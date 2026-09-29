@@ -148,7 +148,7 @@ export default function Home() {
             <Image src="/images/personalized_gift_1789548500986.jpg" alt="Shop Products" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" priority />
           </div>
           <div className="feature-text">
-            <span className="subtitle">THE 3D CRAFTED</span>
+            <span className="subtitle">3D MATRIX</span>
             <h3>Shop</h3>
             <p>Browse our curated collection of ready-to-ship 3D printed products — from desk toys and planters to cable organizers and artistic sculptures. Each piece is precision-printed and quality-checked before it leaves the lab.</p>
             <a href="/shop" className="btn-outline">Browse Collection</a>
@@ -157,7 +157,7 @@ export default function Home() {
 
         <section className="feature-section right-image fade-in" ref={addToRefs}>
           <div className="feature-text">
-            <span className="subtitle">THE 3D CRAFTED</span>
+            <span className="subtitle">3D MATRIX</span>
             <h3>Custom Print</h3>
             <p>Got an STL file or a wild idea? Upload your 3D model or describe what you need, and we'll bring it to life layer by layer. Choose your material, colour, and finish — we handle the rest.</p>
             <a href="/custom-print" className="btn-outline">Start Your Print</a>
@@ -172,7 +172,7 @@ export default function Home() {
             <Image src="/images/home_decor_1789548521878.jpg" alt="Material Guide" fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, 33vw" />
           </div>
           <div className="feature-text">
-            <span className="subtitle">THE 3D CRAFTED</span>
+            <span className="subtitle">3D MATRIX</span>
             <h3>Material Guide</h3>
             <p>Not sure which material fits your project? Explore our detailed guide covering PLA, PETG, ABS, Resin and more — with comparisons on strength, flexibility, heat resistance, and finish quality.</p>
             <a href="/material-guide" className="btn-outline">Explore Materials</a>
@@ -181,7 +181,7 @@ export default function Home() {
 
         <section className="feature-section right-image fade-in" ref={addToRefs}>
           <div className="feature-text">
-            <span className="subtitle">THE 3D CRAFTED</span>
+            <span className="subtitle">3D MATRIX</span>
             <h3>Get a Quote</h3>
             <p>Have a project in mind? Tell us about your requirements — quantity, material, dimensions — and receive a detailed quote within 24 hours. No commitments, just honest pricing from real humans.</p>
             <a href="/get-a-quote" className="btn-outline">Request a Quote</a>

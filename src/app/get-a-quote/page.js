@@ -85,7 +85,7 @@ export default function GetAQuote() {
                 </svg>
                 <h4>The lab</h4>
               </div>
-              <p>Streets of Europe, 24, Maan Road,<br/>Phase 1, Hinjawadi, Pune 411057</p>
+              <p>Floor 3rd 3011 Streets of Europe, 24, Maan Road,<br/>Phase 1, Rajiv Gandhi Infotech Park, Hinjawadi, Pune 411057</p>
             </div>
             
             <div className="quote-info-section">

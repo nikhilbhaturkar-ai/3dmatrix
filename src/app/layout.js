@@ -18,7 +18,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "The 3D Crafted",
+  title: "3D Matrix",
   description: "Custom 3D Printed Gifts, Decor & Prototypes",
 };
 

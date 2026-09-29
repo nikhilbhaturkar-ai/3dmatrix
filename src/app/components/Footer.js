@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-column brand-column">
           <div className="logo">
-            <h1><span className="dot"></span>THE <span className="box">3D</span> CRAFTED</h1>
+            <h1><span className="box">3D</span> MATRIX</h1>
           </div>
           <p className="footer-desc">A print lab turning sketches, STL files and wild ideas into precision parts, decor and desk toys — one layer at a time.</p>
           <div className="social-icons-footer">
@@ -58,11 +58,11 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="https://www.google.com/maps/search/?api=1&query=Streets+of+Europe+,24,+Maan+Road,+Phase+1,+Rajiv+Gandhi+Infotech+Park,+Hinjawadi,+Pimpri-Chinchwad,+Pune,+Maharashtra+411057" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.google.com/maps/search/?api=1&query=Floor+3rd+3011+Streets+of+Europe+,24,+Maan+Road,+Phase+1,+Rajiv+Gandhi+Infotech+Park,+Hinjawadi,+Pimpri-Chinchwad,+Pune,+Maharashtra+411057" target="_blank" rel="noopener noreferrer">
                 <span className="icon">
                   <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
                 </span>
-                Streets of Europe ,24, Maan Road, Phase 1, Rajiv Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Pune, Maharashtra 411057
+                Floor 3rd 3011 Streets of Europe ,24, Maan Road, Phase 1, Rajiv Gandhi Infotech Park, Hinjawadi, Pimpri-Chinchwad, Pune, Maharashtra 411057
               </a>
             </li>
           </ul>
@@ -70,7 +70,7 @@ export default function Footer() {
       </div>
       
       <div className="footer-bottom">
-        <p>© 2026 The 3D Crafted. All rights reserved.</p>
+        <p>© 2026 3D Matrix. All rights reserved.</p>
         <p>Layer by layer.</p>
       </div>
     </footer>

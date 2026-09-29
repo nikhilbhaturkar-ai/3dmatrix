@@ -37,7 +37,7 @@ export default function Navbar() {
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="logo">
           <Link href="/" style={{textDecoration: 'none', color: 'inherit'}}>
-            <h1><span className="dot"></span>THE <span className="box">3D</span> CRAFTED</h1>
+            <h1><span className="box">3D</span> MATRIX</h1>
           </Link>
         </div>
         
