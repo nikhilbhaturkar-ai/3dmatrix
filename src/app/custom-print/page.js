@@ -9,10 +9,10 @@ export default function CustomPrint() {
   const [color, setColor] = useState('Charcoal');
 
   const materials = [
-    { id: 'PLA+', name: 'PLA+', price: '₹12/g', desc: 'Crisp detail, everyday parts' },
-    { id: 'PETG', name: 'PETG', price: '₹14/g', desc: 'Tough, weather-friendly' },
-    { id: 'ABS', name: 'ABS', price: '₹15/g', desc: 'Heat resistant, engineering' },
-    { id: 'TPU', name: 'TPU Flex', price: '₹22/g', desc: 'Rubbery, bendable' }
+    { id: 'PLA+', name: 'PLA+', price: '₹10/g', desc: 'Crisp detail, everyday parts' },
+    { id: 'PETG', name: 'PETG', price: '₹12/g', desc: 'Tough, weather-friendly' },
+    { id: 'ABS', name: 'ABS', price: '₹12/g', desc: 'Heat resistant, engineering' },
+    { id: 'TPU', name: 'TPU Flex', price: '₹18/g', desc: 'Rubbery, bendable' }
   ];
 
   const colors = [
@@ -89,6 +89,9 @@ export default function CustomPrint() {
                 </div>
               ))}
             </div>
+            <p className="cp-material-pricing-note">
+              Starting rates. Final price depends on material weight, print time, complexity and post-processing · Minimum order: ₹199
+            </p>
           </div>
 
           <div className="config-section">

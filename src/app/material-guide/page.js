@@ -7,7 +7,7 @@ const materialsData = [
     id: 'PLA+',
     name: 'PLA+',
     tagline: 'THE CROWD FAVOURITE',
-    price: '₹12/g',
+    price: '₹10/g',
     description: 'Plant-based, crisp and reliable. PLA+ takes stunning detail and rich colour, making it perfect for decor, prototypes, cosplay props and gifts.',
     bestFor: ['Decor', 'Prototypes', 'Cosplay', 'Gifts'],
     stats: [
@@ -22,7 +22,7 @@ const materialsData = [
     id: 'PETG',
     name: 'PETG',
     tagline: 'THE ALL-ROUNDER',
-    price: '₹14/g',
+    price: '₹12/g',
     description: 'The sweet spot between PLA and ABS. Highly durable, water-resistant, and perfect for functional parts that need to withstand the elements.',
     bestFor: ['Mechanical Parts', 'Outdoor Use', 'Containers'],
     stats: [
@@ -37,7 +37,7 @@ const materialsData = [
     id: 'ABS',
     name: 'ABS',
     tagline: 'THE TOUGH GUY',
-    price: '₹15/g',
+    price: '₹12/g',
     description: 'Industrial-grade plastic known for its incredible toughness and heat resistance. The go-to choice for engineering prototypes and high-stress parts.',
     bestFor: ['Engineering', 'High Heat', 'Automotive'],
     stats: [
@@ -52,7 +52,7 @@ const materialsData = [
     id: 'TPU FLEX',
     name: 'TPU FLEX',
     tagline: 'THE BENDY ONE',
-    price: '₹22/g',
+    price: '₹18/g',
     description: 'A rubber-like material that can stretch, bend, and compress without losing its shape. Perfect for phone cases, grips, and custom tires.',
     bestFor: ['Wearables', 'Phone Cases', 'Grips'],
     stats: [
@@ -67,7 +67,7 @@ const materialsData = [
     id: 'HIGH-DETAIL RESIN',
     name: 'HIGH-DETAIL RESIN',
     tagline: 'THE PERFECTIONIST',
-    price: '₹35/g',
+    price: '₹30/g',
     description: 'When precision is paramount. Resin printing delivers injection-mould quality parts with invisible layer lines, perfect for miniatures and jewelry masters.',
     bestFor: ['Miniatures', 'Jewelry', 'Art'],
     stats: [
@@ -109,7 +109,11 @@ export default function MaterialGuide() {
         <div className="mg-card-left">
           <div className="mg-card-top">
             <span className="mg-badge">{activeMaterial.tagline}</span>
-            <span className="mg-price">{activeMaterial.price}</span>
+            <div className="mg-price-wrap">
+              <span className="mg-price-prefix">STARTING RATE</span>
+              <span className="mg-price">{activeMaterial.price}</span>
+              <span className="mg-min-order">· Min. order: ₹199</span>
+            </div>
           </div>
           
           <h3 className="mg-title">{activeMaterial.name}</h3>
@@ -137,6 +141,23 @@ export default function MaterialGuide() {
               </div>
             ))}
           </div>
+        </div>
+      </div>
+
+      {/* Starting Rates & Minimum Order Note */}
+      <div className="mg-pricing-note-wrapper">
+        <div className="mg-pricing-note-content">
+          <svg className="mg-note-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+          <p className="mg-pricing-note-text">
+            Starting rates. Final price depends on material weight, print time, complexity and post-processing.
+          </p>
+        </div>
+        <div className="mg-min-order-pill">
+          Minimum order: ₹199
         </div>
       </div>
     </div>
