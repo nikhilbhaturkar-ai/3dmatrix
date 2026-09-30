@@ -17,6 +17,116 @@ export default function Shop() {
   const products = [
     {
       id: 1,
+      title: "Dynamic Crouching Spider-Man Statue",
+      price: "₹899",
+      badge: "ART",
+      image: "/images/product_spiderman_crouching_statue.png",
+      material: "PLA+",
+      category: "Art & Figurines",
+      numericPrice: 899,
+      desc: "High-definition Spider-Man action statue sculpted in his signature low crouch pose atop a chiseled rock base with crisp muscle definition."
+    },
+    {
+      id: 2,
+      title: "Deadpool Shelf Sitter Figurine",
+      price: "₹699",
+      badge: "ART",
+      image: "/images/product_deadpool_shelf_sitter.png",
+      material: "Resin",
+      category: "Art & Figurines",
+      numericPrice: 699,
+      desc: "Detailed Deadpool shelf sitter in full tactical gear perched comfortably on any shelf, monitor, or desk ledge with dangling legs."
+    },
+    {
+      id: 3,
+      title: "Miles Morales Spider-Man Shelf Sitter",
+      price: "₹699",
+      badge: "ART",
+      image: "/images/product_miles_morales_shelf_sitter.png",
+      material: "Resin",
+      category: "Art & Figurines",
+      numericPrice: 699,
+      desc: "Stealth black & red Miles Morales Spider-Man shelf sitter posed casually in a perch position. Perfect for monitors, mantels, and bookshelves."
+    },
+    {
+      id: 4,
+      title: "Classic Spider-Man Shelf Sitter",
+      price: "₹699",
+      badge: "ART",
+      image: "/images/product_spiderman_shelf_sitter.png",
+      material: "Resin",
+      category: "Art & Figurines",
+      numericPrice: 699,
+      desc: "Iconic red and blue Peter Parker Spider-Man shelf sitter figurine designed to hang relaxed over shelf edges and desk setups."
+    },
+    {
+      id: 5,
+      title: "Chibi Deadpool Desk Figurine",
+      price: "₹499",
+      badge: "ART",
+      image: "/images/product_chibi_deadpool_figurine.jpg",
+      material: "PLA+",
+      category: "Art & Figurines",
+      numericPrice: 499,
+      desc: "Cute stylized miniature Deadpool figurine with crossed arms and dual katanas. Premium multi-color print for desks and display shelves."
+    },
+    {
+      id: 6,
+      title: "Articulated Baby Light Fury Dragon",
+      price: "₹399",
+      badge: "TOYS",
+      image: "/images/product_baby_light_fury_dragon.png",
+      material: "PLA+",
+      category: "Toys & Games",
+      numericPrice: 399,
+      desc: "Ultra-cute articulated baby Light Fury dragon with sapphire blue eyes, poseable wings, and flexible multi-jointed tail."
+    },
+    {
+      id: 7,
+      title: "Articulated Pink Kitten Keychain",
+      price: "₹249",
+      badge: "TOYS",
+      image: "/images/product_articulated_cat_keychain.jpg",
+      material: "PLA+",
+      category: "Toys & Games",
+      numericPrice: 249,
+      desc: "Flexible print-in-place kawaii pink kitten with segmented articulated tail and keychain attachment. Perfect fidget companion."
+    },
+    {
+      id: 8,
+      title: "Articulated Fluffy Samoyed Keychain",
+      price: "₹249",
+      badge: "TOYS",
+      image: "/images/product_articulated_samoyed_keychain.png",
+      material: "PLA+",
+      category: "Toys & Games",
+      numericPrice: 249,
+      desc: "Cheerful smiling white Samoyed puppy fidget keychain featuring a multi-segmented wave tail and durable print-in-place joints."
+    },
+    {
+      id: 9,
+      title: "Mini Night Fury & Light Fury Keychain",
+      price: "₹229",
+      badge: "TOYS",
+      image: "/images/product_night_fury_keychains.png",
+      material: "PLA+",
+      category: "Toys & Games",
+      numericPrice: 229,
+      desc: "Pocket-sized articulated Night Fury and Light Fury dragon keychains with detailed painted eyes and flexible print-in-place bodies."
+    },
+    {
+      id: 10,
+      title: "Articulated Googly-Eye Octopus Keychain",
+      price: "₹199",
+      badge: "TOYS",
+      image: "/images/product_articulated_octopus_keychain.png",
+      material: "PLA+",
+      category: "Toys & Games",
+      numericPrice: 199,
+      desc: "Playful multi-color articulated octopus keychain with wobbly tactile tentacles and expressive googly eyes. Ideal stress-relief fidget."
+    },
+    {
+      id: 11,
       title: "Ribbon Swirl Curly Puppy Figurine",
       price: "₹599",
       badge: "ART",
@@ -27,7 +137,7 @@ export default function Shop() {
       desc: "Intricately printed curly-coated puppy with organic sweeping ribbon fur strands. Warm caramel bronze finish."
     },
     {
-      id: 2,
+      id: 12,
       title: "Geometric Matte Black Pug Statue",
       price: "₹549",
       badge: "ART",
@@ -38,7 +148,7 @@ export default function Shop() {
       desc: "Stylized modern geometric seated pug figurine finished in smooth satin matte black. Perfect for animal lovers."
     },
     {
-      id: 3,
+      id: 13,
       title: "Faceted Low-Poly Lion Sculpture",
       price: "₹699",
       badge: "ART",
@@ -49,7 +159,7 @@ export default function Shop() {
       desc: "Powerful geometric lion sculpture with chiseled faceted planes and a bold sweeping mane in obsidian black."
     },
     {
-      id: 4,
+      id: 14,
       title: "Filigree Tendril Galloping Horse",
       price: "₹799",
       badge: "ART",
@@ -60,7 +170,7 @@ export default function Shop() {
       desc: "Breathtaking kinetic horse sculpture composed of flowing organic ribbon tendrils, captured mid-leap over stylized waves."
     },
     {
-      id: 5,
+      id: 15,
       title: "Geometric Stallion Horse Statue",
       price: "₹649",
       badge: "HOME DECOR",
@@ -71,7 +181,7 @@ export default function Shop() {
       desc: "Sculptural low-poly prancing white stallion on a faceted rock pedestal. An elegant centerpiece for desks and mantels."
     },
     {
-      id: 6,
+      id: 16,
       title: "Heisenberg Headphone Stand",
       price: "₹899",
       badge: "DESK",
@@ -82,7 +192,7 @@ export default function Shop() {
       desc: "Iconic Walter White character bust engineered as an ultra-stable desktop over-ear headphone display mount."
     },
     {
-      id: 7,
+      id: 17,
       title: "The Dark Knight Batman Statue",
       price: "₹999",
       badge: "ART",
@@ -93,7 +203,7 @@ export default function Shop() {
       desc: "Collector's edition Batman statue standing in heroic pose on a textured base with fine armor details."
     },
     {
-      id: 8,
+      id: 18,
       title: "Brooding Batman Shelf Sitter",
       price: "₹699",
       badge: "ART",
@@ -104,7 +214,7 @@ export default function Shop() {
       desc: "Pensive Batman shelf sitter in brooding tactical suit, sculpted with draped cape to hang off book stacks or shelves."
     },
     {
-      id: 9,
+      id: 19,
       title: "Coffee Break Skeleton Shelf Sitter",
       price: "₹549",
       badge: "ART",
@@ -115,7 +225,7 @@ export default function Shop() {
       desc: "Humorous office skeleton figurine holding a coffee mug, designed to perch comfortably on monitors, shelves, or 3D printers."
     },
     {
-      id: 10,
+      id: 20,
       title: "Samurai Incense Holder & Ash Catcher",
       price: "₹599",
       badge: "ART",
@@ -126,7 +236,7 @@ export default function Shop() {
       desc: "Dramatic black samurai warrior holding an incense stick like a katana, with an integrated elongated ash catcher tray."
     },
     {
-      id: 11,
+      id: 21,
       title: "Mandala Sacred Geometry Incense Plate",
       price: "₹399",
       badge: "HOME DECOR",
@@ -137,7 +247,7 @@ export default function Shop() {
       desc: "Intricately detailed round incense burner tray with a raised 3D sacred mandala pattern and center stick port."
     },
     {
-      id: 12,
+      id: 22,
       title: "Laughing Buddha Zen Incense Statue",
       price: "₹499",
       badge: "ART",
@@ -148,7 +258,7 @@ export default function Shop() {
       desc: "Serene marble-look meditating Laughing Buddha idol holding an incense stick for peaceful zen sanctuaries."
     },
     {
-      id: 13,
+      id: 23,
       title: "Parametric Voronoi Angled Desk Caddy",
       price: "₹449",
       badge: "DESK",
@@ -159,7 +269,7 @@ export default function Shop() {
       desc: "Ergonomically tilted dual-tone desk caddy featuring a 6-compartment organizer core and parametric lattice sleeve."
     },
     {
-      id: 14,
+      id: 24,
       title: "Puffer Jacket Pen Holder",
       price: "₹499",
       badge: "DESK",
@@ -170,7 +280,7 @@ export default function Shop() {
       desc: "Trendy miniature puffer jacket styled pen caddy. A stylish statement piece for any desk or study setup."
     },
     {
-      id: 15,
+      id: 25,
       title: "Bal Krishna Shelf Sitter",
       price: "₹699",
       badge: "ART",
@@ -181,7 +291,7 @@ export default function Shop() {
       desc: "Detailed Little Krishna idol playing the flute with peacock feather crown. Sits gracefully on any shelf or desk edge."
     },
     {
-      id: 16,
+      id: 26,
       title: "Fluted Desk Organizer & Dock",
       price: "₹649",
       badge: "ORGANIZERS",
@@ -192,7 +302,7 @@ export default function Shop() {
       desc: "All-in-one ribbed desk organizer with phone stand, pen cylinder, and trays for glasses, AirPods, and stationery."
     },
     {
-      id: 17,
+      id: 27,
       title: "Personalized Name Desk Caddy",
       price: "₹549",
       badge: "GIFTS",
@@ -203,7 +313,7 @@ export default function Shop() {
       desc: "Custom 3D printed cloud stationery caddy with raised personalized name lettering and multi-slot storage."
     },
     {
-      id: 18,
+      id: 28,
       title: "Fluted Paper Towel Holder",
       price: "₹599",
       badge: "HOME DECOR",
@@ -214,7 +324,7 @@ export default function Shop() {
       desc: "Sleek architectural fluted paper towel stand with contoured tear guard for clean one-handed dispensing."
     },
     {
-      id: 19,
+      id: 29,
       title: "Drainage Toothbrush & Paste Caddy",
       price: "₹349",
       badge: "ORGANIZERS",
@@ -225,7 +335,7 @@ export default function Shop() {
       desc: "Hygienic multi-slot bathroom caddy with dedicated toothpaste tube cup and aerated drainage tray."
     },
     {
-      id: 20,
+      id: 30,
       title: "Locking Core Paper Towel Dispenser",
       price: "₹649",
       badge: "ORGANIZERS",
@@ -236,7 +346,7 @@ export default function Shop() {
       desc: "Fluted kitchen roll caddy engineered with a quick twist-lock bayonet spindle for smooth, steady sheet rolling."
     },
     {
-      id: 21,
+      id: 31,
       title: "Ribbed Tealight Candle Holder",
       price: "₹449",
       badge: "HOME DECOR",
@@ -247,7 +357,7 @@ export default function Shop() {
       desc: "Sculptural finned ceramic-styled vessel for standard tealights, casting soft ambient radial shadows."
     },
     {
-      id: 22,
+      id: 32,
       title: "Spiral Helix Shadow Lantern",
       price: "₹499",
       badge: "HOME DECOR",
@@ -258,7 +368,7 @@ export default function Shop() {
       desc: "Twisted spiral slat lantern that projects a hypnotic starburst shadow pattern across tables and walls."
     },
     {
-      id: 23,
+      id: 33,
       title: "Geometric Desk Planter",
       price: "₹399",
       badge: "DESK",
@@ -269,7 +379,7 @@ export default function Shop() {
       desc: "Modern faceted geometric succulent planter. Built with drainage and watertight inner lining."
     },
     {
-      id: 24,
+      id: 34,
       title: "Minimalist Phone Stand",
       price: "₹249",
       badge: "DESK",
@@ -280,7 +390,7 @@ export default function Shop() {
       desc: "Ergonomic angled desktop smartphone stand with cable cutouts for clutter-free charging."
     },
     {
-      id: 25,
+      id: 35,
       title: "Dragon Figurine",
       price: "₹1,199",
       badge: "ART",
@@ -291,7 +401,7 @@ export default function Shop() {
       desc: "Intricately detailed dragon statue printed in high-definition resin with textured scales and wings."
     },
     {
-      id: 26,
+      id: 36,
       title: "Honeycomb Wall Shelf",
       price: "₹499",
       badge: "HOME DECOR",
@@ -302,7 +412,7 @@ export default function Shop() {
       desc: "Modular hexagonal floating shelf unit. Lightweight, sturdy, and easy to mount."
     },
     {
-      id: 27,
+      id: 37,
       title: "Cable Management Box",
       price: "₹599",
       badge: "ORGANIZERS",
@@ -313,7 +423,7 @@ export default function Shop() {
       desc: "Clean desktop wire organizer box with multiple port cutouts to hide messy cords and adapters."
     },
     {
-      id: 28,
+      id: 38,
       title: "Flexi Rex",
       price: "₹199",
       badge: "TOYS",
@@ -324,7 +434,7 @@ export default function Shop() {
       desc: "Articulated print-in-place flexible T-Rex dinosaur. A classic fidget toy for all ages."
     },
     {
-      id: 29,
+      id: 39,
       title: "Lithophane Photo Frame",
       price: "₹799",
       badge: "GIFTS",
@@ -335,7 +445,7 @@ export default function Shop() {
       desc: "Personalized illuminated 3D photo that reveals your memory in high contrast when backlit."
     },
     {
-      id: 30,
+      id: 40,
       title: "Gear Fidget Cube",
       price: "₹299",
       badge: "TOYS",
@@ -346,7 +456,7 @@ export default function Shop() {
       desc: "Interlocking print-in-place mechanical gear cube for tactile focus and sensory fidgeting."
     },
     {
-      id: 31,
+      id: 41,
       title: "Geometric Pendant Lamp",
       price: "₹999",
       badge: "HOME DECOR",
