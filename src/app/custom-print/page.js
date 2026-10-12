@@ -2,17 +2,14 @@
 import React, { useState } from 'react';
 
 export default function CustomPrint() {
-  const [material, setMaterial] = useState('PLA+');
+  const [material, setMaterial] = useState('PLA');
   const [density, setDensity] = useState(20);
   const [layerHeight, setLayerHeight] = useState('0.20mm · Standard');
   const [quantity, setQuantity] = useState(1);
   const [color, setColor] = useState('Charcoal');
 
   const materials = [
-    { id: 'PLA+', name: 'PLA+', price: '₹10/g', desc: 'Crisp detail, everyday parts' },
-    { id: 'PETG', name: 'PETG', price: '₹12/g', desc: 'Tough, weather-friendly' },
-    { id: 'ABS', name: 'ABS', price: '₹12/g', desc: 'Heat resistant, engineering' },
-    { id: 'TPU', name: 'TPU Flex', price: '₹18/g', desc: 'Rubbery, bendable' }
+    { id: 'PLA', name: 'Material: PLA', price: '₹10/g', desc: 'Crisp detail, everyday parts & precision models' }
   ];
 
   const colors = [
@@ -74,20 +71,12 @@ export default function CustomPrint() {
 
           <div className="config-section">
             <h4 className="section-label">MATERIAL</h4>
-            <div className="materials-grid">
-              {materials.map(m => (
-                <div 
-                  key={m.id} 
-                  className={`material-card ${material === m.id ? 'active' : ''}`}
-                  onClick={() => setMaterial(m.id)}
-                >
-                  <div className="m-card-top">
-                    <h5>{m.name}</h5>
-                    <span className="m-price">{m.price}</span>
-                  </div>
-                  <p>{m.desc}</p>
-                </div>
-              ))}
+            <div className="material-card active" style={{ maxWidth: '100%', cursor: 'default' }}>
+              <div className="m-card-top">
+                <h5>Material: PLA</h5>
+                <span className="m-price">₹10/g</span>
+              </div>
+              <p>Crisp detail, everyday parts & precision models</p>
             </div>
             <p className="cp-material-pricing-note">
               Starting rates. Final price depends on material weight, print time, complexity and post-processing · Minimum order: ₹199

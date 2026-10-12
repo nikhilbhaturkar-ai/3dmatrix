@@ -18,13 +18,13 @@ export default function About() {
     },
     {
       name: "Elegoo Saturn 3 Ultra",
-      desc: "0.05mm resin rigs for miniatures",
+      desc: "0.05mm ultra-fine precision rigs for miniatures",
       qty: 2,
       image: "/images/printer_farm_bw.jpg"
     },
     {
       name: "Voron 2.4 (custom)",
-      desc: "ABS/ASA enclosed engineering beast",
+      desc: "Enclosed high-speed coreXY production beast",
       qty: 1,
       image: "/images/printer_farm_bw.jpg"
     }

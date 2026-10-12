@@ -4,104 +4,38 @@ import React, { useState } from 'react';
 
 const materialsData = [
   {
-    id: 'PLA+',
-    name: 'PLA+',
-    tagline: 'THE CROWD FAVOURITE',
+    id: 'PLA',
+    name: 'PLA',
+    tagline: 'THE STUDIO STANDARD',
     price: '₹10/g',
-    description: 'Plant-based, crisp and reliable. PLA+ takes stunning detail and rich colour, making it perfect for decor, prototypes, cosplay props and gifts.',
+    description: 'Plant-based, crisp and reliable. PLA takes stunning detail and rich colour, making it perfect for decor, prototypes, models and gifts.',
     bestFor: ['Decor', 'Prototypes', 'Cosplay', 'Gifts'],
-    stats: [
-      { label: 'DURABILITY', score: 3 },
-      { label: 'FLEXIBILITY', score: 2 },
-      { label: 'HEAT RESISTANCE', score: 2 },
-      { label: 'SURFACE FINISH', score: 4 },
-      { label: 'ECO FRIENDLY', score: 5 },
-    ]
-  },
-  {
-    id: 'PETG',
-    name: 'PETG',
-    tagline: 'THE ALL-ROUNDER',
-    price: '₹12/g',
-    description: 'The sweet spot between PLA and ABS. Highly durable, water-resistant, and perfect for functional parts that need to withstand the elements.',
-    bestFor: ['Mechanical Parts', 'Outdoor Use', 'Containers'],
     stats: [
       { label: 'DURABILITY', score: 4 },
       { label: 'FLEXIBILITY', score: 3 },
       { label: 'HEAT RESISTANCE', score: 3 },
-      { label: 'SURFACE FINISH', score: 3 },
-      { label: 'ECO FRIENDLY', score: 3 },
-    ]
-  },
-  {
-    id: 'ABS',
-    name: 'ABS',
-    tagline: 'THE TOUGH GUY',
-    price: '₹12/g',
-    description: 'Industrial-grade plastic known for its incredible toughness and heat resistance. The go-to choice for engineering prototypes and high-stress parts.',
-    bestFor: ['Engineering', 'High Heat', 'Automotive'],
-    stats: [
-      { label: 'DURABILITY', score: 5 },
-      { label: 'FLEXIBILITY', score: 2 },
-      { label: 'HEAT RESISTANCE', score: 5 },
-      { label: 'SURFACE FINISH', score: 3 },
-      { label: 'ECO FRIENDLY', score: 1 },
-    ]
-  },
-  {
-    id: 'TPU FLEX',
-    name: 'TPU FLEX',
-    tagline: 'THE BENDY ONE',
-    price: '₹18/g',
-    description: 'A rubber-like material that can stretch, bend, and compress without losing its shape. Perfect for phone cases, grips, and custom tires.',
-    bestFor: ['Wearables', 'Phone Cases', 'Grips'],
-    stats: [
-      { label: 'DURABILITY', score: 4 },
-      { label: 'FLEXIBILITY', score: 5 },
-      { label: 'HEAT RESISTANCE', score: 2 },
-      { label: 'SURFACE FINISH', score: 3 },
-      { label: 'ECO FRIENDLY', score: 2 },
-    ]
-  },
-  {
-    id: 'HIGH-DETAIL RESIN',
-    name: 'HIGH-DETAIL RESIN',
-    tagline: 'THE PERFECTIONIST',
-    price: '₹30/g',
-    description: 'When precision is paramount. Resin printing delivers injection-mould quality parts with invisible layer lines, perfect for miniatures and jewelry masters.',
-    bestFor: ['Miniatures', 'Jewelry', 'Art'],
-    stats: [
-      { label: 'DURABILITY', score: 2 },
-      { label: 'FLEXIBILITY', score: 1 },
-      { label: 'HEAT RESISTANCE', score: 3 },
       { label: 'SURFACE FINISH', score: 5 },
-      { label: 'ECO FRIENDLY', score: 1 },
+      { label: 'ECO FRIENDLY', score: 5 },
     ]
   }
 ];
 
 export default function MaterialGuide() {
-  const [activeTab, setActiveTab] = useState(materialsData[0].id);
+  const [activeTab, setActiveTab] = useState('PLA');
   
-  const activeMaterial = materialsData.find(m => m.id === activeTab);
+  const activeMaterial = materialsData[0];
 
   return (
     <div className="material-guide-page fade-in visible">
       <div className="mg-header">
         <div className="mg-tag"><span>03</span> MATERIAL GUIDE</div>
-        <h2>Pick your filament wisely</h2>
-        <p>Five materials, five personalities. Compare strength, flex, heat tolerance and finish before you commit your model.</p>
+        <h2>Filament Specification</h2>
+        <p>Explore strength, flex, heat tolerance and surface finish for our signature PLA material.</p>
         
         <div className="mg-tabs">
-          {materialsData.map(m => (
-            <button 
-              key={m.id}
-              className={`mg-tab ${activeTab === m.id ? 'active' : ''}`}
-              onClick={() => setActiveTab(m.id)}
-            >
-              {m.id}
-            </button>
-          ))}
+          <div className="mg-tab active" style={{ cursor: 'default' }}>
+            Material: PLA
+          </div>
         </div>
       </div>
 

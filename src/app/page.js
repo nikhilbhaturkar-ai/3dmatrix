@@ -174,7 +174,7 @@ export default function Home() {
           <div className="feature-text">
             <span className="subtitle">3D MATRIX</span>
             <h3>Material Guide</h3>
-            <p>Not sure which material fits your project? Explore our detailed guide covering PLA, PETG, ABS, Resin and more — with comparisons on strength, flexibility, heat resistance, and finish quality.</p>
+            <p>Explore our detailed guide covering PLA — with insights on strength, flexibility, heat resistance, and finish quality.</p>
             <a href="/material-guide" className="btn-outline">Explore Materials</a>
           </div>
         </section>

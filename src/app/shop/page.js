@@ -1,8 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useCart } from '../context/CartContext';
 
 export default function Shop() {
@@ -12,466 +11,845 @@ export default function Shop() {
   const [sortBy, setSortBy] = useState("Featured");
   const [selectedMaterials, setSelectedMaterials] = useState({});
   
-  const categories = ["All Products", "Home Decor", "Desk Accessories", "Toys & Games", "Art & Figurines", "Organizers", "Gifts"];
+  // Card image turntable carousel indices: { [productId]: currentImageIndex }
+  const [cardImageIndices, setCardImageIndices] = useState({});
+
+  // Mobile touch swipe tracking: { [productId]: startX }
+  const touchStartXRef = useRef({});
+
+  // Quick View / Product Detail Modal State
+  const [quickViewProduct, setQuickViewProduct] = useState(null);
+  const [modalImageIndex, setModalImageIndex] = useState(0);
+  const [modalMaterial, setModalMaterial] = useState('PLA');
+  const [modalSize, setModalSize] = useState('Medium');
+  const [modalQuantity, setModalQuantity] = useState(1);
+  const [modalAddedAlert, setModalAddedAlert] = useState(false);
+
+  const categories = [
+    "All Products", 
+    "Toys & Games", 
+    "Home Decor", 
+    "Desk Accessories", 
+    "Organizers", 
+    "Keychains", 
+    "Art & Figurines", 
+    "Gifts"
+  ];
   
+  // Angle labels for 4-angle studio turntable inspection
+  const angleLabels = [
+    "Front / Hero",
+    "45° Angle",
+    "Side / Rear",
+    "Detail / Top"
+  ];
+
+  /* =========================================================
+     --- UNIQUE 3D MODEL CATALOG WITH 4 TURNTABLE ANGLES ---
+     Every product is a completely unique 3D model.
+     For each product:
+     Image 1 = Front / Hero view
+     Image 2 = 45° Angle view
+     Image 3 = Side / Rear view
+     Image 4 = Close-up Detail / Top view
+     ========================================================= */
   const products = [
     {
       id: 1,
-      title: "Dynamic Crouching Spider-Man Statue",
-      price: "₹899",
-      badge: "ART",
-      image: "/images/product_spiderman_crouching_statue.png",
-      material: "PLA+",
-      category: "Art & Figurines",
-      numericPrice: 899,
-      desc: "High-definition Spider-Man action statue sculpted in his signature low crouch pose atop a chiseled rock base with crisp muscle definition."
+      name: "Articulated Dragon",
+      description: "Flexible print-in-place dragon with multi-segmented body, tactile moving scales, and poseable wings.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "180 × 50 × 30 mm",
+                  "price": "₹249",
+                  "numericPrice": 249
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "240 × 65 × 40 mm",
+                  "price": "₹299",
+                  "numericPrice": 299
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "320 × 85 × 55 mm",
+                  "price": "₹449",
+                  "numericPrice": 449
+            }
+      ],
+      price: "From ₹299",
+      numericPrice: 299,
+      originalPrice: "₹599",
+      discount: "50% off",
+      category: "Toys & Games",
+      badge: "BESTSELLER",
+      rating: 4.9,
+      reviewsCount: 230,
+      images: [
+        "/images/product_dragon_front.jpg",
+        "/images/product_dragon_angle.jpg",
+        "/images/product_dragon_side.jpg",
+        "/images/product_dragon_detail.jpg"
+      ],
+      specs: {
+        infill: "15% Gyroid (Fluid flexible joints)",
+        layerHeight: "0.16mm Precision",
+        dimensions: "24.0 x 6.5 x 4.0 cm",
+        printTime: "5.5 Hours",
+        ringType: "Print-in-Place Flexible Jointing"
+      }
     },
     {
       id: 2,
-      title: "Deadpool Shelf Sitter Figurine",
-      price: "₹699",
-      badge: "ART",
-      image: "/images/product_deadpool_shelf_sitter.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 699,
-      desc: "Detailed Deadpool shelf sitter in full tactical gear perched comfortably on any shelf, monitor, or desk ledge with dangling legs."
+      name: "The Oyster Geometric Vase",
+      description: "Sculptural organic spiral vase with flowing shell-inspired fluted layers for dried florals and centerpieces.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "140 × 85 × 85 mm",
+                  "price": "₹349",
+                  "numericPrice": 349
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "185 × 110 × 110 mm",
+                  "price": "₹449",
+                  "numericPrice": 449
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "240 × 140 × 140 mm",
+                  "price": "₹649",
+                  "numericPrice": 649
+            }
+      ],
+      price: "From ₹449",
+      numericPrice: 449,
+      originalPrice: "₹899",
+      discount: "50% off",
+      category: "Home Decor",
+      badge: "FEATURED",
+      rating: 4.9,
+      reviewsCount: 114,
+      images: [
+        "/images/product_vase_front.jpg",
+        "/images/product_vase_angle.jpg",
+        "/images/product_vase_side.jpg",
+        "/images/product_vase_front.jpg"
+      ],
+      specs: {
+        infill: "100% Watertight Spiral Vase Mode",
+        layerHeight: "0.20mm Architectural Layers",
+        dimensions: "18.5 x 11.0 x 11.0 cm",
+        printTime: "4.8 Hours",
+        ringType: "Weighted Ceramic-Style Base"
+      }
     },
     {
       id: 3,
-      title: "Miles Morales Spider-Man Shelf Sitter",
-      price: "₹699",
-      badge: "ART",
-      image: "/images/product_miles_morales_shelf_sitter.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 699,
-      desc: "Stealth black & red Miles Morales Spider-Man shelf sitter posed casually in a perch position. Perfect for monitors, mantels, and bookshelves."
+      name: "Cyber Ergonomic Phone Stand",
+      description: "Stealth angled smartphone desk stand engineered with low-profile charging cutouts and non-slip feet.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "80 × 65 × 70 mm",
+                  "price": "₹199",
+                  "numericPrice": 199
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "95 × 75 × 80 mm",
+                  "price": "₹249",
+                  "numericPrice": 249
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "125 × 95 × 100 mm",
+                  "price": "₹349",
+                  "numericPrice": 349
+            }
+      ],
+      price: "From ₹249",
+      numericPrice: 249,
+      originalPrice: "₹499",
+      discount: "50% off",
+      category: "Desk Accessories",
+      badge: "EDC GEAR",
+      rating: 4.8,
+      reviewsCount: 196,
+      images: [
+        "/images/product_phonestand_front.jpg",
+        "/images/product_phonestand_angle.jpg",
+        "/images/product_phonestand_side.jpg",
+        "/images/product_phonestand_detail.jpg"
+      ],
+      specs: {
+        infill: "35% Dense Hexagonal Infill",
+        layerHeight: "0.16mm Precision",
+        dimensions: "9.5 x 7.5 x 8.0 cm",
+        printTime: "2.4 Hours",
+        ringType: "Cable Pass-Through Notch"
+      }
     },
     {
       id: 4,
-      title: "Classic Spider-Man Shelf Sitter",
-      price: "₹699",
-      badge: "ART",
-      image: "/images/product_spiderman_shelf_sitter.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 699,
-      desc: "Iconic red and blue Peter Parker Spider-Man shelf sitter figurine designed to hang relaxed over shelf edges and desk setups."
+      name: "Multi-Compartment Desk Organizer",
+      description: "Architectural 3-tier desk organizer featuring dedicated pen cylinders, gadget dock, and accessory tray.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "150 × 90 × 65 mm",
+                  "price": "₹449",
+                  "numericPrice": 449
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "200 × 120 × 85 mm",
+                  "price": "₹549",
+                  "numericPrice": 549
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "260 × 150 × 105 mm",
+                  "price": "₹749",
+                  "numericPrice": 749
+            }
+      ],
+      price: "From ₹549",
+      numericPrice: 549,
+      originalPrice: "₹999",
+      discount: "45% off",
+      category: "Organizers",
+      badge: "OFFICE ESSENTIAL",
+      rating: 4.9,
+      reviewsCount: 88,
+      images: [
+        "/images/product_deskcaddy_front.jpg",
+        "/images/product_deskcaddy_angle.jpg",
+        "/images/product_deskcaddy_side.jpg",
+        "/images/product_deskcaddy_detail.jpg"
+      ],
+      specs: {
+        infill: "20% Cubic Infill",
+        layerHeight: "0.18mm Standard",
+        dimensions: "20.0 x 12.0 x 8.5 cm",
+        printTime: "6.2 Hours",
+        ringType: "Multi-Slot Modular Bay"
+      }
     },
     {
       id: 5,
-      title: "Chibi Deadpool Desk Figurine",
-      price: "₹499",
-      badge: "ART",
-      image: "/images/product_chibi_deadpool_figurine.jpg",
-      material: "PLA+",
-      category: "Art & Figurines",
-      numericPrice: 499,
-      desc: "Cute stylized miniature Deadpool figurine with crossed arms and dual katanas. Premium multi-color print for desks and display shelves."
+      name: "Parametric Geometric Planter Pot",
+      description: "Modern faceted low-poly succulent pot with internal root aerator base and watertight outer shell.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "80 × 80 × 70 mm",
+                  "price": "₹299",
+                  "numericPrice": 299
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "105 × 105 × 90 mm",
+                  "price": "₹399",
+                  "numericPrice": 399
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "145 × 145 × 120 mm",
+                  "price": "₹549",
+                  "numericPrice": 549
+            }
+      ],
+      price: "From ₹399",
+      numericPrice: 399,
+      originalPrice: "₹749",
+      discount: "47% off",
+      category: "Home Decor",
+      badge: "BOTANICAL",
+      rating: 4.8,
+      reviewsCount: 79,
+      images: [
+        "/images/product_planter_front.jpg",
+        "/images/product_planter_angle.jpg",
+        "/images/product_planter_side.jpg",
+        "/images/product_planter_detail.jpg"
+      ],
+      specs: {
+        infill: "25% Tri-Hexagonal (Watertight)",
+        layerHeight: "0.16mm Layering",
+        dimensions: "10.5 x 10.5 x 9.0 cm",
+        printTime: "3.5 Hours",
+        ringType: "Integrated Aeration Sump"
+      }
     },
     {
       id: 6,
-      title: "Articulated Baby Light Fury Dragon",
-      price: "₹399",
-      badge: "TOYS",
-      image: "/images/product_baby_light_fury_dragon.png",
-      material: "PLA+",
-      category: "Toys & Games",
-      numericPrice: 399,
-      desc: "Ultra-cute articulated baby Light Fury dragon with sapphire blue eyes, poseable wings, and flexible multi-jointed tail."
+      name: "Web-Armor Headphone Stand",
+      description: "Heavy-duty desktop headphone display mount sculpted with web-matrix lattice support and curved headrest.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "210 × 120 × 100 mm",
+                  "price": "₹749",
+                  "numericPrice": 749
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "250 × 140 × 120 mm",
+                  "price": "₹899",
+                  "numericPrice": 899
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "280 × 160 × 135 mm",
+                  "price": "₹1,099",
+                  "numericPrice": 1099
+            }
+      ],
+      price: "From ₹899",
+      numericPrice: 899,
+      originalPrice: "₹1,499",
+      discount: "40% off",
+      category: "Desk Accessories",
+      badge: "GAMING SETUP",
+      rating: 5.0,
+      reviewsCount: 142,
+      images: [
+        "/images/product_headphone_stand_front.jpg",
+        "/images/product_headphone_stand_angle.jpg",
+        "/images/product_headphone_stand_side.jpg",
+        "/images/product_headphone_stand_detail.jpg"
+      ],
+      specs: {
+        infill: "40% Gyroid Rigid Core",
+        layerHeight: "0.16mm Clean Finish",
+        dimensions: "25.0 x 14.0 x 12.0 cm",
+        printTime: "8.0 Hours",
+        ringType: "Anti-Tip Weighted Pedestal"
+      }
     },
     {
       id: 7,
-      title: "Articulated Pink Kitten Keychain",
-      price: "₹249",
-      badge: "TOYS",
-      image: "/images/product_articulated_cat_keychain.jpg",
-      material: "PLA+",
+      name: "Articulated Flexi Skeleton Fidget",
+      description: "Classic print-in-place posable skeleton toy with flexible interlocking spine, ribs, and dangling limbs.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "90 × 28 × 10 mm",
+                  "price": "₹139",
+                  "numericPrice": 139
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "120 × 35 × 12 mm",
+                  "price": "₹179",
+                  "numericPrice": 179
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "160 × 48 × 16 mm",
+                  "price": "₹249",
+                  "numericPrice": 249
+            }
+      ],
+      price: "From ₹179",
+      numericPrice: 179,
+      originalPrice: "₹399",
+      discount: "55% off",
       category: "Toys & Games",
-      numericPrice: 249,
-      desc: "Flexible print-in-place kawaii pink kitten with segmented articulated tail and keychain attachment. Perfect fidget companion."
+      badge: "BESTSELLER",
+      rating: 4.9,
+      reviewsCount: 310,
+      images: [
+        "/images/product_skeleton_fsk_front.jpg",
+        "/images/product_skeleton_fsk_angle.jpg",
+        "/images/product_skeleton_fsk_side.jpg",
+        "/images/product_skeleton_fsk_detail.jpg"
+      ],
+      specs: {
+        infill: "100% Solid Interlocking Ball Joints",
+        layerHeight: "0.12mm Ultra Detail",
+        dimensions: "12.0 x 3.5 x 1.2 cm",
+        printTime: "2.2 Hours",
+        ringType: "Stainless Steel Keyring Loop"
+      }
     },
     {
       id: 8,
-      title: "Articulated Fluffy Samoyed Keychain",
-      price: "₹249",
-      badge: "TOYS",
-      image: "/images/product_articulated_samoyed_keychain.png",
-      material: "PLA+",
-      category: "Toys & Games",
-      numericPrice: 249,
-      desc: "Cheerful smiling white Samoyed puppy fidget keychain featuring a multi-segmented wave tail and durable print-in-place joints."
+      name: "LED Clicky Keyboard Switch Keychain",
+      description: "Tactile mechanical clicky key switch inside a precision 3D printed housing with clear keycap and internal LED.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "24 × 24 × 28 mm",
+                  "price": "₹169",
+                  "numericPrice": 169
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "28 × 28 × 32 mm",
+                  "price": "₹199",
+                  "numericPrice": 199
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "54 × 28 × 32 mm",
+                  "price": "₹299",
+                  "numericPrice": 299
+            }
+      ],
+      price: "From ₹199",
+      numericPrice: 199,
+      originalPrice: "₹449",
+      discount: "56% off",
+      category: "Desk Accessories",
+      badge: "FIDGET GEAR",
+      rating: 4.9,
+      reviewsCount: 265,
+      images: [
+        "/images/product_switch_fk_front.jpg",
+        "/images/product_switch_fk_angle.jpg",
+        "/images/product_switch_fk_side.jpg",
+        "/images/product_switch_fk_detail.jpg"
+      ],
+      specs: {
+        infill: "50% Solid Snap-Fit Shell",
+        layerHeight: "0.14mm Fine Fit",
+        dimensions: "2.8 x 2.8 x 3.2 cm",
+        printTime: "1.2 Hours",
+        ringType: "Chrome Split Ring + Braided Strap"
+      }
     },
     {
       id: 9,
-      title: "Mini Night Fury & Light Fury Keychain",
-      price: "₹229",
-      badge: "TOYS",
-      image: "/images/product_night_fury_keychains.png",
-      material: "PLA+",
-      category: "Toys & Games",
-      numericPrice: 229,
-      desc: "Pocket-sized articulated Night Fury and Light Fury dragon keychains with detailed painted eyes and flexible print-in-place bodies."
+      name: "Spider-Man & Venom Mask Dual-Relief Keychain",
+      description: "Split-face superhero medallion showing classic Spider-Man web contour seamlessly merging into sharp venom fangs.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "45 × 32 × 7 mm",
+                  "price": "₹149",
+                  "numericPrice": 149
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "55 × 40 × 8 mm",
+                  "price": "₹189",
+                  "numericPrice": 189
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "72 × 52 × 10 mm",
+                  "price": "₹269",
+                  "numericPrice": 269
+            }
+      ],
+      price: "From ₹189",
+      numericPrice: 189,
+      originalPrice: "₹399",
+      discount: "52% off",
+      category: "Art & Figurines",
+      badge: "FAN FAVORITE",
+      rating: 4.9,
+      reviewsCount: 184,
+      images: [
+        "/images/product_spiderman_venom_mask_front.jpg",
+        "/images/product_spiderman_venom_mask_angle.jpg",
+        "/images/product_spiderman_venom_mask_side.jpg",
+        "/images/product_spiderman_venom_mask_detail.jpg"
+      ],
+      specs: {
+        infill: "Solid Multi-Layer Relief",
+        layerHeight: "0.10mm High-Def Sculpt",
+        dimensions: "5.5 x 4.0 x 0.8 cm",
+        printTime: "1.8 Hours",
+        ringType: "Nickel-Plated Steel Key Link"
+      }
     },
     {
       id: 10,
-      title: "Articulated Googly-Eye Octopus Keychain",
-      price: "₹199",
-      badge: "TOYS",
-      image: "/images/product_articulated_octopus_keychain.png",
-      material: "PLA+",
-      category: "Toys & Games",
-      numericPrice: 199,
-      desc: "Playful multi-color articulated octopus keychain with wobbly tactile tentacles and expressive googly eyes. Ideal stress-relief fidget."
+      name: "Custom 3D Dual-Color Nameplate",
+      description: "Personalized two-tone custom key tag or motorcycle registration plate with permanent embossed raised lettering.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "55 × 18 × 6 mm",
+                  "price": "₹179",
+                  "numericPrice": 179
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "70 × 22 × 6 mm",
+                  "price": "₹219",
+                  "numericPrice": 219
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "95 × 26 × 6 mm",
+                  "price": "₹279",
+                  "numericPrice": 279
+            }
+      ],
+      price: "From ₹219",
+      numericPrice: 219,
+      originalPrice: "₹499",
+      discount: "56% off",
+      category: "Gifts",
+      badge: "CUSTOM PRINT",
+      rating: 4.9,
+      reviewsCount: 228,
+      images: [
+        "/images/product_nameplate_p3d_front.jpg",
+        "/images/product_nameplate_p3d_angle.jpg",
+        "/images/product_nameplate_p3d_side.jpg",
+        "/images/product_nameplate_p3d_detail.jpg"
+      ],
+      specs: {
+        infill: "100% Solid Infill",
+        layerHeight: "0.16mm with Top Surface Ironing",
+        dimensions: "7.0 x 2.2 x 0.6 cm",
+        printTime: "1.4 Hours",
+        ringType: "Polished Stainless Steel Ring"
+      }
     },
     {
       id: 11,
-      title: "Ribbon Swirl Curly Puppy Figurine",
-      price: "₹599",
-      badge: "ART",
-      image: "/images/product_ribbon_puppy_figurine.jpg",
-      material: "PLA+",
-      category: "Art & Figurines",
-      numericPrice: 599,
-      desc: "Intricately printed curly-coated puppy with organic sweeping ribbon fur strands. Warm caramel bronze finish."
+      name: "3D Football Cleat & Ball Keychain",
+      description: "Miniature athletic football shoe featuring molded stud soles, laces, and coordinating soccer ball charm.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "45 × 22 × 20 mm",
+                  "price": "₹139",
+                  "numericPrice": 139
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "60 × 28 × 25 mm",
+                  "price": "₹169",
+                  "numericPrice": 169
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "80 × 38 × 32 mm",
+                  "price": "₹239",
+                  "numericPrice": 239
+            }
+      ],
+      price: "From ₹169",
+      numericPrice: 169,
+      originalPrice: "₹349",
+      discount: "51% off",
+      category: "Gifts",
+      badge: "SPORTS",
+      rating: 4.8,
+      reviewsCount: 92,
+      images: [
+        "/images/product_football_shoe_front.jpg",
+        "/images/product_football_shoe_angle.jpg",
+        "/images/product_football_shoe_side.jpg",
+        "/images/product_football_shoe_detail.jpg"
+      ],
+      specs: {
+        infill: "Solid Core Miniature",
+        layerHeight: "0.12mm Detail",
+        dimensions: "6.0 x 2.8 x 2.5 cm",
+        printTime: "1.5 Hours",
+        ringType: "Split Ring + Chain Link"
+      }
     },
     {
       id: 12,
-      title: "Geometric Matte Black Pug Statue",
-      price: "₹549",
-      badge: "ART",
-      image: "/images/product_geometric_pug_statue.png",
-      material: "PLA+",
-      category: "Art & Figurines",
-      numericPrice: 549,
-      desc: "Stylized modern geometric seated pug figurine finished in smooth satin matte black. Perfect for animal lovers."
+      name: "Tibetan Guardian Motorcycle Bell",
+      description: "Traditional embossed protective bell with raised knot patterns designed as a good-luck biker key charm.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "36 × 20 × 20 mm",
+                  "price": "₹119",
+                  "numericPrice": 119
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "45 × 25 × 25 mm",
+                  "price": "₹149",
+                  "numericPrice": 149
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "58 × 32 × 32 mm",
+                  "price": "₹219",
+                  "numericPrice": 219
+            }
+      ],
+      price: "From ₹149",
+      numericPrice: 149,
+      originalPrice: "₹349",
+      discount: "57% off",
+      category: "Gifts",
+      badge: "LUCKY CHARM",
+      rating: 4.8,
+      reviewsCount: 167,
+      images: [
+        "/images/product_guardian_bell_front.jpg",
+        "/images/product_guardian_bell_angle.jpg",
+        "/images/product_guardian_bell_side.jpg",
+        "/images/product_guardian_bell_detail.jpg"
+      ],
+      specs: {
+        infill: "Thick Wall Resonant Shell",
+        layerHeight: "0.12mm Ornament Detail",
+        dimensions: "4.5 x 2.5 x 2.5 cm",
+        printTime: "1.6 Hours",
+        ringType: "Heavy-Duty Motorcycle Loop"
+      }
     },
     {
       id: 13,
-      title: "Faceted Low-Poly Lion Sculpture",
-      price: "₹699",
-      badge: "ART",
-      image: "/images/product_lowpoly_lion_sculpture.png",
-      material: "PLA+",
+      name: "Demon Slayer Flame Warrior 3D Miniature",
+      description: "Collector-grade anime action miniature sculpted with dynamic flowing flame robes and battle sword.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "50 × 30 × 20 mm",
+                  "price": "₹149",
+                  "numericPrice": 149
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "62 × 38 × 25 mm",
+                  "price": "₹189",
+                  "numericPrice": 189
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "92 × 55 × 36 mm",
+                  "price": "₹289",
+                  "numericPrice": 289
+            }
+      ],
+      price: "From ₹189",
+      numericPrice: 189,
+      originalPrice: "₹399",
+      discount: "52% off",
       category: "Art & Figurines",
-      numericPrice: 699,
-      desc: "Powerful geometric lion sculpture with chiseled faceted planes and a bold sweeping mane in obsidian black."
+      badge: "ANIME HERO",
+      rating: 4.9,
+      reviewsCount: 174,
+      images: [
+        "/images/product_demon_slayer_front.jpg",
+        "/images/product_demon_slayer_angle.jpg",
+        "/images/product_demon_slayer_side.jpg",
+        "/images/product_demon_slayer_detail.jpg"
+      ],
+      specs: {
+        infill: "High-Density Solid PLA Core",
+        layerHeight: "0.08mm Ultra-Res Micro Layers",
+        dimensions: "6.2 x 3.8 x 2.5 cm",
+        printTime: "2.5 Hours",
+        ringType: "Reinforced Swivel Clasp"
+      }
     },
     {
       id: 14,
-      title: "Filigree Tendril Galloping Horse",
-      price: "₹799",
-      badge: "ART",
-      image: "/images/product_filigree_horse_sculpture.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 799,
-      desc: "Breathtaking kinetic horse sculpture composed of flowing organic ribbon tendrils, captured mid-leap over stylized waves."
+      name: "Articulated Cockatoo Bird Fidget",
+      description: "Multi-jointed movable bird fidget toy with poseable wings, crest plumage, and flexible tail links.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "75 × 32 × 22 mm",
+                  "price": "₹149",
+                  "numericPrice": 149
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "100 × 42 × 30 mm",
+                  "price": "₹189",
+                  "numericPrice": 189
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "135 × 56 × 40 mm",
+                  "price": "₹269",
+                  "numericPrice": 269
+            }
+      ],
+      price: "From ₹189",
+      numericPrice: 189,
+      originalPrice: "₹389",
+      discount: "51% off",
+      category: "Toys & Games",
+      badge: "KINETIC FIDGET",
+      rating: 4.8,
+      reviewsCount: 83,
+      images: [
+        "/images/product_cockatoo_bird_front.jpg",
+        "/images/product_cockatoo_bird_angle.jpg",
+        "/images/product_cockatoo_bird_side.jpg",
+        "/images/product_cockatoo_bird_detail.jpg"
+      ],
+      specs: {
+        infill: "Print-in-Place Linkages",
+        layerHeight: "0.14mm Joint Calibration",
+        dimensions: "10.0 x 4.2 x 3.0 cm",
+        printTime: "2.0 Hours",
+        ringType: "Top Swivel Ring Link"
+      }
     },
     {
       id: 15,
-      title: "Geometric Stallion Horse Statue",
-      price: "₹649",
-      badge: "HOME DECOR",
-      image: "/images/product_geometric_stallion_statue.png",
-      material: "PLA+",
-      category: "Home Decor",
-      numericPrice: 649,
-      desc: "Sculptural low-poly prancing white stallion on a faceted rock pedestal. An elegant centerpiece for desks and mantels."
+      name: "Premium 3D Astronaut Bear",
+      description: "Stylized cosmic astronaut bear sculpted with an iridescent rainbow visor and detailed chest lifepack.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "50 × 28 × 19 mm",
+                  "price": "₹129",
+                  "numericPrice": 129
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "65 × 35 × 24 mm",
+                  "price": "₹159",
+                  "numericPrice": 159
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "95 × 52 × 35 mm",
+                  "price": "₹259",
+                  "numericPrice": 259
+            }
+      ],
+      price: "From ₹159",
+      numericPrice: 159,
+      originalPrice: "₹349",
+      discount: "54% off",
+      category: "Gifts",
+      badge: "SPACE VOYAGER",
+      rating: 4.8,
+      reviewsCount: 150,
+      images: [
+        "/images/product_astronaut_bear_front.jpg",
+        "/images/product_astronaut_bear_angle.jpg",
+        "/images/product_astronaut_bear_side.jpg",
+        "/images/product_astronaut_bear_detail.jpg"
+      ],
+      specs: {
+        infill: "Solid Precision Shell / Tough Core",
+        layerHeight: "0.08mm Micro Sculpt",
+        dimensions: "6.5 x 3.5 x 2.4 cm",
+        printTime: "2.0 Hours",
+        ringType: "Braided Pilot Lanyard + Clip"
+      }
     },
     {
       id: 16,
-      title: "Heisenberg Headphone Stand",
-      price: "₹899",
-      badge: "DESK",
-      image: "/images/product_heisenberg_headphone_stand.jpg",
-      material: "PLA+",
-      category: "Desk Accessories",
-      numericPrice: 899,
-      desc: "Iconic Walter White character bust engineered as an ultra-stable desktop over-ear headphone display mount."
-    },
-    {
-      id: 17,
-      title: "The Dark Knight Batman Statue",
-      price: "₹999",
-      badge: "ART",
-      image: "/images/product_batman_standing_statue.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 999,
-      desc: "Collector's edition Batman statue standing in heroic pose on a textured base with fine armor details."
-    },
-    {
-      id: 18,
-      title: "Brooding Batman Shelf Sitter",
-      price: "₹699",
-      badge: "ART",
-      image: "/images/product_batman_shelf_sitter.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 699,
-      desc: "Pensive Batman shelf sitter in brooding tactical suit, sculpted with draped cape to hang off book stacks or shelves."
-    },
-    {
-      id: 19,
-      title: "Coffee Break Skeleton Shelf Sitter",
-      price: "₹549",
-      badge: "ART",
-      image: "/images/product_skeleton_coffee_sitter.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 549,
-      desc: "Humorous office skeleton figurine holding a coffee mug, designed to perch comfortably on monitors, shelves, or 3D printers."
-    },
-    {
-      id: 20,
-      title: "Samurai Incense Holder & Ash Catcher",
-      price: "₹599",
-      badge: "ART",
-      image: "/images/product_samurai_incense_holder.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 599,
-      desc: "Dramatic black samurai warrior holding an incense stick like a katana, with an integrated elongated ash catcher tray."
-    },
-    {
-      id: 21,
-      title: "Mandala Sacred Geometry Incense Plate",
-      price: "₹399",
-      badge: "HOME DECOR",
-      image: "/images/product_mandala_incense_plate.png",
-      material: "PLA+",
-      category: "Home Decor",
-      numericPrice: 399,
-      desc: "Intricately detailed round incense burner tray with a raised 3D sacred mandala pattern and center stick port."
-    },
-    {
-      id: 22,
-      title: "Laughing Buddha Zen Incense Statue",
-      price: "₹499",
-      badge: "ART",
-      image: "/images/product_buddha_incense_holder.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 499,
-      desc: "Serene marble-look meditating Laughing Buddha idol holding an incense stick for peaceful zen sanctuaries."
-    },
-    {
-      id: 23,
-      title: "Parametric Voronoi Angled Desk Caddy",
-      price: "₹449",
-      badge: "DESK",
-      image: "/images/product_voronoi_angled_caddy.png",
-      material: "PLA+",
-      category: "Desk Accessories",
-      numericPrice: 449,
-      desc: "Ergonomically tilted dual-tone desk caddy featuring a 6-compartment organizer core and parametric lattice sleeve."
-    },
-    {
-      id: 24,
-      title: "Puffer Jacket Pen Holder",
-      price: "₹499",
-      badge: "DESK",
-      image: "/images/product_puffer_jacket_holder.png",
-      material: "PLA+",
-      category: "Desk Accessories",
-      numericPrice: 499,
-      desc: "Trendy miniature puffer jacket styled pen caddy. A stylish statement piece for any desk or study setup."
-    },
-    {
-      id: 25,
-      title: "Bal Krishna Shelf Sitter",
-      price: "₹699",
-      badge: "ART",
-      image: "/images/product_krishna_figurine.png",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 699,
-      desc: "Detailed Little Krishna idol playing the flute with peacock feather crown. Sits gracefully on any shelf or desk edge."
-    },
-    {
-      id: 26,
-      title: "Fluted Desk Organizer & Dock",
-      price: "₹649",
-      badge: "ORGANIZERS",
-      image: "/images/product_fluted_desk_organizer.png",
-      material: "PLA+",
-      category: "Organizers",
-      numericPrice: 649,
-      desc: "All-in-one ribbed desk organizer with phone stand, pen cylinder, and trays for glasses, AirPods, and stationery."
-    },
-    {
-      id: 27,
-      title: "Personalized Name Desk Caddy",
-      price: "₹549",
-      badge: "GIFTS",
-      image: "/images/product_personalized_name_caddy.png",
-      material: "PLA+",
-      category: "Gifts",
-      numericPrice: 549,
-      desc: "Custom 3D printed cloud stationery caddy with raised personalized name lettering and multi-slot storage."
-    },
-    {
-      id: 28,
-      title: "Fluted Paper Towel Holder",
-      price: "₹599",
-      badge: "HOME DECOR",
-      image: "/images/product_fluted_paper_towel_holder.png",
-      material: "PETG",
-      category: "Home Decor",
-      numericPrice: 599,
-      desc: "Sleek architectural fluted paper towel stand with contoured tear guard for clean one-handed dispensing."
-    },
-    {
-      id: 29,
-      title: "Drainage Toothbrush & Paste Caddy",
-      price: "₹349",
-      badge: "ORGANIZERS",
-      image: "/images/product_toothbrush_holder.png",
-      material: "PETG",
-      category: "Organizers",
-      numericPrice: 349,
-      desc: "Hygienic multi-slot bathroom caddy with dedicated toothpaste tube cup and aerated drainage tray."
-    },
-    {
-      id: 30,
-      title: "Locking Core Paper Towel Dispenser",
-      price: "₹649",
-      badge: "ORGANIZERS",
-      image: "/images/product_locking_paper_towel_dispenser.png",
-      material: "PETG",
-      category: "Organizers",
-      numericPrice: 649,
-      desc: "Fluted kitchen roll caddy engineered with a quick twist-lock bayonet spindle for smooth, steady sheet rolling."
-    },
-    {
-      id: 31,
-      title: "Ribbed Tealight Candle Holder",
-      price: "₹449",
-      badge: "HOME DECOR",
-      image: "/images/product_ribbed_candle_holder.png",
-      material: "PETG",
-      category: "Home Decor",
-      numericPrice: 449,
-      desc: "Sculptural finned ceramic-styled vessel for standard tealights, casting soft ambient radial shadows."
-    },
-    {
-      id: 32,
-      title: "Spiral Helix Shadow Lantern",
-      price: "₹499",
-      badge: "HOME DECOR",
-      image: "/images/product_spiral_shadow_lantern.jpg",
-      material: "PETG",
-      category: "Home Decor",
-      numericPrice: 499,
-      desc: "Twisted spiral slat lantern that projects a hypnotic starburst shadow pattern across tables and walls."
-    },
-    {
-      id: 33,
-      title: "Geometric Desk Planter",
-      price: "₹399",
-      badge: "DESK",
-      image: "/images/product_planter_1789551199185.jpg",
-      material: "PLA+",
-      category: "Desk Accessories",
-      numericPrice: 399,
-      desc: "Modern faceted geometric succulent planter. Built with drainage and watertight inner lining."
-    },
-    {
-      id: 34,
-      title: "Minimalist Phone Stand",
-      price: "₹249",
-      badge: "DESK",
-      image: "/images/product_phonestand_1789551213267.jpg",
-      material: "PLA+",
-      category: "Desk Accessories",
-      numericPrice: 249,
-      desc: "Ergonomic angled desktop smartphone stand with cable cutouts for clutter-free charging."
-    },
-    {
-      id: 35,
-      title: "Dragon Figurine",
-      price: "₹1,199",
-      badge: "ART",
-      image: "/images/product_dragon_1789551228568.jpg",
-      material: "Resin",
-      category: "Art & Figurines",
-      numericPrice: 1199,
-      desc: "Intricately detailed dragon statue printed in high-definition resin with textured scales and wings."
-    },
-    {
-      id: 36,
-      title: "Honeycomb Wall Shelf",
-      price: "₹499",
-      badge: "HOME DECOR",
-      image: "/images/product_shelf_1789551241782.jpg",
-      material: "PLA+",
-      category: "Home Decor",
-      numericPrice: 499,
-      desc: "Modular hexagonal floating shelf unit. Lightweight, sturdy, and easy to mount."
-    },
-    {
-      id: 37,
-      title: "Cable Management Box",
-      price: "₹599",
-      badge: "ORGANIZERS",
-      image: "/images/product_cablebox_1789551258913.jpg",
-      material: "PETG",
-      category: "Organizers",
-      numericPrice: 599,
-      desc: "Clean desktop wire organizer box with multiple port cutouts to hide messy cords and adapters."
-    },
-    {
-      id: 38,
-      title: "Flexi Rex",
-      price: "₹199",
-      badge: "TOYS",
-      image: "/images/product_trex_1789551278939.jpg",
-      material: "PLA+",
+      name: "Kawaii Articulated Pink Cat",
+      description: "Articulated desk kitten toy featuring multi-segment swiveling tail and flexible paws for tactile fidgeting.",
+      material: "PLA",
+      availableMaterials: ["PLA"],
+      sizes: [
+            {
+                  "name": "Small",
+                  "dimensions": "70 × 32 × 28 mm",
+                  "price": "₹189",
+                  "numericPrice": 189
+            },
+            {
+                  "name": "Medium",
+                  "dimensions": "90 × 40 × 35 mm",
+                  "price": "₹229",
+                  "numericPrice": 229
+            },
+            {
+                  "name": "Large",
+                  "dimensions": "120 × 52 × 46 mm",
+                  "price": "₹319",
+                  "numericPrice": 319
+            }
+      ],
+      price: "From ₹229",
+      numericPrice: 229,
+      originalPrice: "₹449",
+      discount: "49% off",
       category: "Toys & Games",
-      numericPrice: 199,
-      desc: "Articulated print-in-place flexible T-Rex dinosaur. A classic fidget toy for all ages."
-    },
-    {
-      id: 39,
-      title: "Lithophane Photo Frame",
-      price: "₹799",
-      badge: "GIFTS",
-      image: "/images/custom_prototype_1789548548021.jpg",
-      material: "PLA+",
-      category: "Gifts",
-      numericPrice: 799,
-      desc: "Personalized illuminated 3D photo that reveals your memory in high contrast when backlit."
-    },
-    {
-      id: 40,
-      title: "Gear Fidget Cube",
-      price: "₹299",
-      badge: "TOYS",
-      image: "/images/personalized_gift_1789548500986.jpg",
-      material: "PLA+",
-      category: "Toys & Games",
-      numericPrice: 299,
-      desc: "Interlocking print-in-place mechanical gear cube for tactile focus and sensory fidgeting."
-    },
-    {
-      id: 41,
-      title: "Geometric Pendant Lamp",
-      price: "₹999",
-      badge: "HOME DECOR",
-      image: "/images/home_decor_1789548521878.jpg",
-      material: "PLA+",
-      category: "Home Decor",
-      numericPrice: 999,
-      desc: "Warm ambient geometric shade that casts beautiful polygon shadow patterns across the room."
+      badge: "KAWAII",
+      rating: 4.9,
+      reviewsCount: 162,
+      images: [
+        "/images/product_kawaii_cat_front.jpg",
+        "/images/product_kawaii_cat_angle.jpg",
+        "/images/product_kawaii_cat_side.jpg",
+        "/images/product_kawaii_cat_detail.jpg"
+      ],
+      specs: {
+        infill: "Flexible Print-in-Place Joints",
+        layerHeight: "0.12mm Silk Gloss",
+        dimensions: "8.0 x 3.5 x 2.2 cm",
+        printTime: "2.2 Hours",
+        ringType: "Stainless Steel Keyring + Swivel"
+      }
     }
   ];
 
+  // Keyboard navigation for Quick View Modal
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!quickViewProduct) return;
+      if (e.key === 'Escape') {
+        handleCloseQuickView();
+      } else if (e.key === 'ArrowLeft') {
+        const imgs = quickViewProduct.images;
+        setModalImageIndex(prev => (prev - 1 + imgs.length) % imgs.length);
+      } else if (e.key === 'ArrowRight') {
+        const imgs = quickViewProduct.images;
+        setModalImageIndex(prev => (prev + 1) % imgs.length);
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [quickViewProduct]);
+
+  // Filtering & Sorting
   let filteredProducts = products.filter(p => {
     const matchesCategory = activeCategory === "All Products" || p.category === activeCategory;
-    const matchesSearch = p.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          (p.desc && p.desc.toLowerCase().includes(searchQuery.toLowerCase()));
+    const matchesSearch = p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          p.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          p.material.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          p.badge.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
@@ -483,28 +861,120 @@ export default function Shop() {
     filteredProducts = [...filteredProducts].sort((a, b) => b.id - a.id);
   }
 
-  const handleMaterialChange = (productId, material) => {
-    setSelectedMaterials(prev => ({ ...prev, [productId]: material }));
+  const handleAddToCart = (product, materialParam = 'PLA', quantity = 1, sizeParam = null, priceParam = null, numPriceParam = null) => {
+    const defaultSize = product.sizes?.[1] || product.sizes?.[0];
+    const size = sizeParam || (defaultSize ? `${defaultSize.name} — ${defaultSize.dimensions}` : 'Standard');
+    const price = priceParam || (defaultSize ? defaultSize.price : product.price);
+    const numPrice = numPriceParam || (defaultSize ? defaultSize.numericPrice : product.numericPrice);
+    for (let i = 0; i < quantity; i++) {
+      addToCart({
+        id: product.id,
+        title: product.name,
+        price: price,
+        numericPrice: numPrice,
+        image: product.images[0],
+        selectedSize: size
+      }, 'PLA');
+    }
   };
 
-  const handleAddToCart = (product) => {
-    const material = selectedMaterials[product.id] || product.material;
-    addToCart(product, material);
+  // Card Image Navigation (Previous / Next / Thumbnail click)
+  const handleCardPrevImage = (e, productId, imagesCount) => {
+    e.stopPropagation();
+    setCardImageIndices(prev => ({
+      ...prev,
+      [productId]: ((prev[productId] || 0) - 1 + imagesCount) % imagesCount
+    }));
+  };
+
+  const handleCardNextImage = (e, productId, imagesCount) => {
+    e.stopPropagation();
+    setCardImageIndices(prev => ({
+      ...prev,
+      [productId]: ((prev[productId] || 0) + 1) % imagesCount
+    }));
+  };
+
+  const handleCardSelectImage = (e, productId, idx) => {
+    e.stopPropagation();
+    setCardImageIndices(prev => ({
+      ...prev,
+      [productId]: idx
+    }));
+  };
+
+  // Mobile Touch Swipe Handlers for Product Card Carousel
+  const handleTouchStart = (e, productId) => {
+    touchStartXRef.current[productId] = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = (e, productId, imagesCount) => {
+    const startX = touchStartXRef.current[productId];
+    if (startX === undefined) return;
+    const endX = e.changedTouches[0].clientX;
+    const diff = startX - endX;
+
+    // Threshold of 35px for swipe
+    if (Math.abs(diff) > 35) {
+      if (diff > 0) {
+        // Swiped Left -> Next Image
+        setCardImageIndices(prev => ({
+          ...prev,
+          [productId]: ((prev[productId] || 0) + 1) % imagesCount
+        }));
+      } else {
+        // Swiped Right -> Previous Image
+        setCardImageIndices(prev => ({
+          ...prev,
+          [productId]: ((prev[productId] || 0) - 1 + imagesCount) % imagesCount
+        }));
+      }
+    }
+    delete touchStartXRef.current[productId];
+  };
+
+  // Quick View Modal
+  const handleOpenQuickView = (product) => {
+    setQuickViewProduct(product);
+    setModalImageIndex(cardImageIndices[product.id] || 0);
+    setModalMaterial('PLA');
+    const defaultSize = product.sizes?.[1]?.name || product.sizes?.[0]?.name || 'Medium';
+    setModalSize(defaultSize);
+    setModalQuantity(1);
+    setModalAddedAlert(false);
+  };
+
+  const handleCloseQuickView = () => {
+    setQuickViewProduct(null);
+  };
+
+  const handleModalAddToCart = () => {
+    if (!quickViewProduct) return;
+    const activeSizeObj = quickViewProduct.sizes?.find(s => s.name === modalSize) || quickViewProduct.sizes?.[1] || quickViewProduct.sizes?.[0];
+    const sizeText = activeSizeObj ? `${activeSizeObj.name} — ${activeSizeObj.dimensions}` : modalSize;
+    const activePrice = activeSizeObj ? activeSizeObj.price : quickViewProduct.price;
+    const activeNumPrice = activeSizeObj ? activeSizeObj.numericPrice : quickViewProduct.numericPrice;
+
+    handleAddToCart(quickViewProduct, 'PLA', modalQuantity, sizeText, activePrice, activeNumPrice);
+    setModalAddedAlert(true);
+    setTimeout(() => setModalAddedAlert(false), 2500);
   };
 
   return (
     <div className="shop-page fade-in visible">
+      {/* Header */}
       <div className="shop-header" data-reveal>
-        <h2>Explore Products</h2>
-        <p>Browse our collection of 3D printed products.</p>
+        <h2>3D Matrix Studio Catalog</h2>
+        <p>Premium 3D printed objects photographed in our studio. Each model features full 4-angle turntable views.</p>
       </div>
       
+      {/* Filters and Search Bar */}
       <div className="shop-filters-container">
         <div className="search-bar">
           <span className="search-icon">🔍</span>
           <input 
             type="text" 
-            placeholder="Search products..." 
+            placeholder="Search by model, category, or material (e.g. Dragon, Vase, PLA)..." 
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -532,46 +1002,425 @@ export default function Shop() {
         </div>
       </div>
       
-      <div className="product-count">
-        <p>{filteredProducts.length} products</p>
+      {/* Catalog Subhead */}
+      <div className="product-count" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <p>{filteredProducts.length} unique 3D models available</p>
+        <span style={{ fontSize: '0.85rem', color: '#a1a1aa' }}>
+          📐 Turntable Gallery: Click thumbnails or swipe to view Front → 45° Angle → Side → Detail
+        </span>
       </div>
 
+      {/* =========================================================
+          --- E-COMMERCE PRODUCT GRID (UNIQUE MODELS) ---
+          ========================================================= */}
       <div className="product-grid" data-stagger style={{ position: 'relative' }}>
-        {filteredProducts.map(product => (
-          <div key={product.id} className="product-card">
-            <div className="product-image-container">
-              <span className="product-badge">{product.badge}</span>
-              <span className="product-view-icon">
-                 <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" strokeWidth="2" fill="none"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-              </span>
-              <Image src={product.image} alt={product.title} fill style={{ objectFit: 'cover' }} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-            </div>
-            
-            <div className="product-info">
-              <div className="product-title-row">
-                <h4>{product.title}</h4>
-                <span className="price">{product.price}</span>
-              </div>
-              <p className="product-desc">{product.desc || "Custom 3D printed part with precision. Order now to customize size and color."}</p>
-              
-              <div className="product-actions">
-                <div className="material-select">
-                  <select 
-                    value={selectedMaterials[product.id] || product.material}
-                    onChange={(e) => handleMaterialChange(product.id, e.target.value)}
-                  >
-                    <option value={product.material}>{product.material}</option>
-                    <option value="PETG">PETG</option>
-                    <option value="ABS">ABS</option>
-                    <option value="TPU Flex">TPU Flex</option>
-                  </select>
+        {filteredProducts.map(product => {
+          const imagesCount = product.images.length;
+          const currentImageIdx = (cardImageIndices[product.id] || 0) % imagesCount;
+          const currentImgSrc = product.images[currentImageIdx];
+
+          return (
+            <div key={product.id} className="product-card">
+              {/* Main Image Viewport with Hover Zoom & Arrows */}
+              <div 
+                className="product-image-container"
+                onClick={() => handleOpenQuickView(product)}
+                onTouchStart={(e) => handleTouchStart(e, product.id)}
+                onTouchEnd={(e) => handleTouchEnd(e, product.id, imagesCount)}
+                style={{ cursor: 'pointer' }}
+              >
+                <span className="product-badge">{product.badge}</span>
+                
+                {/* Image Counter & Active Angle Label */}
+                <span className="card-image-counter">
+                  📷 {currentImageIdx + 1}/{imagesCount}
+                </span>
+
+                <span className="card-angle-tag">
+                  {angleLabels[currentImageIdx] || `Angle ${currentImageIdx + 1}`}
+                </span>
+
+                {/* Quick View Hover Hint */}
+                <span className="product-card-quickview-hint">
+                  QUICK VIEW
+                </span>
+
+                {/* Left / Right Chevron Controls on Desktop */}
+                {imagesCount > 1 && (
+                  <>
+                    <button 
+                      className="card-image-arrow prev"
+                      title="Previous turntable angle"
+                      onClick={(e) => handleCardPrevImage(e, product.id, imagesCount)}
+                    >
+                      ‹
+                    </button>
+                    <button 
+                      className="card-image-arrow next"
+                      title="Next turntable angle"
+                      onClick={(e) => handleCardNextImage(e, product.id, imagesCount)}
+                    >
+                      ›
+                    </button>
+                  </>
+                )}
+
+                {/* Main Prominent Product Image with Lazy Loading */}
+                <Image 
+                  src={currentImgSrc} 
+                  alt={`${product.name} - ${angleLabels[currentImageIdx] || 'Angle'}`} 
+                  fill 
+                  style={{ objectFit: 'cover' }} 
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  loading="lazy"
+                />
+
+                {/* Mobile Pagination Dots */}
+                <div className="card-image-dots">
+                  {product.images.map((_, dotIdx) => (
+                    <button
+                      key={dotIdx}
+                      className={`card-image-dot ${dotIdx === currentImageIdx ? 'active' : ''}`}
+                      title={`Turntable Angle ${dotIdx + 1}`}
+                      onClick={(e) => handleCardSelectImage(e, product.id, dotIdx)}
+                    />
+                  ))}
                 </div>
-                <button className="btn-add" onClick={() => handleAddToCart(product)}>+ Add</button>
+              </div>
+
+              {/* Desktop 4-Angle Thumbnail Strip directly on each Card */}
+              <div className="card-thumbnails-strip">
+                {product.images.map((thumbSrc, thumbIdx) => (
+                  <button
+                    key={thumbIdx}
+                    className={`card-thumb-btn ${thumbIdx === currentImageIdx ? 'active' : ''}`}
+                    onClick={(e) => handleCardSelectImage(e, product.id, thumbIdx)}
+                    title={`View ${angleLabels[thumbIdx] || `Angle ${thumbIdx + 1}`}`}
+                  >
+                    <Image 
+                      src={thumbSrc}
+                      alt={`${product.name} thumbnail ${thumbIdx + 1}`}
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      sizes="80px"
+                    />
+                    <span className="card-thumb-label">
+                      {['Front', '45°', 'Side', 'Detail'][thumbIdx] || thumbIdx + 1}
+                    </span>
+                  </button>
+                ))}
+              </div>
+              
+              {/* Product Info Section */}
+              <div className="product-info">
+                <div className="card-badge-row">
+                  <span className="card-badge">{product.badge}</span>
+                  <span className="card-category">{product.category}</span>
+                </div>
+
+                <h3 
+                  className="card-product-name"
+                  onClick={() => handleOpenQuickView(product)}
+                >
+                  {product.name}
+                </h3>
+
+                <p className="card-product-desc">
+                  {product.description}
+                </p>
+
+                <div className="card-material-info">
+                  <span className="mat-label">Material:</span>
+                  <span className="mat-val">{product.material}</span>
+                </div>
+
+                <div className="card-pricing-row">
+                  <div className="card-price-box">
+                    <span className="price-prefix">From</span>
+                    <span className="card-price-val">{product.price.replace('From ', '')}</span>
+                  </div>
+                  {product.originalPrice && (
+                    <span className="card-price-original">{product.originalPrice}</span>
+                  )}
+                </div>
+
+                <div className="card-actions-row">
+                  <button 
+                    className="btn-card-quickview"
+                    onClick={() => handleOpenQuickView(product)}
+                  >
+                    VIEW PRODUCT →
+                  </button>
+                  <button 
+                    className="btn-card-add" 
+                    onClick={() => handleAddToCart(product)}
+                  >
+                    + Add
+                  </button>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* =========================================================
+          --- QUICK VIEW / MULTI-ANGLE TURNTABLE MODAL ---
+          ========================================================= */}
+      {quickViewProduct && (() => {
+        const modalImages = quickViewProduct.images;
+        const activeModalImg = modalImages[modalImageIndex % modalImages.length];
+
+        const activeSizeObj = quickViewProduct.sizes?.find(s => s.name === modalSize) || quickViewProduct.sizes?.[1] || quickViewProduct.sizes?.[0];
+        const activePrice = activeSizeObj ? activeSizeObj.price : quickViewProduct.price;
+        const activeNumericPrice = activeSizeObj ? activeSizeObj.numericPrice : quickViewProduct.numericPrice;
+        const sizeText = activeSizeObj ? `${activeSizeObj.name} — ${activeSizeObj.dimensions}` : modalSize;
+        const totalAmount = activeNumericPrice * modalQuantity;
+
+        const whatsappMsg = encodeURIComponent(
+          `Hi 3D Matrix! I'd like to place an order:\n\n` +
+          `• Model: ${quickViewProduct.name}\n` +
+          `• Material: PLA\n` +
+          `• Size: ${sizeText}\n` +
+          `• Quantity: ${modalQuantity}\n` +
+          `• Total: ₹${totalAmount.toLocaleString()}\n\n` +
+          `Please confirm delivery timeline and payment details.`
+        );
+
+        return (
+          <div className="quickview-backdrop" onClick={handleCloseQuickView}>
+            <div className="quickview-modal" onClick={(e) => e.stopPropagation()}>
+              <button 
+                className="quickview-close-btn" 
+                onClick={handleCloseQuickView}
+                title="Close (ESC)"
+              >
+                ✕
+              </button>
+
+              {/* Left Column: Multi-Angle Interactive Gallery */}
+              <div className="qv-gallery-section">
+                <div className="qv-main-image-viewport">
+                  <Image 
+                    src={activeModalImg} 
+                    alt={`${quickViewProduct.name} - ${angleLabels[modalImageIndex]}`}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                    sizes="(max-width: 900px) 100vw, 500px"
+                    priority
+                  />
+
+                  {modalImages.length > 1 && (
+                    <>
+                      <button 
+                        className="qv-gallery-arrow prev"
+                        onClick={() => setModalImageIndex(prev => (prev - 1 + modalImages.length) % modalImages.length)}
+                        title="Previous angle (Arrow Left)"
+                      >
+                        ‹
+                      </button>
+                      <button 
+                        className="qv-gallery-arrow next"
+                        onClick={() => setModalImageIndex(prev => (prev + 1) % modalImages.length)}
+                        title="Next angle (Arrow Right)"
+                      >
+                        ›
+                      </button>
+                    </>
+                  )}
+
+                  <span className="qv-angle-badge">
+                    {angleLabels[modalImageIndex] || `Angle ${modalImageIndex + 1}`} ({modalImageIndex + 1} of {modalImages.length})
+                  </span>
+                </div>
+
+                {/* 4-Image Thumbnails Bar */}
+                <div className="qv-thumbnail-strip" style={{ gridTemplateColumns: `repeat(${modalImages.length}, 1fr)` }}>
+                  {modalImages.map((imgSrc, idx) => (
+                    <button
+                      key={idx}
+                      className={`qv-thumb-btn ${idx === modalImageIndex ? 'active' : ''}`}
+                      onClick={() => setModalImageIndex(idx)}
+                      title={`Inspect ${angleLabels[idx]}`}
+                    >
+                      <Image 
+                        src={imgSrc} 
+                        alt={`${quickViewProduct.name} angle ${idx + 1}`}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        sizes="100px"
+                      />
+                      <span className="qv-thumb-label">{['Front', '45° Angle', 'Side View', 'Detail View'][idx] || idx + 1}</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Column: Specifications & Purchasing Controls */}
+              <div className="qv-details-section">
+                <div className="qv-header-tags">
+                  <span className="qv-badge-category">{quickViewProduct.category}</span>
+                  <span className="card-badge">{quickViewProduct.badge}</span>
+                  <span style={{ fontSize: '0.8rem', color: '#a1a1aa' }}>SKU: 3DM-00{quickViewProduct.id}</span>
+                </div>
+
+                <h3 className="qv-title">{quickViewProduct.name}</h3>
+
+                <div className="qv-rating-row">
+                  <span className="qv-stars">★★★★★</span>
+                  <span style={{ fontWeight: 700, color: '#ffffff' }}>{quickViewProduct.rating || "4.9"}</span>
+                  <span>({quickViewProduct.reviewsCount || "120+"} verified customer orders)</span>
+                </div>
+
+                <div className="qv-price-row">
+                  <span className="qv-price-main">{activePrice}</span>
+                  {quickViewProduct.originalPrice && (
+                    <span className="qv-price-strikethrough">{quickViewProduct.originalPrice}</span>
+                  )}
+                  {quickViewProduct.discount && (
+                    <span className="qv-price-saving">{quickViewProduct.discount}</span>
+                  )}
+                </div>
+
+                <p className="qv-description">{quickViewProduct.description}</p>
+
+                {/* Specs Box */}
+                {quickViewProduct.specs && (
+                  <div className="qv-specs-box">
+                    <div className="qv-spec-item">
+                      <span className="qv-spec-label">Print Infill</span>
+                      <span className="qv-spec-val">{quickViewProduct.specs.infill}</span>
+                    </div>
+                    <div className="qv-spec-item">
+                      <span className="qv-spec-label">Layer Resolution</span>
+                      <span className="qv-spec-val">{quickViewProduct.specs.layerHeight}</span>
+                    </div>
+                    <div className="qv-spec-item">
+                      <span className="qv-spec-label">Dimensions</span>
+                      <span className="qv-spec-val">{quickViewProduct.specs.dimensions}</span>
+                    </div>
+                    <div className="qv-spec-item">
+                      <span className="qv-spec-label">Print Duration</span>
+                      <span className="qv-spec-val">{quickViewProduct.specs.printTime}</span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Material Display (Fixed PLA) */}
+                <div className="qv-option-group">
+                  <div className="card-material-info" style={{ marginBottom: 0 }}>
+                    <span className="mat-label">Material:</span>
+                    <span className="mat-val">PLA</span>
+                  </div>
+                </div>
+
+                {/* Size Selection Section */}
+                <div className="qv-size-group">
+                  <div className="qv-size-header">
+                    <span className="qv-section-title">Select Size</span>
+                    <span className="qv-size-active-tag">Selected: <strong>{activeSizeObj?.name}</strong></span>
+                  </div>
+                  <div className="qv-size-grid">
+                    {(quickViewProduct.sizes || []).map(sizeItem => {
+                      const isSelected = modalSize === sizeItem.name;
+                      return (
+                        <button
+                          key={sizeItem.name}
+                          type="button"
+                          className={`qv-size-card ${isSelected ? 'active' : ''}`}
+                          onClick={() => setModalSize(sizeItem.name)}
+                        >
+                          <div className="qv-size-card-info">
+                            <span className="qv-size-name">{sizeItem.name}</span>
+                            <span className="qv-size-dim">{sizeItem.dimensions}</span>
+                          </div>
+                          <span className="qv-size-price">{sizeItem.price}</span>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Quantity Selector Section */}
+                <div className="qv-qty-group">
+                  <div className="qv-qty-header">
+                    <span className="qv-section-title">Quantity</span>
+                    <span className="qv-qty-subtext">Min: 1</span>
+                  </div>
+                  <div className="qv-qty-stepper-container">
+                    <div className="qv-qty-stepper">
+                      <button 
+                        type="button"
+                        className="qv-qty-btn"
+                        onClick={() => setModalQuantity(prev => Math.max(1, prev - 1))}
+                        aria-label="Decrease quantity"
+                      >
+                        −
+                      </button>
+                      <span className="qv-qty-num">{modalQuantity}</span>
+                      <button 
+                        type="button"
+                        className="qv-qty-btn"
+                        onClick={() => setModalQuantity(prev => prev + 1)}
+                        aria-label="Increase quantity"
+                      >
+                        +
+                      </button>
+                    </div>
+                    <div className="qv-total-preview">
+                      <span className="qv-total-label">Subtotal:</span>
+                      <span className="qv-total-val">₹{(activeNumericPrice * modalQuantity).toLocaleString()}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Pre-Order Confirmation Box */}
+                <div className="qv-order-summary-box">
+                  <span className="qv-summary-item">📦 <strong>{quickViewProduct.name}</strong></span>
+                  <span className="qv-summary-item">📐 <strong>{activeSizeObj?.name}</strong> ({activeSizeObj?.dimensions})</span>
+                  <span className="qv-summary-item">🏷️ Material: <strong>PLA</strong></span>
+                  <span className="qv-summary-item">🔢 Qty: <strong>{modalQuantity}</strong></span>
+                </div>
+
+                {/* Order & Cart Action Buttons - Placed AFTER Quantity and Size */}
+                <div className="qv-action-buttons">
+                  <a 
+                    className="qv-btn-whatsapp-order"
+                    href={`https://wa.me/919175256675?text=${whatsappMsg}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Order directly on WhatsApp"
+                  >
+                    <img src="/images/whatsapp_icon.png" width="22" height="22" alt="WhatsApp" style={{ objectFit: 'contain' }} />
+                    ORDER ON WHATSAPP
+                  </a>
+
+                  <button 
+                    type="button"
+                    className="qv-btn-add" 
+                    onClick={handleModalAddToCart}
+                  >
+                    {modalAddedAlert ? "✓ Added to Cart!" : `+ Add (${modalQuantity}) to Cart`}
+                  </button>
+                </div>
+
+                {/* Trust Badges */}
+                <div className="qv-trust-list">
+                  <div className="qv-trust-item">
+                    <span>✓</span> 100% In-House 3D Printed
+                  </div>
+                  <div className="qv-trust-item">
+                    <span>✓</span> Precision Tolerances Tested
+                  </div>
+                  <div className="qv-trust-item">
+                    <span>✓</span> Fast All-India Safe Delivery
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        );
+      })()}
     </div>
   );
 }

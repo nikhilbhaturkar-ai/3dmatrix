@@ -12,7 +12,8 @@ export default function CartSidebar({ isOpen, onClose }) {
     
     let message = "Hi! I'd like to place an order:\n\n";
     cart.forEach(item => {
-      message += `- 1x ${item.title} (${item.selectedMaterial}) : ${item.price}\n`;
+      const sizeStr = item.selectedSize ? ` [${item.selectedSize}]` : '';
+      message += `- 1x ${item.title}${sizeStr} (Material: ${item.selectedMaterial || 'PLA'}) : ${item.price}\n`;
     });
     message += `\n*Total: ₹${cartTotal.toLocaleString()}*`;
     
@@ -55,7 +56,10 @@ export default function CartSidebar({ isOpen, onClose }) {
                   <div key={item.cartId} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', paddingBottom: '20px', borderBottom: '1px solid var(--border-color)' }}>
                     <div>
                       <h4 style={{ margin: '0 0 5px 0', fontSize: '1rem' }}>{item.title}</h4>
-                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>{item.selectedMaterial}</div>
+                      <div style={{ color: 'var(--text-secondary)', fontSize: '0.85rem' }}>
+                        Material: {item.selectedMaterial || 'PLA'}
+                        {item.selectedSize && <div style={{ color: '#ffffff', fontSize: '0.8rem', marginTop: '2px' }}>Size: {item.selectedSize}</div>}
+                      </div>
                       <div style={{ marginTop: '5px', fontWeight: 'bold' }}>{item.price}</div>
                     </div>
                     <button onClick={() => removeFromCart(item.cartId)} style={{ background: 'none', border: 'none', color: '#ff4444', cursor: 'pointer', padding: '5px' }}>
