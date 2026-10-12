@@ -28,7 +28,7 @@ export default function CustomPrint() {
       <div className="cp-header">
         <div className="cp-tag"><span>02</span> CUSTOM PRINT LAB</div>
         <h2>Print your own model</h2>
-        <p>Drop your 3D file, dial in the specs, and watch the estimate react. The request — with your file — lands straight in the owner's inbox.</p>
+        <p>Drop your 3D file, dial in the specs, and watch the estimate react. The request — with your file — lands straight in the owner&apos;s inbox.</p>
       </div>
 
       <form className="cp-layout" action="https://formsubmit.co/ntdd.business.solutions@gmail.com" method="POST" encType="multipart/form-data">
@@ -159,7 +159,7 @@ export default function CustomPrint() {
             </div>
             
             <p className="estimate-disclaimer">
-              The final quote will be confirmed and emailed to you after our engineers check your file's geometry and printability.
+              The final quote will be confirmed and emailed to you after our engineers check your file&apos;s geometry and printability.
             </p>
           </div>
 

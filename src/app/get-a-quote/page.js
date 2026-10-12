@@ -7,7 +7,7 @@ export default function GetAQuote() {
     <div className="quote-page fade-in visible">
       <div className="quote-header">
         <div className="quote-tag"><span>07</span> GET A QUOTE & CONTACT</div>
-        <h2>Big idea? Bulk order? <span className="highlight-purple">Let's talk.</span></h2>
+        <h2>Big idea? Bulk order? <span className="highlight-purple">Let&apos;s talk.</span></h2>
       </div>
 
       <div className="quote-layout">

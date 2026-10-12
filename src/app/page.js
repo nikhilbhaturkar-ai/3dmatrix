@@ -159,7 +159,7 @@ export default function Home() {
           <div className="feature-text">
             <span className="subtitle">3D MATRIX</span>
             <h3>Custom Print</h3>
-            <p>Got an STL file or a wild idea? Upload your 3D model or describe what you need, and we'll bring it to life layer by layer. Choose your material, colour, and finish — we handle the rest.</p>
+            <p>Got an STL file or a wild idea? Upload your 3D model or describe what you need, and we&apos;ll bring it to life layer by layer. Choose your material, colour, and finish — we handle the rest.</p>
             <a href="/custom-print" className="btn-outline">Start Your Print</a>
           </div>
           <div className="feature-image">
