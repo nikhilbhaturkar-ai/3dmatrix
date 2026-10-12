@@ -17,21 +17,19 @@ export default function Shop() {
 
   // Quick View / Product Detail Modal State
   const [quickViewProduct, setQuickViewProduct] = useState(null);
-  const [modalActiveMediaIndex, setModalActiveMediaIndex] = useState(0); // 0..4 = images, 5 = video
-  const [isVideoPlaying, setIsVideoPlaying] = useState(true);
-  const [videoScrubIndex, setVideoScrubIndex] = useState(0);
+  const [modalActiveMediaIndex, setModalActiveMediaIndex] = useState(0); // 0..4 = 5 distinct studio images
   const [modalSize, setModalSize] = useState('Medium');
   const [modalQuantity, setModalQuantity] = useState(1);
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomPos, setZoomPos] = useState({ x: 50, y: 50 });
 
-  // Angle labels for 5 studio views
+  // Angle labels for 5 studio perspective views
   const angleLabels = [
     "Front / Hero",
     "45° Angle",
-    "Side / Profile",
-    "Close-up Detail",
-    "Lifestyle / Use"
+    "Side Profile",
+    "Rear View",
+    "Close-up Detail"
   ];
 
   // Calculate live model count for each category
@@ -100,8 +98,6 @@ export default function Shop() {
   const handleOpenProduct = (product) => {
     setQuickViewProduct(product);
     setModalActiveMediaIndex(0);
-    setVideoScrubIndex(0);
-    setIsVideoPlaying(true);
     setModalQuantity(1);
     setIsZoomed(false);
     // Default to medium size if available, otherwise first size
@@ -114,18 +110,18 @@ export default function Shop() {
     setIsZoomed(false);
   };
 
-  // Keyboard navigation for modal (ESC to close, Left/Right arrow for media)
+  // Keyboard navigation for modal (ESC to close, Left/Right arrow for gallery)
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (!quickViewProduct) return;
       if (e.key === 'Escape') handleCloseProduct();
       if (e.key === 'ArrowLeft') {
-        const totalMedia = quickViewProduct.images.length + 1; // 5 images + 1 video
-        setModalActiveMediaIndex(prev => (prev - 1 + totalMedia) % totalMedia);
+        const totalImages = quickViewProduct.images.length;
+        setModalActiveMediaIndex(prev => (prev - 1 + totalImages) % totalImages);
       }
       if (e.key === 'ArrowRight') {
-        const totalMedia = quickViewProduct.images.length + 1;
-        setModalActiveMediaIndex(prev => (prev + 1) % totalMedia);
+        const totalImages = quickViewProduct.images.length;
+        setModalActiveMediaIndex(prev => (prev + 1) % totalImages);
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -160,41 +156,41 @@ export default function Shop() {
             3D MATRIX <span className="highlight-text">MODEL CATALOG</span>
           </h1>
           <p className="catalog-hero-subtitle">
-            Browse 60 precision 3D printable models across 12 categories.
+            Browse 65 precision 3D printable models across 13 categories.
             Every design is print-verified and custom-manufactured in premium PLA.
           </p>
 
           <div className="catalog-stat-pills">
             <div className="stat-pill">
-              <strong>60</strong>
+              <strong>65</strong>
               <span>Unique Models</span>
             </div>
             <div className="stat-pill-divider"></div>
             <div className="stat-pill">
-              <strong>12</strong>
+              <strong>13</strong>
               <span>Categories</span>
             </div>
             <div className="stat-pill-divider"></div>
             <div className="stat-pill">
-              <strong>4–5</strong>
-              <span>Angles / Model</span>
-            </div>
-            <div className="stat-pill-divider"></div>
-            <div className="stat-pill">
-              <strong>360°</strong>
-              <span>Studio Video</span>
+              <strong>5</strong>
+              <span>Studio Angles / Model</span>
             </div>
             <div className="stat-pill-divider"></div>
             <div className="stat-pill">
               <strong>PLA</strong>
-              <span>Material Only</span>
+              <span>Eco-Friendly Material</span>
+            </div>
+            <div className="stat-pill-divider"></div>
+            <div className="stat-pill">
+              <strong>GST</strong>
+              <span>All Taxes Included</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* =========================================================
-          --- 12-CATEGORY NAVIGATION BAR ---
+          --- 13-CATEGORY NAVIGATION BAR ---
           ========================================================= */}
       <nav className="catalog-nav-bar" aria-label="Product categories">
         <div className="catalog-nav-scroll">
@@ -228,7 +224,7 @@ export default function Shop() {
           <input
             type="text"
             className="search-input"
-            placeholder="Search 60 models by name, category, or keyword (e.g. phone stand, dragon)..."
+            placeholder="Search 65 models by name, category, or character (e.g. Spider-Man, Batman, dragon)..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
@@ -321,7 +317,7 @@ export default function Shop() {
           <div className="catalog-empty-state">
             <div className="empty-icon">🔍</div>
             <h3>No models match your search</h3>
-            <p>Try searching with different keywords or reset your filters to see all 60 models.</p>
+            <p>Try searching with different keywords or reset your filters to see all 65 models.</p>
             <button 
               className="empty-reset-btn"
               onClick={() => {
@@ -331,7 +327,7 @@ export default function Shop() {
                 setPriceFilter("all");
               }}
             >
-              View All 60 Models
+              View All 65 Models
             </button>
           </div>
         ) : (
@@ -378,11 +374,6 @@ export default function Shop() {
                     {/* Category Label */}
                     <span className="card-category-tag">
                       {product.category}
-                    </span>
-
-                    {/* Dedicated Video Indicator Badge */}
-                    <span className="card-video-indicator" title="Includes dedicated 360° product video">
-                      ▶ 360° Video
                     </span>
 
                     {/* Angle Switcher Dots */}
@@ -456,12 +447,11 @@ export default function Shop() {
       </main>
 
       {/* =========================================================
-          --- PRODUCT DETAIL MODAL (Gallery + Video + Customizer) ---
+          --- PRODUCT DETAIL MODAL (Gallery + Customizer) ---
           ========================================================= */}
       {quickViewProduct && (() => {
         const product = quickViewProduct;
         const images = product.images;
-        const isVideoActive = modalActiveMediaIndex === images.length; // index 5 is video
 
         // Selected size object and calculated total
         const activeSizeObj = product.sizes.find(s => s.name === modalSize) || product.sizes[0];
@@ -498,105 +488,46 @@ export default function Shop() {
               {/* LEFT COLUMN: ECOMMERCE MEDIA GALLERY */}
               <div className="modal-gallery-column">
                 <div 
-                  className={`modal-main-viewport ${isVideoActive ? 'video-mode' : ''}`}
-                  onMouseMove={!isVideoActive && isZoomed ? handleMouseMove : undefined}
-                  onClick={() => !isVideoActive && setIsZoomed(!isZoomed)}
-                  title={!isVideoActive ? (isZoomed ? "Click to unzoom" : "Click to zoom") : undefined}
+                  className="modal-main-viewport"
+                  onMouseMove={isZoomed ? handleMouseMove : undefined}
+                  onClick={() => setIsZoomed(!isZoomed)}
+                  title={isZoomed ? "Click to unzoom" : "Click to zoom"}
                 >
-                  {isVideoActive ? (
-                    /* DEDICATED 360° PRODUCT VIDEO PLAYER */
-                    <div className="turntable-video-player">
-                      <video
-                        src={product.video}
-                        poster={images[0]}
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        className="native-video-elem"
-                      />
+                  {/* HIGH-DEFINITION IMAGE VIEW WITH ZOOM */}
+                  <div className="main-image-wrapper">
+                    <Image
+                      src={images[modalActiveMediaIndex]}
+                      alt={`${product.name} - ${angleLabels[modalActiveMediaIndex] || 'Detail'}`}
+                      fill
+                      style={{
+                        objectFit: isZoomed ? 'none' : 'contain',
+                        transform: isZoomed ? `scale(2)` : 'scale(1)',
+                        transformOrigin: `${zoomPos.x}% ${zoomPos.y}%`,
+                        transition: isZoomed ? 'none' : 'transform 0.25s ease'
+                      }}
+                      priority
+                    />
 
-                      {/* Studio Turntable Rotation Layer */}
-                      <div className="turntable-studio-overlay">
-                        <Image
-                          src={images[videoScrubIndex % images.length]}
-                          alt={`${product.name} 360 rotation`}
-                          fill
-                          style={{ objectFit: 'contain' }}
-                          priority
-                        />
+                    {/* Current Angle Label */}
+                    <span className="viewport-angle-pill">
+                      {angleLabels[modalActiveMediaIndex] || `Angle ${modalActiveMediaIndex + 1}`} ({modalActiveMediaIndex + 1} of {images.length})
+                    </span>
 
-                        {/* Top Video Header */}
-                        <div className="turntable-header-tag">
-                          <span className="rec-dot"></span> 360° STUDIO TURNTABLE VIDEO
-                        </div>
-
-                        {/* Interactive Rotation Scrubber */}
-                        <div className="turntable-controls-bar" onClick={(e) => e.stopPropagation()}>
-                          <button
-                            className="turntable-play-btn"
-                            onClick={() => setIsVideoPlaying(!isVideoPlaying)}
-                            title={isVideoPlaying ? "Pause auto-spin" : "Auto-spin"}
-                          >
-                            {isVideoPlaying ? "⏸ Pause" : "▶ Play 360°"}
-                          </button>
-
-                          <input
-                            type="range"
-                            min="0"
-                            max={images.length - 1}
-                            value={videoScrubIndex}
-                            onChange={(e) => {
-                              setIsVideoPlaying(false);
-                              setVideoScrubIndex(parseInt(e.target.value, 10));
-                            }}
-                            className="turntable-slider"
-                            title="Drag to rotate model 360 degrees"
-                          />
-
-                          <span className="turntable-deg-label">
-                            {Math.round((videoScrubIndex / (images.length - 1)) * 360)}°
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  ) : (
-                    /* HIGH-DEFINITION IMAGE VIEW WITH ZOOM */
-                    <div className="main-image-wrapper">
-                      <Image
-                        src={images[modalActiveMediaIndex]}
-                        alt={`${product.name} - ${angleLabels[modalActiveMediaIndex] || 'Detail'}`}
-                        fill
-                        style={{
-                          objectFit: isZoomed ? 'none' : 'contain',
-                          transform: isZoomed ? `scale(2)` : 'scale(1)',
-                          transformOrigin: `${zoomPos.x}% ${zoomPos.y}%`,
-                          transition: isZoomed ? 'none' : 'transform 0.25s ease'
-                        }}
-                        priority
-                      />
-
-                      {/* Current Angle Label */}
-                      <span className="viewport-angle-pill">
-                        {angleLabels[modalActiveMediaIndex] || `Angle ${modalActiveMediaIndex + 1}`} ({modalActiveMediaIndex + 1} of {images.length})
-                      </span>
-
-                      {/* Zoom Indicator */}
-                      <span className="viewport-zoom-hint">
-                        {isZoomed ? "🔍 Zoom: Active (Click to exit)" : "🔍 Click to Zoom"}
-                      </span>
-                    </div>
-                  )}
+                    {/* Zoom Indicator */}
+                    <span className="viewport-zoom-hint">
+                      {isZoomed ? "🔍 Zoom: Active (Click to exit)" : "🔍 Click to Zoom"}
+                    </span>
+                  </div>
 
                   {/* Previous / Next Arrows */}
                   <button
                     className="gallery-arrow prev"
                     onClick={(e) => {
                       e.stopPropagation();
-                      const total = images.length + 1;
+                      const total = images.length;
                       setModalActiveMediaIndex(prev => (prev - 1 + total) % total);
                     }}
-                    title="Previous media"
+                    title="Previous angle"
                   >
                     ‹
                   </button>
@@ -604,16 +535,16 @@ export default function Shop() {
                     className="gallery-arrow next"
                     onClick={(e) => {
                       e.stopPropagation();
-                      const total = images.length + 1;
+                      const total = images.length;
                       setModalActiveMediaIndex(prev => (prev + 1) % total);
                     }}
-                    title="Next media"
+                    title="Next angle"
                   >
                     ›
                   </button>
                 </div>
 
-                {/* THUMBNAILS STRIP: 4–5 Images + 1 Video */}
+                {/* THUMBNAILS STRIP: 5 Studio Angles */}
                 <div className="modal-thumbnail-strip">
                   {images.map((imgSrc, idx) => (
                     <button
@@ -634,25 +565,6 @@ export default function Shop() {
                       <span className="thumb-label-mini">{idx + 1}</span>
                     </button>
                   ))}
-
-                  {/* DEDICATED VIDEO THUMBNAIL */}
-                  <button
-                    className={`thumb-btn video-thumb ${isVideoActive ? 'active' : ''}`}
-                    onClick={() => {
-                      setModalActiveMediaIndex(images.length);
-                      setIsZoomed(false);
-                    }}
-                    title="Play 360° Product Video"
-                  >
-                    <Image
-                      src={images[0]}
-                      alt={`${product.name} video thumbnail`}
-                      fill
-                      style={{ objectFit: 'cover', filter: 'brightness(0.7)' }}
-                    />
-                    <div className="video-thumb-play-icon">▶</div>
-                    <span className="video-thumb-badge">VIDEO</span>
-                  </button>
                 </div>
               </div>
 

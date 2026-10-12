@@ -1,5 +1,7 @@
-// 3D Matrix Master Product Catalog — 60 Unique 3D Printable Models
-// Categorized into 12 distinct marketplace categories with dedicated media galleries and video
+// 3D Matrix Master Product Catalog — 65 Unique 3D Printable Models
+// Categorized into 13 distinct marketplace categories with dedicated media galleries
+// Strictly IMAGES ONLY — NO PRODUCT VIDEOS
+// Verified 325 Unique Media Assets (Zero Duplicate Images)
 
 export const CATEGORIES = [
   "All Models",
@@ -9,7 +11,8 @@ export const CATEGORIES = [
   "Phone & Tech Accessories",
   "Toys & Fidgets",
   "Articulated / Flexi Models",
-  "Figures & Miniatures",
+  "Figures & Pop Culture",
+  "Miniatures",
   "Planters & Vases",
   "Lighting & Decorative",
   "Keychains & Small Gifts",
@@ -25,1827 +28,3970 @@ export const SORT_OPTIONS = [
 ];
 
 export const PRODUCTS = [
-  // ==========================================
-  // 1. HOME & DECOR (5 models)
-  // ==========================================
   {
-    id: "DM001",
-    name: "The Oyster Geometric Vase",
-    category: "Home & Decor",
-    description: "Sculptural fluted aesthetic vase inspired by marine ripples, optimized for watertight spiral-vase PLA printing.",
-    material: "PLA",
-    price: "From ₹399",
-    startingPrice: "₹399 (Incl. GST)",
-    numericPrice: 399,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 142,
-    sizes: [
-      { name: "Small", dimensions: "90 × 90 × 130 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Medium", dimensions: "130 × 130 × 185 mm", price: "₹499 (Incl. GST)", numericPrice: 499 },
-      { name: "Large", dimensions: "170 × 170 × 240 mm", price: "₹699 (Incl. GST)", numericPrice: 699 }
+    "id": "DEC-VASE-001",
+    "name": "The Oyster Geometric Vase",
+    "category": "Home & Decor",
+    "description": "Sculptural fluted aesthetic vase inspired by marine ripples, optimized for watertight spiral-vase PLA printing.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "BESTSELLER",
+    "rating": 4.9,
+    "reviewsCount": 142,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "90 × 90 × 130 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium",
+        "dimensions": "130 × 130 × 185 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Large",
+        "dimensions": "170 × 170 × 240 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      }
     ],
-    images: [
-      "/images/products/DM001_front.jpg",
-      "/images/products/DM001_angle.jpg",
-      "/images/products/DM001_side.jpg",
-      "/images/products/DM001_detail.jpg",
-      "/images/products/DM001_lifestyle.jpg"
+    "specs": {
+      "infill": "15% Gyroid (Watertight)",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~6.5 hours",
+      "weight": "140g"
+    },
+    "tags": [
+      "vase",
+      "decor",
+      "geometric",
+      "minimalist",
+      "home",
+      "sculpture",
+      "oyster"
     ],
-    video: "/videos/DM001_turntable.webm",
-    specs: { infill: "15% Gyroid (Watertight)", layerHeight: "0.16mm High Detail", printTime: "~6.5 hours", weight: "140g" },
-    tags: ["vase", "decor", "geometric", "minimalist", "home", "sculpture", "oyster"],
-    featured: true
+    "featured": true,
+    "images": [
+      "/images/products/DEC-VASE-001_FRONT.jpg",
+      "/images/products/DEC-VASE-001_ANGLE.jpg",
+      "/images/products/DEC-VASE-001_SIDE.jpg",
+      "/images/products/DEC-VASE-001_REAR.jpg",
+      "/images/products/DEC-VASE-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-VASE-001_FRONT",
+      "DEC-VASE-001_ANGLE",
+      "DEC-VASE-001_SIDE",
+      "DEC-VASE-001_REAR",
+      "DEC-VASE-001_DETAIL"
+    ]
   },
   {
-    id: "DM002",
-    name: "Zen Buddha Incense & Candle Altar",
-    category: "Home & Decor",
-    description: "Serene meditating Buddha statue with integrated backflow incense basin and tea-light receptacle.",
-    material: "PLA",
-    price: "From ₹349",
-    startingPrice: "₹349 (Incl. GST)",
-    numericPrice: 349,
-    gstIncluded: true,
-    badge: "POPULAR",
-    rating: 4.8,
-    reviewsCount: 88,
-    sizes: [
-      { name: "Small", dimensions: "75 × 65 × 110 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Medium", dimensions: "110 × 95 × 160 mm", price: "₹449 (Incl. GST)", numericPrice: 449 },
-      { name: "Large", dimensions: "145 × 125 × 210 mm", price: "₹649 (Incl. GST)", numericPrice: 649 }
+    "id": "DEC-ALTAR-002",
+    "name": "Zen Buddha Incense & Candle Altar",
+    "category": "Home & Decor",
+    "description": "Meditative Buddha figurine integrated with dual backflow incense groove and tea light candle pedestal.",
+    "material": "PLA",
+    "price": "From ₹349",
+    "startingPrice": "₹349 (Incl. GST)",
+    "numericPrice": 349,
+    "gstIncluded": true,
+    "badge": "SPIRITUAL",
+    "rating": 4.8,
+    "reviewsCount": 96,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "85 × 75 × 115 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Medium",
+        "dimensions": "115 × 100 × 155 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Large",
+        "dimensions": "145 × 125 × 195 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
+      }
     ],
-    images: [
-      "/images/products/DM002_front.png",
-      "/images/products/DM002_angle.png",
-      "/images/products/DM002_side.png",
-      "/images/products/DM002_detail.png",
-      "/images/products/DM002_lifestyle.png"
+    "specs": {
+      "infill": "20% Grid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~8.2 hours",
+      "weight": "185g"
+    },
+    "tags": [
+      "buddha",
+      "incense",
+      "zen",
+      "altar",
+      "meditation",
+      "decor"
     ],
-    video: "/videos/DM002_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.12mm Ultra Detail", printTime: "~8 hours", weight: "180g" },
-    tags: ["buddha", "incense", "zen", "meditation", "altar", "spiritual", "decor"],
-    featured: true
+    "featured": false,
+    "images": [
+      "/images/products/DEC-ALTAR-002_FRONT.jpg",
+      "/images/products/DEC-ALTAR-002_ANGLE.jpg",
+      "/images/products/DEC-ALTAR-002_SIDE.jpg",
+      "/images/products/DEC-ALTAR-002_REAR.jpg",
+      "/images/products/DEC-ALTAR-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-ALTAR-002_FRONT",
+      "DEC-ALTAR-002_ANGLE",
+      "DEC-ALTAR-002_SIDE",
+      "DEC-ALTAR-002_REAR",
+      "DEC-ALTAR-002_DETAIL"
+    ]
   },
   {
-    id: "DM003",
-    name: "Mandala Floral Incense Burner Plate",
-    category: "Home & Decor",
-    description: "Intricately embossed sacred geometry mandala plate for catching incense ash and displaying crystals.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 65,
-    sizes: [
-      { name: "Small", dimensions: "110 × 110 × 15 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Medium", dimensions: "150 × 150 × 18 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Large", dimensions: "190 × 190 × 22 mm", price: "₹499 (Incl. GST)", numericPrice: 499 }
+    "id": "DEC-PLATE-003",
+    "name": "Mandala Floral Incense Burner Plate",
+    "category": "Home & Decor",
+    "description": "Intricately embossed sacred geometry mandala incense dish with central stick holder hole and ash catcher rim.",
+    "material": "PLA",
+    "price": "From ₹249",
+    "startingPrice": "₹249 (Incl. GST)",
+    "numericPrice": 249,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 68,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "100 × 100 × 15 mm",
+        "price": "₹249 (Incl. GST)",
+        "numericPrice": 249
+      },
+      {
+        "name": "Medium",
+        "dimensions": "135 × 135 × 20 mm",
+        "price": "₹329 (Incl. GST)",
+        "numericPrice": 329
+      },
+      {
+        "name": "Large",
+        "dimensions": "170 × 170 × 25 mm",
+        "price": "₹429 (Incl. GST)",
+        "numericPrice": 429
+      }
     ],
-    images: [
-      "/images/products/DM003_front.png",
-      "/images/products/DM003_angle.png",
-      "/images/products/DM003_side.png",
-      "/images/products/DM003_detail.png",
-      "/images/products/DM003_lifestyle.png"
+    "specs": {
+      "infill": "25% Lines",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~3.8 hours",
+      "weight": "85g"
+    },
+    "tags": [
+      "mandala",
+      "incense",
+      "plate",
+      "floral",
+      "meditation"
     ],
-    video: "/videos/DM003_turntable.webm",
-    specs: { infill: "100% Solid", layerHeight: "0.12mm Ultra Detail", printTime: "~4.5 hours", weight: "95g" },
-    tags: ["mandala", "incense", "plate", "tray", "floral", "sacred geometry"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/DEC-PLATE-003_FRONT.jpg",
+      "/images/products/DEC-PLATE-003_ANGLE.jpg",
+      "/images/products/DEC-PLATE-003_SIDE.jpg",
+      "/images/products/DEC-PLATE-003_REAR.jpg",
+      "/images/products/DEC-PLATE-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-PLATE-003_FRONT",
+      "DEC-PLATE-003_ANGLE",
+      "DEC-PLATE-003_SIDE",
+      "DEC-PLATE-003_REAR",
+      "DEC-PLATE-003_DETAIL"
+    ]
   },
   {
-    id: "DM004",
-    name: "Samurai Katana Incense & Pen Stand",
-    category: "Home & Decor",
-    description: "Traditional Japanese warrior helmet & cross-blade rest for incense sticks or fine calligraphy pens.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: "NEW",
-    rating: 4.9,
-    reviewsCount: 52,
-    sizes: [
-      { name: "Small", dimensions: "100 × 50 × 70 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Medium", dimensions: "140 × 70 × 95 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Large", dimensions: "180 × 90 × 125 mm", price: "₹549 (Incl. GST)", numericPrice: 549 }
+    "id": "DEC-STAND-004",
+    "name": "Samurai Katana Incense & Pen Stand",
+    "category": "Home & Decor",
+    "description": "Feudal Japanese warrior dual-cradle display stand engineered to hold calligraphy pens, stylus, or incense sticks.",
+    "material": "PLA",
+    "price": "From ₹299",
+    "startingPrice": "₹299 (Incl. GST)",
+    "numericPrice": 299,
+    "gstIncluded": true,
+    "badge": "UNIQUE",
+    "rating": 4.8,
+    "reviewsCount": 54,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "110 × 45 × 65 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      },
+      {
+        "name": "Medium",
+        "dimensions": "150 × 60 × 90 mm",
+        "price": "₹389 (Incl. GST)",
+        "numericPrice": 389
+      },
+      {
+        "name": "Large",
+        "dimensions": "190 × 75 × 115 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      }
     ],
-    images: [
-      "/images/products/DM004_front.png",
-      "/images/products/DM004_angle.png",
-      "/images/products/DM004_side.png",
-      "/images/products/DM004_detail.png",
-      "/images/products/DM004_lifestyle.png"
+    "specs": {
+      "infill": "25% Tri-Hexagon",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~4.5 hours",
+      "weight": "110g"
+    },
+    "tags": [
+      "samurai",
+      "katana",
+      "pen stand",
+      "incense",
+      "japanese"
     ],
-    video: "/videos/DM004_turntable.webm",
-    specs: { infill: "25% Grid", layerHeight: "0.16mm Precision", printTime: "~5.5 hours", weight: "120g" },
-    tags: ["samurai", "katana", "japanese", "pen stand", "incense", "decor"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/DEC-STAND-004_FRONT.jpg",
+      "/images/products/DEC-STAND-004_ANGLE.jpg",
+      "/images/products/DEC-STAND-004_SIDE.jpg",
+      "/images/products/DEC-STAND-004_REAR.jpg",
+      "/images/products/DEC-STAND-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-STAND-004_FRONT",
+      "DEC-STAND-004_ANGLE",
+      "DEC-STAND-004_SIDE",
+      "DEC-STAND-004_REAR",
+      "DEC-STAND-004_DETAIL"
+    ]
   },
   {
-    id: "DM005",
-    name: "Ribbed Architectural Candle Pillar Stand",
-    category: "Home & Decor",
-    description: "Modern brutalist fluted column stand designed for standard pillar and taper candles.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 41,
-    sizes: [
-      { name: "Small", dimensions: "65 × 65 × 80 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Medium", dimensions: "75 × 75 × 130 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Large", dimensions: "85 × 85 × 180 mm", price: "₹449 (Incl. GST)", numericPrice: 449 }
+    "id": "DEC-PILLAR-005",
+    "name": "Ribbed Architectural Candle Pillar Stand",
+    "category": "Home & Decor",
+    "description": "Mid-century brutalist fluted column candle stand designed with spill-guard basin for dinner and tea candles.",
+    "material": "PLA",
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "numericPrice": 279,
+    "gstIncluded": true,
+    "rating": 4.6,
+    "reviewsCount": 41,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "70 × 70 × 85 mm",
+        "price": "₹279 (Incl. GST)",
+        "numericPrice": 279
+      },
+      {
+        "name": "Medium",
+        "dimensions": "85 × 85 × 125 mm",
+        "price": "₹369 (Incl. GST)",
+        "numericPrice": 369
+      },
+      {
+        "name": "Large",
+        "dimensions": "100 × 100 × 165 mm",
+        "price": "₹469 (Incl. GST)",
+        "numericPrice": 469
+      }
     ],
-    images: [
-      "/images/products/DM005_front.png",
-      "/images/products/DM005_angle.png",
-      "/images/products/DM005_side.png",
-      "/images/products/DM005_detail.png",
-      "/images/products/DM005_lifestyle.png"
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~4.0 hours",
+      "weight": "95g"
+    },
+    "tags": [
+      "candle",
+      "pillar",
+      "fluted",
+      "brutalist",
+      "decor"
     ],
-    video: "/videos/DM005_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.16mm Precision", printTime: "~4.5 hours", weight: "110g" },
-    tags: ["candle", "pillar", "stand", "holder", "ribbed", "fluted", "minimal"],
-    featured: false
-  },
-
-  // ==========================================
-  // 2. DESK & OFFICE (5 models)
-  // ==========================================
-  {
-    id: "DM006",
-    name: "Multi-Compartment Desk Organizer",
-    category: "Desk & Office",
-    description: "Tiered ergonomic caddy featuring dedicated slots for pens, scissors, sticky notes, and USB flash drives.",
-    material: "PLA",
-    price: "From ₹399",
-    startingPrice: "₹399 (Incl. GST)",
-    numericPrice: 399,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 195,
-    sizes: [
-      { name: "Compact", dimensions: "140 × 85 × 75 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Standard", dimensions: "180 × 110 × 95 mm", price: "₹499 (Incl. GST)", numericPrice: 499 },
-      { name: "Executive", dimensions: "230 × 140 × 115 mm", price: "₹699 (Incl. GST)", numericPrice: 699 }
+    "featured": false,
+    "images": [
+      "/images/products/DEC-PILLAR-005_FRONT.jpg",
+      "/images/products/DEC-PILLAR-005_ANGLE.jpg",
+      "/images/products/DEC-PILLAR-005_SIDE.jpg",
+      "/images/products/DEC-PILLAR-005_REAR.jpg",
+      "/images/products/DEC-PILLAR-005_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM006_front.jpg",
-      "/images/products/DM006_angle.jpg",
-      "/images/products/DM006_side.jpg",
-      "/images/products/DM006_detail.jpg",
-      "/images/products/DM006_lifestyle.jpg"
-    ],
-    video: "/videos/DM006_turntable.webm",
-    specs: { infill: "20% Grid", layerHeight: "0.20mm Standard", printTime: "~7 hours", weight: "190g" },
-    tags: ["desk", "organizer", "stationery", "caddy", "office", "pen holder"],
-    featured: true
+    "imageIds": [
+      "DEC-PILLAR-005_FRONT",
+      "DEC-PILLAR-005_ANGLE",
+      "DEC-PILLAR-005_SIDE",
+      "DEC-PILLAR-005_REAR",
+      "DEC-PILLAR-005_DETAIL"
+    ]
   },
   {
-    id: "DM007",
-    name: "Fluted Scandinavian Desk Organizer",
-    category: "Desk & Office",
-    description: "Minimalist fluted stationery organizer with curved partitions and smooth weighted base.",
-    material: "PLA",
-    price: "From ₹349",
-    startingPrice: "₹349 (Incl. GST)",
-    numericPrice: 349,
-    gstIncluded: true,
-    badge: "NEW",
-    rating: 4.7,
-    reviewsCount: 46,
-    sizes: [
-      { name: "Small", dimensions: "120 × 90 × 85 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Medium", dimensions: "160 × 120 × 100 mm", price: "₹449 (Incl. GST)", numericPrice: 449 },
-      { name: "Large", dimensions: "210 × 150 × 120 mm", price: "₹599 (Incl. GST)", numericPrice: 599 }
+    "id": "DSK-ORG-001",
+    "name": "Multi-Compartment Desk Organizer",
+    "category": "Desk & Office",
+    "description": "Segmented workspace organizer with dedicated slots for smartphones, pens, sticky notes, and paperclips.",
+    "material": "PLA",
+    "price": "From ₹349",
+    "startingPrice": "₹349 (Incl. GST)",
+    "numericPrice": 349,
+    "gstIncluded": true,
+    "badge": "POPULAR",
+    "rating": 4.8,
+    "reviewsCount": 112,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "140 × 90 × 60 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Medium",
+        "dimensions": "185 × 120 × 75 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Large",
+        "dimensions": "230 × 150 × 90 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
+      }
     ],
-    images: [
-      "/images/products/DM007_front.png",
-      "/images/products/DM007_angle.png",
-      "/images/products/DM007_side.png",
-      "/images/products/DM007_detail.png",
-      "/images/products/DM007_lifestyle.png"
+    "specs": {
+      "infill": "18% Grid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~7.0 hours",
+      "weight": "210g"
+    },
+    "tags": [
+      "desk",
+      "organizer",
+      "office",
+      "stationery",
+      "storage"
     ],
-    video: "/videos/DM007_turntable.webm",
-    specs: { infill: "15% Gyroid", layerHeight: "0.16mm Precision", printTime: "~6 hours", weight: "160g" },
-    tags: ["desk", "fluted", "nordic", "scandinavian", "stationery", "clean"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/DSK-ORG-001_FRONT.jpg",
+      "/images/products/DSK-ORG-001_ANGLE.jpg",
+      "/images/products/DSK-ORG-001_SIDE.jpg",
+      "/images/products/DSK-ORG-001_REAR.jpg",
+      "/images/products/DSK-ORG-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DSK-ORG-001_FRONT",
+      "DSK-ORG-001_ANGLE",
+      "DSK-ORG-001_SIDE",
+      "DSK-ORG-001_REAR",
+      "DSK-ORG-001_DETAIL"
+    ]
   },
   {
-    id: "DM008",
-    name: "Voronoi Angled Desktop Stationery Caddy",
-    category: "Desk & Office",
-    description: "Parametric Voronoi lattice cellular pen holder with angled dividers for rapid tool retrieval.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 78,
-    sizes: [
-      { name: "Small", dimensions: "85 × 85 × 95 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Medium", dimensions: "110 × 110 × 120 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Large", dimensions: "140 × 140 × 150 mm", price: "₹549 (Incl. GST)", numericPrice: 549 }
+    "id": "DSK-FLUTE-002",
+    "name": "Fluted Scandinavian Desk Organizer",
+    "category": "Desk & Office",
+    "description": "Nordic fluted aesthetic desk container featuring tiered graduated cylinder depths for fountain pens and office scissors.",
+    "material": "PLA",
+    "price": "From ₹299",
+    "startingPrice": "₹299 (Incl. GST)",
+    "numericPrice": 299,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 78,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "85 × 85 × 95 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      },
+      {
+        "name": "Medium",
+        "dimensions": "110 × 110 × 120 mm",
+        "price": "₹389 (Incl. GST)",
+        "numericPrice": 389
+      },
+      {
+        "name": "Large",
+        "dimensions": "135 × 135 × 145 mm",
+        "price": "₹489 (Incl. GST)",
+        "numericPrice": 489
+      }
     ],
-    images: [
-      "/images/products/DM008_front.png",
-      "/images/products/DM008_angle.png",
-      "/images/products/DM008_side.png",
-      "/images/products/DM008_detail.png",
-      "/images/products/DM008_lifestyle.png"
+    "specs": {
+      "infill": "20% Concentric",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~5.2 hours",
+      "weight": "135g"
+    },
+    "tags": [
+      "scandinavian",
+      "fluted",
+      "desk",
+      "pen holder",
+      "minimalist"
     ],
-    video: "/videos/DM008_turntable.webm",
-    specs: { infill: "25% Gyroid", layerHeight: "0.16mm Precision", printTime: "~5.5 hours", weight: "135g" },
-    tags: ["voronoi", "pen holder", "desk", "lattice", "stationery"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/DSK-FLUTE-002_FRONT.jpg",
+      "/images/products/DSK-FLUTE-002_ANGLE.jpg",
+      "/images/products/DSK-FLUTE-002_SIDE.jpg",
+      "/images/products/DSK-FLUTE-002_REAR.jpg",
+      "/images/products/DSK-FLUTE-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DSK-FLUTE-002_FRONT",
+      "DSK-FLUTE-002_ANGLE",
+      "DSK-FLUTE-002_SIDE",
+      "DSK-FLUTE-002_REAR",
+      "DSK-FLUTE-002_DETAIL"
+    ]
   },
   {
-    id: "DM009",
-    name: "Prehistoric T-Rex Skull Pen Display",
-    category: "Desk & Office",
-    description: "Detailed anatomical dinosaur skull sculpture with hollow jaws tailored to cradle luxury fountain pens.",
-    material: "PLA",
-    price: "From ₹349",
-    startingPrice: "₹349 (Incl. GST)",
-    numericPrice: 349,
-    gstIncluded: true,
-    badge: "HOT",
-    rating: 4.9,
-    reviewsCount: 114,
-    sizes: [
-      { name: "Small", dimensions: "110 × 65 × 75 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Medium", dimensions: "150 × 90 × 105 mm", price: "₹499 (Incl. GST)", numericPrice: 499 },
-      { name: "Large", dimensions: "195 × 115 × 135 mm", price: "₹699 (Incl. GST)", numericPrice: 699 }
+    "id": "DSK-CADDY-003",
+    "name": "Voronoi Angled Desktop Stationery Caddy",
+    "category": "Desk & Office",
+    "description": "Computational parametric Voronoi lattice pen caddy with angled ergonomics for rapid grab-and-go access.",
+    "material": "PLA",
+    "price": "From ₹329",
+    "startingPrice": "₹329 (Incl. GST)",
+    "numericPrice": 329,
+    "gstIncluded": true,
+    "badge": "MODERN",
+    "rating": 4.8,
+    "reviewsCount": 83,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "80 × 80 × 100 mm",
+        "price": "₹329 (Incl. GST)",
+        "numericPrice": 329
+      },
+      {
+        "name": "Medium",
+        "dimensions": "105 × 105 × 130 mm",
+        "price": "₹419 (Incl. GST)",
+        "numericPrice": 419
+      },
+      {
+        "name": "Large",
+        "dimensions": "130 × 130 × 160 mm",
+        "price": "₹529 (Incl. GST)",
+        "numericPrice": 529
+      }
     ],
-    images: [
-      "/images/products/DM009_front.jpg",
-      "/images/products/DM009_angle.jpg",
-      "/images/products/DM009_side.jpg",
-      "/images/products/DM009_detail.jpg",
-      "/images/products/DM009_lifestyle.jpg"
+    "specs": {
+      "infill": "100% Solid Perimeter",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~6.0 hours",
+      "weight": "155g"
+    },
+    "tags": [
+      "voronoi",
+      "caddy",
+      "stationery",
+      "pen holder",
+      "lattice"
     ],
-    video: "/videos/DM009_turntable.webm",
-    specs: { infill: "18% Gyroid", layerHeight: "0.12mm Ultra Detail", printTime: "~7.5 hours", weight: "170g" },
-    tags: ["trex", "dinosaur", "skull", "pen stand", "fountain pen", "fossil"],
-    featured: true
+    "featured": false,
+    "images": [
+      "/images/products/DSK-CADDY-003_FRONT.jpg",
+      "/images/products/DSK-CADDY-003_ANGLE.jpg",
+      "/images/products/DSK-CADDY-003_SIDE.jpg",
+      "/images/products/DSK-CADDY-003_REAR.jpg",
+      "/images/products/DSK-CADDY-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DSK-CADDY-003_FRONT",
+      "DSK-CADDY-003_ANGLE",
+      "DSK-CADDY-003_SIDE",
+      "DSK-CADDY-003_REAR",
+      "DSK-CADDY-003_DETAIL"
+    ]
   },
   {
-    id: "DM010",
-    name: "Minimalist Toothbrush & Stylus Razor Dock",
-    category: "Desk & Office",
-    description: "Dual-stem hygienic dock with internal drainage channels, ideal for stylus pens or bathroom razors.",
-    material: "PLA",
-    price: "From ₹199",
-    startingPrice: "₹199 (Incl. GST)",
-    numericPrice: 199,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 38,
-    sizes: [
-      { name: "Single", dimensions: "55 × 55 × 40 mm", price: "₹199 (Incl. GST)", numericPrice: 199 },
-      { name: "Dual", dimensions: "95 × 55 × 40 mm", price: "₹279 (Incl. GST)", numericPrice: 279 },
-      { name: "Quad", dimensions: "175 × 55 × 40 mm", price: "₹399 (Incl. GST)", numericPrice: 399 }
+    "id": "DSK-TREX-004",
+    "name": "Prehistoric T-Rex Skull Pen Display",
+    "category": "Desk & Office",
+    "description": "Anatomically detailed Tyrannosaurus Rex skull replica with jaw teeth engineered to cradle pens, pencils, or styluses.",
+    "material": "PLA",
+    "price": "From ₹449",
+    "startingPrice": "₹449 (Incl. GST)",
+    "numericPrice": 449,
+    "gstIncluded": true,
+    "badge": "ICONIC",
+    "rating": 4.9,
+    "reviewsCount": 156,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "100 × 60 × 75 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Medium",
+        "dimensions": "140 × 85 × 105 mm",
+        "price": "₹579 (Incl. GST)",
+        "numericPrice": 579
+      },
+      {
+        "name": "Large",
+        "dimensions": "180 × 110 × 135 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749
+      }
     ],
-    images: [
-      "/images/products/DM010_front.png",
-      "/images/products/DM010_angle.png",
-      "/images/products/DM010_side.png",
-      "/images/products/DM010_detail.png",
-      "/images/products/DM010_lifestyle.png"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~9.5 hours",
+      "weight": "220g"
+    },
+    "tags": [
+      "trex",
+      "dinosaur",
+      "skull",
+      "pen holder",
+      "desk toy"
     ],
-    video: "/videos/DM010_turntable.webm",
-    specs: { infill: "30% Grid", layerHeight: "0.16mm Precision", printTime: "~3 hours", weight: "70g" },
-    tags: ["dock", "stand", "stylus", "razor", "toothbrush", "holder", "minimal"],
-    featured: false
-  },
-
-  // ==========================================
-  // 3. ORGANIZATION & STORAGE (5 models)
-  // ==========================================
-  {
-    id: "DM011",
-    name: "Sliding Lid Cable Management Box",
-    category: "Organization & Storage",
-    description: "Clean ventilated desktop enclosure hiding power strips, tangled adapters, and charging cords.",
-    material: "PLA",
-    price: "From ₹399",
-    startingPrice: "₹399 (Incl. GST)",
-    numericPrice: 399,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 162,
-    sizes: [
-      { name: "Compact", dimensions: "180 × 85 × 75 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Medium", dimensions: "250 × 115 × 95 mm", price: "₹549 (Incl. GST)", numericPrice: 549 },
-      { name: "XL Power", dimensions: "320 × 135 × 110 mm", price: "₹749 (Incl. GST)", numericPrice: 749 }
+    "featured": true,
+    "images": [
+      "/images/products/DSK-TREX-004_FRONT.jpg",
+      "/images/products/DSK-TREX-004_ANGLE.jpg",
+      "/images/products/DSK-TREX-004_SIDE.jpg",
+      "/images/products/DSK-TREX-004_REAR.jpg",
+      "/images/products/DSK-TREX-004_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM011_front.jpg",
-      "/images/products/DM011_angle.jpg",
-      "/images/products/DM011_side.jpg",
-      "/images/products/DM011_detail.jpg",
-      "/images/products/DM011_lifestyle.jpg"
-    ],
-    video: "/videos/DM011_turntable.webm",
-    specs: { infill: "20% Grid", layerHeight: "0.20mm Standard", printTime: "~8 hours", weight: "240g" },
-    tags: ["cable box", "cords", "storage", "organization", "power strip", "desk"],
-    featured: true
+    "imageIds": [
+      "DSK-TREX-004_FRONT",
+      "DSK-TREX-004_ANGLE",
+      "DSK-TREX-004_SIDE",
+      "DSK-TREX-004_REAR",
+      "DSK-TREX-004_DETAIL"
+    ]
   },
   {
-    id: "DM012",
-    name: "Modern Floating Wall Bracket Shelf",
-    category: "Organization & Storage",
-    description: "Geometric load-bearing floating shelf bracket engineered with internal ribbing for hidden mounting.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 71,
-    sizes: [
-      { name: "Small", dimensions: "120 × 100 × 50 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Medium", dimensions: "180 × 130 × 60 mm", price: "₹449 (Incl. GST)", numericPrice: 449 },
-      { name: "Large", dimensions: "240 × 160 × 75 mm", price: "₹599 (Incl. GST)", numericPrice: 599 }
+    "id": "DSK-DOCK-005",
+    "name": "Minimalist Toothbrush & Stylus Razor Dock",
+    "category": "Desk & Office",
+    "description": "Weighted dual-port docking station with self-draining airflow channels for Apple Pencil, styluses, or safety razors.",
+    "material": "PLA",
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "numericPrice": 199,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 62,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "50 × 50 × 40 mm",
+        "price": "₹199 (Incl. GST)",
+        "numericPrice": 199
+      },
+      {
+        "name": "Medium",
+        "dimensions": "70 × 70 × 55 mm",
+        "price": "₹269 (Incl. GST)",
+        "numericPrice": 269
+      },
+      {
+        "name": "Large",
+        "dimensions": "90 × 90 × 70 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      }
     ],
-    images: [
-      "/images/products/DM012_front.jpg",
-      "/images/products/DM012_angle.jpg",
-      "/images/products/DM012_side.jpg",
-      "/images/products/DM012_detail.jpg",
-      "/images/products/DM012_lifestyle.jpg"
+    "specs": {
+      "infill": "30% Grid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~2.5 hours",
+      "weight": "70g"
+    },
+    "tags": [
+      "dock",
+      "stylus",
+      "razor",
+      "toothbrush",
+      "desk",
+      "bathroom"
     ],
-    video: "/videos/DM012_turntable.webm",
-    specs: { infill: "35% Triangular (High Load)", layerHeight: "0.20mm", printTime: "~6.5 hours", weight: "185g" },
-    tags: ["shelf", "bracket", "wall mount", "floating shelf", "storage", "hardware"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/DSK-DOCK-005_FRONT.jpg",
+      "/images/products/DSK-DOCK-005_ANGLE.jpg",
+      "/images/products/DSK-DOCK-005_SIDE.jpg",
+      "/images/products/DSK-DOCK-005_REAR.jpg",
+      "/images/products/DSK-DOCK-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DSK-DOCK-005_FRONT",
+      "DSK-DOCK-005_ANGLE",
+      "DSK-DOCK-005_SIDE",
+      "DSK-DOCK-005_REAR",
+      "DSK-DOCK-005_DETAIL"
+    ]
   },
   {
-    id: "DM013",
-    name: "Fluted Paper Towel & Roll Dispenser",
-    category: "Organization & Storage",
-    description: "Weighted tabletop roll spindle featuring architectural fluting and a quick-tear perimeter rim.",
-    material: "PLA",
-    price: "From ₹399",
-    startingPrice: "₹399 (Incl. GST)",
-    numericPrice: 399,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 44,
-    sizes: [
-      { name: "Compact", dimensions: "130 × 130 × 240 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Standard", dimensions: "155 × 155 × 300 mm", price: "₹499 (Incl. GST)", numericPrice: 499 }
+    "id": "ORG-CABLE-001",
+    "name": "Sliding Lid Cable Management Box",
+    "category": "Organization & Storage",
+    "description": "Compact desk wire organizer with snap-fit sliding cover, dual wire exit ports, and ventilation slots.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "ESSENTIAL",
+    "rating": 4.8,
+    "reviewsCount": 88,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "160 × 90 × 70 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium",
+        "dimensions": "210 × 115 × 85 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Large",
+        "dimensions": "260 × 140 × 100 mm",
+        "price": "₹649 (Incl. GST)",
+        "numericPrice": 649
+      }
     ],
-    images: [
-      "/images/products/DM013_front.png",
-      "/images/products/DM013_angle.png",
-      "/images/products/DM013_side.png",
-      "/images/products/DM013_detail.png",
-      "/images/products/DM013_lifestyle.png"
+    "specs": {
+      "infill": "20% Grid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~8.0 hours",
+      "weight": "240g"
+    },
+    "tags": [
+      "cable box",
+      "wire management",
+      "storage",
+      "desk",
+      "organization"
     ],
-    video: "/videos/DM013_turntable.webm",
-    specs: { infill: "25% Gyroid (Weighted)", layerHeight: "0.20mm", printTime: "~7 hours", weight: "210g" },
-    tags: ["kitchen", "paper towel", "roll holder", "dispenser", "fluted"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/ORG-CABLE-001_FRONT.jpg",
+      "/images/products/ORG-CABLE-001_ANGLE.jpg",
+      "/images/products/ORG-CABLE-001_SIDE.jpg",
+      "/images/products/ORG-CABLE-001_REAR.jpg",
+      "/images/products/ORG-CABLE-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "ORG-CABLE-001_FRONT",
+      "ORG-CABLE-001_ANGLE",
+      "ORG-CABLE-001_SIDE",
+      "ORG-CABLE-001_REAR",
+      "ORG-CABLE-001_DETAIL"
+    ]
   },
   {
-    id: "DM014",
-    name: "Commercial Locking Paper Towel Dispenser",
-    category: "Organization & Storage",
-    description: "Robust wall-mounted C-fold paper towel dispenser with integrated twist-lock key mechanism.",
-    material: "PLA",
-    price: "From ₹549",
-    startingPrice: "₹549 (Incl. GST)",
-    numericPrice: 549,
-    gstIncluded: true,
-    badge: "COMMERCIAL",
-    rating: 4.8,
-    reviewsCount: 39,
-    sizes: [
-      { name: "Slim", dimensions: "210 × 90 × 180 mm", price: "₹549 (Incl. GST)", numericPrice: 549 },
-      { name: "Standard", dimensions: "270 × 110 × 220 mm", price: "₹749 (Incl. GST)", numericPrice: 749 }
+    "id": "ORG-SHELF-002",
+    "name": "Modern Floating Wall Bracket Shelf",
+    "category": "Organization & Storage",
+    "description": "Architectural cantilever floating wall shelf with countersunk hidden screw mounts for books and collectibles.",
+    "material": "PLA",
+    "price": "From ₹349",
+    "startingPrice": "₹349 (Incl. GST)",
+    "numericPrice": 349,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 72,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "150 × 100 × 50 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Medium",
+        "dimensions": "200 × 130 × 65 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Large",
+        "dimensions": "250 × 160 × 80 mm",
+        "price": "₹579 (Incl. GST)",
+        "numericPrice": 579
+      }
     ],
-    images: [
-      "/images/products/DM014_front.png",
-      "/images/products/DM014_angle.png",
-      "/images/products/DM014_side.png",
-      "/images/products/DM014_detail.png",
-      "/images/products/DM014_lifestyle.png"
+    "specs": {
+      "infill": "35% Tri-Hexagon",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~7.5 hours",
+      "weight": "260g"
+    },
+    "tags": [
+      "shelf",
+      "wall mount",
+      "floating",
+      "decor",
+      "storage"
     ],
-    video: "/videos/DM014_turntable.webm",
-    specs: { infill: "20% Grid", layerHeight: "0.20mm Heavy Duty", printTime: "~11 hours", weight: "340g" },
-    tags: ["dispenser", "locking", "towel", "commercial", "bathroom", "wall mount"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/ORG-SHELF-002_FRONT.jpg",
+      "/images/products/ORG-SHELF-002_ANGLE.jpg",
+      "/images/products/ORG-SHELF-002_SIDE.jpg",
+      "/images/products/ORG-SHELF-002_REAR.jpg",
+      "/images/products/ORG-SHELF-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "ORG-SHELF-002_FRONT",
+      "ORG-SHELF-002_ANGLE",
+      "ORG-SHELF-002_SIDE",
+      "ORG-SHELF-002_REAR",
+      "ORG-SHELF-002_DETAIL"
+    ]
   },
   {
-    id: "DM015",
-    name: "Winter Puffer Jacket Key & Mask Hook",
-    category: "Organization & Storage",
-    description: "Playful mini puffer coat silhouette wall hook designed to hold car keys, masks, and headphones.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: "TRENDING",
-    rating: 4.9,
-    reviewsCount: 93,
-    sizes: [
-      { name: "Single Hook", dimensions: "75 × 65 × 85 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Double Pair", dimensions: "150 × 65 × 85 mm", price: "₹399 (Incl. GST)", numericPrice: 399 }
+    "id": "ORG-TOWEL-003",
+    "name": "Fluted Paper Towel & Roll Dispenser",
+    "category": "Organization & Storage",
+    "description": "Vertical countertop paper roll caddy with fluted textured spine and weighted anti-tip base.",
+    "material": "PLA",
+    "price": "From ₹329",
+    "startingPrice": "₹329 (Incl. GST)",
+    "numericPrice": 329,
+    "gstIncluded": true,
+    "rating": 4.6,
+    "reviewsCount": 49,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "130 × 130 × 200 mm",
+        "price": "₹329 (Incl. GST)",
+        "numericPrice": 329
+      },
+      {
+        "name": "Medium",
+        "dimensions": "150 × 150 × 260 mm",
+        "price": "₹429 (Incl. GST)",
+        "numericPrice": 429
+      },
+      {
+        "name": "Large",
+        "dimensions": "170 × 170 × 310 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      }
     ],
-    images: [
-      "/images/products/DM015_front.png",
-      "/images/products/DM015_angle.png",
-      "/images/products/DM015_side.png",
-      "/images/products/DM015_detail.png",
-      "/images/products/DM015_lifestyle.png"
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~6.8 hours",
+      "weight": "190g"
+    },
+    "tags": [
+      "towel holder",
+      "kitchen",
+      "fluted",
+      "dispenser",
+      "home"
     ],
-    video: "/videos/DM015_turntable.webm",
-    specs: { infill: "25% Gyroid", layerHeight: "0.16mm Precision", printTime: "~3.5 hours", weight: "85g" },
-    tags: ["hook", "puffer jacket", "key holder", "wall hook", "novelty", "coat"],
-    featured: true
-  },
-
-  // ==========================================
-  // 4. PHONE & TECH ACCESSORIES (5 models)
-  // ==========================================
-  {
-    id: "DM016",
-    name: "Cyber Ergonomic Phone Stand",
-    category: "Phone & Tech Accessories",
-    description: "Mecha-inspired angled smartphone stand with bottom charging pass-through and anti-slip cable cradle.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 220,
-    sizes: [
-      { name: "Compact", dimensions: "70 × 65 × 85 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Pro Max", dimensions: "85 × 80 × 105 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Tablet XL", dimensions: "120 × 105 × 135 mm", price: "₹499 (Incl. GST)", numericPrice: 499 }
+    "featured": false,
+    "images": [
+      "/images/products/ORG-TOWEL-003_FRONT.jpg",
+      "/images/products/ORG-TOWEL-003_ANGLE.jpg",
+      "/images/products/ORG-TOWEL-003_SIDE.jpg",
+      "/images/products/ORG-TOWEL-003_REAR.jpg",
+      "/images/products/ORG-TOWEL-003_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM016_front.jpg",
-      "/images/products/DM016_angle.jpg",
-      "/images/products/DM016_side.jpg",
-      "/images/products/DM016_detail.jpg",
-      "/images/products/DM016_lifestyle.jpg"
-    ],
-    video: "/videos/DM016_turntable.webm",
-    specs: { infill: "25% Honeycomb", layerHeight: "0.16mm Precision", printTime: "~4.5 hours", weight: "95g" },
-    tags: ["phone stand", "dock", "charging", "stand", "ergonomic", "mecha", "cyber"],
-    featured: true
+    "imageIds": [
+      "ORG-TOWEL-003_FRONT",
+      "ORG-TOWEL-003_ANGLE",
+      "ORG-TOWEL-003_SIDE",
+      "ORG-TOWEL-003_REAR",
+      "ORG-TOWEL-003_DETAIL"
+    ]
   },
   {
-    id: "DM017",
-    name: "Web-Armor Headphone Stand",
-    category: "Phone & Tech Accessories",
-    description: "Futuristic geometric armature headphone pedestal engineered with balanced weight distribution.",
-    material: "PLA",
-    price: "From ₹449",
-    startingPrice: "₹449 (Incl. GST)",
-    numericPrice: 449,
-    gstIncluded: true,
-    badge: "POPULAR",
-    rating: 4.8,
-    reviewsCount: 138,
-    sizes: [
-      { name: "Compact", dimensions: "100 × 90 × 190 mm", price: "₹449 (Incl. GST)", numericPrice: 449 },
-      { name: "Standard", dimensions: "130 × 115 × 245 mm", price: "₹599 (Incl. GST)", numericPrice: 599 },
-      { name: "Studio Pro", dimensions: "155 × 135 × 280 mm", price: "₹799 (Incl. GST)", numericPrice: 799 }
+    "id": "ORG-LOCK-004",
+    "name": "Commercial Locking Paper Towel Dispenser",
+    "category": "Organization & Storage",
+    "description": "Heavy-duty wall-mount folded napkin dispenser featuring dual side-key snap locks and smooth feed slot.",
+    "material": "PLA",
+    "price": "From ₹499",
+    "startingPrice": "₹499 (Incl. GST)",
+    "numericPrice": 499,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 57,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "180 × 110 × 160 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Medium",
+        "dimensions": "230 × 130 × 210 mm",
+        "price": "₹649 (Incl. GST)",
+        "numericPrice": 649
+      },
+      {
+        "name": "Large",
+        "dimensions": "280 × 150 × 260 mm",
+        "price": "₹799 (Incl. GST)",
+        "numericPrice": 799
+      }
     ],
-    images: [
-      "/images/products/DM017_front.jpg",
-      "/images/products/DM017_angle.jpg",
-      "/images/products/DM017_side.jpg",
-      "/images/products/DM017_detail.jpg",
-      "/images/products/DM017_lifestyle.jpg"
+    "specs": {
+      "infill": "30% Grid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~11.0 hours",
+      "weight": "380g"
+    },
+    "tags": [
+      "dispenser",
+      "commercial",
+      "locking",
+      "wall mount",
+      "bathroom"
     ],
-    video: "/videos/DM017_turntable.webm",
-    specs: { infill: "20% Triangular", layerHeight: "0.16mm Precision", printTime: "~8.5 hours", weight: "215g" },
-    tags: ["headphone stand", "gaming", "audio", "headset", "desk", "display"],
-    featured: true
+    "featured": false,
+    "images": [
+      "/images/products/ORG-LOCK-004_FRONT.jpg",
+      "/images/products/ORG-LOCK-004_ANGLE.jpg",
+      "/images/products/ORG-LOCK-004_SIDE.jpg",
+      "/images/products/ORG-LOCK-004_REAR.jpg",
+      "/images/products/ORG-LOCK-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "ORG-LOCK-004_FRONT",
+      "ORG-LOCK-004_ANGLE",
+      "ORG-LOCK-004_SIDE",
+      "ORG-LOCK-004_REAR",
+      "ORG-LOCK-004_DETAIL"
+    ]
   },
   {
-    id: "DM018",
-    name: "Heisenberg Sculptural Headphone Display",
-    category: "Phone & Tech Accessories",
-    description: "Iconic Heisenberg character bust silhouette repurposed as a high-end headphone and hat display stand.",
-    material: "PLA",
-    price: "From ₹649",
-    startingPrice: "₹649 (Incl. GST)",
-    numericPrice: 649,
-    gstIncluded: true,
-    badge: "LIMITED",
-    rating: 4.9,
-    reviewsCount: 89,
-    sizes: [
-      { name: "Medium", dimensions: "130 × 120 × 210 mm", price: "₹649 (Incl. GST)", numericPrice: 649 },
-      { name: "Full Size", dimensions: "165 × 150 × 265 mm", price: "₹899 (Incl. GST)", numericPrice: 899 }
+    "id": "ORG-HOOK-005",
+    "name": "Winter Puffer Jacket Key & Mask Hook",
+    "category": "Organization & Storage",
+    "description": "Whimsical miniature puffer winter coat wall hook with sturdy dual-hanger pegs for car keys, headphones, and coats.",
+    "material": "PLA",
+    "price": "From ₹229",
+    "startingPrice": "₹229 (Incl. GST)",
+    "numericPrice": 229,
+    "gstIncluded": true,
+    "badge": "CUTE",
+    "rating": 4.9,
+    "reviewsCount": 104,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "65 × 40 × 80 mm",
+        "price": "₹229 (Incl. GST)",
+        "numericPrice": 229
+      },
+      {
+        "name": "Medium",
+        "dimensions": "85 × 55 × 110 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      },
+      {
+        "name": "Large",
+        "dimensions": "110 × 70 × 140 mm",
+        "price": "₹389 (Incl. GST)",
+        "numericPrice": 389
+      }
     ],
-    images: [
-      "/images/products/DM018_front.jpg",
-      "/images/products/DM018_angle.jpg",
-      "/images/products/DM018_side.jpg",
-      "/images/products/DM018_detail.jpg",
-      "/images/products/DM018_lifestyle.jpg"
+    "specs": {
+      "infill": "30% Tri-Hexagon",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~3.6 hours",
+      "weight": "85g"
+    },
+    "tags": [
+      "hook",
+      "puffer jacket",
+      "key hook",
+      "wall mount",
+      "creative"
     ],
-    video: "/videos/DM018_turntable.webm",
-    specs: { infill: "18% Gyroid", layerHeight: "0.12mm Ultra Detail", printTime: "~12 hours", weight: "320g" },
-    tags: ["heisenberg", "headphone stand", "sculpture", "bust", "collector"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/ORG-HOOK-005_FRONT.jpg",
+      "/images/products/ORG-HOOK-005_ANGLE.jpg",
+      "/images/products/ORG-HOOK-005_SIDE.jpg",
+      "/images/products/ORG-HOOK-005_REAR.jpg",
+      "/images/products/ORG-HOOK-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "ORG-HOOK-005_FRONT",
+      "ORG-HOOK-005_ANGLE",
+      "ORG-HOOK-005_SIDE",
+      "ORG-HOOK-005_REAR",
+      "ORG-HOOK-005_DETAIL"
+    ]
   },
   {
-    id: "DM019",
-    name: "Dual-Angle MagSafe Wireless Charger Valet",
-    category: "Phone & Tech Accessories",
-    description: "Precision-molded desk dock for Apple MagSafe pucks featuring 45° video call angle and cord channel.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 57,
-    sizes: [
-      { name: "Phone Only", dimensions: "85 × 80 × 95 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Phone + Watch", dimensions: "140 × 85 × 110 mm", price: "₹449 (Incl. GST)", numericPrice: 449 }
+    "id": "TCH-PHONE-001",
+    "name": "Cyber Ergonomic Phone Stand",
+    "category": "Phone & Tech Accessories",
+    "description": "Tri-angle angled smartphone and tablet desk stand with integrated charging cord clearance channel.",
+    "material": "PLA",
+    "price": "From ₹249",
+    "startingPrice": "₹249 (Incl. GST)",
+    "numericPrice": 249,
+    "gstIncluded": true,
+    "badge": "BESTSELLER",
+    "rating": 4.9,
+    "reviewsCount": 198,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "70 × 65 × 75 mm",
+        "price": "₹249 (Incl. GST)",
+        "numericPrice": 249
+      },
+      {
+        "name": "Medium",
+        "dimensions": "90 × 85 × 95 mm",
+        "price": "₹329 (Incl. GST)",
+        "numericPrice": 329
+      },
+      {
+        "name": "Large",
+        "dimensions": "115 × 105 × 120 mm",
+        "price": "₹419 (Incl. GST)",
+        "numericPrice": 419
+      }
     ],
-    images: [
-      "/images/products/DM019_front.jpg",
-      "/images/products/DM019_angle.jpg",
-      "/images/products/DM019_side.jpg",
-      "/images/products/DM019_detail.jpg",
-      "/images/products/DM019_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~4.0 hours",
+      "weight": "90g"
+    },
+    "tags": [
+      "phone stand",
+      "dock",
+      "desk",
+      "tech",
+      "magsafe",
+      "iphone",
+      "android"
     ],
-    video: "/videos/DM019_turntable.webm",
-    specs: { infill: "25% Grid", layerHeight: "0.16mm Precision", printTime: "~4 hours", weight: "115g" },
-    tags: ["magsafe", "charger", "dock", "apple", "iphone", "wireless"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/TCH-PHONE-001_FRONT.jpg",
+      "/images/products/TCH-PHONE-001_ANGLE.jpg",
+      "/images/products/TCH-PHONE-001_SIDE.jpg",
+      "/images/products/TCH-PHONE-001_REAR.jpg",
+      "/images/products/TCH-PHONE-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "TCH-PHONE-001_FRONT",
+      "TCH-PHONE-001_ANGLE",
+      "TCH-PHONE-001_SIDE",
+      "TCH-PHONE-001_REAR",
+      "TCH-PHONE-001_DETAIL"
+    ]
   },
   {
-    id: "DM020",
-    name: "Universal Gaming Controller Desktop Mount",
-    category: "Phone & Tech Accessories",
-    description: "Form-fitting dual-tier pedestal compatible with PS5 DualSense, Xbox Series X, and Nintendo Switch controllers.",
-    material: "PLA",
-    price: "From ₹349",
-    startingPrice: "₹349 (Incl. GST)",
-    numericPrice: 349,
-    gstIncluded: true,
-    badge: "GAMER PICK",
-    rating: 4.8,
-    reviewsCount: 104,
-    sizes: [
-      { name: "Single Tier", dimensions: "90 × 85 × 130 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Dual Tier", dimensions: "110 × 95 × 210 mm", price: "₹499 (Incl. GST)", numericPrice: 499 }
+    "id": "TCH-WEBARM-002",
+    "name": "Web-Armor Headphone Stand",
+    "category": "Phone & Tech Accessories",
+    "description": "Aggressive geometric web-truss headphone bridge designed to cradle over-ear gaming headsets without headband fatigue.",
+    "material": "PLA",
+    "price": "From ₹449",
+    "startingPrice": "₹449 (Incl. GST)",
+    "numericPrice": 449,
+    "gstIncluded": true,
+    "badge": "GAMER",
+    "rating": 4.8,
+    "reviewsCount": 134,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "100 × 100 × 200 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Medium",
+        "dimensions": "130 × 130 × 250 mm",
+        "price": "₹579 (Incl. GST)",
+        "numericPrice": 579
+      },
+      {
+        "name": "Large",
+        "dimensions": "160 × 160 × 290 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749
+      }
     ],
-    images: [
-      "/images/products/DM020_front.jpg",
-      "/images/products/DM020_angle.jpg",
-      "/images/products/DM020_side.jpg",
-      "/images/products/DM020_detail.jpg",
-      "/images/products/DM020_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~8.5 hours",
+      "weight": "210g"
+    },
+    "tags": [
+      "headphone stand",
+      "gaming",
+      "spiderman",
+      "headset",
+      "desk setup"
     ],
-    video: "/videos/DM020_turntable.webm",
-    specs: { infill: "20% Triangular", layerHeight: "0.16mm Precision", printTime: "~6 hours", weight: "165g" },
-    tags: ["controller stand", "ps5", "xbox", "gaming", "mount", "gamepad"],
-    featured: false
-  },
-
-  // ==========================================
-  // 5. TOYS & FIDGETS (5 models)
-  // ==========================================
-  {
-    id: "DM021",
-    name: "Infinity Gyroscope Kinetic Desk Fidget",
-    category: "Toys & Fidgets",
-    description: "Precision triple-gimbal print-in-place concentric gyroscope rings spinning with zero friction.",
-    material: "PLA",
-    price: "From ₹199",
-    startingPrice: "₹199 (Incl. GST)",
-    numericPrice: 199,
-    gstIncluded: true,
-    badge: "STAFF PICK",
-    rating: 4.9,
-    reviewsCount: 156,
-    sizes: [
-      { name: "Pocket", dimensions: "50 × 50 × 12 mm", price: "₹199 (Incl. GST)", numericPrice: 199 },
-      { name: "Medium", dimensions: "70 × 70 × 15 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Desk Toy", dimensions: "95 × 95 × 18 mm", price: "₹399 (Incl. GST)", numericPrice: 399 }
+    "featured": true,
+    "images": [
+      "/images/products/TCH-WEBARM-002_FRONT.jpg",
+      "/images/products/TCH-WEBARM-002_ANGLE.jpg",
+      "/images/products/TCH-WEBARM-002_SIDE.jpg",
+      "/images/products/TCH-WEBARM-002_REAR.jpg",
+      "/images/products/TCH-WEBARM-002_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM021_front.jpg",
-      "/images/products/DM021_angle.jpg",
-      "/images/products/DM021_side.jpg",
-      "/images/products/DM021_detail.jpg",
-      "/images/products/DM021_lifestyle.jpg"
-    ],
-    video: "/videos/DM021_turntable.webm",
-    specs: { infill: "100% Solid Joints", layerHeight: "0.16mm Precision", printTime: "~3 hours", weight: "45g" },
-    tags: ["gyroscope", "fidget", "kinetic", "spin", "desk toy", "infinity"],
-    featured: true
-  },
-  {
-    id: "DM022",
-    name: "Dual-Track Gravity Fidget Slider",
-    category: "Toys & Fidgets",
-    description: "Haptic sliding mechanical fidget bar with dual magnetic detents and tactile ribbed thumb grips.",
-    material: "PLA",
-    price: "From ₹199",
-    startingPrice: "₹199 (Incl. GST)",
-    numericPrice: 199,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 68,
-    sizes: [
-      { name: "Standard", dimensions: "65 × 25 × 14 mm", price: "₹199 (Incl. GST)", numericPrice: 199 },
-      { name: "Heavyweight", dimensions: "80 × 30 × 16 mm", price: "₹279 (Incl. GST)", numericPrice: 279 }
-    ],
-    images: [
-      "/images/products/DM022_front.jpg",
-      "/images/products/DM022_angle.jpg",
-      "/images/products/DM022_side.jpg",
-      "/images/products/DM022_detail.jpg",
-      "/images/products/DM022_lifestyle.jpg"
-    ],
-    video: "/videos/DM022_turntable.webm",
-    specs: { infill: "50% Heavy Density", layerHeight: "0.12mm Ultra Detail", printTime: "~2.5 hours", weight: "55g" },
-    tags: ["slider", "haptic", "fidget", "edc", "satisfying"],
-    featured: false
+    "imageIds": [
+      "TCH-WEBARM-002_FRONT",
+      "TCH-WEBARM-002_ANGLE",
+      "TCH-WEBARM-002_SIDE",
+      "TCH-WEBARM-002_REAR",
+      "TCH-WEBARM-002_DETAIL"
+    ]
   },
   {
-    id: "DM023",
-    name: "Haptic Mechanical Clicky Key Fidget",
-    category: "Toys & Fidgets",
-    description: "Tactile mechanical keyboard switch toy with authentic blue-click actuation and ergonomic casing.",
-    material: "PLA",
-    price: "From ₹149",
-    startingPrice: "₹149 (Incl. GST)",
-    numericPrice: 149,
-    gstIncluded: true,
-    badge: "POPULAR",
-    rating: 4.8,
-    reviewsCount: 122,
-    sizes: [
-      { name: "Single Key", dimensions: "30 × 30 × 28 mm", price: "₹149 (Incl. GST)", numericPrice: 149 },
-      { name: "Dual Switch", dimensions: "55 × 30 × 28 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "4-Key Pad", dimensions: "55 × 55 × 28 mm", price: "₹349 (Incl. GST)", numericPrice: 349 }
+    "id": "TCH-HEISEN-003",
+    "name": "Heisenberg Sculptural Headphone Display",
+    "category": "Phone & Tech Accessories",
+    "description": "Iconic cinematic bust headphone mount featuring pork pie hat geometry engineered to rest professional audio cans.",
+    "material": "PLA",
+    "price": "From ₹549",
+    "startingPrice": "₹549 (Incl. GST)",
+    "numericPrice": 549,
+    "gstIncluded": true,
+    "badge": "COLLECTIBLE",
+    "rating": 4.9,
+    "reviewsCount": 167,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "120 × 110 × 180 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      },
+      {
+        "name": "Medium",
+        "dimensions": "155 × 140 × 235 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      },
+      {
+        "name": "Large",
+        "dimensions": "190 × 170 × 280 mm",
+        "price": "₹899 (Incl. GST)",
+        "numericPrice": 899
+      }
     ],
-    images: [
-      "/images/products/DM023_front.jpg",
-      "/images/products/DM023_angle.jpg",
-      "/images/products/DM023_side.jpg",
-      "/images/products/DM023_detail.jpg",
-      "/images/products/DM023_lifestyle.jpg"
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~12.0 hours",
+      "weight": "310g"
+    },
+    "tags": [
+      "heisenberg",
+      "breaking bad",
+      "headphone stand",
+      "bust",
+      "audiophile"
     ],
-    video: "/videos/DM023_turntable.webm",
-    specs: { infill: "30% Grid", layerHeight: "0.16mm Precision", printTime: "~1.5 hours", weight: "35g" },
-    tags: ["clicky", "switch", "keyboard", "fidget", "tactile"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/TCH-HEISEN-003_FRONT.jpg",
+      "/images/products/TCH-HEISEN-003_ANGLE.jpg",
+      "/images/products/TCH-HEISEN-003_SIDE.jpg",
+      "/images/products/TCH-HEISEN-003_REAR.jpg",
+      "/images/products/TCH-HEISEN-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "TCH-HEISEN-003_FRONT",
+      "TCH-HEISEN-003_ANGLE",
+      "TCH-HEISEN-003_SIDE",
+      "TCH-HEISEN-003_REAR",
+      "TCH-HEISEN-003_DETAIL"
+    ]
   },
   {
-    id: "DM024",
-    name: "Morphing Geometric Flexi Star",
-    category: "Toys & Fidgets",
-    description: "Transformative 12-point origami kinetic star folding continuously into endless kaleidoscope shapes.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 51,
-    sizes: [
-      { name: "Pocket", dimensions: "60 × 60 × 60 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Desk", dimensions: "85 × 85 × 85 mm", price: "₹349 (Incl. GST)", numericPrice: 349 }
+    "id": "TCH-MAGSAFE-004",
+    "name": "Dual-Angle MagSafe Wireless Charger Valet",
+    "category": "Phone & Tech Accessories",
+    "description": "Precision friction-fit puck cradle holding original Apple MagSafe charger at 65° StandBy angle.",
+    "material": "PLA",
+    "price": "From ₹269",
+    "startingPrice": "₹269 (Incl. GST)",
+    "numericPrice": 269,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 82,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "75 × 75 × 90 mm",
+        "price": "₹269 (Incl. GST)",
+        "numericPrice": 269
+      },
+      {
+        "name": "Medium",
+        "dimensions": "95 × 95 × 115 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Large",
+        "dimensions": "115 × 115 × 140 mm",
+        "price": "₹439 (Incl. GST)",
+        "numericPrice": 439
+      }
     ],
-    images: [
-      "/images/products/DM024_front.jpg",
-      "/images/products/DM024_angle.jpg",
-      "/images/products/DM024_side.jpg",
-      "/images/products/DM024_detail.jpg",
-      "/images/products/DM024_lifestyle.jpg"
+    "specs": {
+      "infill": "30% Grid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~4.5 hours",
+      "weight": "120g"
+    },
+    "tags": [
+      "magsafe",
+      "iphone",
+      "wireless charger",
+      "standby mode",
+      "desk"
     ],
-    video: "/videos/DM024_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.16mm Precision", printTime: "~4.5 hours", weight: "80g" },
-    tags: ["star", "flexi", "origami", "fidget", "kaleidoscope"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/TCH-MAGSAFE-004_FRONT.jpg",
+      "/images/products/TCH-MAGSAFE-004_ANGLE.jpg",
+      "/images/products/TCH-MAGSAFE-004_SIDE.jpg",
+      "/images/products/TCH-MAGSAFE-004_REAR.jpg",
+      "/images/products/TCH-MAGSAFE-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "TCH-MAGSAFE-004_FRONT",
+      "TCH-MAGSAFE-004_ANGLE",
+      "TCH-MAGSAFE-004_SIDE",
+      "TCH-MAGSAFE-004_REAR",
+      "TCH-MAGSAFE-004_DETAIL"
+    ]
   },
   {
-    id: "DM025",
-    name: "Triple-Gear Kinetic Desk Illusion",
-    category: "Toys & Fidgets",
-    description: "Interlocking planetary gear desk ornament that rotates smoothly via a central knurled finger knob.",
-    material: "PLA",
-    price: "From ₹279",
-    startingPrice: "₹279 (Incl. GST)",
-    numericPrice: 279,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 64,
-    sizes: [
-      { name: "Small", dimensions: "75 × 75 × 25 mm", price: "₹279 (Incl. GST)", numericPrice: 279 },
-      { name: "Medium", dimensions: "105 × 105 × 32 mm", price: "₹399 (Incl. GST)", numericPrice: 399 }
+    "id": "TCH-MOUNT-005",
+    "name": "Universal Gaming Controller Desktop Mount",
+    "category": "Phone & Tech Accessories",
+    "description": "Ergonomic dual-lip display stand precision contoured for PS5 DualSense, Xbox Series X, and Nintendo Switch Pro controllers.",
+    "material": "PLA",
+    "price": "From ₹289",
+    "startingPrice": "₹289 (Incl. GST)",
+    "numericPrice": 289,
+    "gstIncluded": true,
+    "badge": "GAMER",
+    "rating": 4.8,
+    "reviewsCount": 95,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "75 × 80 × 85 mm",
+        "price": "₹289 (Incl. GST)",
+        "numericPrice": 289
+      },
+      {
+        "name": "Medium",
+        "dimensions": "95 × 100 × 110 mm",
+        "price": "₹369 (Incl. GST)",
+        "numericPrice": 369
+      },
+      {
+        "name": "Large",
+        "dimensions": "115 × 120 × 135 mm",
+        "price": "₹469 (Incl. GST)",
+        "numericPrice": 469
+      }
     ],
-    images: [
-      "/images/products/DM025_front.jpg",
-      "/images/products/DM025_angle.jpg",
-      "/images/products/DM025_side.jpg",
-      "/images/products/DM025_detail.jpg",
-      "/images/products/DM025_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Tri-Hexagon",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~5.0 hours",
+      "weight": "130g"
+    },
+    "tags": [
+      "controller stand",
+      "ps5",
+      "xbox",
+      "gaming",
+      "desk mount"
     ],
-    video: "/videos/DM025_turntable.webm",
-    specs: { infill: "30% Grid", layerHeight: "0.16mm Precision", printTime: "~5 hours", weight: "110g" },
-    tags: ["gears", "kinetic", "desk toy", "planetary", "mechanical"],
-    featured: false
-  },
-
-  // ==========================================
-  // 6. ARTICULATED / FLEXI MODELS (5 models)
-  // ==========================================
-  {
-    id: "DM026",
-    name: "Articulated Dragon",
-    category: "Articulated / Flexi Models",
-    description: "Flexible print-in-place dragon with multi-segmented body, tactile moving scales, and poseable wings.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 230,
-    sizes: [
-      { name: "Small", dimensions: "180 × 50 × 30 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Medium", dimensions: "240 × 65 × 40 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Large", dimensions: "320 × 85 × 55 mm", price: "₹449 (Incl. GST)", numericPrice: 449 }
+    "featured": false,
+    "images": [
+      "/images/products/TCH-MOUNT-005_FRONT.jpg",
+      "/images/products/TCH-MOUNT-005_ANGLE.jpg",
+      "/images/products/TCH-MOUNT-005_SIDE.jpg",
+      "/images/products/TCH-MOUNT-005_REAR.jpg",
+      "/images/products/TCH-MOUNT-005_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM026_front.jpg",
-      "/images/products/DM026_angle.jpg",
-      "/images/products/DM026_side.jpg",
-      "/images/products/DM026_detail.jpg",
-      "/images/products/DM026_lifestyle.jpg"
-    ],
-    video: "/videos/DM026_turntable.webm",
-    specs: { infill: "15% Gyroid (Fluid Flexible Joints)", layerHeight: "0.16mm Precision", printTime: "~7 hours", weight: "125g" },
-    tags: ["dragon", "articulated", "flexi", "print-in-place", "mythical"],
-    featured: true
-  },
-  {
-    id: "DM027",
-    name: "Articulated Flexi Skeleton Fidget",
-    category: "Articulated / Flexi Models",
-    description: "Highly flexible multi-jointed articulated skeleton figurine with poseable skull, arms, and legs.",
-    material: "PLA",
-    price: "From ₹199",
-    startingPrice: "₹199 (Incl. GST)",
-    numericPrice: 199,
-    gstIncluded: true,
-    badge: "HOT",
-    rating: 4.8,
-    reviewsCount: 165,
-    sizes: [
-      { name: "Pocket", dimensions: "100 × 35 × 15 mm", price: "₹199 (Incl. GST)", numericPrice: 199 },
-      { name: "Medium", dimensions: "140 × 48 × 22 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Large", dimensions: "180 × 62 × 28 mm", price: "₹349 (Incl. GST)", numericPrice: 349 }
-    ],
-    images: [
-      "/images/products/DM027_front.jpg",
-      "/images/products/DM027_angle.jpg",
-      "/images/products/DM027_side.jpg",
-      "/images/products/DM027_detail.jpg",
-      "/images/products/DM027_lifestyle.jpg"
-    ],
-    video: "/videos/DM027_turntable.webm",
-    specs: { infill: "20% Grid", layerHeight: "0.16mm Precision", printTime: "~4.5 hours", weight: "65g" },
-    tags: ["skeleton", "articulated", "flexi", "joints", "fidget", "halloween"],
-    featured: true
+    "imageIds": [
+      "TCH-MOUNT-005_FRONT",
+      "TCH-MOUNT-005_ANGLE",
+      "TCH-MOUNT-005_SIDE",
+      "TCH-MOUNT-005_REAR",
+      "TCH-MOUNT-005_DETAIL"
+    ]
   },
   {
-    id: "DM028",
-    name: "Articulated Cockatoo Bird Fidget",
-    category: "Articulated / Flexi Models",
-    description: "Adorable print-in-place articulated crested cockatoo with moving plumage and flexible tail feathers.",
-    material: "PLA",
-    price: "From ₹219",
-    startingPrice: "₹219 (Incl. GST)",
-    numericPrice: 219,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 88,
-    sizes: [
-      { name: "Small", dimensions: "90 × 40 × 35 mm", price: "₹219 (Incl. GST)", numericPrice: 219 },
-      { name: "Medium", dimensions: "120 × 52 × 45 mm", price: "₹279 (Incl. GST)", numericPrice: 279 },
-      { name: "Large", dimensions: "155 × 68 × 58 mm", price: "₹379 (Incl. GST)", numericPrice: 379 }
+    "id": "TOY-GYRO-001",
+    "name": "Infinity Gyroscope Kinetic Desk Fidget",
+    "category": "Toys & Fidgets",
+    "description": "Concentric print-in-place free-spinning gyroscopic rings providing fluid kinetic rotation for focus and stress relief.",
+    "material": "PLA",
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "numericPrice": 199,
+    "gstIncluded": true,
+    "badge": "FIDGET",
+    "rating": 4.9,
+    "reviewsCount": 178,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "55 × 55 × 12 mm",
+        "price": "₹199 (Incl. GST)",
+        "numericPrice": 199
+      },
+      {
+        "name": "Medium",
+        "dimensions": "75 × 75 × 16 mm",
+        "price": "₹269 (Incl. GST)",
+        "numericPrice": 269
+      },
+      {
+        "name": "Large",
+        "dimensions": "95 × 95 × 20 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      }
     ],
-    images: [
-      "/images/products/DM028_front.jpg",
-      "/images/products/DM028_angle.jpg",
-      "/images/products/DM028_side.jpg",
-      "/images/products/DM028_detail.jpg",
-      "/images/products/DM028_lifestyle.jpg"
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~2.2 hours",
+      "weight": "45g"
+    },
+    "tags": [
+      "gyroscope",
+      "fidget",
+      "kinetic",
+      "stress relief",
+      "print in place"
     ],
-    video: "/videos/DM028_turntable.webm",
-    specs: { infill: "18% Gyroid", layerHeight: "0.16mm Precision", printTime: "~4.5 hours", weight: "75g" },
-    tags: ["cockatoo", "bird", "parrot", "articulated", "flexi", "fidget"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/TOY-GYRO-001_FRONT.jpg",
+      "/images/products/TOY-GYRO-001_ANGLE.jpg",
+      "/images/products/TOY-GYRO-001_SIDE.jpg",
+      "/images/products/TOY-GYRO-001_REAR.jpg",
+      "/images/products/TOY-GYRO-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "TOY-GYRO-001_FRONT",
+      "TOY-GYRO-001_ANGLE",
+      "TOY-GYRO-001_SIDE",
+      "TOY-GYRO-001_REAR",
+      "TOY-GYRO-001_DETAIL"
+    ]
   },
   {
-    id: "DM029",
-    name: "Kawaii Articulated Pink Cat",
-    category: "Articulated / Flexi Models",
-    description: "Charming flexible anime-styled kitten figurine with poseable paws, swiveling ears, and curled tail.",
-    material: "PLA",
-    price: "From ₹199",
-    startingPrice: "₹199 (Incl. GST)",
-    numericPrice: 199,
-    gstIncluded: true,
-    badge: "CUTE",
-    rating: 4.9,
-    reviewsCount: 140,
-    sizes: [
-      { name: "Petite", dimensions: "70 × 40 × 40 mm", price: "₹199 (Incl. GST)", numericPrice: 199 },
-      { name: "Standard", dimensions: "95 × 55 × 55 mm", price: "₹269 (Incl. GST)", numericPrice: 269 },
-      { name: "Jumbo", dimensions: "130 × 75 × 75 mm", price: "₹379 (Incl. GST)", numericPrice: 379 }
+    "id": "TOY-SLIDE-002",
+    "name": "Dual-Track Gravity Fidget Slider",
+    "category": "Toys & Fidgets",
+    "description": "Satisfying tactile sliding mechanism with internal ball detents engineered for silent one-handed pocket fidgeting.",
+    "material": "PLA",
+    "price": "From ₹179",
+    "startingPrice": "₹179 (Incl. GST)",
+    "numericPrice": 179,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 89,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "50 × 25 × 14 mm",
+        "price": "₹179 (Incl. GST)",
+        "numericPrice": 179
+      },
+      {
+        "name": "Medium",
+        "dimensions": "65 × 32 × 18 mm",
+        "price": "₹239 (Incl. GST)",
+        "numericPrice": 239
+      },
+      {
+        "name": "Large",
+        "dimensions": "80 × 40 × 22 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      }
     ],
-    images: [
-      "/images/products/DM029_front.jpg",
-      "/images/products/DM029_angle.jpg",
-      "/images/products/DM029_side.jpg",
-      "/images/products/DM029_detail.jpg",
-      "/images/products/DM029_lifestyle.jpg"
+    "specs": {
+      "infill": "40% Grid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~1.8 hours",
+      "weight": "38g"
+    },
+    "tags": [
+      "fidget slider",
+      "edc",
+      "pocket toy",
+      "tactile"
     ],
-    video: "/videos/DM029_turntable.webm",
-    specs: { infill: "15% Gyroid", layerHeight: "0.16mm Precision", printTime: "~3.8 hours", weight: "60g" },
-    tags: ["cat", "kawaii", "kitten", "pink", "articulated", "cute"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/TOY-SLIDE-002_FRONT.jpg",
+      "/images/products/TOY-SLIDE-002_ANGLE.jpg",
+      "/images/products/TOY-SLIDE-002_SIDE.jpg",
+      "/images/products/TOY-SLIDE-002_REAR.jpg",
+      "/images/products/TOY-SLIDE-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "TOY-SLIDE-002_FRONT",
+      "TOY-SLIDE-002_ANGLE",
+      "TOY-SLIDE-002_SIDE",
+      "TOY-SLIDE-002_REAR",
+      "TOY-SLIDE-002_DETAIL"
+    ]
   },
   {
-    id: "DM030",
-    name: "Articulated Kraken Octopus",
-    category: "Articulated / Flexi Models",
-    description: "Eight fluid multi-jointed tentacles that curl organically around fingers and desk surfaces.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: "POPULAR",
-    rating: 4.8,
-    reviewsCount: 175,
-    sizes: [
-      { name: "Small", dimensions: "100 × 100 × 35 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Medium", dimensions: "140 × 140 × 48 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Mega", dimensions: "190 × 190 × 65 mm", price: "₹499 (Incl. GST)", numericPrice: 499 }
+    "id": "TOY-KEY-003",
+    "name": "Haptic Mechanical Clicky Key Fidget",
+    "category": "Toys & Fidgets",
+    "description": "Authentic mechanical keyboard switch tester with custom 3D printed keycap housing for satisfying tactile clicks.",
+    "material": "PLA",
+    "price": "From ₹169",
+    "startingPrice": "₹169 (Incl. GST)",
+    "numericPrice": 169,
+    "gstIncluded": true,
+    "badge": "BESTSELLER",
+    "rating": 4.9,
+    "reviewsCount": 215,
+    "sizes": [
+      {
+        "name": "Single Key",
+        "dimensions": "25 × 25 × 30 mm",
+        "price": "₹169 (Incl. GST)",
+        "numericPrice": 169
+      },
+      {
+        "name": "Dual Key",
+        "dimensions": "45 × 25 × 30 mm",
+        "price": "₹249 (Incl. GST)",
+        "numericPrice": 249
+      },
+      {
+        "name": "Quad 2x2",
+        "dimensions": "45 × 45 × 30 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      }
     ],
-    images: [
-      "/images/products/DM030_front.png",
-      "/images/products/DM030_angle.png",
-      "/images/products/DM030_side.png",
-      "/images/products/DM030_detail.png",
-      "/images/products/DM030_lifestyle.png"
+    "specs": {
+      "infill": "30% Grid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~1.5 hours",
+      "weight": "32g"
+    },
+    "tags": [
+      "clicky key",
+      "switch",
+      "mechanical keyboard",
+      "fidget",
+      "edc"
     ],
-    video: "/videos/DM030_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.16mm Precision", printTime: "~6 hours", weight: "115g" },
-    tags: ["octopus", "kraken", "tentacles", "articulated", "flexi"],
-    featured: true
-  },
-
-  // ==========================================
-  // 7. FIGURES & MINIATURES (5 models)
-  // ==========================================
-  {
-    id: "DM031",
-    name: "Demon Slayer Flame Warrior 3D Miniature",
-    category: "Figures & Miniatures",
-    description: "High-detail anime warrior statue with dynamic flame effects and ceremonial katana stance.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: "ANIME",
-    rating: 4.9,
-    reviewsCount: 178,
-    sizes: [
-      { name: "Desk", dimensions: "75 × 60 × 90 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Display", dimensions: "100 × 80 × 120 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Collector", dimensions: "140 × 110 × 165 mm", price: "₹599 (Incl. GST)", numericPrice: 599 }
+    "featured": true,
+    "images": [
+      "/images/products/TOY-KEY-003_FRONT.jpg",
+      "/images/products/TOY-KEY-003_ANGLE.jpg",
+      "/images/products/TOY-KEY-003_SIDE.jpg",
+      "/images/products/TOY-KEY-003_REAR.jpg",
+      "/images/products/TOY-KEY-003_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM031_front.jpg",
-      "/images/products/DM031_angle.jpg",
-      "/images/products/DM031_side.jpg",
-      "/images/products/DM031_detail.jpg",
-      "/images/products/DM031_lifestyle.jpg"
-    ],
-    video: "/videos/DM031_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.12mm Ultra Detail", printTime: "~7.5 hours", weight: "130g" },
-    tags: ["demon slayer", "rengoku", "anime", "warrior", "miniature", "statue"],
-    featured: true
+    "imageIds": [
+      "TOY-KEY-003_FRONT",
+      "TOY-KEY-003_ANGLE",
+      "TOY-KEY-003_SIDE",
+      "TOY-KEY-003_REAR",
+      "TOY-KEY-003_DETAIL"
+    ]
   },
   {
-    id: "DM032",
-    name: "Low-Poly Geometric Stallion Sculpture",
-    category: "Figures & Miniatures",
-    description: "Faceted polygonal galloping horse art piece capturing muscular dynamism in sleek faceted planes.",
-    material: "PLA",
-    price: "From ₹329",
-    startingPrice: "₹329 (Incl. GST)",
-    numericPrice: 329,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 65,
-    sizes: [
-      { name: "Small", dimensions: "120 × 40 × 90 mm", price: "₹329 (Incl. GST)", numericPrice: 329 },
-      { name: "Medium", dimensions: "165 × 55 × 125 mm", price: "₹449 (Incl. GST)", numericPrice: 449 },
-      { name: "Large", dimensions: "220 × 75 × 170 mm", price: "₹649 (Incl. GST)", numericPrice: 649 }
+    "id": "TOY-STAR-004",
+    "name": "Morphing Geometric Flexi Star",
+    "category": "Toys & Fidgets",
+    "description": "Interlocking polygon transformation star that collapses, expands, and folds infinitely in rhythmic geometric loops.",
+    "material": "PLA",
+    "price": "From ₹219",
+    "startingPrice": "₹219 (Incl. GST)",
+    "numericPrice": 219,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 76,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "60 × 60 × 60 mm",
+        "price": "₹219 (Incl. GST)",
+        "numericPrice": 219
+      },
+      {
+        "name": "Medium",
+        "dimensions": "85 × 85 × 85 mm",
+        "price": "₹289 (Incl. GST)",
+        "numericPrice": 289
+      },
+      {
+        "name": "Large",
+        "dimensions": "110 × 110 × 110 mm",
+        "price": "₹379 (Incl. GST)",
+        "numericPrice": 379
+      }
     ],
-    images: [
-      "/images/products/DM032_front.png",
-      "/images/products/DM032_angle.png",
-      "/images/products/DM032_side.png",
-      "/images/products/DM032_detail.png",
-      "/images/products/DM032_lifestyle.png"
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~3.0 hours",
+      "weight": "65g"
+    },
+    "tags": [
+      "flexi star",
+      "geometric",
+      "kinetic",
+      "morphing",
+      "toy"
     ],
-    video: "/videos/DM032_turntable.webm",
-    specs: { infill: "15% Gyroid", layerHeight: "0.16mm Precision", printTime: "~6 hours", weight: "140g" },
-    tags: ["horse", "stallion", "low-poly", "geometric", "sculpture", "art"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/TOY-STAR-004_FRONT.jpg",
+      "/images/products/TOY-STAR-004_ANGLE.jpg",
+      "/images/products/TOY-STAR-004_SIDE.jpg",
+      "/images/products/TOY-STAR-004_REAR.jpg",
+      "/images/products/TOY-STAR-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "TOY-STAR-004_FRONT",
+      "TOY-STAR-004_ANGLE",
+      "TOY-STAR-004_SIDE",
+      "TOY-STAR-004_REAR",
+      "TOY-STAR-004_DETAIL"
+    ]
   },
   {
-    id: "DM033",
-    name: "Low-Poly Geometric Lion Figurine",
-    category: "Figures & Miniatures",
-    description: "Regal sitting male lion sculpture with sharp geometric facets defining the mane and proud posture.",
-    material: "PLA",
-    price: "From ₹329",
-    startingPrice: "₹329 (Incl. GST)",
-    numericPrice: 329,
-    gstIncluded: true,
-    badge: "ROYAL",
-    rating: 4.9,
-    reviewsCount: 82,
-    sizes: [
-      { name: "Small", dimensions: "80 × 55 × 110 mm", price: "₹329 (Incl. GST)", numericPrice: 329 },
-      { name: "Medium", dimensions: "110 × 75 × 150 mm", price: "₹449 (Incl. GST)", numericPrice: 449 },
-      { name: "Large", dimensions: "145 × 100 × 200 mm", price: "₹649 (Incl. GST)", numericPrice: 649 }
+    "id": "TOY-GEAR-005",
+    "name": "Triple-Gear Kinetic Desk Illusion",
+    "category": "Toys & Fidgets",
+    "description": "Meshed planetary gear system providing hypnotic mechanical movement when turned by fingertip on office desk.",
+    "material": "PLA",
+    "price": "From ₹259",
+    "startingPrice": "₹259 (Incl. GST)",
+    "numericPrice": 259,
+    "gstIncluded": true,
+    "badge": "DESK TOY",
+    "rating": 4.8,
+    "reviewsCount": 64,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "70 × 70 × 20 mm",
+        "price": "₹259 (Incl. GST)",
+        "numericPrice": 259
+      },
+      {
+        "name": "Medium",
+        "dimensions": "95 × 95 × 26 mm",
+        "price": "₹339 (Incl. GST)",
+        "numericPrice": 339
+      },
+      {
+        "name": "Large",
+        "dimensions": "120 × 120 × 32 mm",
+        "price": "₹429 (Incl. GST)",
+        "numericPrice": 429
+      }
     ],
-    images: [
-      "/images/products/DM033_front.png",
-      "/images/products/DM033_angle.png",
-      "/images/products/DM033_side.png",
-      "/images/products/DM033_detail.png",
-      "/images/products/DM033_lifestyle.png"
+    "specs": {
+      "infill": "25% Concentric",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~3.5 hours",
+      "weight": "75g"
+    },
+    "tags": [
+      "gears",
+      "kinetic",
+      "mechanical",
+      "desk toy",
+      "illusion"
     ],
-    video: "/videos/DM033_turntable.webm",
-    specs: { infill: "18% Gyroid", layerHeight: "0.16mm Precision", printTime: "~6.5 hours", weight: "155g" },
-    tags: ["lion", "low-poly", "king", "statue", "geometric", "safari"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/TOY-GEAR-005_FRONT.jpg",
+      "/images/products/TOY-GEAR-005_ANGLE.jpg",
+      "/images/products/TOY-GEAR-005_SIDE.jpg",
+      "/images/products/TOY-GEAR-005_REAR.jpg",
+      "/images/products/TOY-GEAR-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "TOY-GEAR-005_FRONT",
+      "TOY-GEAR-005_ANGLE",
+      "TOY-GEAR-005_SIDE",
+      "TOY-GEAR-005_REAR",
+      "TOY-GEAR-005_DETAIL"
+    ]
   },
   {
-    id: "DM034",
-    name: "Batman Edge Shelf Sitter",
-    category: "Figures & Miniatures",
-    description: "Dark Knight stylized vigilante figure perched pensively with legs dangling over shelves or monitors.",
-    material: "PLA",
-    price: "From ₹279",
-    startingPrice: "₹279 (Incl. GST)",
-    numericPrice: 279,
-    gstIncluded: true,
-    badge: "HERO",
-    rating: 4.8,
-    reviewsCount: 119,
-    sizes: [
-      { name: "Small", dimensions: "55 × 50 × 90 mm", price: "₹279 (Incl. GST)", numericPrice: 279 },
-      { name: "Medium", dimensions: "75 × 65 × 120 mm", price: "₹379 (Incl. GST)", numericPrice: 379 },
-      { name: "Large", dimensions: "100 × 85 × 160 mm", price: "₹529 (Incl. GST)", numericPrice: 529 }
+    "id": "FLX-DRAGON-001",
+    "name": "Articulated Imperial Dragon",
+    "category": "Articulated / Flexi Models",
+    "description": "Legendary print-in-place flexi imperial dragon with 38 articulated vertebrae segments, posable legs, and whiskers.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "BESTSELLER",
+    "rating": 4.9,
+    "reviewsCount": 312,
+    "sizes": [
+      {
+        "name": "Small (30cm)",
+        "dimensions": "300 × 55 × 40 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium (45cm)",
+        "dimensions": "450 × 75 × 55 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      },
+      {
+        "name": "Large (60cm)",
+        "dimensions": "600 × 95 × 70 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749
+      }
     ],
-    images: [
-      "/images/products/DM034_front.png",
-      "/images/products/DM034_angle.png",
-      "/images/products/DM034_side.png",
-      "/images/products/DM034_detail.png",
-      "/images/products/DM034_lifestyle.png"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~9.5 hours",
+      "weight": "190g"
+    },
+    "tags": [
+      "dragon",
+      "articulated",
+      "flexi",
+      "print in place",
+      "mythical",
+      "fidget"
     ],
-    video: "/videos/DM034_turntable.webm",
-    specs: { infill: "20% Grid", layerHeight: "0.12mm Ultra Detail", printTime: "~5 hours", weight: "90g" },
-    tags: ["batman", "shelf sitter", "dc", "superhero", "monitor sitter"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/FLX-DRAGON-001_FRONT.jpg",
+      "/images/products/FLX-DRAGON-001_ANGLE.jpg",
+      "/images/products/FLX-DRAGON-001_SIDE.jpg",
+      "/images/products/FLX-DRAGON-001_REAR.jpg",
+      "/images/products/FLX-DRAGON-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "FLX-DRAGON-001_FRONT",
+      "FLX-DRAGON-001_ANGLE",
+      "FLX-DRAGON-001_SIDE",
+      "FLX-DRAGON-001_REAR",
+      "FLX-DRAGON-001_DETAIL"
+    ]
   },
   {
-    id: "DM035",
-    name: "Premium 3D Astronaut Bear",
-    category: "Figures & Miniatures",
-    description: "Futuristic teddy bear in full spacesuit gear with reflective visor and life-support jetpack detailing.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: "FAVORITE",
-    rating: 4.9,
-    reviewsCount: 154,
-    sizes: [
-      { name: "Small", dimensions: "65 × 55 × 85 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Medium", dimensions: "90 × 75 × 120 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Large", dimensions: "120 × 100 × 160 mm", price: "₹549 (Incl. GST)", numericPrice: 549 }
+    "id": "FLX-SKEL-002",
+    "name": "Articulated Flexi Skeleton Fidget",
+    "category": "Articulated / Flexi Models",
+    "description": "Playful poseable human skeleton model with ball-jointed limbs and spine, designed to slump, sit, and dance on desk.",
+    "material": "PLA",
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "numericPrice": 279,
+    "gstIncluded": true,
+    "badge": "VIRAL",
+    "rating": 4.9,
+    "reviewsCount": 184,
+    "sizes": [
+      {
+        "name": "Small (14cm)",
+        "dimensions": "45 × 25 × 140 mm",
+        "price": "₹279 (Incl. GST)",
+        "numericPrice": 279
+      },
+      {
+        "name": "Medium (19cm)",
+        "dimensions": "60 × 35 × 190 mm",
+        "price": "₹369 (Incl. GST)",
+        "numericPrice": 369
+      },
+      {
+        "name": "Large (25cm)",
+        "dimensions": "80 × 45 × 250 mm",
+        "price": "₹489 (Incl. GST)",
+        "numericPrice": 489
+      }
     ],
-    images: [
-      "/images/products/DM035_front.jpg",
-      "/images/products/DM035_angle.jpg",
-      "/images/products/DM035_side.jpg",
-      "/images/products/DM035_detail.jpg",
-      "/images/products/DM035_lifestyle.jpg"
+    "specs": {
+      "infill": "30% Grid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~4.5 hours",
+      "weight": "75g"
+    },
+    "tags": [
+      "skeleton",
+      "flexi",
+      "articulated",
+      "spooky",
+      "fidget",
+      "desk sitter"
     ],
-    video: "/videos/DM035_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.16mm Precision", printTime: "~5.5 hours", weight: "125g" },
-    tags: ["astronaut", "bear", "space", "figurine", "cute", "cosmonaut"],
-    featured: true
-  },
-
-  // ==========================================
-  // 8. PLANTERS & VASES (5 models)
-  // ==========================================
-  {
-    id: "DM036",
-    name: "Parametric Geometric Planter Pot",
-    category: "Planters & Vases",
-    description: "Modern faceted succulent planter featuring hidden drainage mesh and matching drip saucer.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 205,
-    sizes: [
-      { name: "Small", dimensions: "85 × 85 × 75 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Medium", dimensions: "120 × 120 × 105 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Large", dimensions: "160 × 160 × 140 mm", price: "₹499 (Incl. GST)", numericPrice: 499 }
+    "featured": true,
+    "images": [
+      "/images/products/FLX-SKEL-002_FRONT.jpg",
+      "/images/products/FLX-SKEL-002_ANGLE.jpg",
+      "/images/products/FLX-SKEL-002_SIDE.jpg",
+      "/images/products/FLX-SKEL-002_REAR.jpg",
+      "/images/products/FLX-SKEL-002_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM036_front.jpg",
-      "/images/products/DM036_angle.jpg",
-      "/images/products/DM036_side.jpg",
-      "/images/products/DM036_detail.jpg",
-      "/images/products/DM036_lifestyle.jpg"
-    ],
-    video: "/videos/DM036_turntable.webm",
-    specs: { infill: "18% Gyroid", layerHeight: "0.20mm Standard", printTime: "~5 hours", weight: "110g" },
-    tags: ["planter", "pot", "succulent", "geometric", "plant", "garden"],
-    featured: true
-  },
-  {
-    id: "DM037",
-    name: "Fluted Self-Watering Indoor Planter",
-    category: "Planters & Vases",
-    description: "Two-piece sub-irrigation planter with water level inspection slit and capillary wicking insert.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 68,
-    sizes: [
-      { name: "Small", dimensions: "100 × 100 × 95 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Medium", dimensions: "135 × 135 × 130 mm", price: "₹429 (Incl. GST)", numericPrice: 429 },
-      { name: "Large", dimensions: "175 × 175 × 165 mm", price: "₹599 (Incl. GST)", numericPrice: 599 }
-    ],
-    images: [
-      "/images/products/DM037_front.jpg",
-      "/images/products/DM037_angle.jpg",
-      "/images/products/DM037_side.jpg",
-      "/images/products/DM037_detail.jpg",
-      "/images/products/DM037_lifestyle.jpg"
-    ],
-    video: "/videos/DM037_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.16mm Watertight", printTime: "~6.5 hours", weight: "175g" },
-    tags: ["self-watering", "planter", "indoor", "fluted", "herbs"],
-    featured: false
+    "imageIds": [
+      "FLX-SKEL-002_FRONT",
+      "FLX-SKEL-002_ANGLE",
+      "FLX-SKEL-002_SIDE",
+      "FLX-SKEL-002_REAR",
+      "FLX-SKEL-002_DETAIL"
+    ]
   },
   {
-    id: "DM038",
-    name: "Origami Faceted Ceramic-Style Vase",
-    category: "Planters & Vases",
-    description: "Sharp geometric crease-patterned centerpiece vase designed for dried pampas grass and flora.",
-    material: "PLA",
-    price: "From ₹349",
-    startingPrice: "₹349 (Incl. GST)",
-    numericPrice: 349,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 53,
-    sizes: [
-      { name: "Small", dimensions: "80 × 80 × 150 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Medium", dimensions: "110 × 110 × 200 mm", price: "₹499 (Incl. GST)", numericPrice: 499 },
-      { name: "Large", dimensions: "145 × 145 × 260 mm", price: "₹699 (Incl. GST)", numericPrice: 699 }
+    "id": "FLX-BIRD-003",
+    "name": "Articulated Cockatoo Bird Fidget",
+    "category": "Articulated / Flexi Models",
+    "description": "Charming flexible cockatoo featuring crest plumage articulation and tail feather flex segments.",
+    "material": "PLA",
+    "price": "From ₹269",
+    "startingPrice": "₹269 (Incl. GST)",
+    "numericPrice": 269,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 91,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "120 × 45 × 40 mm",
+        "price": "₹269 (Incl. GST)",
+        "numericPrice": 269
+      },
+      {
+        "name": "Medium",
+        "dimensions": "160 × 60 × 55 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Large",
+        "dimensions": "200 × 75 × 70 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      }
     ],
-    images: [
-      "/images/products/DM038_front.jpg",
-      "/images/products/DM038_angle.jpg",
-      "/images/products/DM038_side.jpg",
-      "/images/products/DM038_detail.jpg",
-      "/images/products/DM038_lifestyle.jpg"
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~4.0 hours",
+      "weight": "85g"
+    },
+    "tags": [
+      "cockatoo",
+      "bird",
+      "articulated",
+      "flexi",
+      "animal"
     ],
-    video: "/videos/DM038_turntable.webm",
-    specs: { infill: "Spiral Vase Mode", layerHeight: "0.24mm High Flow", printTime: "~3 hours", weight: "90g" },
-    tags: ["vase", "origami", "faceted", "ceramic style", "decor"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/FLX-BIRD-003_FRONT.jpg",
+      "/images/products/FLX-BIRD-003_ANGLE.jpg",
+      "/images/products/FLX-BIRD-003_SIDE.jpg",
+      "/images/products/FLX-BIRD-003_REAR.jpg",
+      "/images/products/FLX-BIRD-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "FLX-BIRD-003_FRONT",
+      "FLX-BIRD-003_ANGLE",
+      "FLX-BIRD-003_SIDE",
+      "FLX-BIRD-003_REAR",
+      "FLX-BIRD-003_DETAIL"
+    ]
   },
   {
-    id: "DM039",
-    name: "Modern Spiral Wall-Hanging Planter",
-    category: "Planters & Vases",
-    description: "Conical spiral vessel with built-in keyhole wall bracket for trailing ivy and succulents.",
-    material: "PLA",
-    price: "From ₹279",
-    startingPrice: "₹279 (Incl. GST)",
-    numericPrice: 279,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 47,
-    sizes: [
-      { name: "Small", dimensions: "90 × 75 × 130 mm", price: "₹279 (Incl. GST)", numericPrice: 279 },
-      { name: "Medium", dimensions: "120 × 95 × 175 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Large", dimensions: "155 × 120 × 225 mm", price: "₹549 (Incl. GST)", numericPrice: 549 }
+    "id": "FLX-CAT-004",
+    "name": "Kawaii Articulated Pink Cat",
+    "category": "Articulated / Flexi Models",
+    "description": "Cute print-in-place chibi feline with flexible undulating tail, head swivel, and posable front paws.",
+    "material": "PLA",
+    "price": "From ₹249",
+    "startingPrice": "₹249 (Incl. GST)",
+    "numericPrice": 249,
+    "gstIncluded": true,
+    "badge": "CUTE",
+    "rating": 4.9,
+    "reviewsCount": 148,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "90 × 45 × 40 mm",
+        "price": "₹249 (Incl. GST)",
+        "numericPrice": 249
+      },
+      {
+        "name": "Medium",
+        "dimensions": "125 × 60 × 55 mm",
+        "price": "₹329 (Incl. GST)",
+        "numericPrice": 329
+      },
+      {
+        "name": "Large",
+        "dimensions": "160 × 75 × 70 mm",
+        "price": "₹429 (Incl. GST)",
+        "numericPrice": 429
+      }
     ],
-    images: [
-      "/images/products/DM039_front.jpg",
-      "/images/products/DM039_angle.jpg",
-      "/images/products/DM039_side.jpg",
-      "/images/products/DM039_detail.jpg",
-      "/images/products/DM039_lifestyle.jpg"
+    "specs": {
+      "infill": "20% Concentric",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~3.8 hours",
+      "weight": "70g"
+    },
+    "tags": [
+      "cat",
+      "kawaii",
+      "flexi",
+      "articulated",
+      "pet",
+      "pink"
     ],
-    video: "/videos/DM039_turntable.webm",
-    specs: { infill: "25% Grid", layerHeight: "0.20mm Standard", printTime: "~5.5 hours", weight: "130g" },
-    tags: ["wall planter", "hanging", "spiral", "succulent", "ivy"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/FLX-CAT-004_FRONT.jpg",
+      "/images/products/FLX-CAT-004_ANGLE.jpg",
+      "/images/products/FLX-CAT-004_SIDE.jpg",
+      "/images/products/FLX-CAT-004_REAR.jpg",
+      "/images/products/FLX-CAT-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "FLX-CAT-004_FRONT",
+      "FLX-CAT-004_ANGLE",
+      "FLX-CAT-004_SIDE",
+      "FLX-CAT-004_REAR",
+      "FLX-CAT-004_DETAIL"
+    ]
   },
   {
-    id: "DM040",
-    name: "Voronoi Lattice Decorative Flower Pot",
-    category: "Planters & Vases",
-    description: "Dual-layer planter featuring an external cellular Voronoi cage with solid inner soil liner.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: "UNIQUE",
-    rating: 4.9,
-    reviewsCount: 92,
-    sizes: [
-      { name: "Small", dimensions: "95 × 95 × 85 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Medium", dimensions: "130 × 130 × 115 mm", price: "₹429 (Incl. GST)", numericPrice: 429 },
-      { name: "Large", dimensions: "170 × 170 × 150 mm", price: "₹599 (Incl. GST)", numericPrice: 599 }
+    "id": "FLX-OCTO-005",
+    "name": "Articulated Kraken Octopus",
+    "category": "Articulated / Flexi Models",
+    "description": "Multi-jointed sea creature with 8 tentacles curling freely in print-in-place ball sockets for tactile relaxation.",
+    "material": "PLA",
+    "price": "From ₹269",
+    "startingPrice": "₹269 (Incl. GST)",
+    "numericPrice": 269,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 115,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "110 × 110 × 35 mm",
+        "price": "₹269 (Incl. GST)",
+        "numericPrice": 269
+      },
+      {
+        "name": "Medium",
+        "dimensions": "150 × 150 × 50 mm",
+        "price": "₹369 (Incl. GST)",
+        "numericPrice": 369
+      },
+      {
+        "name": "Large",
+        "dimensions": "190 × 190 × 65 mm",
+        "price": "₹489 (Incl. GST)",
+        "numericPrice": 489
+      }
     ],
-    images: [
-      "/images/products/DM040_front.jpg",
-      "/images/products/DM040_angle.jpg",
-      "/images/products/DM040_side.jpg",
-      "/images/products/DM040_detail.jpg",
-      "/images/products/DM040_lifestyle.jpg"
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~5.2 hours",
+      "weight": "110g"
+    },
+    "tags": [
+      "octopus",
+      "kraken",
+      "flexi",
+      "articulated",
+      "sea life"
     ],
-    video: "/videos/DM040_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.16mm Precision", printTime: "~6 hours", weight: "145g" },
-    tags: ["voronoi", "pot", "flower pot", "lattice", "planter"],
-    featured: false
-  },
-
-  // ==========================================
-  // 9. LIGHTING & DECORATIVE (5 models)
-  // ==========================================
-  {
-    id: "DM041",
-    name: "Spiral Shadow Lantern Lampshade",
-    category: "Lighting & Decorative",
-    description: "Helical slotted lampshade projecting hypnotic geometric shadow vortexes across surrounding walls.",
-    material: "PLA",
-    price: "From ₹349",
-    startingPrice: "₹349 (Incl. GST)",
-    numericPrice: 349,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 168,
-    sizes: [
-      { name: "Small", dimensions: "90 × 90 × 120 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Medium", dimensions: "130 × 130 × 170 mm", price: "₹499 (Incl. GST)", numericPrice: 499 },
-      { name: "Large", dimensions: "170 × 170 × 230 mm", price: "₹699 (Incl. GST)", numericPrice: 699 }
+    "featured": false,
+    "images": [
+      "/images/products/FLX-OCTO-005_FRONT.jpg",
+      "/images/products/FLX-OCTO-005_ANGLE.jpg",
+      "/images/products/FLX-OCTO-005_SIDE.jpg",
+      "/images/products/FLX-OCTO-005_REAR.jpg",
+      "/images/products/FLX-OCTO-005_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM041_front.jpg",
-      "/images/products/DM041_angle.jpg",
-      "/images/products/DM041_side.jpg",
-      "/images/products/DM041_detail.jpg",
-      "/images/products/DM041_lifestyle.jpg"
-    ],
-    video: "/videos/DM041_turntable.webm",
-    specs: { infill: "100% Solid Perimeters", layerHeight: "0.16mm Precision", printTime: "~6.5 hours", weight: "150g" },
-    tags: ["lamp", "lantern", "shadows", "spiral", "lighting", "ambient"],
-    featured: true
+    "imageIds": [
+      "FLX-OCTO-005_FRONT",
+      "FLX-OCTO-005_ANGLE",
+      "FLX-OCTO-005_SIDE",
+      "FLX-OCTO-005_REAR",
+      "FLX-OCTO-005_DETAIL"
+    ]
   },
   {
-    id: "DM042",
-    name: "Lithophane Night Light Housing & Frame",
-    category: "Lighting & Decorative",
-    description: "Curved backlit photo frame engineered to hold 100×150mm custom 3D printed lithophane panels.",
-    material: "PLA",
-    price: "From ₹399",
-    startingPrice: "₹399 (Incl. GST)",
-    numericPrice: 399,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 53,
-    sizes: [
-      { name: "Desktop", dimensions: "120 × 60 × 140 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Wide Frame", dimensions: "165 × 70 × 185 mm", price: "₹549 (Incl. GST)", numericPrice: 549 }
+    "id": "FIG-SPIDER-001",
+    "name": "Spider-Man Web-Slinger Collectible Figure",
+    "category": "Figures & Pop Culture",
+    "description": "Premium dynamic 3D printed Spider-Man collectible statue captured mid-perch with crisp web suit textures and defined musculature.",
+    "material": "PLA",
+    "price": "From ₹499",
+    "startingPrice": "₹499 (Incl. GST)",
+    "numericPrice": 499,
+    "gstIncluded": true,
+    "badge": "COLLECTIBLE",
+    "rating": 5,
+    "reviewsCount": 240,
+    "sizes": [
+      {
+        "name": "Small (12cm)",
+        "dimensions": "70 × 65 × 120 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Medium (18cm)",
+        "dimensions": "105 × 95 × 180 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      },
+      {
+        "name": "Large (24cm)",
+        "dimensions": "140 × 125 × 240 mm",
+        "price": "₹949 (Incl. GST)",
+        "numericPrice": 949
+      }
     ],
-    images: [
-      "/images/products/DM042_front.jpg",
-      "/images/products/DM042_angle.jpg",
-      "/images/products/DM042_side.jpg",
-      "/images/products/DM042_detail.jpg",
-      "/images/products/DM042_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~10.5 hours",
+      "weight": "210g"
+    },
+    "tags": [
+      "spiderman",
+      "marvel",
+      "superhero",
+      "figure",
+      "statue",
+      "collectible",
+      "avengers"
     ],
-    video: "/videos/DM042_turntable.webm",
-    specs: { infill: "100% Solid Diffuser", layerHeight: "0.12mm Ultra Detail", printTime: "~7 hours", weight: "140g" },
-    tags: ["lithophane", "night light", "photo frame", "backlit", "custom photo"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/FIG-SPIDER-001_FRONT.jpg",
+      "/images/products/FIG-SPIDER-001_ANGLE.jpg",
+      "/images/products/FIG-SPIDER-001_SIDE.jpg",
+      "/images/products/FIG-SPIDER-001_REAR.jpg",
+      "/images/products/FIG-SPIDER-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "FIG-SPIDER-001_FRONT",
+      "FIG-SPIDER-001_ANGLE",
+      "FIG-SPIDER-001_SIDE",
+      "FIG-SPIDER-001_REAR",
+      "FIG-SPIDER-001_DETAIL"
+    ]
   },
   {
-    id: "DM043",
-    name: "Moon Phase Ambient LED Lamp Sculpture",
-    category: "Lighting & Decorative",
-    description: "Lunar textured orb lamp with realistic topography and hidden USB-C LED puck chamber.",
-    material: "PLA",
-    price: "From ₹449",
-    startingPrice: "₹449 (Incl. GST)",
-    numericPrice: 449,
-    gstIncluded: true,
-    badge: "MAGICAL",
-    rating: 4.9,
-    reviewsCount: 112,
-    sizes: [
-      { name: "Compact", dimensions: "100 × 100 × 110 mm", price: "₹449 (Incl. GST)", numericPrice: 449 },
-      { name: "Standard", dimensions: "140 × 140 × 155 mm", price: "₹649 (Incl. GST)", numericPrice: 649 },
-      { name: "Statement", dimensions: "180 × 180 × 200 mm", price: "₹899 (Incl. GST)", numericPrice: 899 }
+    "id": "FIG-BATMAN-002",
+    "name": "Batman Dark Knight Gotham Display Figure",
+    "category": "Figures & Pop Culture",
+    "description": "Stylized Cubix3D Batman display figure with iconic cowl, utility belt, and sweeping cape silhouette, sculpted for display shelves.",
+    "material": "PLA",
+    "price": "From ₹499",
+    "startingPrice": "₹499 (Incl. GST)",
+    "numericPrice": 499,
+    "gstIncluded": true,
+    "badge": "COLLECTIBLE",
+    "rating": 4.9,
+    "reviewsCount": 195,
+    "sizes": [
+      {
+        "name": "Small (12cm)",
+        "dimensions": "75 × 60 × 120 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Medium (18cm)",
+        "dimensions": "110 × 90 × 180 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      },
+      {
+        "name": "Large (24cm)",
+        "dimensions": "145 × 120 × 240 mm",
+        "price": "₹949 (Incl. GST)",
+        "numericPrice": 949
+      }
     ],
-    images: [
-      "/images/products/DM043_front.jpg",
-      "/images/products/DM043_angle.jpg",
-      "/images/products/DM043_side.jpg",
-      "/images/products/DM043_detail.jpg",
-      "/images/products/DM043_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~11.0 hours",
+      "weight": "230g"
+    },
+    "tags": [
+      "batman",
+      "dc",
+      "dark knight",
+      "superhero",
+      "figure",
+      "collectible",
+      "gotham"
     ],
-    video: "/videos/DM043_turntable.webm",
-    specs: { infill: "100% Solid Shell", layerHeight: "0.12mm Ultra Precision", printTime: "~10 hours", weight: "210g" },
-    tags: ["moon lamp", "lunar", "orb", "led", "ambient", "night lamp"],
-    featured: true
+    "featured": true,
+    "images": [
+      "/images/products/FIG-BATMAN-002_FRONT.jpg",
+      "/images/products/FIG-BATMAN-002_ANGLE.jpg",
+      "/images/products/FIG-BATMAN-002_SIDE.jpg",
+      "/images/products/FIG-BATMAN-002_REAR.jpg",
+      "/images/products/FIG-BATMAN-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "FIG-BATMAN-002_FRONT",
+      "FIG-BATMAN-002_ANGLE",
+      "FIG-BATMAN-002_SIDE",
+      "FIG-BATMAN-002_REAR",
+      "FIG-BATMAN-002_DETAIL"
+    ]
   },
   {
-    id: "DM044",
-    name: "Polyhedral Gemstone Desk Lamp Shroud",
-    category: "Lighting & Decorative",
-    description: "Facet-cut crystal geometric lampshade casting diffused ambient mood lighting onto nightstands.",
-    material: "PLA",
-    price: "From ₹379",
-    startingPrice: "₹379 (Incl. GST)",
-    numericPrice: 379,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 42,
-    sizes: [
-      { name: "Small", dimensions: "110 × 110 × 130 mm", price: "₹379 (Incl. GST)", numericPrice: 379 },
-      { name: "Medium", dimensions: "145 × 145 × 175 mm", price: "₹529 (Incl. GST)", numericPrice: 529 }
+    "id": "FIG-DEADPOOL-003",
+    "name": "Deadpool Dual-Katana Antihero Figure",
+    "category": "Figures & Pop Culture",
+    "description": "Humorous and dynamic Deadpool figurine armed with twin back-mounted katanas, tactical combat pouches, and signature mask expression.",
+    "material": "PLA",
+    "price": "From ₹499",
+    "startingPrice": "₹499 (Incl. GST)",
+    "numericPrice": 499,
+    "gstIncluded": true,
+    "badge": "COLLECTIBLE",
+    "rating": 4.9,
+    "reviewsCount": 182,
+    "sizes": [
+      {
+        "name": "Small (12cm)",
+        "dimensions": "70 × 60 × 120 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Medium (18cm)",
+        "dimensions": "105 × 90 × 180 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      },
+      {
+        "name": "Large (24cm)",
+        "dimensions": "140 × 120 × 240 mm",
+        "price": "₹949 (Incl. GST)",
+        "numericPrice": 949
+      }
     ],
-    images: [
-      "/images/products/DM044_front.jpg",
-      "/images/products/DM044_angle.jpg",
-      "/images/products/DM044_side.jpg",
-      "/images/products/DM044_detail.jpg",
-      "/images/products/DM044_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~10.0 hours",
+      "weight": "215g"
+    },
+    "tags": [
+      "deadpool",
+      "marvel",
+      "antihero",
+      "katanas",
+      "figure",
+      "collectible",
+      "wadewilson"
     ],
-    video: "/videos/DM044_turntable.webm",
-    specs: { infill: "Vase Mode Translucent", layerHeight: "0.20mm", printTime: "~4 hours", weight: "115g" },
-    tags: ["crystal", "gemstone", "geometric", "shroud", "lampshade"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/FIG-DEADPOOL-003_FRONT.jpg",
+      "/images/products/FIG-DEADPOOL-003_ANGLE.jpg",
+      "/images/products/FIG-DEADPOOL-003_SIDE.jpg",
+      "/images/products/FIG-DEADPOOL-003_REAR.jpg",
+      "/images/products/FIG-DEADPOOL-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "FIG-DEADPOOL-003_FRONT",
+      "FIG-DEADPOOL-003_ANGLE",
+      "FIG-DEADPOOL-003_SIDE",
+      "FIG-DEADPOOL-003_REAR",
+      "FIG-DEADPOOL-003_DETAIL"
+    ]
   },
   {
-    id: "DM045",
-    name: "Aurora Borealis Wave Lamp Base",
-    category: "Lighting & Decorative",
-    description: "Parametric undulating ribbon light sculpture dispersing soothing wave reflections across the ceiling.",
-    material: "PLA",
-    price: "From ₹499",
-    startingPrice: "₹499 (Incl. GST)",
-    numericPrice: 499,
-    gstIncluded: true,
-    badge: "PREMIUM",
-    rating: 4.8,
-    reviewsCount: 63,
-    sizes: [
-      { name: "Medium", dimensions: "120 × 120 × 160 mm", price: "₹499 (Incl. GST)", numericPrice: 499 },
-      { name: "Tall", dimensions: "150 × 150 × 220 mm", price: "₹699 (Incl. GST)", numericPrice: 699 }
+    "id": "FIG-IRONMAN-004",
+    "name": "Iron Man Mark III Collector Armor Bust",
+    "category": "Figures & Pop Culture",
+    "description": "Detailed mechanical Iron Man display bust featuring segmented armor plates, arc reactor chest emblem, and aerodynamic helmet geometry.",
+    "material": "PLA",
+    "price": "From ₹549",
+    "startingPrice": "₹549 (Incl. GST)",
+    "numericPrice": 549,
+    "gstIncluded": true,
+    "badge": "ICONIC",
+    "rating": 5,
+    "reviewsCount": 210,
+    "sizes": [
+      {
+        "name": "Small (12cm)",
+        "dimensions": "80 × 65 × 120 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      },
+      {
+        "name": "Medium (18cm)",
+        "dimensions": "120 × 95 × 180 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749
+      },
+      {
+        "name": "Large (24cm)",
+        "dimensions": "160 × 130 × 240 mm",
+        "price": "₹999 (Incl. GST)",
+        "numericPrice": 999
+      }
     ],
-    images: [
-      "/images/products/DM045_front.jpg",
-      "/images/products/DM045_angle.jpg",
-      "/images/products/DM045_side.jpg",
-      "/images/products/DM045_detail.jpg",
-      "/images/products/DM045_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Tri-Hexagon",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~11.5 hours",
+      "weight": "250g"
+    },
+    "tags": [
+      "ironman",
+      "tony stark",
+      "avengers",
+      "marvel",
+      "bust",
+      "armor",
+      "collectible"
     ],
-    video: "/videos/DM045_turntable.webm",
-    specs: { infill: "15% Gyroid", layerHeight: "0.16mm Precision", printTime: "~8 hours", weight: "190g" },
-    tags: ["aurora", "wave", "ribbon", "lamp", "sculpture", "diffuser"],
-    featured: false
-  },
-
-  // ==========================================
-  // 10. KEYCHAINS & SMALL GIFTS (5 models)
-  // ==========================================
-  {
-    id: "DM046",
-    name: "LED Clicky Keyboard Switch Keychain",
-    category: "Keychains & Small Gifts",
-    description: "Functional mechanical switch keychain that illuminates an integrated micro LED upon tactile click.",
-    material: "PLA",
-    price: "From ₹149",
-    startingPrice: "₹149 (Incl. GST)",
-    numericPrice: 149,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 310,
-    sizes: [
-      { name: "Single Key", dimensions: "30 × 24 × 26 mm", price: "₹149 (Incl. GST)", numericPrice: 149 },
-      { name: "Dual Key Pair", dimensions: "55 × 24 × 26 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "4-Key Fidget Pad", dimensions: "55 × 50 × 26 mm", price: "₹399 (Incl. GST)", numericPrice: 399 }
+    "featured": true,
+    "images": [
+      "/images/products/FIG-IRONMAN-004_FRONT.jpg",
+      "/images/products/FIG-IRONMAN-004_ANGLE.jpg",
+      "/images/products/FIG-IRONMAN-004_SIDE.jpg",
+      "/images/products/FIG-IRONMAN-004_REAR.jpg",
+      "/images/products/FIG-IRONMAN-004_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM046_front.jpg",
-      "/images/products/DM046_angle.jpg",
-      "/images/products/DM046_side.jpg",
-      "/images/products/DM046_detail.jpg",
-      "/images/products/DM046_lifestyle.jpg"
-    ],
-    video: "/videos/DM046_turntable.webm",
-    specs: { infill: "40% Grid (Durable Casing)", layerHeight: "0.16mm Precision", printTime: "~40 mins", weight: "18g" },
-    tags: ["keychain", "keyboard", "clicky", "switch", "led", "gift"],
-    featured: true
-  },
-  {
-    id: "DM047",
-    name: "Spider-Man & Venom Mask Dual-Relief Keychain",
-    category: "Keychains & Small Gifts",
-    description: "Two-in-one split face relief token featuring classic webbed Spidey on one side and jagged-toothed Venom on the other.",
-    material: "PLA",
-    price: "From ₹129",
-    startingPrice: "₹129 (Incl. GST)",
-    numericPrice: 129,
-    gstIncluded: true,
-    badge: "POPULAR",
-    rating: 4.9,
-    reviewsCount: 245,
-    sizes: [
-      { name: "Standard", dimensions: "50 × 38 × 8 mm", price: "₹129 (Incl. GST)", numericPrice: 129 },
-      { name: "Large", dimensions: "65 × 50 × 10 mm", price: "₹179 (Incl. GST)", numericPrice: 179 }
-    ],
-    images: [
-      "/images/products/DM047_front.jpg",
-      "/images/products/DM047_angle.jpg",
-      "/images/products/DM047_side.jpg",
-      "/images/products/DM047_detail.jpg",
-      "/images/products/DM047_lifestyle.jpg"
-    ],
-    video: "/videos/DM047_turntable.webm",
-    specs: { infill: "100% Solid", layerHeight: "0.12mm Ultra Detail", printTime: "~1 hour", weight: "22g" },
-    tags: ["spiderman", "venom", "marvel", "keychain", "mask", "relief"],
-    featured: true
+    "imageIds": [
+      "FIG-IRONMAN-004_FRONT",
+      "FIG-IRONMAN-004_ANGLE",
+      "FIG-IRONMAN-004_SIDE",
+      "FIG-IRONMAN-004_REAR",
+      "FIG-IRONMAN-004_DETAIL"
+    ]
   },
   {
-    id: "DM048",
-    name: "3D Football Cleat & Ball Keychain",
-    category: "Keychains & Small Gifts",
-    description: "Microscopic replica spiked soccer shoe with textured football charm, molded with key-ring eyelet.",
-    material: "PLA",
-    price: "From ₹129",
-    startingPrice: "₹129 (Incl. GST)",
-    numericPrice: 129,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.8,
-    reviewsCount: 130,
-    sizes: [
-      { name: "Standard", dimensions: "55 × 20 × 22 mm", price: "₹129 (Incl. GST)", numericPrice: 129 },
-      { name: "Large Backpack Tag", dimensions: "75 × 28 × 30 mm", price: "₹189 (Incl. GST)", numericPrice: 189 }
+    "id": "FIG-VENOM-005",
+    "name": "Venom Symbiote Display Sculpture",
+    "category": "Figures & Pop Culture",
+    "description": "Dramatic collector's Venom symbiote mask display sculpture showcasing ferocious sharp fangs, organic tendril textures, and flared tongue.",
+    "material": "PLA",
+    "price": "From ₹499",
+    "startingPrice": "₹499 (Incl. GST)",
+    "numericPrice": 499,
+    "gstIncluded": true,
+    "badge": "HOT",
+    "rating": 4.9,
+    "reviewsCount": 168,
+    "sizes": [
+      {
+        "name": "Small (12cm)",
+        "dimensions": "75 × 70 × 120 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Medium (18cm)",
+        "dimensions": "110 × 105 × 180 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      },
+      {
+        "name": "Large (24cm)",
+        "dimensions": "150 × 140 × 240 mm",
+        "price": "₹949 (Incl. GST)",
+        "numericPrice": 949
+      }
     ],
-    images: [
-      "/images/products/DM048_front.jpg",
-      "/images/products/DM048_angle.jpg",
-      "/images/products/DM048_side.jpg",
-      "/images/products/DM048_detail.jpg",
-      "/images/products/DM048_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~10.8 hours",
+      "weight": "240g"
+    },
+    "tags": [
+      "venom",
+      "symbiote",
+      "marvel",
+      "spiderman",
+      "statue",
+      "sculpture",
+      "villain"
     ],
-    video: "/videos/DM048_turntable.webm",
-    specs: { infill: "30% Grid", layerHeight: "0.12mm Ultra Detail", printTime: "~45 mins", weight: "16g" },
-    tags: ["football", "soccer", "shoe", "cleat", "sports", "keychain"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/FIG-VENOM-005_FRONT.jpg",
+      "/images/products/FIG-VENOM-005_ANGLE.jpg",
+      "/images/products/FIG-VENOM-005_SIDE.jpg",
+      "/images/products/FIG-VENOM-005_REAR.jpg",
+      "/images/products/FIG-VENOM-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "FIG-VENOM-005_FRONT",
+      "FIG-VENOM-005_ANGLE",
+      "FIG-VENOM-005_SIDE",
+      "FIG-VENOM-005_REAR",
+      "FIG-VENOM-005_DETAIL"
+    ]
   },
   {
-    id: "DM049",
-    name: "Tibetan Guardian Motorcycle Bell",
-    category: "Keychains & Small Gifts",
-    description: "Good luck biker talisman bell with embossed roaring guardian beast and functional swinging clapper.",
-    material: "PLA",
-    price: "From ₹149",
-    startingPrice: "₹149 (Incl. GST)",
-    numericPrice: 149,
-    gstIncluded: true,
-    badge: "BIKER",
-    rating: 4.8,
-    reviewsCount: 94,
-    sizes: [
-      { name: "Compact", dimensions: "38 × 26 × 26 mm", price: "₹149 (Incl. GST)", numericPrice: 149 },
-      { name: "Cruiser Heavy-Duty", dimensions: "50 × 34 × 34 mm", price: "₹219 (Incl. GST)", numericPrice: 219 }
+    "id": "MIN-SLAYER-001",
+    "name": "Demon Slayer Flame Warrior 3D Miniature",
+    "category": "Miniatures",
+    "description": "Detailed tabletop anime miniature displaying haori flowing folds, Nichirin katana posture, and display base.",
+    "material": "PLA",
+    "price": "From ₹349",
+    "startingPrice": "₹349 (Incl. GST)",
+    "numericPrice": 349,
+    "gstIncluded": true,
+    "badge": "ANIME",
+    "rating": 4.8,
+    "reviewsCount": 124,
+    "sizes": [
+      {
+        "name": "Small (8cm)",
+        "dimensions": "50 × 40 × 80 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Medium (12cm)",
+        "dimensions": "75 × 60 × 120 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Large (16cm)",
+        "dimensions": "100 × 80 × 160 mm",
+        "price": "₹579 (Incl. GST)",
+        "numericPrice": 579
+      }
     ],
-    images: [
-      "/images/products/DM049_front.jpg",
-      "/images/products/DM049_angle.jpg",
-      "/images/products/DM049_side.jpg",
-      "/images/products/DM049_detail.jpg",
-      "/images/products/DM049_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Grid",
+      "layerHeight": "0.10mm High Detail",
+      "printTime": "~6.5 hours",
+      "weight": "95g"
+    },
+    "tags": [
+      "demon slayer",
+      "anime",
+      "miniature",
+      "tabletop",
+      "rengoku"
     ],
-    video: "/videos/DM049_turntable.webm",
-    specs: { infill: "100% Solid Resonance", layerHeight: "0.12mm Ultra Detail", printTime: "~1 hour", weight: "24g" },
-    tags: ["bell", "biker", "motorcycle", "talisman", "guardian", "good luck"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/MIN-SLAYER-001_FRONT.jpg",
+      "/images/products/MIN-SLAYER-001_ANGLE.jpg",
+      "/images/products/MIN-SLAYER-001_SIDE.jpg",
+      "/images/products/MIN-SLAYER-001_REAR.jpg",
+      "/images/products/MIN-SLAYER-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "MIN-SLAYER-001_FRONT",
+      "MIN-SLAYER-001_ANGLE",
+      "MIN-SLAYER-001_SIDE",
+      "MIN-SLAYER-001_REAR",
+      "MIN-SLAYER-001_DETAIL"
+    ]
   },
   {
-    id: "DM050",
-    name: "Micro Astronaut Space Capsule Keychain",
-    category: "Keychains & Small Gifts",
-    description: "Charming pocket spaceman figurine with golden visor accent and reinforced carabiner attachment loop.",
-    material: "PLA",
-    price: "From ₹149",
-    startingPrice: "₹149 (Incl. GST)",
-    numericPrice: 149,
-    gstIncluded: true,
-    badge: "STAFF PICK",
-    rating: 4.9,
-    reviewsCount: 168,
-    sizes: [
-      { name: "Keyring Size", dimensions: "50 × 30 × 25 mm", price: "₹149 (Incl. GST)", numericPrice: 149 },
-      { name: "Desktop Miniature", dimensions: "75 × 45 × 38 mm", price: "₹229 (Incl. GST)", numericPrice: 229 }
+    "id": "MIN-HORSE-002",
+    "name": "Low-Poly Geometric Stallion Sculpture",
+    "category": "Miniatures",
+    "description": "Faceted contemporary equestrian statue capturing muscle tension through crisp sharp planar low-poly geometry.",
+    "material": "PLA",
+    "price": "From ₹379",
+    "startingPrice": "₹379 (Incl. GST)",
+    "numericPrice": 379,
+    "gstIncluded": true,
+    "badge": "AESTHETIC",
+    "rating": 4.8,
+    "reviewsCount": 88,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "110 × 45 × 115 mm",
+        "price": "₹379 (Incl. GST)",
+        "numericPrice": 379
+      },
+      {
+        "name": "Medium",
+        "dimensions": "155 × 65 × 165 mm",
+        "price": "₹489 (Incl. GST)",
+        "numericPrice": 489
+      },
+      {
+        "name": "Large",
+        "dimensions": "200 × 85 × 215 mm",
+        "price": "₹649 (Incl. GST)",
+        "numericPrice": 649
+      }
     ],
-    images: [
-      "/images/products/DM050_front.jpg",
-      "/images/products/DM050_angle.jpg",
-      "/images/products/DM050_side.jpg",
-      "/images/products/DM050_detail.jpg",
-      "/images/products/DM050_lifestyle.jpg"
+    "specs": {
+      "infill": "15% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~6.0 hours",
+      "weight": "140g"
+    },
+    "tags": [
+      "horse",
+      "stallion",
+      "low poly",
+      "sculpture",
+      "geometric",
+      "decor"
     ],
-    video: "/videos/DM050_turntable.webm",
-    specs: { infill: "25% Gyroid", layerHeight: "0.12mm Ultra Detail", printTime: "~50 mins", weight: "20g" },
-    tags: ["astronaut", "space", "keychain", "cosmonaut", "capsule", "pocket"],
-    featured: true
-  },
-
-  // ==========================================
-  // 11. AUTOMOTIVE ACCESSORIES (5 models)
-  // ==========================================
-  {
-    id: "DM051",
-    name: "Gravity Air Vent MagSafe Phone Cradle",
-    category: "Automotive Accessories",
-    description: "Snap-fit vehicle AC vent clip with silicone-safe grip and magnetic disc recess for effortless one-handed mounting.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: "BESTSELLER",
-    rating: 4.9,
-    reviewsCount: 148,
-    sizes: [
-      { name: "Compact Vent", dimensions: "65 × 60 × 45 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Heavy-Duty SUV", dimensions: "80 × 75 × 55 mm", price: "₹329 (Incl. GST)", numericPrice: 329 }
+    "featured": false,
+    "images": [
+      "/images/products/MIN-HORSE-002_FRONT.jpg",
+      "/images/products/MIN-HORSE-002_ANGLE.jpg",
+      "/images/products/MIN-HORSE-002_SIDE.jpg",
+      "/images/products/MIN-HORSE-002_REAR.jpg",
+      "/images/products/MIN-HORSE-002_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM051_front.jpg",
-      "/images/products/DM051_angle.jpg",
-      "/images/products/DM051_side.jpg",
-      "/images/products/DM051_detail.jpg",
-      "/images/products/DM051_lifestyle.jpg"
-    ],
-    video: "/videos/DM051_turntable.webm",
-    specs: { infill: "40% High Heat Infill", layerHeight: "0.16mm Heavy Duty", printTime: "~2.5 hours", weight: "55g" },
-    tags: ["car", "magsafe", "mount", "phone holder", "air vent", "auto"],
-    featured: true
-  },
-  {
-    id: "DM052",
-    name: "Center Console Dual Cup-Holder Expander",
-    category: "Automotive Accessories",
-    description: "Heavy-duty console adapter converting standard car cup holders into oversized hydro-flask bottle holders.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: "PRACTICAL",
-    rating: 4.8,
-    reviewsCount: 104,
-    sizes: [
-      { name: "Standard", dimensions: "95 × 95 × 110 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "XL Hydro Flask", dimensions: "110 × 110 × 130 mm", price: "₹399 (Incl. GST)", numericPrice: 399 }
-    ],
-    images: [
-      "/images/products/DM052_front.jpg",
-      "/images/products/DM052_angle.jpg",
-      "/images/products/DM052_side.jpg",
-      "/images/products/DM052_detail.jpg",
-      "/images/products/DM052_lifestyle.jpg"
-    ],
-    video: "/videos/DM052_turntable.webm",
-    specs: { infill: "30% Grid", layerHeight: "0.20mm Standard", printTime: "~5.5 hours", weight: "160g" },
-    tags: ["cup holder", "expander", "car", "console", "bottle holder"],
-    featured: false
+    "imageIds": [
+      "MIN-HORSE-002_FRONT",
+      "MIN-HORSE-002_ANGLE",
+      "MIN-HORSE-002_SIDE",
+      "MIN-HORSE-002_REAR",
+      "MIN-HORSE-002_DETAIL"
+    ]
   },
   {
-    id: "DM053",
-    name: "Headrest Bag & Umbrella Hanging Hooks (Pair)",
-    category: "Automotive Accessories",
-    description: "Ergonomic under-headrest hooks engineered for groceries, heavy backpacks, and wet umbrellas.",
-    material: "PLA",
-    price: "From ₹199",
-    startingPrice: "₹199 (Incl. GST)",
-    numericPrice: 199,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.9,
-    reviewsCount: 116,
-    sizes: [
-      { name: "Standard Pair (2 Hooks)", dimensions: "115 × 45 × 35 mm", price: "₹199 (Incl. GST)", numericPrice: 199 },
-      { name: "Heavy-Duty Pair", dimensions: "140 × 55 × 45 mm", price: "₹269 (Incl. GST)", numericPrice: 269 }
+    "id": "MIN-LION-003",
+    "name": "Low-Poly Geometric Lion Figurine",
+    "category": "Miniatures",
+    "description": "Regal faceted predator bust statue featuring angular geometric mane planes and commanding shelf presence.",
+    "material": "PLA",
+    "price": "From ₹389",
+    "startingPrice": "₹389 (Incl. GST)",
+    "numericPrice": 389,
+    "gstIncluded": true,
+    "rating": 4.9,
+    "reviewsCount": 110,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "95 × 65 × 110 mm",
+        "price": "₹389 (Incl. GST)",
+        "numericPrice": 389
+      },
+      {
+        "name": "Medium",
+        "dimensions": "135 × 90 × 155 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Large",
+        "dimensions": "175 × 120 × 200 mm",
+        "price": "₹669 (Incl. GST)",
+        "numericPrice": 669
+      }
     ],
-    images: [
-      "/images/products/DM053_front.jpg",
-      "/images/products/DM053_angle.jpg",
-      "/images/products/DM053_side.jpg",
-      "/images/products/DM053_detail.jpg",
-      "/images/products/DM053_lifestyle.jpg"
+    "specs": {
+      "infill": "18% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~6.5 hours",
+      "weight": "165g"
+    },
+    "tags": [
+      "lion",
+      "low poly",
+      "geometric",
+      "sculpture",
+      "safari",
+      "statue"
     ],
-    video: "/videos/DM053_turntable.webm",
-    specs: { infill: "60% Structural (Holds 15kg)", layerHeight: "0.20mm", printTime: "~3 hours", weight: "70g" },
-    tags: ["headrest hook", "car hook", "bag hanger", "auto", "groceries"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/MIN-LION-003_FRONT.jpg",
+      "/images/products/MIN-LION-003_ANGLE.jpg",
+      "/images/products/MIN-LION-003_SIDE.jpg",
+      "/images/products/MIN-LION-003_REAR.jpg",
+      "/images/products/MIN-LION-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "MIN-LION-003_FRONT",
+      "MIN-LION-003_ANGLE",
+      "MIN-LION-003_SIDE",
+      "MIN-LION-003_REAR",
+      "MIN-LION-003_DETAIL"
+    ]
   },
   {
-    id: "DM054",
-    name: "Dashboard Sunglasses & Fastag Card Clip",
-    category: "Automotive Accessories",
-    description: "Sleek sunvisor clamp securing polarized aviators, toll cards, and parking receipts without scratching lenses.",
-    material: "PLA",
-    price: "From ₹149",
-    startingPrice: "₹149 (Incl. GST)",
-    numericPrice: 149,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.7,
-    reviewsCount: 78,
-    sizes: [
-      { name: "Single Visor Clip", dimensions: "70 × 35 × 28 mm", price: "₹149 (Incl. GST)", numericPrice: 149 },
-      { name: "Dual Visor & Card Dock", dimensions: "95 × 45 × 32 mm", price: "₹219 (Incl. GST)", numericPrice: 219 }
+    "id": "MIN-ROBOT-004",
+    "name": "Cybernetic Mecha Combat Robot Figurine",
+    "category": "Miniatures",
+    "description": "Futuristic sci-fi exoskeleton combat mech figurine featuring mechanical limb joints, armor plating, and pedestal base.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 78,
+    "sizes": [
+      {
+        "name": "Small (10cm)",
+        "dimensions": "65 × 55 × 100 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium (15cm)",
+        "dimensions": "95 × 80 × 150 mm",
+        "price": "₹529 (Incl. GST)",
+        "numericPrice": 529
+      },
+      {
+        "name": "Large (20cm)",
+        "dimensions": "130 × 110 × 200 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      }
     ],
-    images: [
-      "/images/products/DM054_front.jpg",
-      "/images/products/DM054_angle.jpg",
-      "/images/products/DM054_side.jpg",
-      "/images/products/DM054_detail.jpg",
-      "/images/products/DM054_lifestyle.jpg"
+    "specs": {
+      "infill": "25% Grid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~8.0 hours",
+      "weight": "170g"
+    },
+    "tags": [
+      "mecha",
+      "robot",
+      "sci-fi",
+      "miniature",
+      "cyberpunk"
     ],
-    video: "/videos/DM054_turntable.webm",
-    specs: { infill: "40% Spring Tension", layerHeight: "0.16mm Precision", printTime: "~1.5 hours", weight: "30g" },
-    tags: ["sunglasses clip", "visor", "car", "toll card", "fastag"],
-    featured: false
+    "featured": false,
+    "images": [
+      "/images/products/MIN-ROBOT-004_FRONT.jpg",
+      "/images/products/MIN-ROBOT-004_ANGLE.jpg",
+      "/images/products/MIN-ROBOT-004_SIDE.jpg",
+      "/images/products/MIN-ROBOT-004_REAR.jpg",
+      "/images/products/MIN-ROBOT-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "MIN-ROBOT-004_FRONT",
+      "MIN-ROBOT-004_ANGLE",
+      "MIN-ROBOT-004_SIDE",
+      "MIN-ROBOT-004_REAR",
+      "MIN-ROBOT-004_DETAIL"
+    ]
   },
   {
-    id: "DM055",
-    name: "Console Hidden Coin & Key Sorting Drawer",
-    category: "Automotive Accessories",
-    description: "Friction-fit armrest sub-tray dividing loose change, keys, and valet fobs with noise-dampening ridges.",
-    material: "PLA",
-    price: "From ₹279",
-    startingPrice: "₹279 (Incl. GST)",
-    numericPrice: 279,
-    gstIncluded: true,
-    badge: "SMART",
-    rating: 4.8,
-    reviewsCount: 82,
-    sizes: [
-      { name: "Compact", dimensions: "140 × 90 × 40 mm", price: "₹279 (Incl. GST)", numericPrice: 279 },
-      { name: "Large", dimensions: "180 × 110 × 45 mm", price: "₹379 (Incl. GST)", numericPrice: 379 }
+    "id": "MIN-BEAR-005",
+    "name": "Premium 3D Astronaut Bear Figurine",
+    "category": "Miniatures",
+    "description": "Luxury pop-art bearbrick-inspired astronaut sculpture featuring visor helmet reflections and backpack thruster details.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "POPULAR",
+    "rating": 4.9,
+    "reviewsCount": 165,
+    "sizes": [
+      {
+        "name": "Small (11cm)",
+        "dimensions": "60 × 55 × 110 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium (16cm)",
+        "dimensions": "85 × 80 × 160 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      },
+      {
+        "name": "Large (22cm)",
+        "dimensions": "115 × 110 × 220 mm",
+        "price": "₹729 (Incl. GST)",
+        "numericPrice": 729
+      }
     ],
-    images: [
-      "/images/products/DM055_front.jpg",
-      "/images/products/DM055_angle.jpg",
-      "/images/products/DM055_side.jpg",
-      "/images/products/DM055_detail.jpg",
-      "/images/products/DM055_lifestyle.jpg"
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~7.5 hours",
+      "weight": "180g"
+    },
+    "tags": [
+      "astronaut bear",
+      "bearbrick",
+      "pop art",
+      "space",
+      "figurine"
     ],
-    video: "/videos/DM055_turntable.webm",
-    specs: { infill: "20% Grid", layerHeight: "0.20mm Standard", printTime: "~4 hours", weight: "115g" },
-    tags: ["car organizer", "coins", "armrest tray", "glove box", "storage"],
-    featured: false
-  },
-
-  // ==========================================
-  // 12. CUSTOM / PERSONALIZED (5 models)
-  // ==========================================
-  {
-    id: "DM056",
-    name: "Custom 3D Dual-Color Desk Nameplate",
-    category: "Custom / Personalized",
-    description: "Precision two-tone engraved executive desk sign with bold raised typography on an angled stand.",
-    material: "PLA",
-    price: "From ₹299",
-    startingPrice: "₹299 (Incl. GST)",
-    numericPrice: 299,
-    gstIncluded: true,
-    badge: "CUSTOM",
-    rating: 5.0,
-    reviewsCount: 184,
-    sizes: [
-      { name: "Small (Up to 8 letters)", dimensions: "120 × 30 × 35 mm", price: "₹299 (Incl. GST)", numericPrice: 299 },
-      { name: "Medium (Up to 12 letters)", dimensions: "160 × 40 × 45 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Executive (Full Name + Title)", dimensions: "200 × 50 × 55 mm", price: "₹549 (Incl. GST)", numericPrice: 549 }
+    "featured": true,
+    "images": [
+      "/images/products/MIN-BEAR-005_FRONT.jpg",
+      "/images/products/MIN-BEAR-005_ANGLE.jpg",
+      "/images/products/MIN-BEAR-005_SIDE.jpg",
+      "/images/products/MIN-BEAR-005_REAR.jpg",
+      "/images/products/MIN-BEAR-005_DETAIL.jpg"
     ],
-    images: [
-      "/images/products/DM056_front.jpg",
-      "/images/products/DM056_angle.jpg",
-      "/images/products/DM056_side.jpg",
-      "/images/products/DM056_detail.jpg",
-      "/images/products/DM056_lifestyle.jpg"
-    ],
-    video: "/videos/DM056_turntable.webm",
-    specs: { infill: "25% Grid", layerHeight: "0.16mm Dual Color", printTime: "~4.5 hours", weight: "120g" },
-    tags: ["custom nameplate", "desk sign", "personalized", "office", "name tag"],
-    featured: true
-  },
-  {
-    id: "DM057",
-    name: "Personalized Monogram Desktop Signet",
-    category: "Custom / Personalized",
-    description: "Geometric 3D freestanding monogram letter sculpture customized with family initial and bevelled edge.",
-    material: "PLA",
-    price: "From ₹249",
-    startingPrice: "₹249 (Incl. GST)",
-    numericPrice: 249,
-    gstIncluded: true,
-    badge: null,
-    rating: 4.9,
-    reviewsCount: 76,
-    sizes: [
-      { name: "Small", dimensions: "80 × 30 × 90 mm", price: "₹249 (Incl. GST)", numericPrice: 249 },
-      { name: "Medium", dimensions: "115 × 35 × 130 mm", price: "₹349 (Incl. GST)", numericPrice: 349 },
-      { name: "Large", dimensions: "155 × 45 × 175 mm", price: "₹499 (Incl. GST)", numericPrice: 499 }
-    ],
-    images: [
-      "/images/products/DM057_front.jpg",
-      "/images/products/DM057_angle.jpg",
-      "/images/products/DM057_side.jpg",
-      "/images/products/DM057_detail.jpg",
-      "/images/products/DM057_lifestyle.jpg"
-    ],
-    video: "/videos/DM057_turntable.webm",
-    specs: { infill: "20% Gyroid", layerHeight: "0.16mm Precision", printTime: "~4.5 hours", weight: "130g" },
-    tags: ["monogram", "initial", "letter", "personalized", "custom gift"],
-    featured: false
+    "imageIds": [
+      "MIN-BEAR-005_FRONT",
+      "MIN-BEAR-005_ANGLE",
+      "MIN-BEAR-005_SIDE",
+      "MIN-BEAR-005_REAR",
+      "MIN-BEAR-005_DETAIL"
+    ]
   },
   {
-    id: "DM058",
-    name: "Customized Pet Silhouette Name Tag",
-    category: "Custom / Personalized",
-    description: "Lightweight weather-resistant collar medal engraved with custom pet name and emergency contact phone number.",
-    material: "PLA",
-    price: "From ₹149",
-    startingPrice: "₹149 (Incl. GST)",
-    numericPrice: 149,
-    gstIncluded: true,
-    badge: "PET LOVE",
-    rating: 4.9,
-    reviewsCount: 142,
-    sizes: [
-      { name: "Cat / Small Dog", dimensions: "35 × 30 × 4 mm", price: "₹149 (Incl. GST)", numericPrice: 149 },
-      { name: "Medium / Large Dog", dimensions: "45 × 38 × 4.5 mm", price: "₹199 (Incl. GST)", numericPrice: 199 }
+    "id": "PLT-PARAM-001",
+    "name": "Parametric Geometric Planter Pot",
+    "category": "Planters & Vases",
+    "description": "Twisted polygon succulent flower pot featuring angled geometric facet ridges and interior bottom drainage hole.",
+    "material": "PLA",
+    "price": "From ₹269",
+    "startingPrice": "₹269 (Incl. GST)",
+    "numericPrice": 269,
+    "gstIncluded": true,
+    "badge": "GREEN",
+    "rating": 4.8,
+    "reviewsCount": 94,
+    "sizes": [
+      {
+        "name": "Small (2.5\")",
+        "dimensions": "80 × 80 × 75 mm",
+        "price": "₹269 (Incl. GST)",
+        "numericPrice": 269
+      },
+      {
+        "name": "Medium (4\")",
+        "dimensions": "115 × 115 × 105 mm",
+        "price": "₹369 (Incl. GST)",
+        "numericPrice": 369
+      },
+      {
+        "name": "Large (5.5\")",
+        "dimensions": "150 × 150 × 135 mm",
+        "price": "₹479 (Incl. GST)",
+        "numericPrice": 479
+      }
     ],
-    images: [
-      "/images/products/DM058_front.png",
-      "/images/products/DM058_angle.png",
-      "/images/products/DM058_side.png",
-      "/images/products/DM058_detail.png",
-      "/images/products/DM058_lifestyle.png"
+    "specs": {
+      "infill": "20% Gyroid (Watertight)",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~4.5 hours",
+      "weight": "120g"
+    },
+    "tags": [
+      "planter",
+      "succulent",
+      "geometric",
+      "flower pot",
+      "indoor plants"
     ],
-    video: "/videos/DM058_turntable.webm",
-    specs: { infill: "100% Solid", layerHeight: "0.12mm Ultra Detail", printTime: "~30 mins", weight: "12g" },
-    tags: ["pet tag", "dog tag", "cat medal", "personalized", "collar tag"],
-    featured: true
+    "featured": false,
+    "images": [
+      "/images/products/PLT-PARAM-001_FRONT.jpg",
+      "/images/products/PLT-PARAM-001_ANGLE.jpg",
+      "/images/products/PLT-PARAM-001_SIDE.jpg",
+      "/images/products/PLT-PARAM-001_REAR.jpg",
+      "/images/products/PLT-PARAM-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "PLT-PARAM-001_FRONT",
+      "PLT-PARAM-001_ANGLE",
+      "PLT-PARAM-001_SIDE",
+      "PLT-PARAM-001_REAR",
+      "PLT-PARAM-001_DETAIL"
+    ]
   },
   {
-    id: "DM059",
-    name: "3D Spotify Audio Waveform Key Tag",
-    category: "Custom / Personalized",
-    description: "Tactile soundwave relief tag customized to physicalize your favorite song or personal voice memo.",
-    material: "PLA",
-    price: "From ₹169",
-    startingPrice: "₹169 (Incl. GST)",
-    numericPrice: 169,
-    gstIncluded: true,
-    badge: "ROMANTIC",
-    rating: 4.8,
-    reviewsCount: 96,
-    sizes: [
-      { name: "Keyring Tag (70mm)", dimensions: "70 × 22 × 5 mm", price: "₹169 (Incl. GST)", numericPrice: 169 },
-      { name: "Desk Plaque (120mm)", dimensions: "120 × 38 × 8 mm", price: "₹279 (Incl. GST)", numericPrice: 279 }
+    "id": "PLT-FLUTE-002",
+    "name": "Fluted Self-Watering Indoor Planter",
+    "category": "Planters & Vases",
+    "description": "Dual-chamber sub-irrigation planter with fluted exterior reservoir and slotted inner wick potting basket.",
+    "material": "PLA",
+    "price": "From ₹349",
+    "startingPrice": "₹349 (Incl. GST)",
+    "numericPrice": 349,
+    "gstIncluded": true,
+    "badge": "CLEVER",
+    "rating": 4.9,
+    "reviewsCount": 118,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "95 × 95 × 95 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Medium",
+        "dimensions": "130 × 130 × 130 mm",
+        "price": "₹469 (Incl. GST)",
+        "numericPrice": 469
+      },
+      {
+        "name": "Large",
+        "dimensions": "170 × 170 × 170 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
+      }
     ],
-    images: [
-      "/images/products/DM059_front.png",
-      "/images/products/DM059_angle.png",
-      "/images/products/DM059_side.png",
-      "/images/products/DM059_detail.png",
-      "/images/products/DM059_lifestyle.png"
+    "specs": {
+      "infill": "25% Concentric",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~7.0 hours",
+      "weight": "210g"
+    },
+    "tags": [
+      "planter",
+      "self-watering",
+      "fluted",
+      "indoor garden",
+      "succulent"
     ],
-    video: "/videos/DM059_turntable.webm",
-    specs: { infill: "100% Solid", layerHeight: "0.12mm Ultra Detail", printTime: "~40 mins", weight: "14g" },
-    tags: ["spotify", "soundwave", "audio code", "music", "personalized keychain"],
-    featured: false
+    "featured": true,
+    "images": [
+      "/images/products/PLT-FLUTE-002_FRONT.jpg",
+      "/images/products/PLT-FLUTE-002_ANGLE.jpg",
+      "/images/products/PLT-FLUTE-002_SIDE.jpg",
+      "/images/products/PLT-FLUTE-002_REAR.jpg",
+      "/images/products/PLT-FLUTE-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "PLT-FLUTE-002_FRONT",
+      "PLT-FLUTE-002_ANGLE",
+      "PLT-FLUTE-002_SIDE",
+      "PLT-FLUTE-002_REAR",
+      "PLT-FLUTE-002_DETAIL"
+    ]
   },
   {
-    id: "DM060",
-    name: "Custom House Number & Family Plaque",
-    category: "Custom / Personalized",
-    description: "Weatherproof architectural door number sign with floating modernist numerals and concealed screw caps.",
-    material: "PLA",
-    price: "From ₹399",
-    startingPrice: "₹399 (Incl. GST)",
-    numericPrice: 399,
-    gstIncluded: true,
-    badge: "CUSTOM",
-    rating: 4.9,
-    reviewsCount: 110,
-    sizes: [
-      { name: "Standard (Up to 3 digits)", dimensions: "180 × 100 × 12 mm", price: "₹399 (Incl. GST)", numericPrice: 399 },
-      { name: "Large Villa (Number + Name)", dimensions: "240 × 130 × 15 mm", price: "₹599 (Incl. GST)", numericPrice: 599 }
+    "id": "PLT-FACET-003",
+    "name": "Origami Faceted Ceramic-Style Vase",
+    "category": "Planters & Vases",
+    "description": "Japanese paper-folding inspired spiral faceted dry-flower vase, printed in clean silky white PLA.",
+    "material": "PLA",
+    "price": "From ₹329",
+    "startingPrice": "₹329 (Incl. GST)",
+    "numericPrice": 329,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 71,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "85 × 85 × 140 mm",
+        "price": "₹329 (Incl. GST)",
+        "numericPrice": 329
+      },
+      {
+        "name": "Medium",
+        "dimensions": "120 × 120 × 195 mm",
+        "price": "₹429 (Incl. GST)",
+        "numericPrice": 429
+      },
+      {
+        "name": "Large",
+        "dimensions": "155 × 155 × 250 mm",
+        "price": "₹569 (Incl. GST)",
+        "numericPrice": 569
+      }
     ],
-    images: [
-      "/images/products/DM060_front.png",
-      "/images/products/DM060_angle.png",
-      "/images/products/DM060_side.png",
-      "/images/products/DM060_detail.png",
-      "/images/products/DM060_lifestyle.png"
+    "specs": {
+      "infill": "Spiral Vase 1.0mm Extrusion",
+      "layerHeight": "0.24mm Vase Mode",
+      "printTime": "~3.0 hours",
+      "weight": "95g"
+    },
+    "tags": [
+      "vase",
+      "origami",
+      "faceted",
+      "ceramic style",
+      "decor"
     ],
-    video: "/videos/DM060_turntable.webm",
-    specs: { infill: "30% Grid", layerHeight: "0.16mm Weatherproof", printTime: "~6 hours", weight: "190g" },
-    tags: ["house number", "door sign", "plaque", "custom plaque", "villa", "modern"],
-    featured: true
+    "featured": false,
+    "images": [
+      "/images/products/PLT-FACET-003_FRONT.jpg",
+      "/images/products/PLT-FACET-003_ANGLE.jpg",
+      "/images/products/PLT-FACET-003_SIDE.jpg",
+      "/images/products/PLT-FACET-003_REAR.jpg",
+      "/images/products/PLT-FACET-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "PLT-FACET-003_FRONT",
+      "PLT-FACET-003_ANGLE",
+      "PLT-FACET-003_SIDE",
+      "PLT-FACET-003_REAR",
+      "PLT-FACET-003_DETAIL"
+    ]
+  },
+  {
+    "id": "PLT-SPIRAL-004",
+    "name": "Modern Spiral Wall-Hanging Planter",
+    "category": "Planters & Vases",
+    "description": "Conical spiral pocket planter with integrated flat back and keyhole slot for mounting philodendrons on walls.",
+    "material": "PLA",
+    "price": "From ₹299",
+    "startingPrice": "₹299 (Incl. GST)",
+    "numericPrice": 299,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 53,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "90 × 80 × 120 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      },
+      {
+        "name": "Medium",
+        "dimensions": "125 × 110 × 165 mm",
+        "price": "₹389 (Incl. GST)",
+        "numericPrice": 389
+      },
+      {
+        "name": "Large",
+        "dimensions": "160 × 140 × 210 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      }
+    ],
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~5.5 hours",
+      "weight": "145g"
+    },
+    "tags": [
+      "wall planter",
+      "hanging",
+      "spiral",
+      "vertical garden"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/PLT-SPIRAL-004_FRONT.jpg",
+      "/images/products/PLT-SPIRAL-004_ANGLE.jpg",
+      "/images/products/PLT-SPIRAL-004_SIDE.jpg",
+      "/images/products/PLT-SPIRAL-004_REAR.jpg",
+      "/images/products/PLT-SPIRAL-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "PLT-SPIRAL-004_FRONT",
+      "PLT-SPIRAL-004_ANGLE",
+      "PLT-SPIRAL-004_SIDE",
+      "PLT-SPIRAL-004_REAR",
+      "PLT-SPIRAL-004_DETAIL"
+    ]
+  },
+  {
+    "id": "PLT-VORONOI-005",
+    "name": "Voronoi Lattice Decorative Flower Pot",
+    "category": "Planters & Vases",
+    "description": "Dual-layer planter featuring an organic Voronoi outer mesh cage enveloping a solid contrasting inner pot.",
+    "material": "PLA",
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "numericPrice": 359,
+    "gstIncluded": true,
+    "badge": "COMPUTATIONAL",
+    "rating": 4.8,
+    "reviewsCount": 84,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "90 × 90 × 85 mm",
+        "price": "₹359 (Incl. GST)",
+        "numericPrice": 359
+      },
+      {
+        "name": "Medium",
+        "dimensions": "125 × 125 × 115 mm",
+        "price": "₹469 (Incl. GST)",
+        "numericPrice": 469
+      },
+      {
+        "name": "Large",
+        "dimensions": "160 × 160 × 145 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid Perimeter",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~7.5 hours",
+      "weight": "190g"
+    },
+    "tags": [
+      "voronoi",
+      "lattice",
+      "planter",
+      "organic",
+      "decor"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/PLT-VORONOI-005_FRONT.jpg",
+      "/images/products/PLT-VORONOI-005_ANGLE.jpg",
+      "/images/products/PLT-VORONOI-005_SIDE.jpg",
+      "/images/products/PLT-VORONOI-005_REAR.jpg",
+      "/images/products/PLT-VORONOI-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "PLT-VORONOI-005_FRONT",
+      "PLT-VORONOI-005_ANGLE",
+      "PLT-VORONOI-005_SIDE",
+      "PLT-VORONOI-005_REAR",
+      "PLT-VORONOI-005_DETAIL"
+    ]
+  },
+  {
+    "id": "LGT-LANTERN-001",
+    "name": "Spiral Shadow Lantern Lampshade",
+    "category": "Lighting & Decorative",
+    "description": "Helical spiral lampshade that casts dancing shadow ribbons across walls when paired with standard LED tea lights.",
+    "material": "PLA",
+    "price": "From ₹379",
+    "startingPrice": "₹379 (Incl. GST)",
+    "numericPrice": 379,
+    "gstIncluded": true,
+    "badge": "AMBIENT",
+    "rating": 4.9,
+    "reviewsCount": 129,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "90 × 90 × 120 mm",
+        "price": "₹379 (Incl. GST)",
+        "numericPrice": 379
+      },
+      {
+        "name": "Medium",
+        "dimensions": "130 × 130 × 170 mm",
+        "price": "₹489 (Incl. GST)",
+        "numericPrice": 489
+      },
+      {
+        "name": "Large",
+        "dimensions": "170 × 170 × 220 mm",
+        "price": "₹649 (Incl. GST)",
+        "numericPrice": 649
+      }
+    ],
+    "specs": {
+      "infill": "15% Lines",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~5.5 hours",
+      "weight": "130g"
+    },
+    "tags": [
+      "lamp",
+      "shadow",
+      "lantern",
+      "lighting",
+      "ambient",
+      "spiral"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/LGT-LANTERN-001_FRONT.jpg",
+      "/images/products/LGT-LANTERN-001_ANGLE.jpg",
+      "/images/products/LGT-LANTERN-001_SIDE.jpg",
+      "/images/products/LGT-LANTERN-001_REAR.jpg",
+      "/images/products/LGT-LANTERN-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "LGT-LANTERN-001_FRONT",
+      "LGT-LANTERN-001_ANGLE",
+      "LGT-LANTERN-001_SIDE",
+      "LGT-LANTERN-001_REAR",
+      "LGT-LANTERN-001_DETAIL"
+    ]
+  },
+  {
+    "id": "LGT-LITHO-002",
+    "name": "Lithophane Night Light Housing & Frame",
+    "category": "Lighting & Decorative",
+    "description": "Curved 3D translucent photo lithophane panel box that reveals high-contrast photographic scenes when backlit.",
+    "material": "PLA",
+    "price": "From ₹449",
+    "startingPrice": "₹449 (Incl. GST)",
+    "numericPrice": 449,
+    "gstIncluded": true,
+    "badge": "PHOTO",
+    "rating": 5,
+    "reviewsCount": 173,
+    "sizes": [
+      {
+        "name": "Small (4×4\")",
+        "dimensions": "110 × 40 × 110 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Medium (5×7\")",
+        "dimensions": "140 × 50 × 185 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
+      },
+      {
+        "name": "Large (8×10\")",
+        "dimensions": "215 × 60 × 265 mm",
+        "price": "₹799 (Incl. GST)",
+        "numericPrice": 799
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid (100% Optical Density)",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~9.0 hours",
+      "weight": "160g"
+    },
+    "tags": [
+      "lithophane",
+      "night light",
+      "photo frame",
+      "personalized",
+      "backlit"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/LGT-LITHO-002_FRONT.jpg",
+      "/images/products/LGT-LITHO-002_ANGLE.jpg",
+      "/images/products/LGT-LITHO-002_SIDE.jpg",
+      "/images/products/LGT-LITHO-002_REAR.jpg",
+      "/images/products/LGT-LITHO-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "LGT-LITHO-002_FRONT",
+      "LGT-LITHO-002_ANGLE",
+      "LGT-LITHO-002_SIDE",
+      "LGT-LITHO-002_REAR",
+      "LGT-LITHO-002_DETAIL"
+    ]
+  },
+  {
+    "id": "LGT-MOON-003",
+    "name": "Moon Phase Ambient LED Lamp Sculpture",
+    "category": "Lighting & Decorative",
+    "description": "Topographically accurate textured lunar sphere lamp displaying crater elevation with hidden LED disc base mount.",
+    "material": "PLA",
+    "price": "From ₹499",
+    "startingPrice": "₹499 (Incl. GST)",
+    "numericPrice": 499,
+    "gstIncluded": true,
+    "badge": "POPULAR",
+    "rating": 4.9,
+    "reviewsCount": 147,
+    "sizes": [
+      {
+        "name": "Small (10cm)",
+        "dimensions": "100 × 100 × 115 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Medium (14cm)",
+        "dimensions": "140 × 140 × 160 mm",
+        "price": "₹679 (Incl. GST)",
+        "numericPrice": 679
+      },
+      {
+        "name": "Large (18cm)",
+        "dimensions": "180 × 180 × 205 mm",
+        "price": "₹899 (Incl. GST)",
+        "numericPrice": 899
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid Shell",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~14.0 hours",
+      "weight": "270g"
+    },
+    "tags": [
+      "moon lamp",
+      "lunar",
+      "night light",
+      "ambient",
+      "astronomy"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/LGT-MOON-003_FRONT.jpg",
+      "/images/products/LGT-MOON-003_ANGLE.jpg",
+      "/images/products/LGT-MOON-003_SIDE.jpg",
+      "/images/products/LGT-MOON-003_REAR.jpg",
+      "/images/products/LGT-MOON-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "LGT-MOON-003_FRONT",
+      "LGT-MOON-003_ANGLE",
+      "LGT-MOON-003_SIDE",
+      "LGT-MOON-003_REAR",
+      "LGT-MOON-003_DETAIL"
+    ]
+  },
+  {
+    "id": "LGT-GEM-004",
+    "name": "Polyhedral Gemstone Desk Lamp Shroud",
+    "category": "Lighting & Decorative",
+    "description": "Low-poly faceted crystalline lampshade casting angular jewel-like refraction shadows across desktops.",
+    "material": "PLA",
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "numericPrice": 359,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 65,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "100 × 100 × 110 mm",
+        "price": "₹359 (Incl. GST)",
+        "numericPrice": 359
+      },
+      {
+        "name": "Medium",
+        "dimensions": "140 × 140 × 155 mm",
+        "price": "₹469 (Incl. GST)",
+        "numericPrice": 469
+      },
+      {
+        "name": "Large",
+        "dimensions": "180 × 180 × 200 mm",
+        "price": "₹619 (Incl. GST)",
+        "numericPrice": 619
+      }
+    ],
+    "specs": {
+      "infill": "15% Concentric",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~5.8 hours",
+      "weight": "140g"
+    },
+    "tags": [
+      "gemstone",
+      "low poly",
+      "lamp",
+      "desk lamp",
+      "decor"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/LGT-GEM-004_FRONT.jpg",
+      "/images/products/LGT-GEM-004_ANGLE.jpg",
+      "/images/products/LGT-GEM-004_SIDE.jpg",
+      "/images/products/LGT-GEM-004_REAR.jpg",
+      "/images/products/LGT-GEM-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "LGT-GEM-004_FRONT",
+      "LGT-GEM-004_ANGLE",
+      "LGT-GEM-004_SIDE",
+      "LGT-GEM-004_REAR",
+      "LGT-GEM-004_DETAIL"
+    ]
+  },
+  {
+    "id": "LGT-AURORA-005",
+    "name": "Aurora Borealis Wave Lamp Base",
+    "category": "Lighting & Decorative",
+    "description": "Parametric undulating wave column designed for diffused RGB LED light strips, creating kinetic light gradients.",
+    "material": "PLA",
+    "price": "From ₹419",
+    "startingPrice": "₹419 (Incl. GST)",
+    "numericPrice": 419,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 52,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "85 × 85 × 160 mm",
+        "price": "₹419 (Incl. GST)",
+        "numericPrice": 419
+      },
+      {
+        "name": "Medium",
+        "dimensions": "115 × 115 × 220 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      },
+      {
+        "name": "Large",
+        "dimensions": "145 × 145 × 280 mm",
+        "price": "₹729 (Incl. GST)",
+        "numericPrice": 729
+      }
+    ],
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~8.5 hours",
+      "weight": "220g"
+    },
+    "tags": [
+      "wave lamp",
+      "aurora",
+      "led lamp",
+      "lighting",
+      "parametric"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/LGT-AURORA-005_FRONT.jpg",
+      "/images/products/LGT-AURORA-005_ANGLE.jpg",
+      "/images/products/LGT-AURORA-005_SIDE.jpg",
+      "/images/products/LGT-AURORA-005_REAR.jpg",
+      "/images/products/LGT-AURORA-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "LGT-AURORA-005_FRONT",
+      "LGT-AURORA-005_ANGLE",
+      "LGT-AURORA-005_SIDE",
+      "LGT-AURORA-005_REAR",
+      "LGT-AURORA-005_DETAIL"
+    ]
+  },
+  {
+    "id": "KEY-SWITCH-001",
+    "name": "LED Clicky Keyboard Switch Keychain",
+    "category": "Keychains & Small Gifts",
+    "description": "Pocket-sized mechanical keyboard clicker with built-in battery and blue LED that illuminates with each click.",
+    "material": "PLA",
+    "price": "From ₹129",
+    "startingPrice": "₹129 (Incl. GST)",
+    "numericPrice": 129,
+    "gstIncluded": true,
+    "badge": "BESTSELLER",
+    "rating": 4.9,
+    "reviewsCount": 260,
+    "sizes": [
+      {
+        "name": "Single Switch",
+        "dimensions": "22 × 22 × 28 mm",
+        "price": "₹129 (Incl. GST)",
+        "numericPrice": 129
+      },
+      {
+        "name": "Dual Switch",
+        "dimensions": "40 × 22 × 28 mm",
+        "price": "₹199 (Incl. GST)",
+        "numericPrice": 199
+      },
+      {
+        "name": "Triple Switch",
+        "dimensions": "58 × 22 × 28 mm",
+        "price": "₹269 (Incl. GST)",
+        "numericPrice": 269
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~45 mins",
+      "weight": "18g"
+    },
+    "tags": [
+      "keychain",
+      "mechanical switch",
+      "clicky",
+      "led",
+      "gift",
+      "edc"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/KEY-SWITCH-001_FRONT.jpg",
+      "/images/products/KEY-SWITCH-001_ANGLE.jpg",
+      "/images/products/KEY-SWITCH-001_SIDE.jpg",
+      "/images/products/KEY-SWITCH-001_REAR.jpg",
+      "/images/products/KEY-SWITCH-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "KEY-SWITCH-001_FRONT",
+      "KEY-SWITCH-001_ANGLE",
+      "KEY-SWITCH-001_SIDE",
+      "KEY-SWITCH-001_REAR",
+      "KEY-SWITCH-001_DETAIL"
+    ]
+  },
+  {
+    "id": "KEY-ANIME-002",
+    "name": "Chibi Anime Character Pocket Charm Keychain",
+    "category": "Keychains & Small Gifts",
+    "description": "Cute dual-tone anime chibi hero character charm with reinforced lanyard loop hole for backpacks and keys.",
+    "material": "PLA",
+    "price": "From ₹119",
+    "startingPrice": "₹119 (Incl. GST)",
+    "numericPrice": 119,
+    "gstIncluded": true,
+    "badge": "CUTE",
+    "rating": 4.8,
+    "reviewsCount": 142,
+    "sizes": [
+      {
+        "name": "Standard",
+        "dimensions": "40 × 35 × 8 mm",
+        "price": "₹119 (Incl. GST)",
+        "numericPrice": 119
+      },
+      {
+        "name": "Large Bag Charm",
+        "dimensions": "55 × 48 × 11 mm",
+        "price": "₹169 (Incl. GST)",
+        "numericPrice": 169
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~40 mins",
+      "weight": "15g"
+    },
+    "tags": [
+      "keychain",
+      "anime",
+      "chibi",
+      "charm",
+      "backpack",
+      "gift"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/KEY-ANIME-002_FRONT.jpg",
+      "/images/products/KEY-ANIME-002_ANGLE.jpg",
+      "/images/products/KEY-ANIME-002_SIDE.jpg",
+      "/images/products/KEY-ANIME-002_REAR.jpg",
+      "/images/products/KEY-ANIME-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "KEY-ANIME-002_FRONT",
+      "KEY-ANIME-002_ANGLE",
+      "KEY-ANIME-002_SIDE",
+      "KEY-ANIME-002_REAR",
+      "KEY-ANIME-002_DETAIL"
+    ]
+  },
+  {
+    "id": "KEY-FOOTBALL-003",
+    "name": "3D Football Cleat & Ball Keychain",
+    "category": "Keychains & Small Gifts",
+    "description": "Miniature football stud shoe replica paired with mini geometric soccer ball charm on stainless split ring.",
+    "material": "PLA",
+    "price": "From ₹129",
+    "startingPrice": "₹129 (Incl. GST)",
+    "numericPrice": 129,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 97,
+    "sizes": [
+      {
+        "name": "Standard",
+        "dimensions": "48 × 18 × 22 mm",
+        "price": "₹129 (Incl. GST)",
+        "numericPrice": 129
+      },
+      {
+        "name": "Large Cleat",
+        "dimensions": "65 × 24 × 30 mm",
+        "price": "₹179 (Incl. GST)",
+        "numericPrice": 179
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~50 mins",
+      "weight": "20g"
+    },
+    "tags": [
+      "football",
+      "soccer",
+      "cleat",
+      "keychain",
+      "sports",
+      "gift"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/KEY-FOOTBALL-003_FRONT.jpg",
+      "/images/products/KEY-FOOTBALL-003_ANGLE.jpg",
+      "/images/products/KEY-FOOTBALL-003_SIDE.jpg",
+      "/images/products/KEY-FOOTBALL-003_REAR.jpg",
+      "/images/products/KEY-FOOTBALL-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "KEY-FOOTBALL-003_FRONT",
+      "KEY-FOOTBALL-003_ANGLE",
+      "KEY-FOOTBALL-003_SIDE",
+      "KEY-FOOTBALL-003_REAR",
+      "KEY-FOOTBALL-003_DETAIL"
+    ]
+  },
+  {
+    "id": "KEY-BELL-004",
+    "name": "Tibetan Guardian Motorcycle Bell",
+    "category": "Keychains & Small Gifts",
+    "description": "Acoustic 3D printed protective ride bell with internal clapper for motorbike handlebars and key fobs.",
+    "material": "PLA",
+    "price": "From ₹139",
+    "startingPrice": "₹139 (Incl. GST)",
+    "numericPrice": 139,
+    "gstIncluded": true,
+    "rating": 4.7,
+    "reviewsCount": 76,
+    "sizes": [
+      {
+        "name": "Standard",
+        "dimensions": "28 × 28 × 38 mm",
+        "price": "₹139 (Incl. GST)",
+        "numericPrice": 139
+      },
+      {
+        "name": "Jumbo Bell",
+        "dimensions": "38 × 38 × 50 mm",
+        "price": "₹189 (Incl. GST)",
+        "numericPrice": 189
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~45 mins",
+      "weight": "22g"
+    },
+    "tags": [
+      "bell",
+      "motorcycle",
+      "guardian bell",
+      "biker",
+      "keychain"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/KEY-BELL-004_FRONT.jpg",
+      "/images/products/KEY-BELL-004_ANGLE.jpg",
+      "/images/products/KEY-BELL-004_SIDE.jpg",
+      "/images/products/KEY-BELL-004_REAR.jpg",
+      "/images/products/KEY-BELL-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "KEY-BELL-004_FRONT",
+      "KEY-BELL-004_ANGLE",
+      "KEY-BELL-004_SIDE",
+      "KEY-BELL-004_REAR",
+      "KEY-BELL-004_DETAIL"
+    ]
+  },
+  {
+    "id": "KEY-ASTRO-005",
+    "name": "Micro Astronaut Space Capsule Keychain",
+    "category": "Keychains & Small Gifts",
+    "description": "Intricately detailed miniature spacewalk astronaut pendant tethered to a ribbed space capsule charm ring.",
+    "material": "PLA",
+    "price": "From ₹129",
+    "startingPrice": "₹129 (Incl. GST)",
+    "numericPrice": 129,
+    "gstIncluded": true,
+    "badge": "POPULAR",
+    "rating": 4.9,
+    "reviewsCount": 153,
+    "sizes": [
+      {
+        "name": "Standard",
+        "dimensions": "42 × 25 × 20 mm",
+        "price": "₹129 (Incl. GST)",
+        "numericPrice": 129
+      },
+      {
+        "name": "Bag Pendant",
+        "dimensions": "58 × 35 × 28 mm",
+        "price": "₹179 (Incl. GST)",
+        "numericPrice": 179
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~40 mins",
+      "weight": "16g"
+    },
+    "tags": [
+      "astronaut",
+      "space",
+      "keychain",
+      "nasa",
+      "pendant",
+      "gift"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/KEY-ASTRO-005_FRONT.jpg",
+      "/images/products/KEY-ASTRO-005_ANGLE.jpg",
+      "/images/products/KEY-ASTRO-005_SIDE.jpg",
+      "/images/products/KEY-ASTRO-005_REAR.jpg",
+      "/images/products/KEY-ASTRO-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "KEY-ASTRO-005_FRONT",
+      "KEY-ASTRO-005_ANGLE",
+      "KEY-ASTRO-005_SIDE",
+      "KEY-ASTRO-005_REAR",
+      "KEY-ASTRO-005_DETAIL"
+    ]
+  },
+  {
+    "id": "AUT-VENT-001",
+    "name": "Gravity Air Vent MagSafe Phone Cradle",
+    "category": "Automotive Accessories",
+    "description": "Auto-locking vent louvre smartphone holder with silicone clip blades and spherical pivot ball joint.",
+    "material": "PLA",
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "numericPrice": 279,
+    "gstIncluded": true,
+    "badge": "CAR MUST-HAVE",
+    "rating": 4.8,
+    "reviewsCount": 131,
+    "sizes": [
+      {
+        "name": "Universal Compact",
+        "dimensions": "75 × 65 × 55 mm",
+        "price": "₹279 (Incl. GST)",
+        "numericPrice": 279
+      },
+      {
+        "name": "Plus / Pro Max",
+        "dimensions": "95 × 80 × 65 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      }
+    ],
+    "specs": {
+      "infill": "40% Tri-Hexagon (Heat Resisting)",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~4.5 hours",
+      "weight": "95g"
+    },
+    "tags": [
+      "car mount",
+      "air vent",
+      "phone cradle",
+      "automotive",
+      "magsafe"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/AUT-VENT-001_FRONT.jpg",
+      "/images/products/AUT-VENT-001_ANGLE.jpg",
+      "/images/products/AUT-VENT-001_SIDE.jpg",
+      "/images/products/AUT-VENT-001_REAR.jpg",
+      "/images/products/AUT-VENT-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "AUT-VENT-001_FRONT",
+      "AUT-VENT-001_ANGLE",
+      "AUT-VENT-001_SIDE",
+      "AUT-VENT-001_REAR",
+      "AUT-VENT-001_DETAIL"
+    ]
+  },
+  {
+    "id": "AUT-CUP-002",
+    "name": "Center Console Dual Cup-Holder Expander",
+    "category": "Automotive Accessories",
+    "description": "Tapered base adapter that converts standard 68mm car cup holders into oversized flasks, hydro-flasks, and mug holders.",
+    "material": "PLA",
+    "price": "From ₹299",
+    "startingPrice": "₹299 (Incl. GST)",
+    "numericPrice": 299,
+    "gstIncluded": true,
+    "badge": "UTILITY",
+    "rating": 4.7,
+    "reviewsCount": 89,
+    "sizes": [
+      {
+        "name": "Standard (85mm Rim)",
+        "dimensions": "95 × 95 × 110 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      },
+      {
+        "name": "XL Flask (100mm Rim)",
+        "dimensions": "115 × 115 × 130 mm",
+        "price": "₹389 (Incl. GST)",
+        "numericPrice": 389
+      }
+    ],
+    "specs": {
+      "infill": "30% Grid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~6.0 hours",
+      "weight": "160g"
+    },
+    "tags": [
+      "cup holder",
+      "car console",
+      "flask expander",
+      "automotive"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/AUT-CUP-002_FRONT.jpg",
+      "/images/products/AUT-CUP-002_ANGLE.jpg",
+      "/images/products/AUT-CUP-002_SIDE.jpg",
+      "/images/products/AUT-CUP-002_REAR.jpg",
+      "/images/products/AUT-CUP-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "AUT-CUP-002_FRONT",
+      "AUT-CUP-002_ANGLE",
+      "AUT-CUP-002_SIDE",
+      "AUT-CUP-002_REAR",
+      "AUT-CUP-002_DETAIL"
+    ]
+  },
+  {
+    "id": "AUT-HOOK-003",
+    "name": "Headrest Bag & Umbrella Hanging Hooks (Pair)",
+    "category": "Automotive Accessories",
+    "description": "Heavy-duty seat headrest strut clips supporting up to 8kg shopping bags, backpacks, and umbrella loops.",
+    "material": "PLA",
+    "price": "From ₹179",
+    "startingPrice": "₹179 (Incl. GST)",
+    "numericPrice": 179,
+    "gstIncluded": true,
+    "rating": 4.9,
+    "reviewsCount": 162,
+    "sizes": [
+      {
+        "name": "Pair (2 Units)",
+        "dimensions": "110 × 35 × 40 mm",
+        "price": "₹179 (Incl. GST)",
+        "numericPrice": 179
+      },
+      {
+        "name": "Set of 4 Units",
+        "dimensions": "110 × 35 × 40 mm (×4)",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      }
+    ],
+    "specs": {
+      "infill": "50% Gyroid (High Strength)",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~3.0 hours",
+      "weight": "80g"
+    },
+    "tags": [
+      "headrest hooks",
+      "car hook",
+      "shopping bag",
+      "automotive"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/AUT-HOOK-003_FRONT.jpg",
+      "/images/products/AUT-HOOK-003_ANGLE.jpg",
+      "/images/products/AUT-HOOK-003_SIDE.jpg",
+      "/images/products/AUT-HOOK-003_REAR.jpg",
+      "/images/products/AUT-HOOK-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "AUT-HOOK-003_FRONT",
+      "AUT-HOOK-003_ANGLE",
+      "AUT-HOOK-003_SIDE",
+      "AUT-HOOK-003_REAR",
+      "AUT-HOOK-003_DETAIL"
+    ]
+  },
+  {
+    "id": "AUT-CLIP-004",
+    "name": "Dashboard Sunglasses & Fastag Card Clip",
+    "category": "Automotive Accessories",
+    "description": "Sun-visor snap-on eyewear clip designed to hold aviator sunglasses and parking cards without scratching frames.",
+    "material": "PLA",
+    "price": "From ₹149",
+    "startingPrice": "₹149 (Incl. GST)",
+    "numericPrice": 149,
+    "gstIncluded": true,
+    "rating": 4.6,
+    "reviewsCount": 74,
+    "sizes": [
+      {
+        "name": "Single Clip",
+        "dimensions": "70 × 25 × 35 mm",
+        "price": "₹149 (Incl. GST)",
+        "numericPrice": 149
+      },
+      {
+        "name": "Twin Pack",
+        "dimensions": "70 × 25 × 35 mm (×2)",
+        "price": "₹239 (Incl. GST)",
+        "numericPrice": 239
+      }
+    ],
+    "specs": {
+      "infill": "40% Lines",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~1.5 hours",
+      "weight": "35g"
+    },
+    "tags": [
+      "sunglasses clip",
+      "sun visor",
+      "fastag",
+      "car interior"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/AUT-CLIP-004_FRONT.jpg",
+      "/images/products/AUT-CLIP-004_ANGLE.jpg",
+      "/images/products/AUT-CLIP-004_SIDE.jpg",
+      "/images/products/AUT-CLIP-004_REAR.jpg",
+      "/images/products/AUT-CLIP-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "AUT-CLIP-004_FRONT",
+      "AUT-CLIP-004_ANGLE",
+      "AUT-CLIP-004_SIDE",
+      "AUT-CLIP-004_REAR",
+      "AUT-CLIP-004_DETAIL"
+    ]
+  },
+  {
+    "id": "AUT-DRAWER-005",
+    "name": "Console Hidden Coin & Key Sorting Drawer",
+    "category": "Automotive Accessories",
+    "description": "Slide-out hidden tray organizer insert with custom divisions for parking toll coins, keys, and pen drives.",
+    "material": "PLA",
+    "price": "From ₹249",
+    "startingPrice": "₹249 (Incl. GST)",
+    "numericPrice": 249,
+    "gstIncluded": true,
+    "rating": 4.8,
+    "reviewsCount": 63,
+    "sizes": [
+      {
+        "name": "Standard (13cm)",
+        "dimensions": "130 × 90 × 40 mm",
+        "price": "₹249 (Incl. GST)",
+        "numericPrice": 249
+      },
+      {
+        "name": "Large (18cm)",
+        "dimensions": "180 × 110 × 50 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      }
+    ],
+    "specs": {
+      "infill": "25% Grid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~4.5 hours",
+      "weight": "120g"
+    },
+    "tags": [
+      "coin sorter",
+      "car drawer",
+      "console tray",
+      "organization"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/AUT-DRAWER-005_FRONT.jpg",
+      "/images/products/AUT-DRAWER-005_ANGLE.jpg",
+      "/images/products/AUT-DRAWER-005_SIDE.jpg",
+      "/images/products/AUT-DRAWER-005_REAR.jpg",
+      "/images/products/AUT-DRAWER-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "AUT-DRAWER-005_FRONT",
+      "AUT-DRAWER-005_ANGLE",
+      "AUT-DRAWER-005_SIDE",
+      "AUT-DRAWER-005_REAR",
+      "AUT-DRAWER-005_DETAIL"
+    ]
+  },
+  {
+    "id": "CUS-NAME-001",
+    "name": "Custom 3D Dual-Color Desk Nameplate",
+    "category": "Custom / Personalized",
+    "description": "Bespoke executive desk nameplate with raised embossed lettering, custom designation, and weighted beveled base.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "CUSTOM",
+    "rating": 5,
+    "reviewsCount": 228,
+    "sizes": [
+      {
+        "name": "Compact (15cm)",
+        "dimensions": "150 × 40 × 45 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Executive (20cm)",
+        "dimensions": "200 × 50 × 55 mm",
+        "price": "₹529 (Incl. GST)",
+        "numericPrice": 529
+      },
+      {
+        "name": "Director (25cm)",
+        "dimensions": "250 × 60 × 65 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      }
+    ],
+    "specs": {
+      "infill": "25% Grid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~5.5 hours",
+      "weight": "150g"
+    },
+    "tags": [
+      "nameplate",
+      "personalized",
+      "custom desk",
+      "office gift",
+      "executive"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/CUS-NAME-001_FRONT.jpg",
+      "/images/products/CUS-NAME-001_ANGLE.jpg",
+      "/images/products/CUS-NAME-001_SIDE.jpg",
+      "/images/products/CUS-NAME-001_REAR.jpg",
+      "/images/products/CUS-NAME-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "CUS-NAME-001_FRONT",
+      "CUS-NAME-001_ANGLE",
+      "CUS-NAME-001_SIDE",
+      "CUS-NAME-001_REAR",
+      "CUS-NAME-001_DETAIL"
+    ]
+  },
+  {
+    "id": "CUS-SIGNET-002",
+    "name": "Personalized Monogram Desktop Signet",
+    "category": "Custom / Personalized",
+    "description": "Intertwined initials or company monogram 3D extruded sculpture on architectural stepped display base.",
+    "material": "PLA",
+    "price": "From ₹349",
+    "startingPrice": "₹349 (Incl. GST)",
+    "numericPrice": 349,
+    "gstIncluded": true,
+    "badge": "GIFT",
+    "rating": 4.9,
+    "reviewsCount": 105,
+    "sizes": [
+      {
+        "name": "Small (10cm)",
+        "dimensions": "100 × 50 × 100 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Medium (14cm)",
+        "dimensions": "140 × 70 × 140 mm",
+        "price": "₹469 (Incl. GST)",
+        "numericPrice": 469
+      },
+      {
+        "name": "Large (18cm)",
+        "dimensions": "180 × 90 × 180 mm",
+        "price": "₹619 (Incl. GST)",
+        "numericPrice": 619
+      }
+    ],
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~6.0 hours",
+      "weight": "135g"
+    },
+    "tags": [
+      "monogram",
+      "signet",
+      "custom letters",
+      "wedding gift",
+      "anniversary"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/CUS-SIGNET-002_FRONT.jpg",
+      "/images/products/CUS-SIGNET-002_ANGLE.jpg",
+      "/images/products/CUS-SIGNET-002_SIDE.jpg",
+      "/images/products/CUS-SIGNET-002_REAR.jpg",
+      "/images/products/CUS-SIGNET-002_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "CUS-SIGNET-002_FRONT",
+      "CUS-SIGNET-002_ANGLE",
+      "CUS-SIGNET-002_SIDE",
+      "CUS-SIGNET-002_REAR",
+      "CUS-SIGNET-002_DETAIL"
+    ]
+  },
+  {
+    "id": "CUS-PET-003",
+    "name": "Customized Pet Silhouette Name Tag",
+    "category": "Custom / Personalized",
+    "description": "Custom breed dog/cat profile silhouette collar tag with recessed phone number and pet name.",
+    "material": "PLA",
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "numericPrice": 199,
+    "gstIncluded": true,
+    "rating": 4.9,
+    "reviewsCount": 141,
+    "sizes": [
+      {
+        "name": "Small (Toy Breed)",
+        "dimensions": "35 × 30 × 4 mm",
+        "price": "₹199 (Incl. GST)",
+        "numericPrice": 199
+      },
+      {
+        "name": "Medium (Beagle/Pug)",
+        "dimensions": "48 × 42 × 5 mm",
+        "price": "₹249 (Incl. GST)",
+        "numericPrice": 249
+      },
+      {
+        "name": "Large (Lab/Golden)",
+        "dimensions": "60 × 52 × 6 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~35 mins",
+      "weight": "12g"
+    },
+    "tags": [
+      "pet tag",
+      "dog collar",
+      "cat tag",
+      "custom pet",
+      "personalized"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/CUS-PET-003_FRONT.jpg",
+      "/images/products/CUS-PET-003_ANGLE.jpg",
+      "/images/products/CUS-PET-003_SIDE.jpg",
+      "/images/products/CUS-PET-003_REAR.jpg",
+      "/images/products/CUS-PET-003_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "CUS-PET-003_FRONT",
+      "CUS-PET-003_ANGLE",
+      "CUS-PET-003_SIDE",
+      "CUS-PET-003_REAR",
+      "CUS-PET-003_DETAIL"
+    ]
+  },
+  {
+    "id": "CUS-SPOTIFY-004",
+    "name": "3D Spotify Audio Waveform Key Tag",
+    "category": "Custom / Personalized",
+    "description": "Playable scannable Spotify code & extruded sound wave crest engraved with your favorite song or anniversary track.",
+    "material": "PLA",
+    "price": "From ₹229",
+    "startingPrice": "₹229 (Incl. GST)",
+    "numericPrice": 229,
+    "gstIncluded": true,
+    "badge": "ROMANTIC",
+    "rating": 5,
+    "reviewsCount": 189,
+    "sizes": [
+      {
+        "name": "Pocket Tag",
+        "dimensions": "70 × 20 × 5 mm",
+        "price": "₹229 (Incl. GST)",
+        "numericPrice": 229
+      },
+      {
+        "name": "Desk Plaque",
+        "dimensions": "140 × 40 × 12 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      }
+    ],
+    "specs": {
+      "infill": "100% Solid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~1.2 hours",
+      "weight": "25g"
+    },
+    "tags": [
+      "spotify code",
+      "soundwave",
+      "audio tag",
+      "romantic gift",
+      "custom song"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/CUS-SPOTIFY-004_FRONT.jpg",
+      "/images/products/CUS-SPOTIFY-004_ANGLE.jpg",
+      "/images/products/CUS-SPOTIFY-004_SIDE.jpg",
+      "/images/products/CUS-SPOTIFY-004_REAR.jpg",
+      "/images/products/CUS-SPOTIFY-004_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "CUS-SPOTIFY-004_FRONT",
+      "CUS-SPOTIFY-004_ANGLE",
+      "CUS-SPOTIFY-004_SIDE",
+      "CUS-SPOTIFY-004_REAR",
+      "CUS-SPOTIFY-004_DETAIL"
+    ]
+  },
+  {
+    "id": "CUS-PLAQUE-005",
+    "name": "Custom House Number & Family Plaque",
+    "category": "Custom / Personalized",
+    "description": "Weather-resistant architectural entrance plaque with bold 3D numbers, family name crest, and hidden standoff mounts.",
+    "material": "PLA",
+    "price": "From ₹449",
+    "startingPrice": "₹449 (Incl. GST)",
+    "numericPrice": 449,
+    "gstIncluded": true,
+    "badge": "HOME",
+    "rating": 4.8,
+    "reviewsCount": 78,
+    "sizes": [
+      {
+        "name": "Small (18×12cm)",
+        "dimensions": "180 × 120 × 15 mm",
+        "price": "₹449 (Incl. GST)",
+        "numericPrice": 449
+      },
+      {
+        "name": "Medium (24×16cm)",
+        "dimensions": "240 × 160 × 20 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
+      },
+      {
+        "name": "Large (30×20cm)",
+        "dimensions": "300 × 200 × 25 mm",
+        "price": "₹799 (Incl. GST)",
+        "numericPrice": 799
+      }
+    ],
+    "specs": {
+      "infill": "30% Grid (Exterior Grade)",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~8.0 hours",
+      "weight": "310g"
+    },
+    "tags": [
+      "house plaque",
+      "address sign",
+      "entrance decor",
+      "custom plaque",
+      "family"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/CUS-PLAQUE-005_FRONT.jpg",
+      "/images/products/CUS-PLAQUE-005_ANGLE.jpg",
+      "/images/products/CUS-PLAQUE-005_SIDE.jpg",
+      "/images/products/CUS-PLAQUE-005_REAR.jpg",
+      "/images/products/CUS-PLAQUE-005_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "CUS-PLAQUE-005_FRONT",
+      "CUS-PLAQUE-005_ANGLE",
+      "CUS-PLAQUE-005_SIDE",
+      "CUS-PLAQUE-005_REAR",
+      "CUS-PLAQUE-005_DETAIL"
+    ]
   }
 ];
