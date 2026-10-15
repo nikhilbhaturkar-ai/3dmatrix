@@ -129,6 +129,42 @@ export const PRODUCT_MEDIA_MANIFEST = [
     ]
   },
   {
+    "id": "DEC-LILKRISH-008",
+    "name": "Little Krishna - The Divine Flutist",
+    "images": [
+      "/images/products/DEC-LILKRISH-008_FRONT.jpg",
+      "/images/products/DEC-LILKRISH-008_ANGLE.jpg",
+      "/images/products/DEC-LILKRISH-008_SIDE.jpg",
+      "/images/products/DEC-LILKRISH-008_REAR.jpg",
+      "/images/products/DEC-LILKRISH-008_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-LILKRISH-008_FRONT",
+      "DEC-LILKRISH-008_ANGLE",
+      "DEC-LILKRISH-008_SIDE",
+      "DEC-LILKRISH-008_REAR",
+      "DEC-LILKRISH-008_DETAIL"
+    ]
+  },
+  {
+    "id": "DEC-EDGEKRISH-009",
+    "name": "Edge-Sitting Baby Krishna Flute Figurine",
+    "images": [
+      "/images/products/DEC-EDGEKRISH-009_FRONT.jpg",
+      "/images/products/DEC-EDGEKRISH-009_ANGLE.jpg",
+      "/images/products/DEC-EDGEKRISH-009_SIDE.jpg",
+      "/images/products/DEC-EDGEKRISH-009_REAR.jpg",
+      "/images/products/DEC-EDGEKRISH-009_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-EDGEKRISH-009_FRONT",
+      "DEC-EDGEKRISH-009_ANGLE",
+      "DEC-EDGEKRISH-009_SIDE",
+      "DEC-EDGEKRISH-009_REAR",
+      "DEC-EDGEKRISH-009_DETAIL"
+    ]
+  },
+  {
     "id": "DSK-ORG-001",
     "name": "Multi-Compartment Desk Organizer",
     "images": [

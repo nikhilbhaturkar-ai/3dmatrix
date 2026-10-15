@@ -481,6 +481,149 @@ export const PRODUCTS = [
     ]
   },
   {
+    "id": "DEC-LILKRISH-008",
+    "name": "Little Krishna - The Divine Flutist",
+    "category": "Home & Decor",
+    "description": "Adorable infant Lord Krishna idol depicted cross-legged with traditional peacock turban and sweet butter pot (makhan handi), playing the flute in serene bliss.",
+    "material": "PLA",
+    "price": "From ₹349",
+    "startingPrice": "₹349 (Incl. GST)",
+    "numericPrice": 349,
+    "gstIncluded": true,
+    "badge": "POPULAR",
+    "rating": 4.9,
+    "reviewsCount": 118,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "65 × 60 × 85 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
+      },
+      {
+        "name": "Medium",
+        "dimensions": "85 × 80 × 115 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Large",
+        "dimensions": "110 × 100 × 150 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      }
+    ],
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~6.5 hours",
+      "weight": "120g"
+    },
+    "tags": [
+      "krishna",
+      "little krishna",
+      "bal krishna",
+      "divine flutist",
+      "makhan chor",
+      "butter pot",
+      "idol",
+      "god idol",
+      "pooja",
+      "mandir",
+      "home decor",
+      "spiritual",
+      "decor",
+      "hindu",
+      "sculpture"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/DEC-LILKRISH-008_FRONT.jpg",
+      "/images/products/DEC-LILKRISH-008_ANGLE.jpg",
+      "/images/products/DEC-LILKRISH-008_SIDE.jpg",
+      "/images/products/DEC-LILKRISH-008_REAR.jpg",
+      "/images/products/DEC-LILKRISH-008_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-LILKRISH-008_FRONT",
+      "DEC-LILKRISH-008_ANGLE",
+      "DEC-LILKRISH-008_SIDE",
+      "DEC-LILKRISH-008_REAR",
+      "DEC-LILKRISH-008_DETAIL"
+    ]
+  },
+  {
+    "id": "DEC-EDGEKRISH-009",
+    "name": "Edge-Sitting Baby Krishna Flute Figurine",
+    "category": "Home & Decor",
+    "description": "Charming shelf-sitter baby Krishna figurine with dangling crossed legs, ornate peacock feather crown, and flute, designed to sit on mantle ledges and shelves.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "NEW",
+    "rating": 5.0,
+    "reviewsCount": 89,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "60 × 55 × 110 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium",
+        "dimensions": "80 × 75 × 150 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      },
+      {
+        "name": "Large",
+        "dimensions": "105 × 95 × 195 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749
+      }
+    ],
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~7.0 hours",
+      "weight": "135g"
+    },
+    "tags": [
+      "krishna",
+      "baby krishna",
+      "edge sitting",
+      "shelf sitter",
+      "flute figurine",
+      "mantel decor",
+      "radha krishna",
+      "god idol",
+      "pooja",
+      "home decor",
+      "spiritual",
+      "decor",
+      "hindu",
+      "sculpture"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/DEC-EDGEKRISH-009_FRONT.jpg",
+      "/images/products/DEC-EDGEKRISH-009_ANGLE.jpg",
+      "/images/products/DEC-EDGEKRISH-009_SIDE.jpg",
+      "/images/products/DEC-EDGEKRISH-009_REAR.jpg",
+      "/images/products/DEC-EDGEKRISH-009_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-EDGEKRISH-009_FRONT",
+      "DEC-EDGEKRISH-009_ANGLE",
+      "DEC-EDGEKRISH-009_SIDE",
+      "DEC-EDGEKRISH-009_REAR",
+      "DEC-EDGEKRISH-009_DETAIL"
+    ]
+  },
+  {
     "id": "DSK-ORG-001",
     "name": "Multi-Compartment Desk Organizer",
     "category": "Desk & Office",
