@@ -93,6 +93,42 @@ export const PRODUCT_MEDIA_MANIFEST = [
     ]
   },
   {
+    "id": "DEC-KRISHNA-006",
+    "name": "Elegant Krishna Idol on Lotus Base",
+    "images": [
+      "/images/products/DEC-KRISHNA-006_FRONT.jpg",
+      "/images/products/DEC-KRISHNA-006_ANGLE.jpg",
+      "/images/products/DEC-KRISHNA-006_SIDE.jpg",
+      "/images/products/DEC-KRISHNA-006_REAR.jpg",
+      "/images/products/DEC-KRISHNA-006_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-KRISHNA-006_FRONT",
+      "DEC-KRISHNA-006_ANGLE",
+      "DEC-KRISHNA-006_SIDE",
+      "DEC-KRISHNA-006_REAR",
+      "DEC-KRISHNA-006_DETAIL"
+    ]
+  },
+  {
+    "id": "DEC-RADHA-007",
+    "name": "Edge Sitting Radhey Rani Idol",
+    "images": [
+      "/images/products/DEC-RADHA-007_FRONT.jpg",
+      "/images/products/DEC-RADHA-007_ANGLE.jpg",
+      "/images/products/DEC-RADHA-007_SIDE.jpg",
+      "/images/products/DEC-RADHA-007_REAR.jpg",
+      "/images/products/DEC-RADHA-007_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-RADHA-007_FRONT",
+      "DEC-RADHA-007_ANGLE",
+      "DEC-RADHA-007_SIDE",
+      "DEC-RADHA-007_REAR",
+      "DEC-RADHA-007_DETAIL"
+    ]
+  },
+  {
     "id": "DSK-ORG-001",
     "name": "Multi-Compartment Desk Organizer",
     "images": [
@@ -183,6 +219,24 @@ export const PRODUCT_MEDIA_MANIFEST = [
     ]
   },
   {
+    "id": "DSK-CAL-006",
+    "name": "Simple Flip Calendar",
+    "images": [
+      "/images/products/DSK-CAL-006_FRONT.jpg",
+      "/images/products/DSK-CAL-006_ANGLE.jpg",
+      "/images/products/DSK-CAL-006_SIDE.jpg",
+      "/images/products/DSK-CAL-006_REAR.jpg",
+      "/images/products/DSK-CAL-006_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DSK-CAL-006_FRONT",
+      "DSK-CAL-006_ANGLE",
+      "DSK-CAL-006_SIDE",
+      "DSK-CAL-006_REAR",
+      "DSK-CAL-006_DETAIL"
+    ]
+  },
+  {
     "id": "ORG-CABLE-001",
     "name": "Sliding Lid Cable Management Box",
     "images": [
@@ -201,21 +255,21 @@ export const PRODUCT_MEDIA_MANIFEST = [
     ]
   },
   {
-    "id": "ORG-SHELF-002",
-    "name": "Modern Floating Wall Bracket Shelf",
+    "id": "ORG-CAL-002",
+    "name": "Pen holder calendar",
     "images": [
-      "/images/products/ORG-SHELF-002_FRONT.jpg",
-      "/images/products/ORG-SHELF-002_ANGLE.jpg",
-      "/images/products/ORG-SHELF-002_SIDE.jpg",
-      "/images/products/ORG-SHELF-002_REAR.jpg",
-      "/images/products/ORG-SHELF-002_DETAIL.jpg"
+      "/images/products/ORG-CAL-002_FRONT.jpg",
+      "/images/products/ORG-CAL-002_ANGLE.jpg",
+      "/images/products/ORG-CAL-002_SIDE.jpg",
+      "/images/products/ORG-CAL-002_REAR.jpg",
+      "/images/products/ORG-CAL-002_DETAIL.jpg"
     ],
     "imageIds": [
-      "ORG-SHELF-002_FRONT",
-      "ORG-SHELF-002_ANGLE",
-      "ORG-SHELF-002_SIDE",
-      "ORG-SHELF-002_REAR",
-      "ORG-SHELF-002_DETAIL"
+      "ORG-CAL-002_FRONT",
+      "ORG-CAL-002_ANGLE",
+      "ORG-CAL-002_SIDE",
+      "ORG-CAL-002_REAR",
+      "ORG-CAL-002_DETAIL"
     ]
   },
   {

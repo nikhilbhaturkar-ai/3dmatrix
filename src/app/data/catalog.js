@@ -340,6 +340,147 @@ export const PRODUCTS = [
     ]
   },
   {
+    "id": "DEC-KRISHNA-006",
+    "name": "Elegant Krishna Idol on Lotus Base",
+    "category": "Home & Decor",
+    "description": "Divine sculptural figurine of Lord Krishna playing the bansuri flute, poised gracefully upon a blooming lotus flower and spiral plinth base.",
+    "material": "PLA",
+    "price": "From ₹499",
+    "startingPrice": "₹499 (Incl. GST)",
+    "numericPrice": 499,
+    "gstIncluded": true,
+    "badge": "BESTSELLER",
+    "rating": 5.0,
+    "reviewsCount": 128,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "70 × 60 × 140 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      },
+      {
+        "name": "Medium",
+        "dimensions": "95 × 80 × 190 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
+      },
+      {
+        "name": "Large",
+        "dimensions": "125 × 105 × 250 mm",
+        "price": "₹949 (Incl. GST)",
+        "numericPrice": 949
+      }
+    ],
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~9.0 hours",
+      "weight": "175g"
+    },
+    "tags": [
+      "krishna",
+      "krishna idol",
+      "god idol",
+      "mandir",
+      "pooja",
+      "home decor",
+      "flute",
+      "lotus",
+      "sculpture",
+      "spiritual",
+      "decor",
+      "hindu",
+      "figures"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/DEC-KRISHNA-006_FRONT.jpg",
+      "/images/products/DEC-KRISHNA-006_ANGLE.jpg",
+      "/images/products/DEC-KRISHNA-006_SIDE.jpg",
+      "/images/products/DEC-KRISHNA-006_REAR.jpg",
+      "/images/products/DEC-KRISHNA-006_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-KRISHNA-006_FRONT",
+      "DEC-KRISHNA-006_ANGLE",
+      "DEC-KRISHNA-006_SIDE",
+      "DEC-KRISHNA-006_REAR",
+      "DEC-KRISHNA-006_DETAIL"
+    ]
+  },
+  {
+    "id": "DEC-RADHA-007",
+    "name": "Edge Sitting Radhey Rani Idol",
+    "category": "Home & Decor",
+    "description": "Exquisite hand-detailed Radhey Rani idol designed to sit gracefully on the edge of mantels, shelves, or desks with dangling feet, adorned in traditional jewelry.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "POPULAR",
+    "rating": 4.9,
+    "reviewsCount": 104,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "60 × 55 × 110 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium",
+        "dimensions": "80 × 75 × 150 mm",
+        "price": "₹549 (Incl. GST)",
+        "numericPrice": 549
+      },
+      {
+        "name": "Large",
+        "dimensions": "105 × 95 × 195 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749
+      }
+    ],
+    "specs": {
+      "infill": "25% Gyroid",
+      "layerHeight": "0.12mm Ultra Fine",
+      "printTime": "~7.0 hours",
+      "weight": "135g"
+    },
+    "tags": [
+      "radha",
+      "radhey rani",
+      "krishna",
+      "idol",
+      "edge sitting",
+      "mantel decor",
+      "shelf sitter",
+      "god idol",
+      "pooja",
+      "home decor",
+      "spiritual",
+      "decor",
+      "hindu",
+      "sculpture"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/DEC-RADHA-007_FRONT.jpg",
+      "/images/products/DEC-RADHA-007_ANGLE.jpg",
+      "/images/products/DEC-RADHA-007_SIDE.jpg",
+      "/images/products/DEC-RADHA-007_REAR.jpg",
+      "/images/products/DEC-RADHA-007_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DEC-RADHA-007_FRONT",
+      "DEC-RADHA-007_ANGLE",
+      "DEC-RADHA-007_SIDE",
+      "DEC-RADHA-007_REAR",
+      "DEC-RADHA-007_DETAIL"
+    ]
+  },
+  {
     "id": "DSK-ORG-001",
     "name": "Multi-Compartment Desk Organizer",
     "category": "Desk & Office",
@@ -649,6 +790,71 @@ export const PRODUCTS = [
     ]
   },
   {
+    "id": "DSK-CAL-006",
+    "name": "Simple Flip Calendar",
+    "category": "Desk & Office",
+    "description": "Minimalist perpetual desktop flip calendar featuring a sleek matte structural frame, smooth pivot rings, and interchangeable date cards.",
+    "material": "PLA",
+    "price": "From ₹299",
+    "startingPrice": "₹299 (Incl. GST)",
+    "numericPrice": 299,
+    "gstIncluded": true,
+    "badge": "NEW",
+    "rating": 4.8,
+    "reviewsCount": 64,
+    "sizes": [
+      {
+        "name": "Small",
+        "dimensions": "130 × 50 × 85 mm",
+        "price": "₹299 (Incl. GST)",
+        "numericPrice": 299
+      },
+      {
+        "name": "Medium",
+        "dimensions": "165 × 65 × 110 mm",
+        "price": "₹389 (Incl. GST)",
+        "numericPrice": 389
+      },
+      {
+        "name": "Large",
+        "dimensions": "200 × 80 × 135 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
+      }
+    ],
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~5.5 hours",
+      "weight": "140g"
+    },
+    "tags": [
+      "calendar",
+      "flip calendar",
+      "desk organizer",
+      "perpetual calendar",
+      "minimalist",
+      "office",
+      "stationery",
+      "desk"
+    ],
+    "featured": false,
+    "images": [
+      "/images/products/DSK-CAL-006_FRONT.jpg",
+      "/images/products/DSK-CAL-006_ANGLE.jpg",
+      "/images/products/DSK-CAL-006_SIDE.jpg",
+      "/images/products/DSK-CAL-006_REAR.jpg",
+      "/images/products/DSK-CAL-006_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "DSK-CAL-006_FRONT",
+      "DSK-CAL-006_ANGLE",
+      "DSK-CAL-006_SIDE",
+      "DSK-CAL-006_REAR",
+      "DSK-CAL-006_DETAIL"
+    ]
+  },
+  {
     "id": "ORG-CABLE-001",
     "name": "Sliding Lid Cable Management Box",
     "category": "Organization & Storage",
@@ -711,64 +917,69 @@ export const PRODUCTS = [
     ]
   },
   {
-    "id": "ORG-SHELF-002",
-    "name": "Modern Floating Wall Bracket Shelf",
+    "id": "ORG-CAL-002",
+    "name": "Pen holder calendar",
     "category": "Organization & Storage",
-    "description": "Architectural cantilever floating wall shelf with countersunk hidden screw mounts for books and collectibles.",
+    "description": "Desktop perpetual flip calendar featuring modular date and month tiles with an integrated Voronoi lattice pen and stationery caddy.",
     "material": "PLA",
     "price": "From ₹349",
     "startingPrice": "₹349 (Incl. GST)",
     "numericPrice": 349,
     "gstIncluded": true,
-    "rating": 4.7,
-    "reviewsCount": 72,
+    "badge": "NEW",
+    "rating": 4.9,
+    "reviewsCount": 86,
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "150 × 100 × 50 mm",
+        "dimensions": "150 × 60 × 90 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
-        "dimensions": "200 × 130 × 65 mm",
+        "dimensions": "190 × 75 × 115 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Large",
-        "dimensions": "250 × 160 × 80 mm",
-        "price": "₹579 (Incl. GST)",
-        "numericPrice": 579
+        "dimensions": "230 × 90 × 140 mm",
+        "price": "₹569 (Incl. GST)",
+        "numericPrice": 569
       }
     ],
     "specs": {
-      "infill": "35% Tri-Hexagon",
-      "layerHeight": "0.20mm Standard",
-      "printTime": "~7.5 hours",
-      "weight": "260g"
+      "infill": "25% Gyroid",
+      "layerHeight": "0.16mm High Detail",
+      "printTime": "~6.5 hours",
+      "weight": "185g"
     },
     "tags": [
-      "shelf",
-      "wall mount",
-      "floating",
-      "decor",
-      "storage"
+      "pen holder",
+      "calendar",
+      "desk organizer",
+      "perpetual calendar",
+      "stationery",
+      "voronoi",
+      "office",
+      "storage",
+      "desk"
     ],
-    "featured": false,
+    "featured": true,
     "images": [
-      "/images/products/ORG-SHELF-002_FRONT.jpg",
-      "/images/products/ORG-SHELF-002_ANGLE.jpg",
-      "/images/products/ORG-SHELF-002_SIDE.jpg",
-      "/images/products/ORG-SHELF-002_REAR.jpg",
-      "/images/products/ORG-SHELF-002_DETAIL.jpg"
+      "/images/products/ORG-CAL-002_FRONT.jpg",
+      "/images/products/ORG-CAL-002_ANGLE.jpg",
+      "/images/products/ORG-CAL-002_SIDE.jpg",
+      "/images/products/ORG-CAL-002_REAR.jpg",
+      "/images/products/ORG-CAL-002_DETAIL.jpg"
     ],
     "imageIds": [
-      "ORG-SHELF-002_FRONT",
-      "ORG-SHELF-002_ANGLE",
-      "ORG-SHELF-002_SIDE",
-      "ORG-SHELF-002_REAR",
-      "ORG-SHELF-002_DETAIL"
+      "ORG-CAL-002_FRONT",
+      "ORG-CAL-002_ANGLE",
+      "ORG-CAL-002_SIDE",
+      "ORG-CAL-002_REAR",
+      "ORG-CAL-002_DETAIL"
     ]
   },
   {
