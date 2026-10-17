@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { CATEGORIES, SORT_OPTIONS, PRODUCTS } from '../data/catalog';
@@ -22,6 +21,19 @@ export default function Shop() {
   const [modalQuantity, setModalQuantity] = useState(1);
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomPos, setZoomPos] = useState({ x: 50, y: 50 });
+
+  // Custom Product Personalization State
+  const [customText, setCustomText] = useState("");
+  const [customColor, setCustomColor] = useState("Matte Black");
+  const [customNotes, setCustomNotes] = useState("");
+
+  const CUSTOM_PRODUCT_IDS = [
+    'CUS-NAME-001',
+    'CUS-SIGNET-002',
+    'CUS-PET-003',
+    'CUS-SPOTIFY-004',
+    'CUS-PLAQUE-005'
+  ];
 
   // Angle labels for 5 studio perspective views
   const angleLabels = [
@@ -100,9 +112,12 @@ export default function Shop() {
     setModalActiveMediaIndex(0);
     setModalQuantity(1);
     setIsZoomed(false);
-    // Default to medium size if available, otherwise first size
+    setCustomText("");
+    setCustomColor("Matte Black");
+    setCustomNotes("");
+    // Default to medium size (recommended / most popular)
     const defSize = product.sizes.find(s => s.name === "Medium") || product.sizes[0];
-    setModalSize(defSize ? defSize.name : "Standard");
+    setModalSize(defSize ? defSize.name : "Medium");
   };
 
   const handleCloseProduct = () => {
@@ -336,16 +351,19 @@ export default function Shop() {
               const currentImgIdx = (cardImageIndices[product.id] || 0) % product.images.length;
               const activeCardImg = product.images[currentImgIdx];
 
+              const cardMediumSize = product.sizes.find(s => s.name === "Medium") || product.sizes[0];
               const whatsappQuickMsg = encodeURIComponent(
                 `Hello 3D Matrix,\n\n` +
                 `I would like to order:\n\n` +
                 `Product: ${product.name}\n` +
-                `Category: ${product.category}\n` +
-                `Size: ${product.sizes[0]?.name || "Standard"} (${product.sizes[0]?.dimensions || "Standard"})\n` +
+                `Size: ${cardMediumSize.name}\n` +
+                `Dimensions: ${cardMediumSize.dimensions}\n` +
                 `Quantity: 1\n` +
                 `Material: PLA\n` +
-                `Price: ${product.startingPrice}\n\n` +
-                `Please confirm availability and delivery details.`
+                `Price per unit: ₹${cardMediumSize.numericPrice.toLocaleString()} (Incl. GST)\n` +
+                `Total: ₹${cardMediumSize.numericPrice.toLocaleString()} (Incl. GST)\n\n` +
+                `Please confirm availability and delivery details.\n\n` +
+                `Thank you.`
               );
 
               return (
@@ -410,10 +428,8 @@ export default function Shop() {
 
                     <div className="card-price-section">
                       <div className="price-tag">
-                        <span className="starting-label">Starting Price:</span>
-                        <span className="price-val">{product.startingPrice}</span>
+                        <span className="price-val">Starting from ₹{product.numericPrice.toLocaleString()} (Incl. GST)</span>
                       </div>
-                      <span className="gst-tag">Price includes GST</span>
                     </div>
 
                     {/* Card Actions: VIEW MODEL + ORDER ON WHATSAPP */}
@@ -422,7 +438,7 @@ export default function Shop() {
                         className="btn-card-view"
                         onClick={() => handleOpenProduct(product)}
                       >
-                        VIEW MODEL
+                        View Model
                       </button>
 
                       <a
@@ -453,22 +469,37 @@ export default function Shop() {
         const product = quickViewProduct;
         const images = product.images;
 
+        // Custom product detection
+        const isCustomProduct = CUSTOM_PRODUCT_IDS.includes(product.id) || product.category === 'Custom / Personalized';
+
         // Selected size object and calculated total
         const activeSizeObj = product.sizes.find(s => s.name === modalSize) || product.sizes[0];
         const unitPrice = activeSizeObj.numericPrice;
         const totalAmount = unitPrice * modalQuantity;
 
         // WhatsApp message matching EXACT user requirements:
-        const whatsappOrderText =
+        let whatsappOrderText =
           `Hello 3D Matrix,\n\n` +
           `I would like to order:\n\n` +
           `Product: ${product.name}\n` +
-          `Category: ${product.category}\n` +
-          `Size: ${activeSizeObj.name} — ${activeSizeObj.dimensions}\n` +
+          `Size: ${activeSizeObj.name}\n` +
+          `Dimensions: ${activeSizeObj.dimensions}\n` +
           `Quantity: ${modalQuantity}\n` +
           `Material: PLA\n` +
-          `Price: ₹${totalAmount.toLocaleString()} (Incl. GST)\n\n` +
-          `Please confirm availability and delivery details.`;
+          `Price per unit: ₹${unitPrice.toLocaleString()} (Incl. GST)\n` +
+          `Total: ₹${totalAmount.toLocaleString()} (Incl. GST)\n\n`;
+
+        if (isCustomProduct && (customText.trim() || customColor || customNotes.trim())) {
+          whatsappOrderText += `Customization Details:\n`;
+          if (customText.trim()) whatsappOrderText += `- Text / Name / Number: ${customText.trim()}\n`;
+          if (customColor) whatsappOrderText += `- Color Preference: ${customColor}\n`;
+          if (customNotes.trim()) whatsappOrderText += `- Notes / Reference: ${customNotes.trim()}\n`;
+          whatsappOrderText += `\n`;
+        }
+
+        whatsappOrderText +=
+          `Please confirm availability and delivery details.\n\n` +
+          `Thank you.`;
 
         const whatsappOrderUrl = `https://wa.me/919175256675?text=${encodeURIComponent(whatsappOrderText)}`;
 
@@ -568,7 +599,7 @@ export default function Shop() {
                 </div>
               </div>
 
-              {/* RIGHT COLUMN: PRODUCT DETAILS & WHATSAPP ORDER */}
+              {/* RIGHT COLUMN: PRODUCT DETAILS & PRICING */}
               <div className="modal-details-column">
                 {/* Category & ID Breadcrumb */}
                 <div className="modal-top-meta">
@@ -579,51 +610,90 @@ export default function Shop() {
                 {/* Product Name */}
                 <h2 className="modal-product-title">{product.name}</h2>
 
-                {/* Short Professional Description */}
+                {/* Rating & Review Status */}
+                <div className="modal-rating-row">
+                  <div className="stars-cluster">
+                    <span className="star-char">★★★★★</span>
+                    <span className="rating-score">{product.rating.toFixed(1)}</span>
+                  </div>
+                  <span className="rating-divider">•</span>
+                  <span className="rating-count">{product.reviewsCount} customer reviews</span>
+                  <span className="verified-badge">✓ Print-Verified PLA</span>
+                </div>
+
+                {/* Product Description */}
                 <p className="modal-product-desc">{product.description}</p>
 
-                {/* PRICE WITH GST CLARITY */}
+                {/* PRICE SECTION (HONEST TRANSPARENT PRICING — NO FAKE DISCOUNTS) */}
                 <div className="modal-price-box">
-                  <div className="price-main-row">
-                    <span className="price-value">₹{unitPrice.toLocaleString()}</span>
-                    <span className="price-gst-badge">Price includes GST</span>
+                  <div className="modal-pricing-honest-display">
+                    {product.mrp ? (
+                      <div className="mrp-pricing-block">
+                        <div className="mrp-row">
+                          <span className="mrp-k">MRP:</span>
+                          <span className="mrp-v">₹{(activeSizeObj.mrp || product.mrp).toLocaleString()}</span>
+                        </div>
+                        <div className="offer-row">
+                          <span className="offer-k">Offer Price:</span>
+                          <span className="offer-v">₹{unitPrice.toLocaleString()} (Incl. GST)</span>
+                          <span className="save-pill">Save ₹{((activeSizeObj.mrp || product.mrp) - unitPrice).toLocaleString()}</span>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="standard-pricing-block">
+                        <div className="regular-price-line">
+                          <span className="price-k">Regular Price:</span>
+                          <span className="price-v">₹{unitPrice.toLocaleString()}</span>
+                        </div>
+                        <div className="offer-price-line">
+                          <span className="price-k">Offer Price:</span>
+                          <span className="price-offer-val">₹{unitPrice.toLocaleString()}</span>
+                          <span className="price-gst-badge">(Incl. GST)</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                  <p className="price-notice-sub">All taxes included. No hidden charges at checkout.</p>
+                  <p className="price-notice-sub">All displayed customer prices include GST. No extra taxes added at checkout.</p>
                 </div>
 
                 {/* MATERIAL SELECTION: STRICTLY PLA ONLY */}
                 <div className="modal-section-box">
                   <div className="section-label-row">
                     <span className="section-title">MATERIAL</span>
-                    <span className="section-selected-value">PLA (Eco-Friendly Thermoplastic)</span>
+                    <span className="section-selected-value">PLA</span>
                   </div>
                   <div className="material-pill-single">
                     <span className="mat-check">✓</span>
                     <span>Material: <strong>PLA</strong></span>
-                    <span className="mat-subtext">— Biodegradable, High-Strength, Crisp Layer Lines</span>
+                    <span className="mat-subtext">— Biodegradable Thermoplastic, High Rigidity & Crisp Detail</span>
                   </div>
                 </div>
 
-                {/* PRODUCT-SPECIFIC SIZE SELECTION */}
+                {/* PRODUCT-SPECIFIC SIZE SELECTION (SMALL / MEDIUM / LARGE) */}
                 <div className="modal-section-box">
                   <div className="section-label-row">
-                    <span className="section-title">SELECT SIZE</span>
-                    <span className="section-selected-value">{activeSizeObj.name} ({activeSizeObj.dimensions})</span>
+                    <span className="section-title">SIZE</span>
+                    <span className="section-selected-value">{activeSizeObj.name} (Approx. {activeSizeObj.dimensions})</span>
                   </div>
                   <div className="size-options-grid">
                     {product.sizes.map(size => {
                       const isSelected = size.name === modalSize;
+                      const isRecommended = size.isPopular || size.name === "Medium";
                       return (
                         <button
                           key={size.name}
                           type="button"
-                          className={`size-card-btn ${isSelected ? 'selected' : ''}`}
+                          className={`size-card-btn ${isSelected ? 'selected' : ''} ${isRecommended ? 'recommended' : ''}`}
                           onClick={() => setModalSize(size.name)}
                         >
-                          <div className="size-name-text">{size.name}</div>
+                          <div className="size-radio-header">
+                            <span className="size-radio-circle">{isSelected ? '●' : '○'}</span>
+                            <span className="size-name-text">{size.name}</span>
+                            {isRecommended && <span className="size-recommended-badge">Recommended</span>}
+                          </div>
+                          <div className="size-dim-label">Approx. dimensions:</div>
                           <div className="size-dim-text">{size.dimensions}</div>
-                          <div className="size-price-tag">₹{size.numericPrice} (Incl. GST)</div>
-                          {isSelected && <span className="size-active-mark">●</span>}
+                          <div className="size-price-tag">₹{size.numericPrice.toLocaleString()} (Incl. GST)</div>
                         </button>
                       );
                     })}
@@ -642,6 +712,7 @@ export default function Shop() {
                       className="qty-btn"
                       onClick={() => setModalQuantity(prev => Math.max(1, prev - 1))}
                       title="Decrease quantity"
+                      aria-label="Decrease quantity"
                     >
                       −
                     </button>
@@ -651,11 +722,64 @@ export default function Shop() {
                       className="qty-btn"
                       onClick={() => setModalQuantity(prev => prev + 1)}
                       title="Increase quantity"
+                      aria-label="Increase quantity"
                     >
                       +
                     </button>
                   </div>
                 </div>
+
+                {/* CUSTOM PRODUCTS PERSONALIZATION BLOCK */}
+                {isCustomProduct && (
+                  <div className="modal-section-box custom-product-box">
+                    <div className="section-label-row">
+                      <span className="section-title">CUSTOMIZATION DETAILS</span>
+                      <span className="custom-note-tag">Custom Order</span>
+                    </div>
+                    <div className="custom-fields-wrapper">
+                      <div className="custom-field">
+                        <label className="custom-field-label">Name / Text / Number to Print:</label>
+                        <input
+                          type="text"
+                          className="custom-field-input"
+                          placeholder="e.g. NIKHIL / Suite 402 / Pet Name"
+                          value={customText}
+                          onChange={(e) => setCustomText(e.target.value)}
+                        />
+                      </div>
+                      <div className="custom-field">
+                        <label className="custom-field-label">Color Preference:</label>
+                        <select
+                          className="custom-field-select"
+                          value={customColor}
+                          onChange={(e) => setCustomColor(e.target.value)}
+                        >
+                          <option value="Matte Black">Matte Black</option>
+                          <option value="Titanium Grey">Titanium Grey</option>
+                          <option value="Pure White">Pure White</option>
+                          <option value="Silk Gold">Silk Gold</option>
+                          <option value="Dual Tone (Black / Gold)">Dual Tone (Black / Gold)</option>
+                          <option value="Dual Tone (White / Black)">Dual Tone (White / Black)</option>
+                          <option value="Fire Red">Fire Red</option>
+                          <option value="Custom / Confirm on WhatsApp">Custom / Confirm on WhatsApp</option>
+                        </select>
+                      </div>
+                      <div className="custom-field">
+                        <label className="custom-field-label">Reference Link / Spotify Track / Notes:</label>
+                        <input
+                          type="text"
+                          className="custom-field-input"
+                          placeholder="e.g. Spotify Song URL, font style, or phone number"
+                          value={customNotes}
+                          onChange={(e) => setCustomNotes(e.target.value)}
+                        />
+                      </div>
+                    </div>
+                    <div className="custom-complexity-notice">
+                      ⚠️ Final price may vary depending on customization complexity.
+                    </div>
+                  </div>
+                )}
 
                 {/* ORDER SUMMARY BOX */}
                 <div className="modal-order-summary-card">
@@ -665,19 +789,39 @@ export default function Shop() {
                   </div>
                   <div className="summary-row">
                     <span>📐 Size:</span>
-                    <strong>{activeSizeObj.name} ({activeSizeObj.dimensions})</strong>
+                    <strong>{activeSizeObj.name} (Approx. {activeSizeObj.dimensions})</strong>
                   </div>
                   <div className="summary-row">
                     <span>🏷️ Material:</span>
                     <strong>PLA</strong>
                   </div>
                   <div className="summary-row">
+                    <span>💵 Unit Price:</span>
+                    <strong>₹{unitPrice.toLocaleString()} (Incl. GST)</strong>
+                  </div>
+                  <div className="summary-row">
                     <span>🔢 Quantity:</span>
                     <strong>{modalQuantity}</strong>
                   </div>
                   <div className="summary-row total-row">
-                    <span>Total Amount:</span>
+                    <span>Estimated Total:</span>
                     <strong className="summary-total-price">₹{totalAmount.toLocaleString()} (Incl. GST)</strong>
+                  </div>
+                </div>
+
+                {/* PRICING DISCLAIMER */}
+                <div className="pricing-disclaimers-card">
+                  <div className="disclaimer-item">
+                    <span className="disclaimer-bullet">ℹ️</span>
+                    <p className="disclaimer-text">
+                      Prices vary by model, selected size, design complexity and print requirements. Displayed prices include GST. Custom designs and special print requirements may require a separate quotation.
+                    </p>
+                  </div>
+                  <div className="disclaimer-item stl-upload-note">
+                    <span className="disclaimer-bullet">📁</span>
+                    <p className="disclaimer-text">
+                      Have your own 3D model? Send us the STL/3MF file for a custom quote.
+                    </p>
                   </div>
                 </div>
 
