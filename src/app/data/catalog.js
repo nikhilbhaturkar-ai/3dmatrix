@@ -1,7 +1,8 @@
 // 3D Matrix Master Product Catalog — 70 Unique 3D Printable Models
 // Categorized into 13 distinct marketplace categories with dedicated media galleries
 // Strictly IMAGES ONLY — NO PRODUCT VIDEOS
-// Verified 350 Unique Media Assets (Zero Duplicate Images)
+// Standardized Global Size System (Small / Medium / Large / Custom Size)
+// Calibrated for Creality K2 SE (Single-Piece Practical Limits: 210 × 205 × 235 mm)
 
 export const CATEGORIES = [
   "All Models",
@@ -56,12 +57,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 90,
+        "depth": 90,
+        "height": 120,
         "dimensions": "90 × 90 × 120 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
+        "width": 125,
+        "depth": 125,
+        "height": 165,
         "dimensions": "125 × 125 × 165 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599,
@@ -69,6 +76,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 160,
+        "depth": 160,
+        "height": 210,
         "dimensions": "160 × 160 × 210 mm",
         "price": "₹899 (Incl. GST)",
         "numericPrice": 899
@@ -103,7 +113,36 @@ export const PRODUCTS = [
       "DEC-VASE-001_SIDE",
       "DEC-VASE-001_REAR",
       "DEC-VASE-001_DETAIL"
-    ]
+    ],
+    "productName": "The Oyster Geometric Vase",
+    "smallDimensions": "90 × 90 × 120 mm",
+    "mediumDimensions": "125 × 125 × 165 mm",
+    "largeDimensions": "160 × 160 × 210 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 899,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-ALTAR-002",
@@ -121,12 +160,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 85,
+        "depth": 75,
+        "height": 110,
         "dimensions": "85 × 75 × 110 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
+        "width": 120,
+        "depth": 105,
+        "height": 155,
         "dimensions": "120 × 105 × 155 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599,
@@ -134,6 +179,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 155,
+        "depth": 135,
+        "height": 200,
         "dimensions": "155 × 135 × 200 mm",
         "price": "₹899 (Incl. GST)",
         "numericPrice": 899
@@ -167,7 +215,36 @@ export const PRODUCTS = [
       "DEC-ALTAR-002_SIDE",
       "DEC-ALTAR-002_REAR",
       "DEC-ALTAR-002_DETAIL"
-    ]
+    ],
+    "productName": "Zen Buddha Incense & Candle Altar",
+    "smallDimensions": "85 × 75 × 110 mm",
+    "mediumDimensions": "120 × 105 × 155 mm",
+    "largeDimensions": "155 × 135 × 200 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 899,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-PLATE-003",
@@ -184,12 +261,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 95,
+        "depth": 95,
+        "height": 15,
         "dimensions": "95 × 95 × 15 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
       },
       {
         "name": "Medium",
+        "width": 135,
+        "depth": 135,
+        "height": 20,
         "dimensions": "135 × 135 × 20 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349,
@@ -197,6 +280,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 175,
+        "depth": 175,
+        "height": 26,
         "dimensions": "175 × 175 × 26 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
@@ -229,7 +315,36 @@ export const PRODUCTS = [
       "DEC-PLATE-003_SIDE",
       "DEC-PLATE-003_REAR",
       "DEC-PLATE-003_DETAIL"
-    ]
+    ],
+    "productName": "Mandala Floral Incense Burner Plate",
+    "smallDimensions": "95 × 95 × 15 mm",
+    "mediumDimensions": "135 × 135 × 20 mm",
+    "largeDimensions": "175 × 175 × 26 mm",
+    "smallPrice": 249,
+    "mediumPrice": 349,
+    "largePrice": 499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-STAND-004",
@@ -247,12 +362,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 110,
+        "depth": 45,
+        "height": 65,
         "dimensions": "110 × 45 × 65 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 150,
+        "depth": 60,
+        "height": 90,
         "dimensions": "150 × 60 × 90 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -260,6 +381,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 195,
+        "depth": 75,
+        "height": 115,
         "dimensions": "195 × 75 × 115 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -292,7 +416,36 @@ export const PRODUCTS = [
       "DEC-STAND-004_SIDE",
       "DEC-STAND-004_REAR",
       "DEC-STAND-004_DETAIL"
-    ]
+    ],
+    "productName": "Samurai Katana Incense & Pen Stand",
+    "smallDimensions": "110 × 45 × 65 mm",
+    "mediumDimensions": "150 × 60 × 90 mm",
+    "largeDimensions": "195 × 75 × 115 mm",
+    "smallPrice": 299,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-PILLAR-005",
@@ -309,12 +462,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 70,
+        "depth": 70,
+        "height": 95,
         "dimensions": "70 × 70 × 95 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 95,
+        "depth": 95,
+        "height": 140,
         "dimensions": "95 × 95 × 140 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -322,6 +481,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 125,
+        "depth": 125,
+        "height": 190,
         "dimensions": "125 × 125 × 190 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -354,7 +516,36 @@ export const PRODUCTS = [
       "DEC-PILLAR-005_SIDE",
       "DEC-PILLAR-005_REAR",
       "DEC-PILLAR-005_DETAIL"
-    ]
+    ],
+    "productName": "Ribbed Architectural Candle Pillar Stand",
+    "smallDimensions": "70 × 70 × 95 mm",
+    "mediumDimensions": "95 × 95 × 140 mm",
+    "largeDimensions": "125 × 125 × 190 mm",
+    "smallPrice": 299,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-KRISHNA-006",
@@ -372,12 +563,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 70,
+        "depth": 60,
+        "height": 110,
         "dimensions": "70 × 60 × 110 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
       },
       {
         "name": "Medium",
+        "width": 95,
+        "depth": 85,
+        "height": 150,
         "dimensions": "95 × 85 × 150 mm",
         "price": "₹749 (Incl. GST)",
         "numericPrice": 749,
@@ -385,6 +582,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 125,
+        "depth": 110,
+        "height": 200,
         "dimensions": "125 × 110 × 200 mm",
         "price": "₹1099 (Incl. GST)",
         "numericPrice": 1099
@@ -425,7 +625,36 @@ export const PRODUCTS = [
       "DEC-KRISHNA-006_SIDE",
       "DEC-KRISHNA-006_REAR",
       "DEC-KRISHNA-006_DETAIL"
-    ]
+    ],
+    "productName": "Elegant Krishna Idol on Lotus Base",
+    "smallDimensions": "70 × 60 × 110 mm",
+    "mediumDimensions": "95 × 85 × 150 mm",
+    "largeDimensions": "125 × 110 × 200 mm",
+    "smallPrice": 499,
+    "mediumPrice": 749,
+    "largePrice": 1099,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-RADHA-007",
@@ -443,12 +672,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 65,
+        "depth": 60,
+        "height": 105,
         "dimensions": "65 × 60 × 105 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Medium",
+        "width": 90,
+        "depth": 80,
+        "height": 145,
         "dimensions": "90 × 80 × 145 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699,
@@ -456,6 +691,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 120,
+        "depth": 105,
+        "height": 190,
         "dimensions": "120 × 105 × 190 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999
@@ -497,7 +735,36 @@ export const PRODUCTS = [
       "DEC-RADHA-007_SIDE",
       "DEC-RADHA-007_REAR",
       "DEC-RADHA-007_DETAIL"
-    ]
+    ],
+    "productName": "Edge Sitting Radhey Rani Idol",
+    "smallDimensions": "65 × 60 × 105 mm",
+    "mediumDimensions": "90 × 80 × 145 mm",
+    "largeDimensions": "120 × 105 × 190 mm",
+    "smallPrice": 449,
+    "mediumPrice": 699,
+    "largePrice": 999,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-LILKRISH-008",
@@ -515,12 +782,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 60,
+        "depth": 55,
+        "height": 100,
         "dimensions": "60 × 55 × 100 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
+        "width": 85,
+        "depth": 75,
+        "height": 140,
         "dimensions": "85 × 75 × 140 mm",
         "price": "₹549 (Incl. GST)",
         "numericPrice": 549,
@@ -528,6 +801,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 115,
+        "depth": 100,
+        "height": 185,
         "dimensions": "115 × 100 × 185 mm",
         "price": "₹799 (Incl. GST)",
         "numericPrice": 799
@@ -570,7 +846,36 @@ export const PRODUCTS = [
       "DEC-LILKRISH-008_SIDE",
       "DEC-LILKRISH-008_REAR",
       "DEC-LILKRISH-008_DETAIL"
-    ]
+    ],
+    "productName": "Little Krishna - The Divine Flutist",
+    "smallDimensions": "60 × 55 × 100 mm",
+    "mediumDimensions": "85 × 75 × 140 mm",
+    "largeDimensions": "115 × 100 × 185 mm",
+    "smallPrice": 349,
+    "mediumPrice": 549,
+    "largePrice": 799,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DEC-EDGEKRISH-009",
@@ -588,12 +893,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 65,
+        "depth": 60,
+        "height": 95,
         "dimensions": "65 × 60 × 95 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
+        "width": 90,
+        "depth": 80,
+        "height": 135,
         "dimensions": "90 × 80 × 135 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599,
@@ -601,6 +912,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 120,
+        "depth": 105,
+        "height": 180,
         "dimensions": "120 × 105 × 180 mm",
         "price": "₹899 (Incl. GST)",
         "numericPrice": 899
@@ -642,7 +956,36 @@ export const PRODUCTS = [
       "DEC-EDGEKRISH-009_SIDE",
       "DEC-EDGEKRISH-009_REAR",
       "DEC-EDGEKRISH-009_DETAIL"
-    ]
+    ],
+    "productName": "Edge-Sitting Baby Krishna Flute Figurine",
+    "smallDimensions": "65 × 60 × 95 mm",
+    "mediumDimensions": "90 × 80 × 135 mm",
+    "largeDimensions": "120 × 105 × 180 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 899,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DSK-ORG-001",
@@ -660,12 +1003,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 110,
+        "depth": 95,
+        "height": 85,
         "dimensions": "110 × 95 × 85 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
+        "width": 150,
+        "depth": 130,
+        "height": 115,
         "dimensions": "150 × 130 × 115 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499,
@@ -673,6 +1022,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 195,
+        "depth": 170,
+        "height": 145,
         "dimensions": "195 × 170 × 145 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
@@ -705,7 +1057,36 @@ export const PRODUCTS = [
       "DSK-ORG-001_SIDE",
       "DSK-ORG-001_REAR",
       "DSK-ORG-001_DETAIL"
-    ]
+    ],
+    "productName": "Multi-Compartment Desk Organizer",
+    "smallDimensions": "110 × 95 × 85 mm",
+    "mediumDimensions": "150 × 130 × 115 mm",
+    "largeDimensions": "195 × 170 × 145 mm",
+    "smallPrice": 349,
+    "mediumPrice": 499,
+    "largePrice": 699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DSK-FLUTE-002",
@@ -722,12 +1103,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 110,
+        "depth": 80,
+        "height": 90,
         "dimensions": "110 × 80 × 90 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
+        "width": 150,
+        "depth": 110,
+        "height": 125,
         "dimensions": "150 × 110 × 125 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499,
@@ -735,6 +1122,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 195,
+        "depth": 140,
+        "height": 160,
         "dimensions": "195 × 140 × 160 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
@@ -767,7 +1157,36 @@ export const PRODUCTS = [
       "DSK-FLUTE-002_SIDE",
       "DSK-FLUTE-002_REAR",
       "DSK-FLUTE-002_DETAIL"
-    ]
+    ],
+    "productName": "Fluted Scandinavian Desk Organizer",
+    "smallDimensions": "110 × 80 × 90 mm",
+    "mediumDimensions": "150 × 110 × 125 mm",
+    "largeDimensions": "195 × 140 × 160 mm",
+    "smallPrice": 349,
+    "mediumPrice": 499,
+    "largePrice": 699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DSK-CADDY-003",
@@ -785,12 +1204,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 105,
+        "depth": 95,
+        "height": 105,
         "dimensions": "105 × 95 × 105 mm",
         "price": "₹379 (Incl. GST)",
         "numericPrice": 379
       },
       {
         "name": "Medium",
+        "width": 145,
+        "depth": 130,
+        "height": 145,
         "dimensions": "145 × 130 × 145 mm",
         "price": "₹549 (Incl. GST)",
         "numericPrice": 549,
@@ -798,6 +1223,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 185,
+        "depth": 165,
+        "height": 185,
         "dimensions": "185 × 165 × 185 mm",
         "price": "₹799 (Incl. GST)",
         "numericPrice": 799
@@ -830,7 +1258,36 @@ export const PRODUCTS = [
       "DSK-CADDY-003_SIDE",
       "DSK-CADDY-003_REAR",
       "DSK-CADDY-003_DETAIL"
-    ]
+    ],
+    "productName": "Voronoi Angled Desktop Stationery Caddy",
+    "smallDimensions": "105 × 95 × 105 mm",
+    "mediumDimensions": "145 × 130 × 145 mm",
+    "largeDimensions": "185 × 165 × 185 mm",
+    "smallPrice": 379,
+    "mediumPrice": 549,
+    "largePrice": 799,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DSK-TREX-004",
@@ -848,12 +1305,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 115,
+        "depth": 65,
+        "height": 75,
         "dimensions": "115 × 65 × 75 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Medium",
+        "width": 155,
+        "depth": 85,
+        "height": 100,
         "dimensions": "155 × 85 × 100 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649,
@@ -861,6 +1324,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 200,
+        "depth": 110,
+        "height": 130,
         "dimensions": "200 × 110 × 130 mm",
         "price": "₹949 (Incl. GST)",
         "numericPrice": 949
@@ -893,7 +1359,36 @@ export const PRODUCTS = [
       "DSK-TREX-004_SIDE",
       "DSK-TREX-004_REAR",
       "DSK-TREX-004_DETAIL"
-    ]
+    ],
+    "productName": "Prehistoric T-Rex Skull Pen Display",
+    "smallDimensions": "115 × 65 × 75 mm",
+    "mediumDimensions": "155 × 85 × 100 mm",
+    "largeDimensions": "200 × 110 × 130 mm",
+    "smallPrice": 449,
+    "mediumPrice": 649,
+    "largePrice": 949,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DSK-DOCK-005",
@@ -910,12 +1405,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 75,
+        "depth": 50,
+        "height": 55,
         "dimensions": "75 × 50 × 55 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
       },
       {
         "name": "Medium",
+        "width": 100,
+        "depth": 65,
+        "height": 70,
         "dimensions": "100 × 65 × 70 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349,
@@ -923,6 +1424,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 130,
+        "depth": 85,
+        "height": 90,
         "dimensions": "130 × 85 × 90 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
@@ -956,7 +1460,36 @@ export const PRODUCTS = [
       "DSK-DOCK-005_SIDE",
       "DSK-DOCK-005_REAR",
       "DSK-DOCK-005_DETAIL"
-    ]
+    ],
+    "productName": "Minimalist Toothbrush & Stylus Razor Dock",
+    "smallDimensions": "75 × 50 × 55 mm",
+    "mediumDimensions": "100 × 65 × 70 mm",
+    "largeDimensions": "130 × 85 × 90 mm",
+    "smallPrice": 249,
+    "mediumPrice": 349,
+    "largePrice": 499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "DSK-CAL-006",
@@ -974,12 +1507,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 100,
+        "depth": 60,
+        "height": 85,
         "dimensions": "100 × 60 × 85 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 140,
+        "depth": 80,
+        "height": 120,
         "dimensions": "140 × 80 × 120 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -987,6 +1526,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 180,
+        "depth": 105,
+        "height": 155,
         "dimensions": "180 × 105 × 155 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -1022,7 +1564,36 @@ export const PRODUCTS = [
       "DSK-CAL-006_SIDE",
       "DSK-CAL-006_REAR",
       "DSK-CAL-006_DETAIL"
-    ]
+    ],
+    "productName": "Simple Flip Calendar",
+    "smallDimensions": "100 × 60 × 85 mm",
+    "mediumDimensions": "140 × 80 × 120 mm",
+    "largeDimensions": "180 × 105 × 155 mm",
+    "smallPrice": 299,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "ORG-CABLE-001",
@@ -1040,22 +1611,31 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "160 × 95 × 75 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "width": 140,
+        "depth": 85,
+        "height": 65,
+        "dimensions": "140 × 85 × 65 mm",
+        "price": "₹349 (Incl. GST)",
+        "numericPrice": 349
       },
       {
         "name": "Medium",
-        "dimensions": "220 × 125 × 100 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549,
+        "width": 180,
+        "depth": 115,
+        "height": 85,
+        "dimensions": "180 × 115 × 85 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "280 × 155 × 125 mm",
-        "price": "₹799 (Incl. GST)",
-        "numericPrice": 799
+        "width": 208,
+        "depth": 130,
+        "height": 95,
+        "dimensions": "208 × 130 × 95 mm",
+        "price": "₹699 (Incl. GST)",
+        "numericPrice": 699
       }
     ],
     "specs": {
@@ -1085,7 +1665,36 @@ export const PRODUCTS = [
       "ORG-CABLE-001_SIDE",
       "ORG-CABLE-001_REAR",
       "ORG-CABLE-001_DETAIL"
-    ]
+    ],
+    "productName": "Sliding Lid Cable Management Box",
+    "smallDimensions": "140 × 85 × 65 mm",
+    "mediumDimensions": "180 × 115 × 85 mm",
+    "largeDimensions": "208 × 130 × 95 mm",
+    "smallPrice": 349,
+    "mediumPrice": 499,
+    "largePrice": 699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "ORG-CAL-002",
@@ -1103,12 +1712,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 105,
+        "depth": 80,
+        "height": 85,
         "dimensions": "105 × 80 × 85 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
+        "width": 145,
+        "depth": 105,
+        "height": 115,
         "dimensions": "145 × 105 × 115 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499,
@@ -1116,6 +1731,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 185,
+        "depth": 135,
+        "height": 145,
         "dimensions": "185 × 135 × 145 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
@@ -1152,7 +1770,36 @@ export const PRODUCTS = [
       "ORG-CAL-002_SIDE",
       "ORG-CAL-002_REAR",
       "ORG-CAL-002_DETAIL"
-    ]
+    ],
+    "productName": "Pen holder calendar",
+    "smallDimensions": "105 × 80 × 85 mm",
+    "mediumDimensions": "145 × 105 × 115 mm",
+    "largeDimensions": "185 × 135 × 145 mm",
+    "smallPrice": 349,
+    "mediumPrice": 499,
+    "largePrice": 699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "ORG-TOWEL-003",
@@ -1169,20 +1816,29 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "150 × 90 × 85 mm",
+        "width": 135,
+        "depth": 85,
+        "height": 80,
+        "dimensions": "135 × 85 × 80 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
-        "dimensions": "210 × 115 × 110 mm",
+        "width": 175,
+        "depth": 110,
+        "height": 100,
+        "dimensions": "175 × 110 × 100 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "275 × 140 × 135 mm",
+        "width": 205,
+        "depth": 125,
+        "height": 120,
+        "dimensions": "205 × 125 × 120 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
       }
@@ -1214,7 +1870,36 @@ export const PRODUCTS = [
       "ORG-TOWEL-003_SIDE",
       "ORG-TOWEL-003_REAR",
       "ORG-TOWEL-003_DETAIL"
-    ]
+    ],
+    "productName": "Fluted Paper Towel & Roll Dispenser",
+    "smallDimensions": "135 × 85 × 80 mm",
+    "mediumDimensions": "175 × 110 × 100 mm",
+    "largeDimensions": "205 × 125 × 120 mm",
+    "smallPrice": 349,
+    "mediumPrice": 499,
+    "largePrice": 699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "ORG-LOCK-004",
@@ -1231,20 +1916,29 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "180 × 110 × 160 mm",
+        "width": 140,
+        "depth": 90,
+        "height": 130,
+        "dimensions": "140 × 90 × 130 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
       },
       {
         "name": "Medium",
-        "dimensions": "235 × 135 × 210 mm",
+        "width": 175,
+        "depth": 110,
+        "height": 170,
+        "dimensions": "175 × 110 × 170 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "290 × 160 × 260 mm",
+        "width": 205,
+        "depth": 130,
+        "height": 215,
+        "dimensions": "205 × 130 × 215 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999
       }
@@ -1276,7 +1970,36 @@ export const PRODUCTS = [
       "ORG-LOCK-004_SIDE",
       "ORG-LOCK-004_REAR",
       "ORG-LOCK-004_DETAIL"
-    ]
+    ],
+    "productName": "Commercial Locking Paper Towel Dispenser",
+    "smallDimensions": "140 × 90 × 130 mm",
+    "mediumDimensions": "175 × 110 × 170 mm",
+    "largeDimensions": "205 × 130 × 215 mm",
+    "smallPrice": 499,
+    "mediumPrice": 699,
+    "largePrice": 999,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "ORG-HOOK-005",
@@ -1294,12 +2017,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 65,
+        "depth": 40,
+        "height": 80,
         "dimensions": "65 × 40 × 80 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
       },
       {
         "name": "Medium",
+        "width": 90,
+        "depth": 55,
+        "height": 110,
         "dimensions": "90 × 55 × 110 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349,
@@ -1307,6 +2036,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 115,
+        "depth": 70,
+        "height": 140,
         "dimensions": "115 × 70 × 140 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
@@ -1339,7 +2071,36 @@ export const PRODUCTS = [
       "ORG-HOOK-005_SIDE",
       "ORG-HOOK-005_REAR",
       "ORG-HOOK-005_DETAIL"
-    ]
+    ],
+    "productName": "Winter Puffer Jacket Key & Mask Hook",
+    "smallDimensions": "65 × 40 × 80 mm",
+    "mediumDimensions": "90 × 55 × 110 mm",
+    "largeDimensions": "115 × 70 × 140 mm",
+    "smallPrice": 249,
+    "mediumPrice": 349,
+    "largePrice": 499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TCH-PHONE-001",
@@ -1357,12 +2118,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 90,
+        "depth": 75,
+        "height": 80,
         "dimensions": "90 × 75 × 80 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
       },
       {
         "name": "Medium",
+        "width": 115,
+        "depth": 95,
+        "height": 100,
         "dimensions": "115 × 95 × 100 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349,
@@ -1370,6 +2137,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 145,
+        "depth": 120,
+        "height": 125,
         "dimensions": "145 × 120 × 125 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
@@ -1404,7 +2174,36 @@ export const PRODUCTS = [
       "TCH-PHONE-001_SIDE",
       "TCH-PHONE-001_REAR",
       "TCH-PHONE-001_DETAIL"
-    ]
+    ],
+    "productName": "Cyber Ergonomic Phone Stand",
+    "smallDimensions": "90 × 75 × 80 mm",
+    "mediumDimensions": "115 × 95 × 100 mm",
+    "largeDimensions": "145 × 120 × 125 mm",
+    "smallPrice": 249,
+    "mediumPrice": 349,
+    "largePrice": 499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TCH-WEBARM-002",
@@ -1422,22 +2221,31 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "105 × 105 × 200 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "width": 100,
+        "depth": 100,
+        "height": 175,
+        "dimensions": "100 × 100 × 175 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
       },
       {
         "name": "Medium",
-        "dimensions": "135 × 135 × 245 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649,
+        "width": 120,
+        "depth": 120,
+        "height": 205,
+        "dimensions": "120 × 120 × 205 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "165 × 165 × 290 mm",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899
+        "width": 135,
+        "depth": 135,
+        "height": 230,
+        "dimensions": "135 × 135 × 230 mm",
+        "price": "₹1099 (Incl. GST)",
+        "numericPrice": 1099
       }
     ],
     "specs": {
@@ -1467,7 +2275,36 @@ export const PRODUCTS = [
       "TCH-WEBARM-002_SIDE",
       "TCH-WEBARM-002_REAR",
       "TCH-WEBARM-002_DETAIL"
-    ]
+    ],
+    "productName": "Web-Armor Headphone Stand",
+    "smallDimensions": "100 × 100 × 175 mm",
+    "mediumDimensions": "120 × 120 × 205 mm",
+    "largeDimensions": "135 × 135 × 230 mm",
+    "smallPrice": 499,
+    "mediumPrice": 749,
+    "largePrice": 1099,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TCH-HEISEN-003",
@@ -1485,22 +2322,31 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "120 × 110 × 185 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549
+        "width": 110,
+        "depth": 100,
+        "height": 175,
+        "dimensions": "110 × 100 × 175 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
       },
       {
         "name": "Medium",
-        "dimensions": "155 × 140 × 240 mm",
-        "price": "₹799 (Incl. GST)",
-        "numericPrice": 799,
+        "width": 135,
+        "depth": 125,
+        "height": 205,
+        "dimensions": "135 × 125 × 205 mm",
+        "price": "₹899 (Incl. GST)",
+        "numericPrice": 899,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "195 × 175 × 295 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099
+        "width": 155,
+        "depth": 140,
+        "height": 230,
+        "dimensions": "155 × 140 × 230 mm",
+        "price": "₹1299 (Incl. GST)",
+        "numericPrice": 1299
       }
     ],
     "specs": {
@@ -1530,7 +2376,36 @@ export const PRODUCTS = [
       "TCH-HEISEN-003_SIDE",
       "TCH-HEISEN-003_REAR",
       "TCH-HEISEN-003_DETAIL"
-    ]
+    ],
+    "productName": "Heisenberg Sculptural Headphone Display",
+    "smallDimensions": "110 × 100 × 175 mm",
+    "mediumDimensions": "135 × 125 × 205 mm",
+    "largeDimensions": "155 × 140 × 230 mm",
+    "smallPrice": 599,
+    "mediumPrice": 899,
+    "largePrice": 1299,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TCH-MAGSAFE-004",
@@ -1547,12 +2422,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 75,
+        "depth": 75,
+        "height": 90,
         "dimensions": "75 × 75 × 90 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 100,
+        "depth": 100,
+        "height": 120,
         "dimensions": "100 × 100 × 120 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399,
@@ -1560,6 +2441,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 125,
+        "depth": 125,
+        "height": 150,
         "dimensions": "125 × 125 × 150 mm",
         "price": "₹549 (Incl. GST)",
         "numericPrice": 549
@@ -1592,7 +2476,36 @@ export const PRODUCTS = [
       "TCH-MAGSAFE-004_SIDE",
       "TCH-MAGSAFE-004_REAR",
       "TCH-MAGSAFE-004_DETAIL"
-    ]
+    ],
+    "productName": "Dual-Angle MagSafe Wireless Charger Valet",
+    "smallDimensions": "75 × 75 × 90 mm",
+    "mediumDimensions": "100 × 100 × 120 mm",
+    "largeDimensions": "125 × 125 × 150 mm",
+    "smallPrice": 299,
+    "mediumPrice": 399,
+    "largePrice": 549,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TCH-MOUNT-005",
@@ -1610,12 +2523,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 75,
+        "depth": 80,
+        "height": 85,
         "dimensions": "75 × 80 × 85 mm",
         "price": "₹329 (Incl. GST)",
         "numericPrice": 329
       },
       {
         "name": "Medium",
+        "width": 100,
+        "depth": 105,
+        "height": 115,
         "dimensions": "100 × 105 × 115 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -1623,6 +2542,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 125,
+        "depth": 130,
+        "height": 145,
         "dimensions": "125 × 130 × 145 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -1655,7 +2577,36 @@ export const PRODUCTS = [
       "TCH-MOUNT-005_SIDE",
       "TCH-MOUNT-005_REAR",
       "TCH-MOUNT-005_DETAIL"
-    ]
+    ],
+    "productName": "Universal Gaming Controller Desktop Mount",
+    "smallDimensions": "75 × 80 × 85 mm",
+    "mediumDimensions": "100 × 105 × 115 mm",
+    "largeDimensions": "125 × 130 × 145 mm",
+    "smallPrice": 329,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TOY-GYRO-001",
@@ -1673,12 +2624,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 55,
+        "depth": 55,
+        "height": 14,
         "dimensions": "55 × 55 × 14 mm",
         "price": "₹199 (Incl. GST)",
         "numericPrice": 199
       },
       {
         "name": "Medium",
+        "width": 75,
+        "depth": 75,
+        "height": 18,
         "dimensions": "75 × 75 × 18 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299,
@@ -1686,6 +2643,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 100,
+        "depth": 100,
+        "height": 22,
         "dimensions": "100 × 100 × 22 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
@@ -1718,7 +2678,36 @@ export const PRODUCTS = [
       "TOY-GYRO-001_SIDE",
       "TOY-GYRO-001_REAR",
       "TOY-GYRO-001_DETAIL"
-    ]
+    ],
+    "productName": "Infinity Gyroscope Kinetic Desk Fidget",
+    "smallDimensions": "55 × 55 × 14 mm",
+    "mediumDimensions": "75 × 75 × 18 mm",
+    "largeDimensions": "100 × 100 × 22 mm",
+    "smallPrice": 199,
+    "mediumPrice": 299,
+    "largePrice": 399,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TOY-SLIDE-002",
@@ -1735,12 +2724,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 50,
+        "depth": 25,
+        "height": 14,
         "dimensions": "50 × 25 × 14 mm",
         "price": "₹179 (Incl. GST)",
         "numericPrice": 179
       },
       {
         "name": "Medium",
+        "width": 68,
+        "depth": 34,
+        "height": 18,
         "dimensions": "68 × 34 × 18 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249,
@@ -1748,6 +2743,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 86,
+        "depth": 43,
+        "height": 22,
         "dimensions": "86 × 43 × 22 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
@@ -1779,7 +2777,36 @@ export const PRODUCTS = [
       "TOY-SLIDE-002_SIDE",
       "TOY-SLIDE-002_REAR",
       "TOY-SLIDE-002_DETAIL"
-    ]
+    ],
+    "productName": "Dual-Track Gravity Fidget Slider",
+    "smallDimensions": "50 × 25 × 14 mm",
+    "mediumDimensions": "68 × 34 × 18 mm",
+    "largeDimensions": "86 × 43 × 22 mm",
+    "smallPrice": 179,
+    "mediumPrice": 249,
+    "largePrice": 349,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TOY-KEY-003",
@@ -1797,12 +2824,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 28,
+        "depth": 28,
+        "height": 32,
         "dimensions": "28 × 28 × 32 mm",
         "price": "₹169 (Incl. GST)",
         "numericPrice": 169
       },
       {
         "name": "Medium",
+        "width": 52,
+        "depth": 28,
+        "height": 32,
         "dimensions": "52 × 28 × 32 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249,
@@ -1810,6 +2843,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 52,
+        "depth": 52,
+        "height": 32,
         "dimensions": "52 × 52 × 32 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
@@ -1842,7 +2878,36 @@ export const PRODUCTS = [
       "TOY-KEY-003_SIDE",
       "TOY-KEY-003_REAR",
       "TOY-KEY-003_DETAIL"
-    ]
+    ],
+    "productName": "Haptic Mechanical Clicky Key Fidget",
+    "smallDimensions": "28 × 28 × 32 mm",
+    "mediumDimensions": "52 × 28 × 32 mm",
+    "largeDimensions": "52 × 52 × 32 mm",
+    "smallPrice": 169,
+    "mediumPrice": 249,
+    "largePrice": 349,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TOY-STAR-004",
@@ -1859,12 +2924,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 60,
+        "depth": 60,
+        "height": 60,
         "dimensions": "60 × 60 × 60 mm",
         "price": "₹219 (Incl. GST)",
         "numericPrice": 219
       },
       {
         "name": "Medium",
+        "width": 85,
+        "depth": 85,
+        "height": 85,
         "dimensions": "85 × 85 × 85 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299,
@@ -1872,6 +2943,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 115,
+        "depth": 115,
+        "height": 115,
         "dimensions": "115 × 115 × 115 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
@@ -1904,7 +2978,36 @@ export const PRODUCTS = [
       "TOY-STAR-004_SIDE",
       "TOY-STAR-004_REAR",
       "TOY-STAR-004_DETAIL"
-    ]
+    ],
+    "productName": "Morphing Geometric Flexi Star",
+    "smallDimensions": "60 × 60 × 60 mm",
+    "mediumDimensions": "85 × 85 × 85 mm",
+    "largeDimensions": "115 × 115 × 115 mm",
+    "smallPrice": 219,
+    "mediumPrice": 299,
+    "largePrice": 399,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "TOY-GEAR-005",
@@ -1922,12 +3025,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 70,
+        "depth": 70,
+        "height": 20,
         "dimensions": "70 × 70 × 20 mm",
         "price": "₹259 (Incl. GST)",
         "numericPrice": 259
       },
       {
         "name": "Medium",
+        "width": 95,
+        "depth": 95,
+        "height": 26,
         "dimensions": "95 × 95 × 26 mm",
         "price": "₹379 (Incl. GST)",
         "numericPrice": 379,
@@ -1935,6 +3044,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 125,
+        "depth": 125,
+        "height": 34,
         "dimensions": "125 × 125 × 34 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
@@ -1967,7 +3079,36 @@ export const PRODUCTS = [
       "TOY-GEAR-005_SIDE",
       "TOY-GEAR-005_REAR",
       "TOY-GEAR-005_DETAIL"
-    ]
+    ],
+    "productName": "Triple-Gear Kinetic Desk Illusion",
+    "smallDimensions": "70 × 70 × 20 mm",
+    "mediumDimensions": "95 × 95 × 26 mm",
+    "largeDimensions": "125 × 125 × 34 mm",
+    "smallPrice": 259,
+    "mediumPrice": 379,
+    "largePrice": 499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FLX-DRAGON-001",
@@ -1985,22 +3126,31 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "300 × 50 × 38 mm",
+        "width": 120,
+        "depth": 120,
+        "height": 35,
+        "dimensions": "120 × 120 × 35 mm (280mm flex)",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
-        "dimensions": "450 × 70 × 52 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649,
+        "width": 160,
+        "depth": 160,
+        "height": 45,
+        "dimensions": "160 × 160 × 45 mm (420mm flex)",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "600 × 90 × 68 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "width": 205,
+        "depth": 205,
+        "height": 55,
+        "dimensions": "205 × 205 × 55 mm (550mm flex)",
+        "price": "₹899 (Incl. GST)",
+        "numericPrice": 899
       }
     ],
     "specs": {
@@ -2031,7 +3181,36 @@ export const PRODUCTS = [
       "FLX-DRAGON-001_SIDE",
       "FLX-DRAGON-001_REAR",
       "FLX-DRAGON-001_DETAIL"
-    ]
+    ],
+    "productName": "Articulated Imperial Dragon",
+    "smallDimensions": "120 × 120 × 35 mm (280mm flex)",
+    "mediumDimensions": "160 × 160 × 45 mm (420mm flex)",
+    "largeDimensions": "205 × 205 × 55 mm (550mm flex)",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 899,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FLX-SKEL-002",
@@ -2049,12 +3228,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 45,
+        "depth": 22,
+        "height": 130,
         "dimensions": "45 × 22 × 130 mm",
         "price": "₹279 (Incl. GST)",
         "numericPrice": 279
       },
       {
         "name": "Medium",
+        "width": 60,
+        "depth": 30,
+        "height": 175,
         "dimensions": "60 × 30 × 175 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -2062,6 +3247,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 80,
+        "depth": 40,
+        "height": 230,
         "dimensions": "80 × 40 × 230 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
@@ -2095,7 +3283,36 @@ export const PRODUCTS = [
       "FLX-SKEL-002_SIDE",
       "FLX-SKEL-002_REAR",
       "FLX-SKEL-002_DETAIL"
-    ]
+    ],
+    "productName": "Articulated Flexi Skeleton Fidget",
+    "smallDimensions": "45 × 22 × 130 mm",
+    "mediumDimensions": "60 × 30 × 175 mm",
+    "largeDimensions": "80 × 40 × 230 mm",
+    "smallPrice": 279,
+    "mediumPrice": 449,
+    "largePrice": 699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FLX-BIRD-003",
@@ -2112,12 +3329,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 110,
+        "depth": 42,
+        "height": 38,
         "dimensions": "110 × 42 × 38 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 155,
+        "depth": 58,
+        "height": 52,
         "dimensions": "155 × 58 × 52 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -2125,6 +3348,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 205,
+        "depth": 76,
+        "height": 68,
         "dimensions": "205 × 76 × 68 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -2157,7 +3383,36 @@ export const PRODUCTS = [
       "FLX-BIRD-003_SIDE",
       "FLX-BIRD-003_REAR",
       "FLX-BIRD-003_DETAIL"
-    ]
+    ],
+    "productName": "Articulated Cockatoo Bird Fidget",
+    "smallDimensions": "110 × 42 × 38 mm",
+    "mediumDimensions": "155 × 58 × 52 mm",
+    "largeDimensions": "205 × 76 × 68 mm",
+    "smallPrice": 299,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FLX-CAT-004",
@@ -2175,12 +3430,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 85,
+        "depth": 42,
+        "height": 38,
         "dimensions": "85 × 42 × 38 mm",
         "price": "₹279 (Incl. GST)",
         "numericPrice": 279
       },
       {
         "name": "Medium",
+        "width": 120,
+        "depth": 58,
+        "height": 52,
         "dimensions": "120 × 58 × 52 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399,
@@ -2188,6 +3449,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 160,
+        "depth": 76,
+        "height": 68,
         "dimensions": "160 × 76 × 68 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599
@@ -2221,7 +3485,36 @@ export const PRODUCTS = [
       "FLX-CAT-004_SIDE",
       "FLX-CAT-004_REAR",
       "FLX-CAT-004_DETAIL"
-    ]
+    ],
+    "productName": "Kawaii Articulated Pink Cat",
+    "smallDimensions": "85 × 42 × 38 mm",
+    "mediumDimensions": "120 × 58 × 52 mm",
+    "largeDimensions": "160 × 76 × 68 mm",
+    "smallPrice": 279,
+    "mediumPrice": 399,
+    "largePrice": 599,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FLX-OCTO-005",
@@ -2238,12 +3531,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 110,
+        "depth": 110,
+        "height": 35,
         "dimensions": "110 × 110 × 35 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 150,
+        "depth": 150,
+        "height": 48,
         "dimensions": "150 × 150 × 48 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -2251,6 +3550,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 195,
+        "depth": 195,
+        "height": 62,
         "dimensions": "195 × 195 × 62 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -2283,7 +3585,36 @@ export const PRODUCTS = [
       "FLX-OCTO-005_SIDE",
       "FLX-OCTO-005_REAR",
       "FLX-OCTO-005_DETAIL"
-    ]
+    ],
+    "productName": "Articulated Kraken Octopus",
+    "smallDimensions": "110 × 110 × 35 mm",
+    "mediumDimensions": "150 × 150 × 48 mm",
+    "largeDimensions": "195 × 195 × 62 mm",
+    "smallPrice": 299,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FIG-SPIDER-001",
@@ -2301,12 +3632,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 70,
+        "depth": 65,
+        "height": 105,
         "dimensions": "70 × 65 × 105 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
       },
       {
         "name": "Medium",
+        "width": 100,
+        "depth": 90,
+        "height": 150,
         "dimensions": "100 × 90 × 150 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999,
@@ -2314,6 +3651,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 135,
+        "depth": 120,
+        "height": 205,
         "dimensions": "135 × 120 × 205 mm",
         "price": "₹1499 (Incl. GST)",
         "numericPrice": 1499
@@ -2348,7 +3688,36 @@ export const PRODUCTS = [
       "FIG-SPIDER-001_SIDE",
       "FIG-SPIDER-001_REAR",
       "FIG-SPIDER-001_DETAIL"
-    ]
+    ],
+    "productName": "Spider-Man Web-Slinger Collectible Figure",
+    "smallDimensions": "70 × 65 × 105 mm",
+    "mediumDimensions": "100 × 90 × 150 mm",
+    "largeDimensions": "135 × 120 × 205 mm",
+    "smallPrice": 699,
+    "mediumPrice": 999,
+    "largePrice": 1499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FIG-BATMAN-002",
@@ -2366,12 +3735,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 75,
+        "depth": 60,
+        "height": 110,
         "dimensions": "75 × 60 × 110 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
       },
       {
         "name": "Medium",
+        "width": 105,
+        "depth": 85,
+        "height": 155,
         "dimensions": "105 × 85 × 155 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999,
@@ -2379,6 +3754,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 140,
+        "depth": 115,
+        "height": 210,
         "dimensions": "140 × 115 × 210 mm",
         "price": "₹1499 (Incl. GST)",
         "numericPrice": 1499
@@ -2413,7 +3791,36 @@ export const PRODUCTS = [
       "FIG-BATMAN-002_SIDE",
       "FIG-BATMAN-002_REAR",
       "FIG-BATMAN-002_DETAIL"
-    ]
+    ],
+    "productName": "Batman Dark Knight Gotham Display Figure",
+    "smallDimensions": "75 × 60 × 110 mm",
+    "mediumDimensions": "105 × 85 × 155 mm",
+    "largeDimensions": "140 × 115 × 210 mm",
+    "smallPrice": 699,
+    "mediumPrice": 999,
+    "largePrice": 1499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FIG-DEADPOOL-003",
@@ -2431,12 +3838,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 70,
+        "depth": 60,
+        "height": 105,
         "dimensions": "70 × 60 × 105 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
       },
       {
         "name": "Medium",
+        "width": 100,
+        "depth": 85,
+        "height": 150,
         "dimensions": "100 × 85 × 150 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999,
@@ -2444,6 +3857,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 135,
+        "depth": 115,
+        "height": 205,
         "dimensions": "135 × 115 × 205 mm",
         "price": "₹1499 (Incl. GST)",
         "numericPrice": 1499
@@ -2478,7 +3894,36 @@ export const PRODUCTS = [
       "FIG-DEADPOOL-003_SIDE",
       "FIG-DEADPOOL-003_REAR",
       "FIG-DEADPOOL-003_DETAIL"
-    ]
+    ],
+    "productName": "Deadpool Dual-Katana Antihero Figure",
+    "smallDimensions": "70 × 60 × 105 mm",
+    "mediumDimensions": "100 × 85 × 150 mm",
+    "largeDimensions": "135 × 115 × 205 mm",
+    "smallPrice": 699,
+    "mediumPrice": 999,
+    "largePrice": 1499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FIG-IRONMAN-004",
@@ -2496,12 +3941,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 85,
+        "depth": 65,
+        "height": 110,
         "dimensions": "85 × 65 × 110 mm",
         "price": "₹749 (Incl. GST)",
         "numericPrice": 749
       },
       {
         "name": "Medium",
+        "width": 120,
+        "depth": 90,
+        "height": 155,
         "dimensions": "120 × 90 × 155 mm",
         "price": "₹1099 (Incl. GST)",
         "numericPrice": 1099,
@@ -2509,6 +3960,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 160,
+        "depth": 120,
+        "height": 210,
         "dimensions": "160 × 120 × 210 mm",
         "price": "₹1699 (Incl. GST)",
         "numericPrice": 1699
@@ -2543,7 +3997,36 @@ export const PRODUCTS = [
       "FIG-IRONMAN-004_SIDE",
       "FIG-IRONMAN-004_REAR",
       "FIG-IRONMAN-004_DETAIL"
-    ]
+    ],
+    "productName": "Iron Man Mark III Collector Armor Bust",
+    "smallDimensions": "85 × 65 × 110 mm",
+    "mediumDimensions": "120 × 90 × 155 mm",
+    "largeDimensions": "160 × 120 × 210 mm",
+    "smallPrice": 749,
+    "mediumPrice": 1099,
+    "largePrice": 1699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "FIG-VENOM-005",
@@ -2561,12 +4044,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 80,
+        "depth": 75,
+        "height": 110,
         "dimensions": "80 × 75 × 110 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
       },
       {
         "name": "Medium",
+        "width": 115,
+        "depth": 105,
+        "height": 155,
         "dimensions": "115 × 105 × 155 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999,
@@ -2574,6 +4063,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 155,
+        "depth": 140,
+        "height": 210,
         "dimensions": "155 × 140 × 210 mm",
         "price": "₹1499 (Incl. GST)",
         "numericPrice": 1499
@@ -2608,7 +4100,36 @@ export const PRODUCTS = [
       "FIG-VENOM-005_SIDE",
       "FIG-VENOM-005_REAR",
       "FIG-VENOM-005_DETAIL"
-    ]
+    ],
+    "productName": "Venom Symbiote Display Sculpture",
+    "smallDimensions": "80 × 75 × 110 mm",
+    "mediumDimensions": "115 × 105 × 155 mm",
+    "largeDimensions": "155 × 140 × 210 mm",
+    "smallPrice": 699,
+    "mediumPrice": 999,
+    "largePrice": 1499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "MIN-SLAYER-001",
@@ -2626,12 +4147,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 55,
+        "depth": 45,
+        "height": 85,
         "dimensions": "55 × 45 × 85 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Medium",
+        "width": 85,
+        "depth": 70,
+        "height": 135,
         "dimensions": "85 × 70 × 135 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699,
@@ -2639,6 +4166,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 120,
+        "depth": 100,
+        "height": 190,
         "dimensions": "120 × 100 × 190 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999
@@ -2671,7 +4201,36 @@ export const PRODUCTS = [
       "MIN-SLAYER-001_SIDE",
       "MIN-SLAYER-001_REAR",
       "MIN-SLAYER-001_DETAIL"
-    ]
+    ],
+    "productName": "Demon Slayer Flame Warrior 3D Miniature",
+    "smallDimensions": "55 × 45 × 85 mm",
+    "mediumDimensions": "85 × 70 × 135 mm",
+    "largeDimensions": "120 × 100 × 190 mm",
+    "smallPrice": 449,
+    "mediumPrice": 699,
+    "largePrice": 999,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "MIN-HORSE-002",
@@ -2689,12 +4248,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 100,
+        "depth": 40,
+        "height": 110,
         "dimensions": "100 × 40 × 110 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Medium",
+        "width": 145,
+        "depth": 58,
+        "height": 155,
         "dimensions": "145 × 58 × 155 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699,
@@ -2702,6 +4267,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 195,
+        "depth": 78,
+        "height": 210,
         "dimensions": "195 × 78 × 210 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999
@@ -2735,7 +4303,36 @@ export const PRODUCTS = [
       "MIN-HORSE-002_SIDE",
       "MIN-HORSE-002_REAR",
       "MIN-HORSE-002_DETAIL"
-    ]
+    ],
+    "productName": "Low-Poly Geometric Stallion Sculpture",
+    "smallDimensions": "100 × 40 × 110 mm",
+    "mediumDimensions": "145 × 58 × 155 mm",
+    "largeDimensions": "195 × 78 × 210 mm",
+    "smallPrice": 449,
+    "mediumPrice": 699,
+    "largePrice": 999,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "MIN-LION-003",
@@ -2752,12 +4349,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 95,
+        "depth": 60,
+        "height": 105,
         "dimensions": "95 × 60 × 105 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Medium",
+        "width": 135,
+        "depth": 85,
+        "height": 150,
         "dimensions": "135 × 85 × 150 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699,
@@ -2765,6 +4368,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 180,
+        "depth": 115,
+        "height": 200,
         "dimensions": "180 × 115 × 200 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999
@@ -2798,7 +4404,36 @@ export const PRODUCTS = [
       "MIN-LION-003_SIDE",
       "MIN-LION-003_REAR",
       "MIN-LION-003_DETAIL"
-    ]
+    ],
+    "productName": "Low-Poly Geometric Lion Figurine",
+    "smallDimensions": "95 × 60 × 105 mm",
+    "mediumDimensions": "135 × 85 × 150 mm",
+    "largeDimensions": "180 × 115 × 200 mm",
+    "smallPrice": 449,
+    "mediumPrice": 699,
+    "largePrice": 999,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "MIN-ROBOT-004",
@@ -2815,12 +4450,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 65,
+        "depth": 55,
+        "height": 100,
         "dimensions": "65 × 55 × 100 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
       },
       {
         "name": "Medium",
+        "width": 95,
+        "depth": 80,
+        "height": 150,
         "dimensions": "95 × 80 × 150 mm",
         "price": "₹749 (Incl. GST)",
         "numericPrice": 749,
@@ -2828,6 +4469,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 135,
+        "depth": 115,
+        "height": 210,
         "dimensions": "135 × 115 × 210 mm",
         "price": "₹1099 (Incl. GST)",
         "numericPrice": 1099
@@ -2860,7 +4504,36 @@ export const PRODUCTS = [
       "MIN-ROBOT-004_SIDE",
       "MIN-ROBOT-004_REAR",
       "MIN-ROBOT-004_DETAIL"
-    ]
+    ],
+    "productName": "Cybernetic Mecha Combat Robot Figurine",
+    "smallDimensions": "65 × 55 × 100 mm",
+    "mediumDimensions": "95 × 80 × 150 mm",
+    "largeDimensions": "135 × 115 × 210 mm",
+    "smallPrice": 499,
+    "mediumPrice": 749,
+    "largePrice": 1099,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "MIN-BEAR-005",
@@ -2878,12 +4551,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 60,
+        "depth": 55,
+        "height": 105,
         "dimensions": "60 × 55 × 105 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Medium",
+        "width": 85,
+        "depth": 75,
+        "height": 150,
         "dimensions": "85 × 75 × 150 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699,
@@ -2891,6 +4570,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 115,
+        "depth": 105,
+        "height": 200,
         "dimensions": "115 × 105 × 200 mm",
         "price": "₹999 (Incl. GST)",
         "numericPrice": 999
@@ -2923,7 +4605,36 @@ export const PRODUCTS = [
       "MIN-BEAR-005_SIDE",
       "MIN-BEAR-005_REAR",
       "MIN-BEAR-005_DETAIL"
-    ]
+    ],
+    "productName": "Premium 3D Astronaut Bear Figurine",
+    "smallDimensions": "60 × 55 × 105 mm",
+    "mediumDimensions": "85 × 75 × 150 mm",
+    "largeDimensions": "115 × 105 × 200 mm",
+    "smallPrice": 449,
+    "mediumPrice": 699,
+    "largePrice": 999,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "PLT-PARAM-001",
@@ -2941,12 +4652,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 85,
+        "depth": 85,
+        "height": 80,
         "dimensions": "85 × 85 × 80 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 120,
+        "depth": 120,
+        "height": 110,
         "dimensions": "120 × 120 × 110 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -2954,6 +4671,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 160,
+        "depth": 160,
+        "height": 145,
         "dimensions": "160 × 160 × 145 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -2986,7 +4706,36 @@ export const PRODUCTS = [
       "PLT-PARAM-001_SIDE",
       "PLT-PARAM-001_REAR",
       "PLT-PARAM-001_DETAIL"
-    ]
+    ],
+    "productName": "Parametric Geometric Planter Pot",
+    "smallDimensions": "85 × 85 × 80 mm",
+    "mediumDimensions": "120 × 120 × 110 mm",
+    "largeDimensions": "160 × 160 × 145 mm",
+    "smallPrice": 299,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "PLT-FLUTE-002",
@@ -3004,12 +4753,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 95,
+        "depth": 95,
+        "height": 95,
         "dimensions": "95 × 95 × 95 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
+        "width": 130,
+        "depth": 130,
+        "height": 130,
         "dimensions": "130 × 130 × 130 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599,
@@ -3017,6 +4772,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 175,
+        "depth": 175,
+        "height": 175,
         "dimensions": "175 × 175 × 175 mm",
         "price": "₹899 (Incl. GST)",
         "numericPrice": 899
@@ -3049,7 +4807,36 @@ export const PRODUCTS = [
       "PLT-FLUTE-002_SIDE",
       "PLT-FLUTE-002_REAR",
       "PLT-FLUTE-002_DETAIL"
-    ]
+    ],
+    "productName": "Fluted Self-Watering Indoor Planter",
+    "smallDimensions": "95 × 95 × 95 mm",
+    "mediumDimensions": "130 × 130 × 130 mm",
+    "largeDimensions": "175 × 175 × 175 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 899,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "PLT-FACET-003",
@@ -3066,12 +4853,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 80,
+        "depth": 80,
+        "height": 130,
         "dimensions": "80 × 80 × 130 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
+        "width": 115,
+        "depth": 115,
+        "height": 185,
         "dimensions": "115 × 115 × 185 mm",
         "price": "₹549 (Incl. GST)",
         "numericPrice": 549,
@@ -3079,7 +4872,10 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
-        "dimensions": "150 × 150 × 240 mm",
+        "width": 145,
+        "depth": 145,
+        "height": 230,
+        "dimensions": "145 × 145 × 230 mm",
         "price": "₹799 (Incl. GST)",
         "numericPrice": 799
       }
@@ -3111,7 +4907,36 @@ export const PRODUCTS = [
       "PLT-FACET-003_SIDE",
       "PLT-FACET-003_REAR",
       "PLT-FACET-003_DETAIL"
-    ]
+    ],
+    "productName": "Origami Faceted Ceramic-Style Vase",
+    "smallDimensions": "80 × 80 × 130 mm",
+    "mediumDimensions": "115 × 115 × 185 mm",
+    "largeDimensions": "145 × 145 × 230 mm",
+    "smallPrice": 349,
+    "mediumPrice": 549,
+    "largePrice": 799,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "PLT-SPIRAL-004",
@@ -3128,12 +4953,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 85,
+        "depth": 75,
+        "height": 115,
         "dimensions": "85 × 75 × 115 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
       },
       {
         "name": "Medium",
+        "width": 120,
+        "depth": 105,
+        "height": 160,
         "dimensions": "120 × 105 × 160 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499,
@@ -3141,6 +4972,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 160,
+        "depth": 140,
+        "height": 210,
         "dimensions": "160 × 140 × 210 mm",
         "price": "₹699 (Incl. GST)",
         "numericPrice": 699
@@ -3172,7 +5006,36 @@ export const PRODUCTS = [
       "PLT-SPIRAL-004_SIDE",
       "PLT-SPIRAL-004_REAR",
       "PLT-SPIRAL-004_DETAIL"
-    ]
+    ],
+    "productName": "Modern Spiral Wall-Hanging Planter",
+    "smallDimensions": "85 × 75 × 115 mm",
+    "mediumDimensions": "120 × 105 × 160 mm",
+    "largeDimensions": "160 × 140 × 210 mm",
+    "smallPrice": 349,
+    "mediumPrice": 499,
+    "largePrice": 699,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "PLT-VORONOI-005",
@@ -3190,12 +5053,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 90,
+        "depth": 90,
+        "height": 85,
         "dimensions": "90 × 90 × 85 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
+        "width": 125,
+        "depth": 125,
+        "height": 120,
         "dimensions": "125 × 125 × 120 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599,
@@ -3203,6 +5072,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 165,
+        "depth": 165,
+        "height": 155,
         "dimensions": "165 × 165 × 155 mm",
         "price": "₹849 (Incl. GST)",
         "numericPrice": 849
@@ -3235,7 +5107,36 @@ export const PRODUCTS = [
       "PLT-VORONOI-005_SIDE",
       "PLT-VORONOI-005_REAR",
       "PLT-VORONOI-005_DETAIL"
-    ]
+    ],
+    "productName": "Voronoi Lattice Decorative Flower Pot",
+    "smallDimensions": "90 × 90 × 85 mm",
+    "mediumDimensions": "125 × 125 × 120 mm",
+    "largeDimensions": "165 × 165 × 155 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 849,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "LGT-LANTERN-001",
@@ -3253,12 +5154,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 90,
+        "depth": 90,
+        "height": 115,
         "dimensions": "90 × 90 × 115 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449
       },
       {
         "name": "Medium",
+        "width": 125,
+        "depth": 125,
+        "height": 160,
         "dimensions": "125 × 125 × 160 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649,
@@ -3266,6 +5173,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 165,
+        "depth": 165,
+        "height": 210,
         "dimensions": "165 × 165 × 210 mm",
         "price": "₹949 (Incl. GST)",
         "numericPrice": 949
@@ -3299,7 +5209,36 @@ export const PRODUCTS = [
       "LGT-LANTERN-001_SIDE",
       "LGT-LANTERN-001_REAR",
       "LGT-LANTERN-001_DETAIL"
-    ]
+    ],
+    "productName": "Spiral Shadow Lantern Lampshade",
+    "smallDimensions": "90 × 90 × 115 mm",
+    "mediumDimensions": "125 × 125 × 160 mm",
+    "largeDimensions": "165 × 165 × 210 mm",
+    "smallPrice": 449,
+    "mediumPrice": 649,
+    "largePrice": 949,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "LGT-LITHO-002",
@@ -3317,12 +5256,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 110,
+        "depth": 40,
+        "height": 105,
         "dimensions": "110 × 40 × 105 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
       },
       {
         "name": "Medium",
+        "width": 150,
+        "depth": 50,
+        "height": 145,
         "dimensions": "150 × 50 × 145 mm",
         "price": "₹749 (Incl. GST)",
         "numericPrice": 749,
@@ -3330,6 +5275,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 200,
+        "depth": 65,
+        "height": 190,
         "dimensions": "200 × 65 × 190 mm",
         "price": "₹1099 (Incl. GST)",
         "numericPrice": 1099
@@ -3362,7 +5310,36 @@ export const PRODUCTS = [
       "LGT-LITHO-002_SIDE",
       "LGT-LITHO-002_REAR",
       "LGT-LITHO-002_DETAIL"
-    ]
+    ],
+    "productName": "Lithophane Night Light Housing & Frame",
+    "smallDimensions": "110 × 40 × 105 mm",
+    "mediumDimensions": "150 × 50 × 145 mm",
+    "largeDimensions": "200 × 65 × 190 mm",
+    "smallPrice": 499,
+    "mediumPrice": 749,
+    "largePrice": 1099,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "LGT-MOON-003",
@@ -3380,12 +5357,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 95,
+        "depth": 95,
+        "height": 110,
         "dimensions": "95 × 95 × 110 mm",
         "price": "₹549 (Incl. GST)",
         "numericPrice": 549
       },
       {
         "name": "Medium",
+        "width": 135,
+        "depth": 135,
+        "height": 155,
         "dimensions": "135 × 135 × 155 mm",
         "price": "₹799 (Incl. GST)",
         "numericPrice": 799,
@@ -3393,6 +5376,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 175,
+        "depth": 175,
+        "height": 200,
         "dimensions": "175 × 175 × 200 mm",
         "price": "₹1199 (Incl. GST)",
         "numericPrice": 1199
@@ -3425,7 +5411,36 @@ export const PRODUCTS = [
       "LGT-MOON-003_SIDE",
       "LGT-MOON-003_REAR",
       "LGT-MOON-003_DETAIL"
-    ]
+    ],
+    "productName": "Moon Phase Ambient LED Lamp Sculpture",
+    "smallDimensions": "95 × 95 × 110 mm",
+    "mediumDimensions": "135 × 135 × 155 mm",
+    "largeDimensions": "175 × 175 × 200 mm",
+    "smallPrice": 549,
+    "mediumPrice": 799,
+    "largePrice": 1199,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "LGT-GEM-004",
@@ -3442,12 +5457,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 95,
+        "depth": 95,
+        "height": 105,
         "dimensions": "95 × 95 × 105 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
+        "width": 135,
+        "depth": 135,
+        "height": 150,
         "dimensions": "135 × 135 × 150 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599,
@@ -3455,6 +5476,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 175,
+        "depth": 175,
+        "height": 195,
         "dimensions": "175 × 175 × 195 mm",
         "price": "₹849 (Incl. GST)",
         "numericPrice": 849
@@ -3487,7 +5511,36 @@ export const PRODUCTS = [
       "LGT-GEM-004_SIDE",
       "LGT-GEM-004_REAR",
       "LGT-GEM-004_DETAIL"
-    ]
+    ],
+    "productName": "Polyhedral Gemstone Desk Lamp Shroud",
+    "smallDimensions": "95 × 95 × 105 mm",
+    "mediumDimensions": "135 × 135 × 150 mm",
+    "largeDimensions": "175 × 175 × 195 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 849,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "LGT-AURORA-005",
@@ -3504,22 +5557,31 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "85 × 85 × 155 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "width": 80,
+        "depth": 80,
+        "height": 140,
+        "dimensions": "80 × 80 × 140 mm",
+        "price": "₹499 (Incl. GST)",
+        "numericPrice": 499
       },
       {
         "name": "Medium",
-        "dimensions": "115 × 115 × 215 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699,
+        "width": 110,
+        "depth": 110,
+        "height": 185,
+        "dimensions": "110 × 110 × 185 mm",
+        "price": "₹749 (Incl. GST)",
+        "numericPrice": 749,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "150 × 150 × 275 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "width": 135,
+        "depth": 135,
+        "height": 230,
+        "dimensions": "135 × 135 × 230 mm",
+        "price": "₹1099 (Incl. GST)",
+        "numericPrice": 1099
       }
     ],
     "specs": {
@@ -3549,7 +5611,36 @@ export const PRODUCTS = [
       "LGT-AURORA-005_SIDE",
       "LGT-AURORA-005_REAR",
       "LGT-AURORA-005_DETAIL"
-    ]
+    ],
+    "productName": "Aurora Borealis Wave Lamp Base",
+    "smallDimensions": "80 × 80 × 140 mm",
+    "mediumDimensions": "110 × 110 × 185 mm",
+    "largeDimensions": "135 × 135 × 230 mm",
+    "smallPrice": 499,
+    "mediumPrice": 749,
+    "largePrice": 1099,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "KEY-SWITCH-001",
@@ -3567,12 +5658,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 24,
+        "depth": 24,
+        "height": 42,
         "dimensions": "24 × 24 × 42 mm",
         "price": "₹149 (Incl. GST)",
         "numericPrice": 149
       },
       {
         "name": "Medium",
+        "width": 42,
+        "depth": 24,
+        "height": 58,
         "dimensions": "42 × 24 × 58 mm",
         "price": "₹199 (Incl. GST)",
         "numericPrice": 199,
@@ -3580,6 +5677,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 60,
+        "depth": 24,
+        "height": 72,
         "dimensions": "60 × 24 × 72 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
@@ -3613,7 +5713,36 @@ export const PRODUCTS = [
       "KEY-SWITCH-001_SIDE",
       "KEY-SWITCH-001_REAR",
       "KEY-SWITCH-001_DETAIL"
-    ]
+    ],
+    "productName": "LED Clicky Keyboard Switch Keychain",
+    "smallDimensions": "24 × 24 × 42 mm",
+    "mediumDimensions": "42 × 24 × 58 mm",
+    "largeDimensions": "60 × 24 × 72 mm",
+    "smallPrice": 149,
+    "mediumPrice": 199,
+    "largePrice": 249,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "KEY-ANIME-002",
@@ -3631,12 +5760,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 36,
+        "depth": 28,
+        "height": 10,
         "dimensions": "36 × 28 × 10 mm",
         "price": "₹149 (Incl. GST)",
         "numericPrice": 149
       },
       {
         "name": "Medium",
+        "width": 50,
+        "depth": 38,
+        "height": 14,
         "dimensions": "50 × 38 × 14 mm",
         "price": "₹199 (Incl. GST)",
         "numericPrice": 199,
@@ -3644,6 +5779,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 68,
+        "depth": 52,
+        "height": 18,
         "dimensions": "68 × 52 × 18 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
@@ -3677,7 +5815,36 @@ export const PRODUCTS = [
       "KEY-ANIME-002_SIDE",
       "KEY-ANIME-002_REAR",
       "KEY-ANIME-002_DETAIL"
-    ]
+    ],
+    "productName": "Chibi Anime Character Pocket Charm Keychain",
+    "smallDimensions": "36 × 28 × 10 mm",
+    "mediumDimensions": "50 × 38 × 14 mm",
+    "largeDimensions": "68 × 52 × 18 mm",
+    "smallPrice": 149,
+    "mediumPrice": 199,
+    "largePrice": 249,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "KEY-FOOTBALL-003",
@@ -3694,12 +5861,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 45,
+        "depth": 18,
+        "height": 20,
         "dimensions": "45 × 18 × 20 mm",
         "price": "₹149 (Incl. GST)",
         "numericPrice": 149
       },
       {
         "name": "Medium",
+        "width": 60,
+        "depth": 24,
+        "height": 27,
         "dimensions": "60 × 24 × 27 mm",
         "price": "₹199 (Incl. GST)",
         "numericPrice": 199,
@@ -3707,6 +5880,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 78,
+        "depth": 30,
+        "height": 34,
         "dimensions": "78 × 30 × 34 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
@@ -3740,7 +5916,36 @@ export const PRODUCTS = [
       "KEY-FOOTBALL-003_SIDE",
       "KEY-FOOTBALL-003_REAR",
       "KEY-FOOTBALL-003_DETAIL"
-    ]
+    ],
+    "productName": "3D Football Cleat & Ball Keychain",
+    "smallDimensions": "45 × 18 × 20 mm",
+    "mediumDimensions": "60 × 24 × 27 mm",
+    "largeDimensions": "78 × 30 × 34 mm",
+    "smallPrice": 149,
+    "mediumPrice": 199,
+    "largePrice": 249,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "KEY-BELL-004",
@@ -3757,12 +5962,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 26,
+        "depth": 26,
+        "height": 36,
         "dimensions": "26 × 26 × 36 mm",
         "price": "₹169 (Incl. GST)",
         "numericPrice": 169
       },
       {
         "name": "Medium",
+        "width": 36,
+        "depth": 36,
+        "height": 48,
         "dimensions": "36 × 36 × 48 mm",
         "price": "₹229 (Incl. GST)",
         "numericPrice": 229,
@@ -3770,6 +5981,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 48,
+        "depth": 48,
+        "height": 62,
         "dimensions": "48 × 48 × 62 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
@@ -3802,7 +6016,36 @@ export const PRODUCTS = [
       "KEY-BELL-004_SIDE",
       "KEY-BELL-004_REAR",
       "KEY-BELL-004_DETAIL"
-    ]
+    ],
+    "productName": "Tibetan Guardian Motorcycle Bell",
+    "smallDimensions": "26 × 26 × 36 mm",
+    "mediumDimensions": "36 × 36 × 48 mm",
+    "largeDimensions": "48 × 48 × 62 mm",
+    "smallPrice": 169,
+    "mediumPrice": 229,
+    "largePrice": 299,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "KEY-ASTRO-005",
@@ -3820,12 +6063,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 38,
+        "depth": 24,
+        "height": 20,
         "dimensions": "38 × 24 × 20 mm",
         "price": "₹149 (Incl. GST)",
         "numericPrice": 149
       },
       {
         "name": "Medium",
+        "width": 52,
+        "depth": 32,
+        "height": 26,
         "dimensions": "52 × 32 × 26 mm",
         "price": "₹199 (Incl. GST)",
         "numericPrice": 199,
@@ -3833,6 +6082,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 68,
+        "depth": 42,
+        "height": 34,
         "dimensions": "68 × 42 × 34 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
@@ -3866,7 +6118,36 @@ export const PRODUCTS = [
       "KEY-ASTRO-005_SIDE",
       "KEY-ASTRO-005_REAR",
       "KEY-ASTRO-005_DETAIL"
-    ]
+    ],
+    "productName": "Micro Astronaut Space Capsule Keychain",
+    "smallDimensions": "38 × 24 × 20 mm",
+    "mediumDimensions": "52 × 32 × 26 mm",
+    "largeDimensions": "68 × 42 × 34 mm",
+    "smallPrice": 149,
+    "mediumPrice": 199,
+    "largePrice": 249,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "AUT-VENT-001",
@@ -3884,12 +6165,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 75,
+        "depth": 65,
+        "height": 60,
         "dimensions": "75 × 65 × 60 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 95,
+        "depth": 80,
+        "height": 75,
         "dimensions": "95 × 80 × 75 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399,
@@ -3897,6 +6184,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 120,
+        "depth": 100,
+        "height": 90,
         "dimensions": "120 × 100 × 90 mm",
         "price": "₹549 (Incl. GST)",
         "numericPrice": 549
@@ -3929,7 +6219,36 @@ export const PRODUCTS = [
       "AUT-VENT-001_SIDE",
       "AUT-VENT-001_REAR",
       "AUT-VENT-001_DETAIL"
-    ]
+    ],
+    "productName": "Gravity Air Vent MagSafe Phone Cradle",
+    "smallDimensions": "75 × 65 × 60 mm",
+    "mediumDimensions": "95 × 80 × 75 mm",
+    "largeDimensions": "120 × 100 × 90 mm",
+    "smallPrice": 299,
+    "mediumPrice": 399,
+    "largePrice": 549,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "AUT-CUP-002",
@@ -3947,12 +6266,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 90,
+        "depth": 90,
+        "height": 105,
         "dimensions": "90 × 90 × 105 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299
       },
       {
         "name": "Medium",
+        "width": 125,
+        "depth": 120,
+        "height": 135,
         "dimensions": "125 × 120 × 135 mm",
         "price": "₹449 (Incl. GST)",
         "numericPrice": 449,
@@ -3960,6 +6285,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 160,
+        "depth": 145,
+        "height": 165,
         "dimensions": "160 × 145 × 165 mm",
         "price": "₹649 (Incl. GST)",
         "numericPrice": 649
@@ -3991,7 +6319,36 @@ export const PRODUCTS = [
       "AUT-CUP-002_SIDE",
       "AUT-CUP-002_REAR",
       "AUT-CUP-002_DETAIL"
-    ]
+    ],
+    "productName": "Center Console Dual Cup-Holder Expander",
+    "smallDimensions": "90 × 90 × 105 mm",
+    "mediumDimensions": "125 × 120 × 135 mm",
+    "largeDimensions": "160 × 145 × 165 mm",
+    "smallPrice": 299,
+    "mediumPrice": 449,
+    "largePrice": 649,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "AUT-HOOK-003",
@@ -4008,12 +6365,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 90,
+        "depth": 30,
+        "height": 35,
         "dimensions": "90 × 30 × 35 mm",
         "price": "₹199 (Incl. GST)",
         "numericPrice": 199
       },
       {
         "name": "Medium",
+        "width": 120,
+        "depth": 38,
+        "height": 45,
         "dimensions": "120 × 38 × 45 mm",
         "price": "₹299 (Incl. GST)",
         "numericPrice": 299,
@@ -4021,6 +6384,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 155,
+        "depth": 48,
+        "height": 55,
         "dimensions": "155 × 48 × 55 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
@@ -4052,7 +6418,36 @@ export const PRODUCTS = [
       "AUT-HOOK-003_SIDE",
       "AUT-HOOK-003_REAR",
       "AUT-HOOK-003_DETAIL"
-    ]
+    ],
+    "productName": "Headrest Bag & Umbrella Hanging Hooks (Pair)",
+    "smallDimensions": "90 × 30 × 35 mm",
+    "mediumDimensions": "120 × 38 × 45 mm",
+    "largeDimensions": "155 × 48 × 55 mm",
+    "smallPrice": 199,
+    "mediumPrice": 299,
+    "largePrice": 399,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "AUT-CLIP-004",
@@ -4069,12 +6464,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 65,
+        "depth": 24,
+        "height": 32,
         "dimensions": "65 × 24 × 32 mm",
         "price": "₹169 (Incl. GST)",
         "numericPrice": 169
       },
       {
         "name": "Medium",
+        "width": 90,
+        "depth": 32,
+        "height": 42,
         "dimensions": "90 × 32 × 42 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249,
@@ -4082,6 +6483,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 115,
+        "depth": 40,
+        "height": 52,
         "dimensions": "115 × 40 × 52 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349
@@ -4113,7 +6517,36 @@ export const PRODUCTS = [
       "AUT-CLIP-004_SIDE",
       "AUT-CLIP-004_REAR",
       "AUT-CLIP-004_DETAIL"
-    ]
+    ],
+    "productName": "Dashboard Sunglasses & Fastag Card Clip",
+    "smallDimensions": "65 × 24 × 32 mm",
+    "mediumDimensions": "90 × 32 × 42 mm",
+    "largeDimensions": "115 × 40 × 52 mm",
+    "smallPrice": 169,
+    "mediumPrice": 249,
+    "largePrice": 349,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "AUT-DRAWER-005",
@@ -4130,22 +6563,31 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 125,
+        "depth": 85,
+        "height": 38,
         "dimensions": "125 × 85 × 38 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
       },
       {
         "name": "Medium",
-        "dimensions": "170 × 110 × 48 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349,
+        "width": 165,
+        "depth": 105,
+        "height": 46,
+        "dimensions": "165 × 105 × 46 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "220 × 140 × 58 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "width": 205,
+        "depth": 135,
+        "height": 54,
+        "dimensions": "205 × 135 × 54 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599
       }
     ],
     "specs": {
@@ -4174,7 +6616,36 @@ export const PRODUCTS = [
       "AUT-DRAWER-005_SIDE",
       "AUT-DRAWER-005_REAR",
       "AUT-DRAWER-005_DETAIL"
-    ]
+    ],
+    "productName": "Console Hidden Coin & Key Sorting Drawer",
+    "smallDimensions": "125 × 85 × 38 mm",
+    "mediumDimensions": "165 × 105 × 46 mm",
+    "largeDimensions": "205 × 135 × 54 mm",
+    "smallPrice": 249,
+    "mediumPrice": 399,
+    "largePrice": 599,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "CUS-NAME-001",
@@ -4192,20 +6663,29 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "140 × 40 × 42 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "width": 130,
+        "depth": 38,
+        "height": 38,
+        "dimensions": "130 × 38 × 38 mm",
+        "price": "₹399 (Incl. GST)",
+        "numericPrice": 399
       },
       {
         "name": "Medium",
-        "dimensions": "195 × 50 × 52 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649,
+        "width": 165,
+        "depth": 45,
+        "height": 46,
+        "dimensions": "165 × 45 × 46 mm",
+        "price": "₹599 (Incl. GST)",
+        "numericPrice": 599,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "250 × 60 × 62 mm",
+        "width": 205,
+        "depth": 52,
+        "height": 54,
+        "dimensions": "205 × 52 × 54 mm",
         "price": "₹899 (Incl. GST)",
         "numericPrice": 899
       }
@@ -4237,7 +6717,36 @@ export const PRODUCTS = [
       "CUS-NAME-001_SIDE",
       "CUS-NAME-001_REAR",
       "CUS-NAME-001_DETAIL"
-    ]
+    ],
+    "productName": "Custom 3D Dual-Color Desk Nameplate",
+    "smallDimensions": "130 × 38 × 38 mm",
+    "mediumDimensions": "165 × 45 × 46 mm",
+    "largeDimensions": "205 × 52 × 54 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 899,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "CUS-SIGNET-002",
@@ -4255,12 +6764,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 95,
+        "depth": 48,
+        "height": 95,
         "dimensions": "95 × 48 × 95 mm",
         "price": "₹399 (Incl. GST)",
         "numericPrice": 399
       },
       {
         "name": "Medium",
+        "width": 135,
+        "depth": 65,
+        "height": 135,
         "dimensions": "135 × 65 × 135 mm",
         "price": "₹599 (Incl. GST)",
         "numericPrice": 599,
@@ -4268,6 +6783,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 175,
+        "depth": 85,
+        "height": 175,
         "dimensions": "175 × 85 × 175 mm",
         "price": "₹849 (Incl. GST)",
         "numericPrice": 849
@@ -4300,7 +6818,36 @@ export const PRODUCTS = [
       "CUS-SIGNET-002_SIDE",
       "CUS-SIGNET-002_REAR",
       "CUS-SIGNET-002_DETAIL"
-    ]
+    ],
+    "productName": "Personalized Monogram Desktop Signet",
+    "smallDimensions": "95 × 48 × 95 mm",
+    "mediumDimensions": "135 × 65 × 135 mm",
+    "largeDimensions": "175 × 85 × 175 mm",
+    "smallPrice": 399,
+    "mediumPrice": 599,
+    "largePrice": 849,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "CUS-PET-003",
@@ -4317,12 +6864,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 35,
+        "depth": 30,
+        "height": 4,
         "dimensions": "35 × 30 × 4 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
       },
       {
         "name": "Medium",
+        "width": 48,
+        "depth": 42,
+        "height": 5,
         "dimensions": "48 × 42 × 5 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349,
@@ -4330,6 +6883,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 62,
+        "depth": 54,
+        "height": 6,
         "dimensions": "62 × 54 × 6 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
@@ -4362,7 +6918,36 @@ export const PRODUCTS = [
       "CUS-PET-003_SIDE",
       "CUS-PET-003_REAR",
       "CUS-PET-003_DETAIL"
-    ]
+    ],
+    "productName": "Customized Pet Silhouette Name Tag",
+    "smallDimensions": "35 × 30 × 4 mm",
+    "mediumDimensions": "48 × 42 × 5 mm",
+    "largeDimensions": "62 × 54 × 6 mm",
+    "smallPrice": 249,
+    "mediumPrice": 349,
+    "largePrice": 499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "CUS-SPOTIFY-004",
@@ -4380,12 +6965,18 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
+        "width": 45,
+        "depth": 16,
+        "height": 5,
         "dimensions": "45 × 16 × 5 mm",
         "price": "₹249 (Incl. GST)",
         "numericPrice": 249
       },
       {
         "name": "Medium",
+        "width": 62,
+        "depth": 20,
+        "height": 6,
         "dimensions": "62 × 20 × 6 mm",
         "price": "₹349 (Incl. GST)",
         "numericPrice": 349,
@@ -4393,6 +6984,9 @@ export const PRODUCTS = [
       },
       {
         "name": "Large",
+        "width": 80,
+        "depth": 25,
+        "height": 7,
         "dimensions": "80 × 25 × 7 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
@@ -4425,7 +7019,36 @@ export const PRODUCTS = [
       "CUS-SPOTIFY-004_SIDE",
       "CUS-SPOTIFY-004_REAR",
       "CUS-SPOTIFY-004_DETAIL"
-    ]
+    ],
+    "productName": "3D Spotify Audio Waveform Key Tag",
+    "smallDimensions": "45 × 16 × 5 mm",
+    "mediumDimensions": "62 × 20 × 6 mm",
+    "largeDimensions": "80 × 25 × 7 mm",
+    "smallPrice": 249,
+    "mediumPrice": 349,
+    "largePrice": 499,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   },
   {
     "id": "CUS-PLAQUE-005",
@@ -4443,20 +7066,29 @@ export const PRODUCTS = [
     "sizes": [
       {
         "name": "Small",
-        "dimensions": "175 × 115 × 15 mm",
+        "width": 140,
+        "depth": 95,
+        "height": 14,
+        "dimensions": "140 × 95 × 14 mm",
         "price": "₹499 (Incl. GST)",
         "numericPrice": 499
       },
       {
         "name": "Medium",
-        "dimensions": "235 × 155 × 20 mm",
+        "width": 175,
+        "depth": 125,
+        "height": 16,
+        "dimensions": "175 × 125 × 16 mm",
         "price": "₹749 (Incl. GST)",
         "numericPrice": 749,
         "isPopular": true
       },
       {
         "name": "Large",
-        "dimensions": "295 × 195 × 25 mm",
+        "width": 208,
+        "depth": 150,
+        "height": 18,
+        "dimensions": "208 × 150 × 18 mm",
         "price": "₹1099 (Incl. GST)",
         "numericPrice": 1099
       }
@@ -4488,6 +7120,35 @@ export const PRODUCTS = [
       "CUS-PLAQUE-005_SIDE",
       "CUS-PLAQUE-005_REAR",
       "CUS-PLAQUE-005_DETAIL"
-    ]
+    ],
+    "productName": "Custom House Number & Family Plaque",
+    "smallDimensions": "140 × 95 × 14 mm",
+    "mediumDimensions": "175 × 125 × 16 mm",
+    "largeDimensions": "208 × 150 × 18 mm",
+    "smallPrice": 499,
+    "mediumPrice": 749,
+    "largePrice": 1099,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 25,
+        "depth": 25,
+        "height": 15
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   }
 ];

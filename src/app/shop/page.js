@@ -2,6 +2,8 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { CATEGORIES, SORT_OPTIONS, PRODUCTS } from '../data/catalog';
+import ProductSizeSelector from '../components/ProductSizeSelector';
+import { normalizeProduct, buildWhatsAppUrl, validateCustomDimensions } from '../data/sizeSystem';
 
 export default function Shop() {
   // Filter & Search State
@@ -18,6 +20,8 @@ export default function Shop() {
   const [quickViewProduct, setQuickViewProduct] = useState(null);
   const [modalActiveMediaIndex, setModalActiveMediaIndex] = useState(0); // 0..4 = 5 distinct studio images
   const [modalSize, setModalSize] = useState('Medium');
+  const [modalCustomDimensions, setModalCustomDimensions] = useState({ width: '', depth: '', height: '' });
+  const [modalCustomSizeNotes, setModalCustomSizeNotes] = useState('');
   const [modalQuantity, setModalQuantity] = useState(1);
   const [isZoomed, setIsZoomed] = useState(false);
   const [zoomPos, setZoomPos] = useState({ x: 50, y: 50 });
@@ -108,15 +112,18 @@ export default function Shop() {
 
   // Open Product Modal
   const handleOpenProduct = (product) => {
-    setQuickViewProduct(product);
+    const norm = normalizeProduct(product);
+    setQuickViewProduct(norm);
     setModalActiveMediaIndex(0);
     setModalQuantity(1);
     setIsZoomed(false);
     setCustomText("");
     setCustomColor("Matte Black");
     setCustomNotes("");
+    setModalCustomDimensions({ width: '', depth: '', height: '' });
+    setModalCustomSizeNotes('');
     // Default to medium size (recommended / most popular)
-    const defSize = product.sizes.find(s => s.name === "Medium") || product.sizes[0];
+    const defSize = norm.sizes.find(s => s.name === "Medium") || norm.sizes[0];
     setModalSize(defSize ? defSize.name : "Medium");
   };
 
@@ -430,6 +437,10 @@ export default function Shop() {
                       <div className="price-tag">
                         <span className="price-val">Starting from ₹{product.numericPrice.toLocaleString()} (Incl. GST)</span>
                       </div>
+                      <div className="card-size-availability-tag">
+                        <span>📐 Approx. dimensions: S · M · L</span>
+                        <span className="tag-highlight">+ Custom Size</span>
+                      </div>
                     </div>
 
                     {/* Card Actions: VIEW MODEL + ORDER ON WHATSAPP */}
@@ -469,39 +480,26 @@ export default function Shop() {
         const product = quickViewProduct;
         const images = product.images;
 
-        // Custom product detection
-        const isCustomProduct = CUSTOM_PRODUCT_IDS.includes(product.id) || product.category === 'Custom / Personalized';
+        // Custom product personalization detection
+        const isCustomPersonalized = CUSTOM_PRODUCT_IDS.includes(product.id) || product.category === 'Custom / Personalized';
+        const isCustomSize = modalSize === 'Custom Size';
 
         // Selected size object and calculated total
         const activeSizeObj = product.sizes.find(s => s.name === modalSize) || product.sizes[0];
-        const unitPrice = activeSizeObj.numericPrice;
+        const unitPrice = activeSizeObj ? activeSizeObj.numericPrice : product.numericPrice;
         const totalAmount = unitPrice * modalQuantity;
 
-        // WhatsApp message matching EXACT user requirements:
-        let whatsappOrderText =
-          `Hello 3D Matrix,\n\n` +
-          `I would like to order:\n\n` +
-          `Product: ${product.name}\n` +
-          `Size: ${activeSizeObj.name}\n` +
-          `Dimensions: ${activeSizeObj.dimensions}\n` +
-          `Quantity: ${modalQuantity}\n` +
-          `Material: PLA\n` +
-          `Price per unit: ₹${unitPrice.toLocaleString()} (Incl. GST)\n` +
-          `Total: ₹${totalAmount.toLocaleString()} (Incl. GST)\n\n`;
-
-        if (isCustomProduct && (customText.trim() || customColor || customNotes.trim())) {
-          whatsappOrderText += `Customization Details:\n`;
-          if (customText.trim()) whatsappOrderText += `- Text / Name / Number: ${customText.trim()}\n`;
-          if (customColor) whatsappOrderText += `- Color Preference: ${customColor}\n`;
-          if (customNotes.trim()) whatsappOrderText += `- Notes / Reference: ${customNotes.trim()}\n`;
-          whatsappOrderText += `\n`;
-        }
-
-        whatsappOrderText +=
-          `Please confirm availability and delivery details.\n\n` +
-          `Thank you.`;
-
-        const whatsappOrderUrl = `https://wa.me/919175256675?text=${encodeURIComponent(whatsappOrderText)}`;
+        // Unified WhatsApp order / custom quote URL
+        const combinedNotes = [modalCustomSizeNotes, customNotes].filter(Boolean).join(' | ');
+        const whatsappOrderUrl = buildWhatsAppUrl({
+          product,
+          selectedSize: modalSize,
+          customDimensions: modalCustomDimensions,
+          quantity: modalQuantity,
+          customNotes: combinedNotes,
+          customText,
+          customColor
+        });
 
         return (
           <div className="product-modal-backdrop" onClick={handleCloseProduct}>
@@ -626,34 +624,52 @@ export default function Shop() {
 
                 {/* PRICE SECTION (HONEST TRANSPARENT PRICING — NO FAKE DISCOUNTS) */}
                 <div className="modal-price-box">
-                  <div className="modal-pricing-honest-display">
-                    {product.mrp ? (
-                      <div className="mrp-pricing-block">
-                        <div className="mrp-row">
-                          <span className="mrp-k">MRP:</span>
-                          <span className="mrp-v">₹{(activeSizeObj.mrp || product.mrp).toLocaleString()}</span>
-                        </div>
-                        <div className="offer-row">
-                          <span className="offer-k">Offer Price:</span>
-                          <span className="offer-v">₹{unitPrice.toLocaleString()} (Incl. GST)</span>
-                          <span className="save-pill">Save ₹{((activeSizeObj.mrp || product.mrp) - unitPrice).toLocaleString()}</span>
-                        </div>
+                  {isCustomSize ? (
+                    <div className="standard-pricing-block">
+                      <div className="regular-price-line">
+                        <span className="price-k">Pricing Mode:</span>
+                        <span className="price-v">Custom Made-to-Order</span>
                       </div>
-                    ) : (
-                      <div className="standard-pricing-block">
-                        <div className="regular-price-line">
-                          <span className="price-k">Regular Price:</span>
-                          <span className="price-v">₹{unitPrice.toLocaleString()}</span>
-                        </div>
-                        <div className="offer-price-line">
-                          <span className="price-k">Offer Price:</span>
-                          <span className="price-offer-val">₹{unitPrice.toLocaleString()}</span>
-                          <span className="price-gst-badge">(Incl. GST)</span>
-                        </div>
+                      <div className="offer-price-line">
+                        <span className="price-k">Quote:</span>
+                        <span className="price-offer-val custom-quote-tag">Price on Request</span>
+                        <span className="save-pill">WhatsApp Quote</span>
                       </div>
-                    )}
-                  </div>
-                  <p className="price-notice-sub">All displayed customer prices include GST. No extra taxes added at checkout.</p>
+                    </div>
+                  ) : (
+                    <div className="modal-pricing-honest-display">
+                      {product.mrp ? (
+                        <div className="mrp-pricing-block">
+                          <div className="mrp-row">
+                            <span className="mrp-k">MRP:</span>
+                            <span className="mrp-v">₹{(activeSizeObj.mrp || product.mrp).toLocaleString()}</span>
+                          </div>
+                          <div className="offer-row">
+                            <span className="offer-k">Offer Price:</span>
+                            <span className="offer-v">₹{unitPrice.toLocaleString()} (Incl. GST)</span>
+                            <span className="save-pill">Save ₹{((activeSizeObj.mrp || product.mrp) - unitPrice).toLocaleString()}</span>
+                          </div>
+                        </div>
+                      ) : (
+                        <div className="standard-pricing-block">
+                          <div className="regular-price-line">
+                            <span className="price-k">Regular Price:</span>
+                            <span className="price-v">₹{unitPrice.toLocaleString()}</span>
+                          </div>
+                          <div className="offer-price-line">
+                            <span className="price-k">Offer Price:</span>
+                            <span className="price-offer-val">₹{unitPrice.toLocaleString()}</span>
+                            <span className="price-gst-badge">(Incl. GST)</span>
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                  <p className="price-notice-sub">
+                    {isCustomSize
+                      ? "Custom size pricing is determined by dimensions, estimated PLA weight, print time, infill & geometry."
+                      : "All displayed customer prices include GST. No extra taxes added at checkout."}
+                  </p>
                 </div>
 
                 {/* MATERIAL SELECTION: STRICTLY PLA ONLY */}
@@ -669,36 +685,16 @@ export default function Shop() {
                   </div>
                 </div>
 
-                {/* PRODUCT-SPECIFIC SIZE SELECTION (SMALL / MEDIUM / LARGE) */}
-                <div className="modal-section-box">
-                  <div className="section-label-row">
-                    <span className="section-title">SIZE</span>
-                    <span className="section-selected-value">{activeSizeObj.name} (Approx. {activeSizeObj.dimensions})</span>
-                  </div>
-                  <div className="size-options-grid">
-                    {product.sizes.map(size => {
-                      const isSelected = size.name === modalSize;
-                      const isRecommended = size.isPopular || size.name === "Medium";
-                      return (
-                        <button
-                          key={size.name}
-                          type="button"
-                          className={`size-card-btn ${isSelected ? 'selected' : ''} ${isRecommended ? 'recommended' : ''}`}
-                          onClick={() => setModalSize(size.name)}
-                        >
-                          <div className="size-radio-header">
-                            <span className="size-radio-circle">{isSelected ? '●' : '○'}</span>
-                            <span className="size-name-text">{size.name}</span>
-                            {isRecommended && <span className="size-recommended-badge">Recommended</span>}
-                          </div>
-                          <div className="size-dim-label">Approx. dimensions:</div>
-                          <div className="size-dim-text">{size.dimensions}</div>
-                          <div className="size-price-tag">₹{size.numericPrice.toLocaleString()} (Incl. GST)</div>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
+                {/* REUSABLE GLOBAL SIZE SELECTOR (S / M / L / CUSTOM SIZE + K2 SE VALIDATION) */}
+                <ProductSizeSelector
+                  product={product}
+                  selectedSize={modalSize}
+                  onSelectSize={setModalSize}
+                  customDimensions={modalCustomDimensions}
+                  onCustomDimensionsChange={setModalCustomDimensions}
+                  customNotes={modalCustomSizeNotes}
+                  onCustomNotesChange={setModalCustomSizeNotes}
+                />
 
                 {/* QUANTITY SELECTOR */}
                 <div className="modal-section-box">
@@ -730,7 +726,7 @@ export default function Shop() {
                 </div>
 
                 {/* CUSTOM PRODUCTS PERSONALIZATION BLOCK */}
-                {isCustomProduct && (
+                {isCustomPersonalized && (
                   <div className="modal-section-box custom-product-box">
                     <div className="section-label-row">
                       <span className="section-title">CUSTOMIZATION DETAILS</span>
@@ -789,15 +785,40 @@ export default function Shop() {
                   </div>
                   <div className="summary-row">
                     <span>📐 Size:</span>
-                    <strong>{activeSizeObj.name} (Approx. {activeSizeObj.dimensions})</strong>
+                    <strong>
+                      {isCustomSize ? (
+                        modalCustomDimensions.width && modalCustomDimensions.depth && modalCustomDimensions.height
+                          ? `Custom Size (Approx. dimensions: ${modalCustomDimensions.width} × ${modalCustomDimensions.depth} × ${modalCustomDimensions.height} mm)`
+                          : 'Custom Size (Review Required)'
+                      ) : (
+                        `${activeSizeObj.name} (Approx. dimensions: ${activeSizeObj.dimensions})`
+                      )}
+                    </strong>
                   </div>
+                  {isCustomSize && (
+                    <div className="summary-row">
+                      <span>🖨️ K2 SE Feasibility:</span>
+                      <strong>
+                        {(() => {
+                          const val = validateCustomDimensions(
+                            modalCustomDimensions.width,
+                            modalCustomDimensions.depth,
+                            modalCustomDimensions.height
+                          );
+                          if (val.state === 'single-piece') return 'Single-Piece Review (Subject to 3D Matrix Review)';
+                          if (val.state === 'multi-part') return 'May Require Multi-Part Printing (To Be Confirmed)';
+                          return 'Custom Dimensions Pending Review';
+                        })()}
+                      </strong>
+                    </div>
+                  )}
                   <div className="summary-row">
                     <span>🏷️ Material:</span>
                     <strong>PLA</strong>
                   </div>
                   <div className="summary-row">
                     <span>💵 Unit Price:</span>
-                    <strong>₹{unitPrice.toLocaleString()} (Incl. GST)</strong>
+                    <strong>{isCustomSize ? 'Price on Request' : `₹${unitPrice.toLocaleString()} (Incl. GST)`}</strong>
                   </div>
                   <div className="summary-row">
                     <span>🔢 Quantity:</span>
@@ -805,7 +826,9 @@ export default function Shop() {
                   </div>
                   <div className="summary-row total-row">
                     <span>Estimated Total:</span>
-                    <strong className="summary-total-price">₹{totalAmount.toLocaleString()} (Incl. GST)</strong>
+                    <strong className="summary-total-price">
+                      {isCustomSize ? 'Quote on Request (WhatsApp)' : `₹${totalAmount.toLocaleString()} (Incl. GST)`}
+                    </strong>
                   </div>
                 </div>
 
@@ -814,7 +837,7 @@ export default function Shop() {
                   <div className="disclaimer-item">
                     <span className="disclaimer-bullet">ℹ️</span>
                     <p className="disclaimer-text">
-                      Prices vary by model, selected size, design complexity and print requirements. Displayed prices include GST. Custom designs and special print requirements may require a separate quotation.
+                      The dimensions listed are standard customer size presets for the website (approx. dimensions) and not claimed to be original STL dimensions. Before production, the actual STL/3MF must be checked against Creality K2 SE build volume (220 × 215 × 245 mm, practical single-piece website limit: approx. 210 × 205 × 235 mm). Custom dimensions will be reviewed by 3D Matrix before production.
                     </p>
                   </div>
                   <div className="disclaimer-item stl-upload-note">
@@ -825,21 +848,25 @@ export default function Shop() {
                   </div>
                 </div>
 
-                {/* PRIMARY ACTION: ORDER ON WHATSAPP */}
+                {/* PRIMARY ACTION: ORDER ON WHATSAPP OR GET CUSTOM QUOTE */}
                 <div className="modal-action-area">
                   <a
-                    className="btn-order-whatsapp-large"
+                    className={`btn-order-whatsapp-large ${isCustomSize ? 'custom-quote-mode' : ''}`}
                     href={whatsappOrderUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    title="Order directly on WhatsApp"
+                    title={isCustomSize ? "Get custom quote on WhatsApp" : "Order directly on WhatsApp"}
                   >
                     <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
                       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                     </svg>
-                    <span>ORDER ON WHATSAPP</span>
+                    <span>{isCustomSize ? 'GET CUSTOM QUOTE ON WHATSAPP' : 'ORDER ON WHATSAPP'}</span>
                   </a>
-                  <p className="order-secure-subtext">🔒 Fast response • Instant order verification • Safe delivery across India</p>
+                  <p className="order-secure-subtext">
+                    {isCustomSize
+                      ? "💬 Direct chat with 3D Matrix • Custom geometry verification & fast quote"
+                      : "🔒 Fast response • Instant order verification • Safe delivery across India"}
+                  </p>
                 </div>
 
                 {/* TECHNICAL PRINT SPECIFICATIONS */}
