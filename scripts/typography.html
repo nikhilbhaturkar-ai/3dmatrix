@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D MATRIX Typography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 1920px;
+      height: 1080px;
+      background: radial-gradient(ellipse at center, #0c0e14 0%, #06070a 60%, #000000 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: 'Outfit', -apple-system, sans-serif;
+      position: relative;
+    }
+
+    /* Ambient soft cool-blue glow */
+    .glow {
+      position: absolute;
+      width: 800px;
+      height: 400px;
+      background: radial-gradient(ellipse, rgba(56, 189, 248, 0.08) 0%, rgba(56, 189, 248, 0) 70%);
+      filter: blur(50px);
+      pointer-events: none;
+    }
+
+    .brand-container {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 96px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      margin-right: -0.14em;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F9 50%, #94A3B8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 28px;
+      filter: drop-shadow(0 4px 30px rgba(56, 189, 248, 0.25));
+    }
+
+    .tagline {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: #94A3B8;
+      letter-spacing: 0.32em;
+      margin-right: -0.32em;
+      text-transform: uppercase;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="brand-container">
+    <h1>3D MATRIX</h1>
+    <div class="tagline">PRECISION PRINTED. MADE FOR YOU.</div>
+  </div>
+</body>
+</html>

@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import HeroCinematic from "./components/HeroCinematic";
 
 const slides = [
   {
@@ -35,6 +36,7 @@ export default function Home() {
   const fadeRefs = useRef([]);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [heroMode, setHeroMode] = useState("cinematic");
 
   useEffect(() => {
     if (isPaused) return;
@@ -80,67 +82,92 @@ export default function Home() {
     <>
       <main>
         {/* Hero Section */}
-        <section className="hero">
-          {/* Background Images for Smooth Transition */}
-          {slides.map((slide, idx) => (
-            <div
-              key={idx}
-              className="hero-image"
-              style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                opacity: idx === currentSlide ? 1 : 0,
-                transition: 'opacity 1s ease-in-out',
-                zIndex: -1,
-              }}
-            >
-              <Image 
-                src={slide.image} 
-                alt={slide.title} 
-                fill 
-                style={{ objectFit: 'cover', objectPosition: 'center' }} 
-                sizes="100vw"
-                priority={idx === 0}
-              />
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                width: '100%',
-                height: '100%',
-                background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))'
-              }} />
-            </div>
-          ))}
-
-          <div className="hero-content fade-in visible" key={currentSlide} style={{ zIndex: 1, animation: 'fadeInUp 0.8s ease forwards' }}>
-            <h2>{slides[currentSlide].title}</h2>
-            <p>{slides[currentSlide].desc}</p>
-          </div>
-          {/* Slider Dots */}
-          <div className="slider-nav" style={{ zIndex: 1 }}>
-            <span className="arrow" onClick={prevSlide} style={{cursor: 'pointer'}}>&lt;</span>
-            {slides.map((_, idx) => (
-              <span 
-                key={idx} 
-                className={`dot ${idx === currentSlide ? 'active' : ''}`}
-                onClick={() => setCurrentSlide(idx)}
-                style={{cursor: 'pointer'}}
-              ></span>
+        {heroMode === "cinematic" ? (
+          <HeroCinematic
+            onToggleMode={(isSlide) => setHeroMode(isSlide ? "slides" : "cinematic")}
+            isSlideMode={false}
+          />
+        ) : (
+          <section className="hero">
+            {/* Background Images for Smooth Transition */}
+            {slides.map((slide, idx) => (
+              <div
+                key={idx}
+                className="hero-image"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  opacity: idx === currentSlide ? 1 : 0,
+                  transition: 'opacity 1s ease-in-out',
+                  zIndex: -1,
+                }}
+              >
+                <Image 
+                  src={slide.image} 
+                  alt={slide.title} 
+                  fill 
+                  style={{ objectFit: 'cover', objectPosition: 'center' }} 
+                  sizes="100vw"
+                  priority={idx === 0}
+                />
+                <div style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  background: 'linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8))'
+                }} />
+              </div>
             ))}
-            <span className="arrow" onClick={nextSlide} style={{cursor: 'pointer'}}>&gt;</span>
-            <span 
-              className="pause" 
-              onClick={() => setIsPaused(!isPaused)} 
-              style={{cursor: 'pointer', opacity: isPaused ? 0.5 : 1}}
-            >
-              {isPaused ? '▶' : '||'}
-            </span>
-          </div>
-        </section>
+
+            <div className="hero-content fade-in visible" key={currentSlide} style={{ zIndex: 1, animation: 'fadeInUp 0.8s ease forwards' }}>
+              <h2>{slides[currentSlide].title}</h2>
+              <p>{slides[currentSlide].desc}</p>
+            </div>
+            {/* Slider Dots */}
+            <div className="slider-nav" style={{ zIndex: 1 }}>
+              <span className="arrow" onClick={prevSlide} style={{cursor: 'pointer'}}>&lt;</span>
+              {slides.map((_, idx) => (
+                <span 
+                  key={idx} 
+                  className={`dot ${idx === currentSlide ? 'active' : ''}`}
+                  onClick={() => setCurrentSlide(idx)}
+                  style={{cursor: 'pointer'}}
+                ></span>
+              ))}
+              <span className="arrow" onClick={nextSlide} style={{cursor: 'pointer'}}>&gt;</span>
+              <span 
+                className="pause" 
+                onClick={() => setIsPaused(!isPaused)} 
+                style={{cursor: 'pointer', opacity: isPaused ? 0.5 : 1}}
+              >
+                {isPaused ? '▶' : '||'}
+              </span>
+            </div>
+
+            <div className="hero-mode-switch">
+              <button 
+                type="button" 
+                className="mode-btn"
+                onClick={() => setHeroMode("cinematic")}
+                title="Switch back to Cinematic Hero Video"
+              >
+                Cinematic Loop
+              </button>
+              <button 
+                type="button" 
+                className="mode-btn active"
+                onClick={() => setHeroMode("slides")}
+              >
+                Product Slides
+              </button>
+            </div>
+          </section>
+        )}
 
         {/* Feature Sections */}
         <section className="feature-section left-image fade-in" ref={addToRefs}>
