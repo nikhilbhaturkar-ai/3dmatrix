@@ -126,10 +126,10 @@ export default function Footer() {
             <h3 className="matrix-col-heading">SUPPORT</h3>
             <ul className="matrix-link-list">
               <li><Link href="/get-a-quote" className="matrix-nav-link">Get a Quote</Link></li>
-              <li><Link href="/about" className="matrix-nav-link">FAQs</Link></li>
-              <li><Link href="/about" className="matrix-nav-link">Shipping &amp; Delivery</Link></li>
-              <li><Link href="/about" className="matrix-nav-link">Returns &amp; Refunds</Link></li>
               <li><Link href="/about" className="matrix-nav-link">About Us</Link></li>
+              <li><Link href="/shipping" className="matrix-nav-link">Shipping &amp; Delivery</Link></li>
+              <li><Link href="/returns" className="matrix-nav-link">Returns &amp; Refunds</Link></li>
+              <li><Link href="/privacy" className="matrix-nav-link">Privacy Policy</Link></li>
             </ul>
           </div>
 
@@ -205,11 +205,13 @@ export default function Footer() {
         </div>
 
         <div className="matrix-bottom-center">
-          <Link href="/about" className="matrix-legal-item">Privacy</Link>
+          <Link href="/privacy" className="matrix-legal-item">Privacy</Link>
           <span className="matrix-dot" aria-hidden="true">•</span>
-          <Link href="/about" className="matrix-legal-item">Terms</Link>
+          <Link href="/terms" className="matrix-legal-item">Terms</Link>
           <span className="matrix-dot" aria-hidden="true">•</span>
-          <Link href="/about" className="matrix-legal-item">Refund Policy</Link>
+          <Link href="/returns" className="matrix-legal-item">Refund Policy</Link>
+          <span className="matrix-dot" aria-hidden="true">•</span>
+          <Link href="/shipping" className="matrix-legal-item">Shipping</Link>
         </div>
 
         <div className="matrix-bottom-right">
