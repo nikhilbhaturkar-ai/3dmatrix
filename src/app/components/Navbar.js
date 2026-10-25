@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import CartSidebar from "./CartSidebar";
 import { useCart } from "../context/CartContext";
@@ -35,8 +36,14 @@ export default function Navbar() {
   return (
       <header className={`header ${scrolled ? "scrolled" : ""}`}>
         <div className="logo">
-          <Link href="/" style={{textDecoration: 'none', color: 'inherit'}}>
-            <h1><span className="box">3D</span> MATRIX</h1>
+          <Link href="/" aria-label="3D Matrix home">
+            <Image
+              src="/images/3d-matrix-lab-logo.png"
+              alt="3D Matrix Lab, 3D printing, design, innovation"
+              width={600}
+              height={200}
+              priority
+            />
           </Link>
         </div>
         

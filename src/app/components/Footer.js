@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -43,9 +44,13 @@ export default function Footer() {
           {/* COLUMN 1 — BRAND */}
           <div className="matrix-col matrix-col-brand">
             <div className="matrix-brand-logo">
-              <Link href="/">
-                <span className="matrix-box">3D</span>
-                <span className="matrix-brand-name">MATRIX</span>
+              <Link href="/" aria-label="3D Matrix home">
+                <Image
+                  src="/images/3d-matrix-lab-logo.png"
+                  alt="3D Matrix Lab, 3D printing, design, innovation"
+                  width={600}
+                  height={200}
+                />
               </Link>
             </div>
 
@@ -394,13 +399,14 @@ export default function Footer() {
 
         .matrix-brand-logo a {
           text-decoration: none !important;
-          color: #ffffff !important;
           display: inline-flex;
           align-items: center;
-          gap: 8px;
-          font-size: 1.25rem;
-          font-weight: 700;
-          letter-spacing: 2px;
+        }
+
+        .matrix-brand-logo img {
+          display: block;
+          width: 220px;
+          height: auto;
         }
 
         .matrix-box {
