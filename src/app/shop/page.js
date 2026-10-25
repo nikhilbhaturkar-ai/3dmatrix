@@ -212,6 +212,11 @@ export default function Shop() {
       </section>
 
       {/* =========================================================
+          --- DIWALI OFFER SECTION ---
+          ========================================================= */}
+      <DiwaliOfferSection />
+
+      {/* =========================================================
           --- 13-CATEGORY NAVIGATION BAR ---
           ========================================================= */}
       <nav className="catalog-nav-bar" aria-label="Product categories">
@@ -905,5 +910,423 @@ export default function Shop() {
         );
       })()}
     </div>
+  );
+}
+
+/* ─────────────────────────────────────────────
+   DIWALI OFFER SECTION
+───────────────────────────────────────────── */
+const DIWALI_ITEMS = [
+  { name: "Personalized Name Desk Plaque", cat: "Custom / Personalized", discount: 50, emoji: "🪔", tag: "EXCLUSIVE" },
+  { name: "Little Krishna Idol", cat: "Spiritual & Devotional", discount: 40, emoji: "🙏", tag: "FESTIVE HIT" },
+  { name: "Edge-Sitting Baby Krishna", cat: "Spiritual & Devotional", discount: 40, emoji: "✨", tag: "FESTIVE HIT" },
+  { name: "Keychain Gift Set", cat: "Keychains & Small Gifts", discount: 30, emoji: "🎁", tag: "GIFT READY" },
+  { name: "Personalized Monogram Signet", cat: "Custom / Personalized", discount: 45, emoji: "💎", tag: "PREMIUM" },
+  { name: "Geometric Desk Organizer", cat: "Desk & Office", discount: 35, emoji: "🌟", tag: "POPULAR" },
+];
+
+function DiwaliOfferSection() {
+  const canvasRef = useRef(null);
+  const animFrameRef = useRef(null);
+  const particlesRef = useRef([]);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+
+    const resize = () => {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    };
+    resize();
+    window.addEventListener("resize", resize);
+
+    const colors = ["#ff6b00", "#ffd700", "#ff3d00", "#ff9500", "#ffe066", "#ff4fa3", "#a259ff", "#00e5ff"];
+
+    function burst(x, y) {
+      for (let i = 0; i < 32; i++) {
+        const angle = (Math.PI * 2 * i) / 32 + Math.random() * 0.3;
+        const speed = 2.5 + Math.random() * 4.5;
+        particlesRef.current.push({
+          x, y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed - 2,
+          alpha: 1,
+          color: colors[Math.floor(Math.random() * colors.length)],
+          size: 2 + Math.random() * 3,
+          gravity: 0.08 + Math.random() * 0.05,
+          trail: [],
+        });
+      }
+    }
+
+    let lastBurst = 0;
+    const positions = [
+      [0.15, 0.25], [0.85, 0.2], [0.5, 0.1], [0.25, 0.7], [0.75, 0.65],
+      [0.1, 0.5], [0.9, 0.5], [0.4, 0.85], [0.6, 0.15],
+    ];
+    let posIdx = 0;
+
+    function animate(ts) {
+      animFrameRef.current = requestAnimationFrame(animate);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      if (ts - lastBurst > 600) {
+        const [px, py] = positions[posIdx % positions.length];
+        burst(px * canvas.width, py * canvas.height);
+        posIdx++;
+        lastBurst = ts;
+      }
+
+      particlesRef.current = particlesRef.current.filter(p => p.alpha > 0.02);
+      particlesRef.current.forEach(p => {
+        p.trail.push({ x: p.x, y: p.y, alpha: p.alpha });
+        if (p.trail.length > 6) p.trail.shift();
+
+        p.trail.forEach((t, i) => {
+          ctx.globalAlpha = t.alpha * (i / p.trail.length) * 0.4;
+          ctx.fillStyle = p.color;
+          ctx.beginPath();
+          ctx.arc(t.x, t.y, p.size * 0.5, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        ctx.globalAlpha = p.alpha;
+        ctx.fillStyle = p.color;
+        ctx.shadowColor = p.color;
+        ctx.shadowBlur = 8;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.shadowBlur = 0;
+
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += p.gravity;
+        p.vx *= 0.98;
+        p.alpha -= 0.018;
+      });
+      ctx.globalAlpha = 1;
+    }
+
+    animFrameRef.current = requestAnimationFrame(animate);
+    return () => {
+      cancelAnimationFrame(animFrameRef.current);
+      window.removeEventListener("resize", resize);
+    };
+  }, []);
+
+  return (
+    <section className="diwali-section">
+      <canvas ref={canvasRef} className="diwali-canvas" aria-hidden="true" />
+
+      {/* Decorative diyas */}
+      <div className="diwali-diya diwali-diya-l" aria-hidden="true">🪔</div>
+      <div className="diwali-diya diwali-diya-r" aria-hidden="true">🪔</div>
+
+      <div className="diwali-inner">
+        {/* Header */}
+        <div className="diwali-header">
+          <div className="diwali-eyebrow">
+            <span className="diwali-sparkle">✦</span>
+            <span>LIMITED TIME · DIWALI 2026</span>
+            <span className="diwali-sparkle">✦</span>
+          </div>
+          <h2 className="diwali-title">
+            <span className="diwali-title-line1">🎆 DIWALI</span>
+            <span className="diwali-title-line2">EXCLUSIVE OFFERS</span>
+          </h2>
+          <p className="diwali-subtitle">30% – 50% off on handpicked gift &amp; spiritual prints. Celebrate with something real.</p>
+          <div className="diwali-badge-row">
+            <span className="diwali-badge">🎁 Gift-Ready Packaging</span>
+            <span className="diwali-badge">🚀 Fast Dispatch</span>
+            <span className="diwali-badge">✅ GST Included</span>
+          </div>
+        </div>
+
+        {/* Offer cards */}
+        <div className="diwali-grid">
+          {DIWALI_ITEMS.map((item, i) => (
+            <div key={i} className="diwali-card" style={{ animationDelay: `${i * 0.1}s` }}>
+              <div className="diwali-card-tag">{item.tag}</div>
+              <div className="diwali-card-emoji">{item.emoji}</div>
+              <div className="diwali-card-name">{item.name}</div>
+              <div className="diwali-card-cat">{item.cat}</div>
+              <div className="diwali-card-discount">
+                <span className="diwali-off-pct">{item.discount}% OFF</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div className="diwali-cta-row">
+          <a
+            href="https://wa.me/919175256675?text=Hi%2C%20I%20am%20interested%20in%20the%20Diwali%20offer%20on%203D%20printed%20gifts.%20Please%20share%20details."
+            target="_blank" rel="noopener noreferrer"
+            className="diwali-cta-btn"
+          >
+            🎆 Claim Diwali Offer on WhatsApp
+          </a>
+          <p className="diwali-cta-note">* Offers valid on select items. Contact us to confirm availability &amp; place your Diwali order. Applicable only at Pune Location.</p>
+        </div>
+      </div>
+
+      <style>{`
+        .diwali-section {
+          position: relative;
+          margin: 0 0 0;
+          overflow: hidden;
+          background: radial-gradient(ellipse at 50% 0%, #1a0800 0%, #0d0500 55%, #050505 100%);
+          border-top: 1px solid rgba(255,140,0,0.25);
+          border-bottom: 1px solid rgba(255,140,0,0.25);
+          padding: 64px 24px 56px;
+        }
+        .diwali-canvas {
+          position: absolute;
+          inset: 0;
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
+          z-index: 0;
+        }
+        .diwali-diya {
+          position: absolute;
+          font-size: 52px;
+          opacity: 0.18;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 1;
+          animation: diyaFloat 3s ease-in-out infinite alternate;
+          filter: drop-shadow(0 0 18px #ff8c00);
+        }
+        .diwali-diya-l { left: 16px; }
+        .diwali-diya-r { right: 16px; }
+        @keyframes diyaFloat {
+          from { transform: translateY(-50%) scale(1); opacity: 0.15; }
+          to   { transform: translateY(calc(-50% - 8px)) scale(1.08); opacity: 0.25; }
+        }
+        .diwali-inner {
+          position: relative;
+          z-index: 2;
+          max-width: 1100px;
+          margin: 0 auto;
+        }
+        .diwali-header {
+          text-align: center;
+          margin-bottom: 40px;
+        }
+        .diwali-eyebrow {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          font-size: 11px;
+          font-weight: 800;
+          letter-spacing: 0.2em;
+          color: #ffd700;
+          text-transform: uppercase;
+          margin-bottom: 14px;
+        }
+        .diwali-sparkle {
+          animation: sparkSpin 1.5s linear infinite;
+          display: inline-block;
+        }
+        @keyframes sparkSpin {
+          0%   { transform: rotate(0deg) scale(1); }
+          50%  { transform: rotate(180deg) scale(1.4); }
+          100% { transform: rotate(360deg) scale(1); }
+        }
+        .diwali-title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          line-height: 1;
+          margin-bottom: 14px;
+        }
+        .diwali-title-line1 {
+          font-size: clamp(2.2rem, 6vw, 4.5rem);
+          font-weight: 900;
+          letter-spacing: -0.02em;
+          color: #ffd700;
+          text-shadow: 0 0 30px rgba(255,200,0,0.6), 0 0 60px rgba(255,100,0,0.3);
+          animation: titleGlow 2s ease-in-out infinite alternate;
+        }
+        .diwali-title-line2 {
+          font-size: clamp(1.4rem, 4vw, 3rem);
+          font-weight: 900;
+          letter-spacing: 0.08em;
+          background: linear-gradient(90deg, #ff6b00, #ffd700, #ff3d00, #ffd700, #ff6b00);
+          background-size: 200%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: shimmer 2.5s linear infinite;
+        }
+        @keyframes titleGlow {
+          from { text-shadow: 0 0 20px rgba(255,200,0,0.5), 0 0 40px rgba(255,100,0,0.2); }
+          to   { text-shadow: 0 0 40px rgba(255,220,0,0.9), 0 0 80px rgba(255,120,0,0.5), 0 0 120px rgba(255,60,0,0.2); }
+        }
+        @keyframes shimmer {
+          0%   { background-position: 200% center; }
+          100% { background-position: -200% center; }
+        }
+        .diwali-subtitle {
+          color: #ffb347;
+          font-size: 15px;
+          max-width: 520px;
+          margin: 0 auto 20px;
+          line-height: 1.6;
+        }
+        .diwali-badge-row {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+        .diwali-badge {
+          background: rgba(255,165,0,0.12);
+          border: 1px solid rgba(255,165,0,0.35);
+          color: #ffd700;
+          padding: 5px 14px;
+          border-radius: 20px;
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: 0.04em;
+        }
+        .diwali-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+          gap: 16px;
+          margin-bottom: 40px;
+        }
+        .diwali-card {
+          position: relative;
+          background: linear-gradient(135deg, rgba(30,10,0,0.9) 0%, rgba(20,6,0,0.95) 100%);
+          border: 1px solid rgba(255,140,0,0.3);
+          border-radius: 14px;
+          padding: 20px 14px 18px;
+          text-align: center;
+          cursor: default;
+          animation: cardPop 0.5s cubic-bezier(0.34,1.56,0.64,1) both;
+          transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+          overflow: hidden;
+        }
+        .diwali-card::before {
+          content: '';
+          position: absolute;
+          inset: 0;
+          background: radial-gradient(ellipse at 50% 0%, rgba(255,165,0,0.08) 0%, transparent 70%);
+          pointer-events: none;
+        }
+        .diwali-card:hover {
+          transform: translateY(-5px) scale(1.02);
+          box-shadow: 0 12px 40px rgba(255,140,0,0.25);
+          border-color: rgba(255,200,0,0.6);
+        }
+        @keyframes cardPop {
+          from { opacity: 0; transform: scale(0.8) translateY(20px); }
+          to   { opacity: 1; transform: scale(1) translateY(0); }
+        }
+        .diwali-card-tag {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: #ff6b00;
+          color: #fff;
+          font-size: 8px;
+          font-weight: 800;
+          letter-spacing: 0.08em;
+          padding: 3px 7px;
+          border-radius: 4px;
+          text-transform: uppercase;
+        }
+        .diwali-card-emoji {
+          font-size: 36px;
+          margin-bottom: 10px;
+          display: block;
+          animation: emojiBob 2s ease-in-out infinite alternate;
+        }
+        @keyframes emojiBob {
+          from { transform: scale(1); }
+          to   { transform: scale(1.15) rotate(5deg); }
+        }
+        .diwali-card-name {
+          font-size: 13px;
+          font-weight: 700;
+          color: #fff;
+          margin-bottom: 4px;
+          line-height: 1.35;
+        }
+        .diwali-card-cat {
+          font-size: 10px;
+          color: #888;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          margin-bottom: 12px;
+        }
+        .diwali-card-discount {
+          display: flex;
+          justify-content: center;
+        }
+        .diwali-off-pct {
+          background: linear-gradient(90deg, #ff6b00, #ffd700);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          font-size: 22px;
+          font-weight: 900;
+          letter-spacing: -0.02em;
+          animation: pulsePct 1.8s ease-in-out infinite alternate;
+        }
+        @keyframes pulsePct {
+          from { filter: drop-shadow(0 0 4px rgba(255,165,0,0.4)); }
+          to   { filter: drop-shadow(0 0 12px rgba(255,200,0,0.9)); }
+        }
+        .diwali-cta-row {
+          text-align: center;
+        }
+        .diwali-cta-btn {
+          display: inline-block;
+          background: linear-gradient(90deg, #ff6b00 0%, #ffd700 50%, #ff6b00 100%);
+          background-size: 200%;
+          color: #0d0500;
+          font-weight: 900;
+          font-size: 16px;
+          padding: 16px 40px;
+          border-radius: 50px;
+          text-decoration: none;
+          letter-spacing: 0.02em;
+          animation: btnShimmer 2s linear infinite, btnPulse 1.5s ease-in-out infinite alternate;
+          transition: transform 0.2s, box-shadow 0.2s;
+          box-shadow: 0 4px 24px rgba(255,165,0,0.4);
+          margin-bottom: 14px;
+        }
+        .diwali-cta-btn:hover {
+          transform: scale(1.04);
+          box-shadow: 0 8px 40px rgba(255,200,0,0.6);
+        }
+        @keyframes btnShimmer {
+          0%   { background-position: 200% center; }
+          100% { background-position: -200% center; }
+        }
+        @keyframes btnPulse {
+          from { box-shadow: 0 4px 24px rgba(255,165,0,0.4); }
+          to   { box-shadow: 0 8px 48px rgba(255,200,0,0.7); }
+        }
+        .diwali-cta-note {
+          color: #666;
+          font-size: 12px;
+          margin: 0;
+        }
+        @media (max-width: 600px) {
+          .diwali-diya { display: none; }
+          .diwali-grid { grid-template-columns: repeat(2, 1fr); }
+          .diwali-cta-btn { font-size: 14px; padding: 14px 24px; }
+        }
+      `}</style>
+    </section>
   );
 }

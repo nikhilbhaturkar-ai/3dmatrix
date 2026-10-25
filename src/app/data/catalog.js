@@ -47,9 +47,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Sculptural fluted aesthetic vase inspired by marine ripples, optimized for watertight spiral-vase PLA printing.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "BESTSELLER",
     "rating": 4.9,
@@ -61,8 +61,8 @@ export const PRODUCTS = [
         "depth": 90,
         "height": 120,
         "dimensions": "90 × 90 × 120 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -70,8 +70,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 165,
         "dimensions": "125 × 125 × 165 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -80,8 +80,8 @@ export const PRODUCTS = [
         "depth": 160,
         "height": 210,
         "dimensions": "160 × 160 × 210 mm",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899
+        "mrp_price": "₹899 (Incl. GST)", "price": "₹719 (Incl. GST)",
+        "mrp": 899, "numericPrice": 719
       }
     ],
     "specs": {
@@ -150,9 +150,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Meditative Buddha figurine integrated with dual backflow incense groove and tea light candle pedestal.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "SPIRITUAL",
     "rating": 4.8,
@@ -164,8 +164,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 110,
         "dimensions": "85 × 75 × 110 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -173,8 +173,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 155,
         "dimensions": "120 × 105 × 155 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -183,8 +183,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 200,
         "dimensions": "155 × 135 × 200 mm",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899
+        "mrp_price": "₹899 (Incl. GST)", "price": "₹719 (Incl. GST)",
+        "mrp": 899, "numericPrice": 719
       }
     ],
     "specs": {
@@ -252,9 +252,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Intricately embossed sacred geometry mandala incense dish with central stick holder hole and ash catcher rim.",
     "material": "PLA",
-    "price": "From ₹249",
-    "startingPrice": "₹249 (Incl. GST)",
-    "numericPrice": 249,
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 249, "numericPrice": 199,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 68,
@@ -265,8 +265,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 15,
         "dimensions": "95 × 95 × 15 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       },
       {
         "name": "Medium",
@@ -274,8 +274,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 20,
         "dimensions": "135 × 135 × 20 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349,
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279,
         "isPopular": true
       },
       {
@@ -284,8 +284,8 @@ export const PRODUCTS = [
         "depth": 175,
         "height": 26,
         "dimensions": "175 × 175 × 26 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       }
     ],
     "specs": {
@@ -352,9 +352,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Feudal Japanese warrior dual-cradle display stand engineered to hold calligraphy pens, stylus, or incense sticks.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "badge": "UNIQUE",
     "rating": 4.8,
@@ -366,8 +366,8 @@ export const PRODUCTS = [
         "depth": 45,
         "height": 65,
         "dimensions": "110 × 45 × 65 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -375,8 +375,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 90,
         "dimensions": "150 × 60 × 90 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -385,8 +385,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 115,
         "dimensions": "195 × 75 × 115 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -453,9 +453,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Mid-century brutalist fluted column candle stand designed with spill-guard basin for dinner and tea candles.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "rating": 4.6,
     "reviewsCount": 41,
@@ -466,8 +466,8 @@ export const PRODUCTS = [
         "depth": 70,
         "height": 95,
         "dimensions": "70 × 70 × 95 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -475,8 +475,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 140,
         "dimensions": "95 × 95 × 140 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -485,8 +485,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 190,
         "dimensions": "125 × 125 × 190 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -553,9 +553,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Divine sculptural figurine of Lord Krishna playing the bansuri flute, poised gracefully upon a blooming lotus flower and spiral plinth base.",
     "material": "PLA",
-    "price": "From ₹499",
-    "startingPrice": "₹499 (Incl. GST)",
-    "numericPrice": 499,
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "mrp": 499, "numericPrice": 399,
     "gstIncluded": true,
     "badge": "BESTSELLER",
     "rating": 5,
@@ -567,8 +567,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 110,
         "dimensions": "70 × 60 × 110 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       },
       {
         "name": "Medium",
@@ -576,8 +576,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 150,
         "dimensions": "95 × 85 × 150 mm",
-        "price": "₹749 (Incl. GST)",
-        "numericPrice": 749,
+        "mrp_price": "₹749 (Incl. GST)", "price": "₹599 (Incl. GST)",
+        "mrp": 749, "numericPrice": 599,
         "isPopular": true
       },
       {
@@ -586,8 +586,8 @@ export const PRODUCTS = [
         "depth": 110,
         "height": 200,
         "dimensions": "125 × 110 × 200 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099
+        "mrp_price": "₹1099 (Incl. GST)", "price": "₹879 (Incl. GST)",
+        "mrp": 1099, "numericPrice": 879
       }
     ],
     "specs": {
@@ -662,9 +662,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Exquisite hand-detailed Radhey Rani idol designed to sit gracefully on the edge of mantels, shelves, or desks with dangling feet, adorned in traditional jewelry.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "POPULAR",
     "rating": 4.9,
@@ -676,8 +676,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 105,
         "dimensions": "65 × 60 × 105 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359
       },
       {
         "name": "Medium",
@@ -685,8 +685,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 145,
         "dimensions": "90 × 80 × 145 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699,
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559,
         "isPopular": true
       },
       {
@@ -695,8 +695,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 190,
         "dimensions": "120 × 105 × 190 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799
       }
     ],
     "specs": {
@@ -772,9 +772,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Adorable infant Lord Krishna idol depicted cross-legged with traditional peacock turban and sweet butter pot (makhan handi), playing the flute in serene bliss.",
     "material": "PLA",
-    "price": "From ₹349",
-    "startingPrice": "₹349 (Incl. GST)",
-    "numericPrice": 349,
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "mrp": 349, "numericPrice": 279,
     "gstIncluded": true,
     "badge": "POPULAR",
     "rating": 4.9,
@@ -786,8 +786,8 @@ export const PRODUCTS = [
         "depth": 55,
         "height": 100,
         "dimensions": "60 × 55 × 100 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -795,8 +795,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 140,
         "dimensions": "85 × 75 × 140 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549,
+        "mrp_price": "₹549 (Incl. GST)", "price": "₹439 (Incl. GST)",
+        "mrp": 549, "numericPrice": 439,
         "isPopular": true
       },
       {
@@ -805,8 +805,8 @@ export const PRODUCTS = [
         "depth": 100,
         "height": 185,
         "dimensions": "115 × 100 × 185 mm",
-        "price": "₹799 (Incl. GST)",
-        "numericPrice": 799
+        "mrp_price": "₹799 (Incl. GST)", "price": "₹639 (Incl. GST)",
+        "mrp": 799, "numericPrice": 639
       }
     ],
     "specs": {
@@ -883,9 +883,9 @@ export const PRODUCTS = [
     "category": "Home & Decor",
     "description": "Charming shelf-sitter baby Krishna figurine with dangling crossed legs, ornate peacock feather crown, and flute, designed to sit on mantle ledges and shelves.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "NEW",
     "rating": 5,
@@ -897,8 +897,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 95,
         "dimensions": "65 × 60 × 95 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -906,8 +906,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 135,
         "dimensions": "90 × 80 × 135 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -916,8 +916,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 180,
         "dimensions": "120 × 105 × 180 mm",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899
+        "mrp_price": "₹899 (Incl. GST)", "price": "₹719 (Incl. GST)",
+        "mrp": 899, "numericPrice": 719
       }
     ],
     "specs": {
@@ -993,9 +993,9 @@ export const PRODUCTS = [
     "category": "Desk & Office",
     "description": "Segmented workspace organizer with dedicated slots for smartphones, pens, sticky notes, and paperclips.",
     "material": "PLA",
-    "price": "From ₹349",
-    "startingPrice": "₹349 (Incl. GST)",
-    "numericPrice": 349,
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "mrp": 349, "numericPrice": 279,
     "gstIncluded": true,
     "badge": "POPULAR",
     "rating": 4.8,
@@ -1007,8 +1007,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 85,
         "dimensions": "110 × 95 × 85 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -1016,8 +1016,8 @@ export const PRODUCTS = [
         "depth": 130,
         "height": 115,
         "dimensions": "150 × 130 × 115 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499,
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399,
         "isPopular": true
       },
       {
@@ -1026,8 +1026,8 @@ export const PRODUCTS = [
         "depth": 170,
         "height": 145,
         "dimensions": "195 × 170 × 145 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       }
     ],
     "specs": {
@@ -1094,9 +1094,9 @@ export const PRODUCTS = [
     "category": "Desk & Office",
     "description": "Nordic fluted aesthetic desk container featuring tiered graduated cylinder depths for fountain pens and office scissors.",
     "material": "PLA",
-    "price": "From ₹349",
-    "startingPrice": "₹349 (Incl. GST)",
-    "numericPrice": 349,
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "mrp": 349, "numericPrice": 279,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 78,
@@ -1107,8 +1107,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 90,
         "dimensions": "110 × 80 × 90 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -1116,8 +1116,8 @@ export const PRODUCTS = [
         "depth": 110,
         "height": 125,
         "dimensions": "150 × 110 × 125 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499,
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399,
         "isPopular": true
       },
       {
@@ -1126,8 +1126,8 @@ export const PRODUCTS = [
         "depth": 140,
         "height": 160,
         "dimensions": "195 × 140 × 160 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       }
     ],
     "specs": {
@@ -1194,9 +1194,9 @@ export const PRODUCTS = [
     "category": "Desk & Office",
     "description": "Computational parametric Voronoi lattice pen caddy with angled ergonomics for rapid grab-and-go access.",
     "material": "PLA",
-    "price": "From ₹379",
-    "startingPrice": "₹379 (Incl. GST)",
-    "numericPrice": 379,
+    "price": "From ₹303",
+    "startingPrice": "₹303 (Incl. GST)",
+    "mrp": 379, "numericPrice": 303,
     "gstIncluded": true,
     "badge": "MODERN",
     "rating": 4.8,
@@ -1208,8 +1208,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 105,
         "dimensions": "105 × 95 × 105 mm",
-        "price": "₹379 (Incl. GST)",
-        "numericPrice": 379
+        "mrp_price": "₹379 (Incl. GST)", "price": "₹303 (Incl. GST)",
+        "mrp": 379, "numericPrice": 303
       },
       {
         "name": "Medium",
@@ -1217,8 +1217,8 @@ export const PRODUCTS = [
         "depth": 130,
         "height": 145,
         "dimensions": "145 × 130 × 145 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549,
+        "mrp_price": "₹549 (Incl. GST)", "price": "₹439 (Incl. GST)",
+        "mrp": 549, "numericPrice": 439,
         "isPopular": true
       },
       {
@@ -1227,8 +1227,8 @@ export const PRODUCTS = [
         "depth": 165,
         "height": 185,
         "dimensions": "185 × 165 × 185 mm",
-        "price": "₹799 (Incl. GST)",
-        "numericPrice": 799
+        "mrp_price": "₹799 (Incl. GST)", "price": "₹639 (Incl. GST)",
+        "mrp": 799, "numericPrice": 639
       }
     ],
     "specs": {
@@ -1295,9 +1295,9 @@ export const PRODUCTS = [
     "category": "Desk & Office",
     "description": "Anatomically detailed Tyrannosaurus Rex skull replica with jaw teeth engineered to cradle pens, pencils, or styluses.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "ICONIC",
     "rating": 4.9,
@@ -1309,8 +1309,8 @@ export const PRODUCTS = [
         "depth": 65,
         "height": 75,
         "dimensions": "115 × 65 × 75 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359
       },
       {
         "name": "Medium",
@@ -1318,8 +1318,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 100,
         "dimensions": "155 × 85 × 100 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649,
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519,
         "isPopular": true
       },
       {
@@ -1328,8 +1328,8 @@ export const PRODUCTS = [
         "depth": 110,
         "height": 130,
         "dimensions": "200 × 110 × 130 mm",
-        "price": "₹949 (Incl. GST)",
-        "numericPrice": 949
+        "mrp_price": "₹949 (Incl. GST)", "price": "₹759 (Incl. GST)",
+        "mrp": 949, "numericPrice": 759
       }
     ],
     "specs": {
@@ -1396,9 +1396,9 @@ export const PRODUCTS = [
     "category": "Desk & Office",
     "description": "Weighted dual-port docking station with self-draining airflow channels for Apple Pencil, styluses, or safety razors.",
     "material": "PLA",
-    "price": "From ₹249",
-    "startingPrice": "₹249 (Incl. GST)",
-    "numericPrice": 249,
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 249, "numericPrice": 199,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 62,
@@ -1409,8 +1409,8 @@ export const PRODUCTS = [
         "depth": 50,
         "height": 55,
         "dimensions": "75 × 50 × 55 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       },
       {
         "name": "Medium",
@@ -1418,8 +1418,8 @@ export const PRODUCTS = [
         "depth": 65,
         "height": 70,
         "dimensions": "100 × 65 × 70 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349,
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279,
         "isPopular": true
       },
       {
@@ -1428,8 +1428,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 90,
         "dimensions": "130 × 85 × 90 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       }
     ],
     "specs": {
@@ -1497,9 +1497,9 @@ export const PRODUCTS = [
     "category": "Desk & Office",
     "description": "Minimalist perpetual desktop flip calendar featuring a sleek matte structural frame, smooth pivot rings, and interchangeable date cards.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "badge": "NEW",
     "rating": 4.8,
@@ -1511,8 +1511,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 85,
         "dimensions": "100 × 60 × 85 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -1520,8 +1520,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 120,
         "dimensions": "140 × 80 × 120 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -1530,8 +1530,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 155,
         "dimensions": "180 × 105 × 155 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -1601,9 +1601,9 @@ export const PRODUCTS = [
     "category": "Organization & Storage",
     "description": "Compact desk wire organizer with snap-fit sliding cover, dual wire exit ports, and ventilation slots.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "ESSENTIAL",
     "rating": 4.8,
@@ -1615,8 +1615,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 65,
         "dimensions": "140 × 85 × 65 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -1624,8 +1624,8 @@ export const PRODUCTS = [
         "depth": 115,
         "height": 85,
         "dimensions": "180 × 115 × 85 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499,
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399,
         "isPopular": true
       },
       {
@@ -1634,8 +1634,8 @@ export const PRODUCTS = [
         "depth": 130,
         "height": 95,
         "dimensions": "208 × 130 × 95 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       }
     ],
     "specs": {
@@ -1702,9 +1702,9 @@ export const PRODUCTS = [
     "category": "Organization & Storage",
     "description": "Desktop perpetual flip calendar featuring modular date and month tiles with an integrated Voronoi lattice pen and stationery caddy.",
     "material": "PLA",
-    "price": "From ₹349",
-    "startingPrice": "₹349 (Incl. GST)",
-    "numericPrice": 349,
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "mrp": 349, "numericPrice": 279,
     "gstIncluded": true,
     "badge": "NEW",
     "rating": 4.9,
@@ -1716,8 +1716,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 85,
         "dimensions": "105 × 80 × 85 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -1725,8 +1725,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 115,
         "dimensions": "145 × 105 × 115 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499,
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399,
         "isPopular": true
       },
       {
@@ -1735,8 +1735,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 145,
         "dimensions": "185 × 135 × 145 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       }
     ],
     "specs": {
@@ -1807,9 +1807,9 @@ export const PRODUCTS = [
     "category": "Organization & Storage",
     "description": "Vertical countertop paper roll caddy with fluted textured spine and weighted anti-tip base.",
     "material": "PLA",
-    "price": "From ₹349",
-    "startingPrice": "₹349 (Incl. GST)",
-    "numericPrice": 349,
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "mrp": 349, "numericPrice": 279,
     "gstIncluded": true,
     "rating": 4.6,
     "reviewsCount": 49,
@@ -1820,8 +1820,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 80,
         "dimensions": "135 × 85 × 80 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -1829,8 +1829,8 @@ export const PRODUCTS = [
         "depth": 110,
         "height": 100,
         "dimensions": "175 × 110 × 100 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499,
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399,
         "isPopular": true
       },
       {
@@ -1839,8 +1839,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 120,
         "dimensions": "205 × 125 × 120 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       }
     ],
     "specs": {
@@ -1907,9 +1907,9 @@ export const PRODUCTS = [
     "category": "Organization & Storage",
     "description": "Heavy-duty wall-mount folded napkin dispenser featuring dual side-key snap locks and smooth feed slot.",
     "material": "PLA",
-    "price": "From ₹499",
-    "startingPrice": "₹499 (Incl. GST)",
-    "numericPrice": 499,
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "mrp": 499, "numericPrice": 399,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 57,
@@ -1920,8 +1920,8 @@ export const PRODUCTS = [
         "depth": 90,
         "height": 130,
         "dimensions": "140 × 90 × 130 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       },
       {
         "name": "Medium",
@@ -1929,8 +1929,8 @@ export const PRODUCTS = [
         "depth": 110,
         "height": 170,
         "dimensions": "175 × 110 × 170 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699,
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559,
         "isPopular": true
       },
       {
@@ -1939,8 +1939,8 @@ export const PRODUCTS = [
         "depth": 130,
         "height": 215,
         "dimensions": "205 × 130 × 215 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799
       }
     ],
     "specs": {
@@ -2007,9 +2007,9 @@ export const PRODUCTS = [
     "category": "Organization & Storage",
     "description": "Whimsical miniature puffer winter coat wall hook with sturdy dual-hanger pegs for car keys, headphones, and coats.",
     "material": "PLA",
-    "price": "From ₹249",
-    "startingPrice": "₹249 (Incl. GST)",
-    "numericPrice": 249,
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 249, "numericPrice": 199,
     "gstIncluded": true,
     "badge": "CUTE",
     "rating": 4.9,
@@ -2021,8 +2021,8 @@ export const PRODUCTS = [
         "depth": 40,
         "height": 80,
         "dimensions": "65 × 40 × 80 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       },
       {
         "name": "Medium",
@@ -2030,8 +2030,8 @@ export const PRODUCTS = [
         "depth": 55,
         "height": 110,
         "dimensions": "90 × 55 × 110 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349,
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279,
         "isPopular": true
       },
       {
@@ -2040,8 +2040,8 @@ export const PRODUCTS = [
         "depth": 70,
         "height": 140,
         "dimensions": "115 × 70 × 140 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       }
     ],
     "specs": {
@@ -2108,9 +2108,9 @@ export const PRODUCTS = [
     "category": "Phone & Tech Accessories",
     "description": "Tri-angle angled smartphone and tablet desk stand with integrated charging cord clearance channel.",
     "material": "PLA",
-    "price": "From ₹249",
-    "startingPrice": "₹249 (Incl. GST)",
-    "numericPrice": 249,
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 249, "numericPrice": 199,
     "gstIncluded": true,
     "badge": "BESTSELLER",
     "rating": 4.9,
@@ -2122,8 +2122,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 80,
         "dimensions": "90 × 75 × 80 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       },
       {
         "name": "Medium",
@@ -2131,8 +2131,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 100,
         "dimensions": "115 × 95 × 100 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349,
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279,
         "isPopular": true
       },
       {
@@ -2141,8 +2141,8 @@ export const PRODUCTS = [
         "depth": 120,
         "height": 125,
         "dimensions": "145 × 120 × 125 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       }
     ],
     "specs": {
@@ -2211,9 +2211,9 @@ export const PRODUCTS = [
     "category": "Phone & Tech Accessories",
     "description": "Aggressive geometric web-truss headphone bridge designed to cradle over-ear gaming headsets without headband fatigue.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "GAMER",
     "rating": 4.8,
@@ -2225,8 +2225,8 @@ export const PRODUCTS = [
         "depth": 100,
         "height": 175,
         "dimensions": "100 × 100 × 175 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       },
       {
         "name": "Medium",
@@ -2234,8 +2234,8 @@ export const PRODUCTS = [
         "depth": 120,
         "height": 205,
         "dimensions": "120 × 120 × 205 mm",
-        "price": "₹749 (Incl. GST)",
-        "numericPrice": 749,
+        "mrp_price": "₹749 (Incl. GST)", "price": "₹599 (Incl. GST)",
+        "mrp": 749, "numericPrice": 599,
         "isPopular": true
       },
       {
@@ -2244,8 +2244,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 230,
         "dimensions": "135 × 135 × 230 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099
+        "mrp_price": "₹1099 (Incl. GST)", "price": "₹879 (Incl. GST)",
+        "mrp": 1099, "numericPrice": 879
       }
     ],
     "specs": {
@@ -2312,9 +2312,9 @@ export const PRODUCTS = [
     "category": "Phone & Tech Accessories",
     "description": "Iconic cinematic bust headphone mount featuring pork pie hat geometry engineered to rest professional audio cans.",
     "material": "PLA",
-    "price": "From ₹549",
-    "startingPrice": "₹549 (Incl. GST)",
-    "numericPrice": 549,
+    "price": "From ₹439",
+    "startingPrice": "₹439 (Incl. GST)",
+    "mrp": 549, "numericPrice": 439,
     "gstIncluded": true,
     "badge": "COLLECTIBLE",
     "rating": 4.9,
@@ -2326,8 +2326,8 @@ export const PRODUCTS = [
         "depth": 100,
         "height": 175,
         "dimensions": "110 × 100 × 175 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479
       },
       {
         "name": "Medium",
@@ -2335,8 +2335,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 205,
         "dimensions": "135 × 125 × 205 mm",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899,
+        "mrp_price": "₹899 (Incl. GST)", "price": "₹719 (Incl. GST)",
+        "mrp": 899, "numericPrice": 719,
         "isPopular": true
       },
       {
@@ -2345,8 +2345,8 @@ export const PRODUCTS = [
         "depth": 140,
         "height": 230,
         "dimensions": "155 × 140 × 230 mm",
-        "price": "₹1299 (Incl. GST)",
-        "numericPrice": 1299
+        "mrp_price": "₹1299 (Incl. GST)", "price": "₹1039 (Incl. GST)",
+        "mrp": 1299, "numericPrice": 1039
       }
     ],
     "specs": {
@@ -2413,9 +2413,9 @@ export const PRODUCTS = [
     "category": "Phone & Tech Accessories",
     "description": "Precision friction-fit puck cradle holding original Apple MagSafe charger at 65° StandBy angle.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 82,
@@ -2426,8 +2426,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 90,
         "dimensions": "75 × 75 × 90 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -2435,8 +2435,8 @@ export const PRODUCTS = [
         "depth": 100,
         "height": 120,
         "dimensions": "100 × 100 × 120 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399,
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319,
         "isPopular": true
       },
       {
@@ -2445,8 +2445,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 150,
         "dimensions": "125 × 125 × 150 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549
+        "mrp_price": "₹549 (Incl. GST)", "price": "₹439 (Incl. GST)",
+        "mrp": 549, "numericPrice": 439
       }
     ],
     "specs": {
@@ -2513,9 +2513,9 @@ export const PRODUCTS = [
     "category": "Phone & Tech Accessories",
     "description": "Ergonomic dual-lip display stand precision contoured for PS5 DualSense, Xbox Series X, and Nintendo Switch Pro controllers.",
     "material": "PLA",
-    "price": "From ₹329",
-    "startingPrice": "₹329 (Incl. GST)",
-    "numericPrice": 329,
+    "price": "From ₹263",
+    "startingPrice": "₹263 (Incl. GST)",
+    "mrp": 329, "numericPrice": 263,
     "gstIncluded": true,
     "badge": "GAMER",
     "rating": 4.8,
@@ -2527,8 +2527,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 85,
         "dimensions": "75 × 80 × 85 mm",
-        "price": "₹329 (Incl. GST)",
-        "numericPrice": 329
+        "mrp_price": "₹329 (Incl. GST)", "price": "₹263 (Incl. GST)",
+        "mrp": 329, "numericPrice": 263
       },
       {
         "name": "Medium",
@@ -2536,8 +2536,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 115,
         "dimensions": "100 × 105 × 115 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -2546,8 +2546,8 @@ export const PRODUCTS = [
         "depth": 130,
         "height": 145,
         "dimensions": "125 × 130 × 145 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -2614,9 +2614,9 @@ export const PRODUCTS = [
     "category": "Toys & Fidgets",
     "description": "Concentric print-in-place free-spinning gyroscopic rings providing fluid kinetic rotation for focus and stress relief.",
     "material": "PLA",
-    "price": "From ₹199",
-    "startingPrice": "₹199 (Incl. GST)",
-    "numericPrice": 199,
+    "price": "From ₹159",
+    "startingPrice": "₹159 (Incl. GST)",
+    "mrp": 199, "numericPrice": 159,
     "gstIncluded": true,
     "badge": "FIDGET",
     "rating": 4.9,
@@ -2628,8 +2628,8 @@ export const PRODUCTS = [
         "depth": 55,
         "height": 14,
         "dimensions": "55 × 55 × 14 mm",
-        "price": "₹199 (Incl. GST)",
-        "numericPrice": 199
+        "mrp_price": "₹199 (Incl. GST)", "price": "₹159 (Incl. GST)",
+        "mrp": 199, "numericPrice": 159
       },
       {
         "name": "Medium",
@@ -2637,8 +2637,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 18,
         "dimensions": "75 × 75 × 18 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299,
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239,
         "isPopular": true
       },
       {
@@ -2647,8 +2647,8 @@ export const PRODUCTS = [
         "depth": 100,
         "height": 22,
         "dimensions": "100 × 100 × 22 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       }
     ],
     "specs": {
@@ -2715,9 +2715,9 @@ export const PRODUCTS = [
     "category": "Toys & Fidgets",
     "description": "Satisfying tactile sliding mechanism with internal ball detents engineered for silent one-handed pocket fidgeting.",
     "material": "PLA",
-    "price": "From ₹179",
-    "startingPrice": "₹179 (Incl. GST)",
-    "numericPrice": 179,
+    "price": "From ₹143",
+    "startingPrice": "₹143 (Incl. GST)",
+    "mrp": 179, "numericPrice": 143,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 89,
@@ -2728,8 +2728,8 @@ export const PRODUCTS = [
         "depth": 25,
         "height": 14,
         "dimensions": "50 × 25 × 14 mm",
-        "price": "₹179 (Incl. GST)",
-        "numericPrice": 179
+        "mrp_price": "₹179 (Incl. GST)", "price": "₹143 (Incl. GST)",
+        "mrp": 179, "numericPrice": 143
       },
       {
         "name": "Medium",
@@ -2737,8 +2737,8 @@ export const PRODUCTS = [
         "depth": 34,
         "height": 18,
         "dimensions": "68 × 34 × 18 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249,
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199,
         "isPopular": true
       },
       {
@@ -2747,8 +2747,8 @@ export const PRODUCTS = [
         "depth": 43,
         "height": 22,
         "dimensions": "86 × 43 × 22 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       }
     ],
     "specs": {
@@ -2814,9 +2814,9 @@ export const PRODUCTS = [
     "category": "Toys & Fidgets",
     "description": "Authentic mechanical keyboard switch tester with custom 3D printed keycap housing for satisfying tactile clicks.",
     "material": "PLA",
-    "price": "From ₹169",
-    "startingPrice": "₹169 (Incl. GST)",
-    "numericPrice": 169,
+    "price": "From ₹135",
+    "startingPrice": "₹135 (Incl. GST)",
+    "mrp": 169, "numericPrice": 135,
     "gstIncluded": true,
     "badge": "BESTSELLER",
     "rating": 4.9,
@@ -2828,8 +2828,8 @@ export const PRODUCTS = [
         "depth": 28,
         "height": 32,
         "dimensions": "28 × 28 × 32 mm",
-        "price": "₹169 (Incl. GST)",
-        "numericPrice": 169
+        "mrp_price": "₹169 (Incl. GST)", "price": "₹135 (Incl. GST)",
+        "mrp": 169, "numericPrice": 135
       },
       {
         "name": "Medium",
@@ -2837,8 +2837,8 @@ export const PRODUCTS = [
         "depth": 28,
         "height": 32,
         "dimensions": "52 × 28 × 32 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249,
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199,
         "isPopular": true
       },
       {
@@ -2847,8 +2847,8 @@ export const PRODUCTS = [
         "depth": 52,
         "height": 32,
         "dimensions": "52 × 52 × 32 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       }
     ],
     "specs": {
@@ -2915,9 +2915,9 @@ export const PRODUCTS = [
     "category": "Toys & Fidgets",
     "description": "Interlocking polygon transformation star that collapses, expands, and folds infinitely in rhythmic geometric loops.",
     "material": "PLA",
-    "price": "From ₹219",
-    "startingPrice": "₹219 (Incl. GST)",
-    "numericPrice": 219,
+    "price": "From ₹175",
+    "startingPrice": "₹175 (Incl. GST)",
+    "mrp": 219, "numericPrice": 175,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 76,
@@ -2928,8 +2928,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 60,
         "dimensions": "60 × 60 × 60 mm",
-        "price": "₹219 (Incl. GST)",
-        "numericPrice": 219
+        "mrp_price": "₹219 (Incl. GST)", "price": "₹175 (Incl. GST)",
+        "mrp": 219, "numericPrice": 175
       },
       {
         "name": "Medium",
@@ -2937,8 +2937,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 85,
         "dimensions": "85 × 85 × 85 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299,
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239,
         "isPopular": true
       },
       {
@@ -2947,8 +2947,8 @@ export const PRODUCTS = [
         "depth": 115,
         "height": 115,
         "dimensions": "115 × 115 × 115 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       }
     ],
     "specs": {
@@ -3015,9 +3015,9 @@ export const PRODUCTS = [
     "category": "Toys & Fidgets",
     "description": "Meshed planetary gear system providing hypnotic mechanical movement when turned by fingertip on office desk.",
     "material": "PLA",
-    "price": "From ₹259",
-    "startingPrice": "₹259 (Incl. GST)",
-    "numericPrice": 259,
+    "price": "From ₹207",
+    "startingPrice": "₹207 (Incl. GST)",
+    "mrp": 259, "numericPrice": 207,
     "gstIncluded": true,
     "badge": "DESK TOY",
     "rating": 4.8,
@@ -3029,8 +3029,8 @@ export const PRODUCTS = [
         "depth": 70,
         "height": 20,
         "dimensions": "70 × 70 × 20 mm",
-        "price": "₹259 (Incl. GST)",
-        "numericPrice": 259
+        "mrp_price": "₹259 (Incl. GST)", "price": "₹207 (Incl. GST)",
+        "mrp": 259, "numericPrice": 207
       },
       {
         "name": "Medium",
@@ -3038,8 +3038,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 26,
         "dimensions": "95 × 95 × 26 mm",
-        "price": "₹379 (Incl. GST)",
-        "numericPrice": 379,
+        "mrp_price": "₹379 (Incl. GST)", "price": "₹303 (Incl. GST)",
+        "mrp": 379, "numericPrice": 303,
         "isPopular": true
       },
       {
@@ -3048,8 +3048,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 34,
         "dimensions": "125 × 125 × 34 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       }
     ],
     "specs": {
@@ -3116,9 +3116,9 @@ export const PRODUCTS = [
     "category": "Articulated / Flexi Models",
     "description": "Legendary print-in-place flexi imperial dragon with 38 articulated vertebrae segments, posable legs, and whiskers.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "BESTSELLER",
     "rating": 4.9,
@@ -3130,8 +3130,8 @@ export const PRODUCTS = [
         "depth": 120,
         "height": 35,
         "dimensions": "120 × 120 × 35 mm (280mm flex)",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -3139,8 +3139,8 @@ export const PRODUCTS = [
         "depth": 160,
         "height": 45,
         "dimensions": "160 × 160 × 45 mm (420mm flex)",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -3149,8 +3149,8 @@ export const PRODUCTS = [
         "depth": 205,
         "height": 55,
         "dimensions": "205 × 205 × 55 mm (550mm flex)",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899
+        "mrp_price": "₹899 (Incl. GST)", "price": "₹719 (Incl. GST)",
+        "mrp": 899, "numericPrice": 719
       }
     ],
     "specs": {
@@ -3218,9 +3218,9 @@ export const PRODUCTS = [
     "category": "Articulated / Flexi Models",
     "description": "Playful poseable human skeleton model with ball-jointed limbs and spine, designed to slump, sit, and dance on desk.",
     "material": "PLA",
-    "price": "From ₹279",
-    "startingPrice": "₹279 (Incl. GST)",
-    "numericPrice": 279,
+    "price": "From ₹223",
+    "startingPrice": "₹223 (Incl. GST)",
+    "mrp": 279, "numericPrice": 223,
     "gstIncluded": true,
     "badge": "VIRAL",
     "rating": 4.9,
@@ -3232,8 +3232,8 @@ export const PRODUCTS = [
         "depth": 22,
         "height": 130,
         "dimensions": "45 × 22 × 130 mm",
-        "price": "₹279 (Incl. GST)",
-        "numericPrice": 279
+        "mrp_price": "₹279 (Incl. GST)", "price": "₹223 (Incl. GST)",
+        "mrp": 279, "numericPrice": 223
       },
       {
         "name": "Medium",
@@ -3241,8 +3241,8 @@ export const PRODUCTS = [
         "depth": 30,
         "height": 175,
         "dimensions": "60 × 30 × 175 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -3251,8 +3251,8 @@ export const PRODUCTS = [
         "depth": 40,
         "height": 230,
         "dimensions": "80 × 40 × 230 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       }
     ],
     "specs": {
@@ -3320,9 +3320,9 @@ export const PRODUCTS = [
     "category": "Articulated / Flexi Models",
     "description": "Charming flexible cockatoo featuring crest plumage articulation and tail feather flex segments.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 91,
@@ -3333,8 +3333,8 @@ export const PRODUCTS = [
         "depth": 42,
         "height": 38,
         "dimensions": "110 × 42 × 38 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -3342,8 +3342,8 @@ export const PRODUCTS = [
         "depth": 58,
         "height": 52,
         "dimensions": "155 × 58 × 52 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -3352,8 +3352,8 @@ export const PRODUCTS = [
         "depth": 76,
         "height": 68,
         "dimensions": "205 × 76 × 68 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -3420,9 +3420,9 @@ export const PRODUCTS = [
     "category": "Articulated / Flexi Models",
     "description": "Cute print-in-place chibi feline with flexible undulating tail, head swivel, and posable front paws.",
     "material": "PLA",
-    "price": "From ₹279",
-    "startingPrice": "₹279 (Incl. GST)",
-    "numericPrice": 279,
+    "price": "From ₹223",
+    "startingPrice": "₹223 (Incl. GST)",
+    "mrp": 279, "numericPrice": 223,
     "gstIncluded": true,
     "badge": "CUTE",
     "rating": 4.9,
@@ -3434,8 +3434,8 @@ export const PRODUCTS = [
         "depth": 42,
         "height": 38,
         "dimensions": "85 × 42 × 38 mm",
-        "price": "₹279 (Incl. GST)",
-        "numericPrice": 279
+        "mrp_price": "₹279 (Incl. GST)", "price": "₹223 (Incl. GST)",
+        "mrp": 279, "numericPrice": 223
       },
       {
         "name": "Medium",
@@ -3443,8 +3443,8 @@ export const PRODUCTS = [
         "depth": 58,
         "height": 52,
         "dimensions": "120 × 58 × 52 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399,
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319,
         "isPopular": true
       },
       {
@@ -3453,8 +3453,8 @@ export const PRODUCTS = [
         "depth": 76,
         "height": 68,
         "dimensions": "160 × 76 × 68 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479
       }
     ],
     "specs": {
@@ -3522,9 +3522,9 @@ export const PRODUCTS = [
     "category": "Articulated / Flexi Models",
     "description": "Multi-jointed sea creature with 8 tentacles curling freely in print-in-place ball sockets for tactile relaxation.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 115,
@@ -3535,8 +3535,8 @@ export const PRODUCTS = [
         "depth": 110,
         "height": 35,
         "dimensions": "110 × 110 × 35 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -3544,8 +3544,8 @@ export const PRODUCTS = [
         "depth": 150,
         "height": 48,
         "dimensions": "150 × 150 × 48 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -3554,8 +3554,8 @@ export const PRODUCTS = [
         "depth": 195,
         "height": 62,
         "dimensions": "195 × 195 × 62 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -3622,9 +3622,9 @@ export const PRODUCTS = [
     "category": "Figures & Pop Culture",
     "description": "Premium dynamic 3D printed Spider-Man collectible statue captured mid-perch with crisp web suit textures and defined musculature.",
     "material": "PLA",
-    "price": "From ₹699",
-    "startingPrice": "₹699 (Incl. GST)",
-    "numericPrice": 699,
+    "price": "From ₹559",
+    "startingPrice": "₹559 (Incl. GST)",
+    "mrp": 699, "numericPrice": 559,
     "gstIncluded": true,
     "badge": "COLLECTIBLE",
     "rating": 5,
@@ -3636,8 +3636,8 @@ export const PRODUCTS = [
         "depth": 65,
         "height": 105,
         "dimensions": "70 × 65 × 105 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       },
       {
         "name": "Medium",
@@ -3645,8 +3645,8 @@ export const PRODUCTS = [
         "depth": 90,
         "height": 150,
         "dimensions": "100 × 90 × 150 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999,
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799,
         "isPopular": true
       },
       {
@@ -3655,8 +3655,8 @@ export const PRODUCTS = [
         "depth": 120,
         "height": 205,
         "dimensions": "135 × 120 × 205 mm",
-        "price": "₹1499 (Incl. GST)",
-        "numericPrice": 1499
+        "mrp_price": "₹1499 (Incl. GST)", "price": "₹1199 (Incl. GST)",
+        "mrp": 1499, "numericPrice": 1199
       }
     ],
     "specs": {
@@ -3725,9 +3725,9 @@ export const PRODUCTS = [
     "category": "Figures & Pop Culture",
     "description": "Stylized Cubix3D Batman display figure with iconic cowl, utility belt, and sweeping cape silhouette, sculpted for display shelves.",
     "material": "PLA",
-    "price": "From ₹699",
-    "startingPrice": "₹699 (Incl. GST)",
-    "numericPrice": 699,
+    "price": "From ₹559",
+    "startingPrice": "₹559 (Incl. GST)",
+    "mrp": 699, "numericPrice": 559,
     "gstIncluded": true,
     "badge": "COLLECTIBLE",
     "rating": 4.9,
@@ -3739,8 +3739,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 110,
         "dimensions": "75 × 60 × 110 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       },
       {
         "name": "Medium",
@@ -3748,8 +3748,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 155,
         "dimensions": "105 × 85 × 155 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999,
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799,
         "isPopular": true
       },
       {
@@ -3758,8 +3758,8 @@ export const PRODUCTS = [
         "depth": 115,
         "height": 210,
         "dimensions": "140 × 115 × 210 mm",
-        "price": "₹1499 (Incl. GST)",
-        "numericPrice": 1499
+        "mrp_price": "₹1499 (Incl. GST)", "price": "₹1199 (Incl. GST)",
+        "mrp": 1499, "numericPrice": 1199
       }
     ],
     "specs": {
@@ -3828,9 +3828,9 @@ export const PRODUCTS = [
     "category": "Figures & Pop Culture",
     "description": "Humorous and dynamic Deadpool figurine armed with twin back-mounted katanas, tactical combat pouches, and signature mask expression.",
     "material": "PLA",
-    "price": "From ₹699",
-    "startingPrice": "₹699 (Incl. GST)",
-    "numericPrice": 699,
+    "price": "From ₹559",
+    "startingPrice": "₹559 (Incl. GST)",
+    "mrp": 699, "numericPrice": 559,
     "gstIncluded": true,
     "badge": "COLLECTIBLE",
     "rating": 4.9,
@@ -3842,8 +3842,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 105,
         "dimensions": "70 × 60 × 105 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       },
       {
         "name": "Medium",
@@ -3851,8 +3851,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 150,
         "dimensions": "100 × 85 × 150 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999,
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799,
         "isPopular": true
       },
       {
@@ -3861,8 +3861,8 @@ export const PRODUCTS = [
         "depth": 115,
         "height": 205,
         "dimensions": "135 × 115 × 205 mm",
-        "price": "₹1499 (Incl. GST)",
-        "numericPrice": 1499
+        "mrp_price": "₹1499 (Incl. GST)", "price": "₹1199 (Incl. GST)",
+        "mrp": 1499, "numericPrice": 1199
       }
     ],
     "specs": {
@@ -3931,9 +3931,9 @@ export const PRODUCTS = [
     "category": "Figures & Pop Culture",
     "description": "Detailed mechanical Iron Man display bust featuring segmented armor plates, arc reactor chest emblem, and aerodynamic helmet geometry.",
     "material": "PLA",
-    "price": "From ₹749",
-    "startingPrice": "₹749 (Incl. GST)",
-    "numericPrice": 749,
+    "price": "From ₹599",
+    "startingPrice": "₹599 (Incl. GST)",
+    "mrp": 749, "numericPrice": 599,
     "gstIncluded": true,
     "badge": "ICONIC",
     "rating": 5,
@@ -3945,8 +3945,8 @@ export const PRODUCTS = [
         "depth": 65,
         "height": 110,
         "dimensions": "85 × 65 × 110 mm",
-        "price": "₹749 (Incl. GST)",
-        "numericPrice": 749
+        "mrp_price": "₹749 (Incl. GST)", "price": "₹599 (Incl. GST)",
+        "mrp": 749, "numericPrice": 599
       },
       {
         "name": "Medium",
@@ -3954,8 +3954,8 @@ export const PRODUCTS = [
         "depth": 90,
         "height": 155,
         "dimensions": "120 × 90 × 155 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099,
+        "mrp_price": "₹1099 (Incl. GST)", "price": "₹879 (Incl. GST)",
+        "mrp": 1099, "numericPrice": 879,
         "isPopular": true
       },
       {
@@ -3964,8 +3964,8 @@ export const PRODUCTS = [
         "depth": 120,
         "height": 210,
         "dimensions": "160 × 120 × 210 mm",
-        "price": "₹1699 (Incl. GST)",
-        "numericPrice": 1699
+        "mrp_price": "₹1699 (Incl. GST)", "price": "₹1359 (Incl. GST)",
+        "mrp": 1699, "numericPrice": 1359
       }
     ],
     "specs": {
@@ -4034,9 +4034,9 @@ export const PRODUCTS = [
     "category": "Figures & Pop Culture",
     "description": "Dramatic collector's Venom symbiote mask display sculpture showcasing ferocious sharp fangs, organic tendril textures, and flared tongue.",
     "material": "PLA",
-    "price": "From ₹699",
-    "startingPrice": "₹699 (Incl. GST)",
-    "numericPrice": 699,
+    "price": "From ₹559",
+    "startingPrice": "₹559 (Incl. GST)",
+    "mrp": 699, "numericPrice": 559,
     "gstIncluded": true,
     "badge": "HOT",
     "rating": 4.9,
@@ -4048,8 +4048,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 110,
         "dimensions": "80 × 75 × 110 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       },
       {
         "name": "Medium",
@@ -4057,8 +4057,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 155,
         "dimensions": "115 × 105 × 155 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999,
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799,
         "isPopular": true
       },
       {
@@ -4067,8 +4067,8 @@ export const PRODUCTS = [
         "depth": 140,
         "height": 210,
         "dimensions": "155 × 140 × 210 mm",
-        "price": "₹1499 (Incl. GST)",
-        "numericPrice": 1499
+        "mrp_price": "₹1499 (Incl. GST)", "price": "₹1199 (Incl. GST)",
+        "mrp": 1499, "numericPrice": 1199
       }
     ],
     "specs": {
@@ -4133,13 +4133,13 @@ export const PRODUCTS = [
   },
   {
     "id": "MIN-SLAYER-001",
-    "name": "Demon Slayer Flame Warrior 3D Miniature",
+    "name": "Demon Slayer Flame Warrior 3D Miniature (With key chain)",
     "category": "Miniatures",
     "description": "Detailed tabletop anime miniature displaying haori flowing folds, Nichirin katana posture, and display base.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "ANIME",
     "rating": 4.8,
@@ -4151,8 +4151,8 @@ export const PRODUCTS = [
         "depth": 45,
         "height": 85,
         "dimensions": "55 × 45 × 85 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359
       },
       {
         "name": "Medium",
@@ -4160,8 +4160,8 @@ export const PRODUCTS = [
         "depth": 70,
         "height": 135,
         "dimensions": "85 × 70 × 135 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699,
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559,
         "isPopular": true
       },
       {
@@ -4170,8 +4170,8 @@ export const PRODUCTS = [
         "depth": 100,
         "height": 190,
         "dimensions": "120 × 100 × 190 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799
       }
     ],
     "specs": {
@@ -4238,9 +4238,9 @@ export const PRODUCTS = [
     "category": "Miniatures",
     "description": "Faceted contemporary equestrian statue capturing muscle tension through crisp sharp planar low-poly geometry.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "AESTHETIC",
     "rating": 4.8,
@@ -4252,8 +4252,8 @@ export const PRODUCTS = [
         "depth": 40,
         "height": 110,
         "dimensions": "100 × 40 × 110 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359
       },
       {
         "name": "Medium",
@@ -4261,8 +4261,8 @@ export const PRODUCTS = [
         "depth": 58,
         "height": 155,
         "dimensions": "145 × 58 × 155 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699,
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559,
         "isPopular": true
       },
       {
@@ -4271,8 +4271,8 @@ export const PRODUCTS = [
         "depth": 78,
         "height": 210,
         "dimensions": "195 × 78 × 210 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799
       }
     ],
     "specs": {
@@ -4340,9 +4340,9 @@ export const PRODUCTS = [
     "category": "Miniatures",
     "description": "Regal faceted predator bust statue featuring angular geometric mane planes and commanding shelf presence.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "rating": 4.9,
     "reviewsCount": 110,
@@ -4353,8 +4353,8 @@ export const PRODUCTS = [
         "depth": 60,
         "height": 105,
         "dimensions": "95 × 60 × 105 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359
       },
       {
         "name": "Medium",
@@ -4362,8 +4362,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 150,
         "dimensions": "135 × 85 × 150 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699,
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559,
         "isPopular": true
       },
       {
@@ -4372,8 +4372,8 @@ export const PRODUCTS = [
         "depth": 115,
         "height": 200,
         "dimensions": "180 × 115 × 200 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799
       }
     ],
     "specs": {
@@ -4441,9 +4441,9 @@ export const PRODUCTS = [
     "category": "Miniatures",
     "description": "Futuristic sci-fi exoskeleton combat mech figurine featuring mechanical limb joints, armor plating, and pedestal base.",
     "material": "PLA",
-    "price": "From ₹499",
-    "startingPrice": "₹499 (Incl. GST)",
-    "numericPrice": 499,
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "mrp": 499, "numericPrice": 399,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 78,
@@ -4454,8 +4454,8 @@ export const PRODUCTS = [
         "depth": 55,
         "height": 100,
         "dimensions": "65 × 55 × 100 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       },
       {
         "name": "Medium",
@@ -4463,8 +4463,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 150,
         "dimensions": "95 × 80 × 150 mm",
-        "price": "₹749 (Incl. GST)",
-        "numericPrice": 749,
+        "mrp_price": "₹749 (Incl. GST)", "price": "₹599 (Incl. GST)",
+        "mrp": 749, "numericPrice": 599,
         "isPopular": true
       },
       {
@@ -4473,8 +4473,8 @@ export const PRODUCTS = [
         "depth": 115,
         "height": 210,
         "dimensions": "135 × 115 × 210 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099
+        "mrp_price": "₹1099 (Incl. GST)", "price": "₹879 (Incl. GST)",
+        "mrp": 1099, "numericPrice": 879
       }
     ],
     "specs": {
@@ -4541,9 +4541,9 @@ export const PRODUCTS = [
     "category": "Miniatures",
     "description": "Luxury pop-art bearbrick-inspired astronaut sculpture featuring visor helmet reflections and backpack thruster details.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "POPULAR",
     "rating": 4.9,
@@ -4555,8 +4555,8 @@ export const PRODUCTS = [
         "depth": 55,
         "height": 105,
         "dimensions": "60 × 55 × 105 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359
       },
       {
         "name": "Medium",
@@ -4564,8 +4564,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 150,
         "dimensions": "85 × 75 × 150 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699,
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559,
         "isPopular": true
       },
       {
@@ -4574,8 +4574,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 200,
         "dimensions": "115 × 105 × 200 mm",
-        "price": "₹999 (Incl. GST)",
-        "numericPrice": 999
+        "mrp_price": "₹999 (Incl. GST)", "price": "₹799 (Incl. GST)",
+        "mrp": 999, "numericPrice": 799
       }
     ],
     "specs": {
@@ -4642,9 +4642,9 @@ export const PRODUCTS = [
     "category": "Planters & Vases",
     "description": "Twisted polygon succulent flower pot featuring angled geometric facet ridges and interior bottom drainage hole.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "badge": "GREEN",
     "rating": 4.8,
@@ -4656,8 +4656,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 80,
         "dimensions": "85 × 85 × 80 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -4665,8 +4665,8 @@ export const PRODUCTS = [
         "depth": 120,
         "height": 110,
         "dimensions": "120 × 120 × 110 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -4675,8 +4675,8 @@ export const PRODUCTS = [
         "depth": 160,
         "height": 145,
         "dimensions": "160 × 160 × 145 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -4743,9 +4743,9 @@ export const PRODUCTS = [
     "category": "Planters & Vases",
     "description": "Dual-chamber sub-irrigation planter with fluted exterior reservoir and slotted inner wick potting basket.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "CLEVER",
     "rating": 4.9,
@@ -4757,8 +4757,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 95,
         "dimensions": "95 × 95 × 95 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -4766,8 +4766,8 @@ export const PRODUCTS = [
         "depth": 130,
         "height": 130,
         "dimensions": "130 × 130 × 130 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -4776,8 +4776,8 @@ export const PRODUCTS = [
         "depth": 175,
         "height": 175,
         "dimensions": "175 × 175 × 175 mm",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899
+        "mrp_price": "₹899 (Incl. GST)", "price": "₹719 (Incl. GST)",
+        "mrp": 899, "numericPrice": 719
       }
     ],
     "specs": {
@@ -4844,9 +4844,9 @@ export const PRODUCTS = [
     "category": "Planters & Vases",
     "description": "Japanese paper-folding inspired spiral faceted dry-flower vase, printed in clean silky white PLA.",
     "material": "PLA",
-    "price": "From ₹349",
-    "startingPrice": "₹349 (Incl. GST)",
-    "numericPrice": 349,
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "mrp": 349, "numericPrice": 279,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 71,
@@ -4857,8 +4857,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 130,
         "dimensions": "80 × 80 × 130 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -4866,8 +4866,8 @@ export const PRODUCTS = [
         "depth": 115,
         "height": 185,
         "dimensions": "115 × 115 × 185 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549,
+        "mrp_price": "₹549 (Incl. GST)", "price": "₹439 (Incl. GST)",
+        "mrp": 549, "numericPrice": 439,
         "isPopular": true
       },
       {
@@ -4876,8 +4876,8 @@ export const PRODUCTS = [
         "depth": 145,
         "height": 230,
         "dimensions": "145 × 145 × 230 mm",
-        "price": "₹799 (Incl. GST)",
-        "numericPrice": 799
+        "mrp_price": "₹799 (Incl. GST)", "price": "₹639 (Incl. GST)",
+        "mrp": 799, "numericPrice": 639
       }
     ],
     "specs": {
@@ -4944,9 +4944,9 @@ export const PRODUCTS = [
     "category": "Planters & Vases",
     "description": "Conical spiral pocket planter with integrated flat back and keyhole slot for mounting philodendrons on walls.",
     "material": "PLA",
-    "price": "From ₹349",
-    "startingPrice": "₹349 (Incl. GST)",
-    "numericPrice": 349,
+    "price": "From ₹279",
+    "startingPrice": "₹279 (Incl. GST)",
+    "mrp": 349, "numericPrice": 279,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 53,
@@ -4957,8 +4957,8 @@ export const PRODUCTS = [
         "depth": 75,
         "height": 115,
         "dimensions": "85 × 75 × 115 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       },
       {
         "name": "Medium",
@@ -4966,8 +4966,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 160,
         "dimensions": "120 × 105 × 160 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499,
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399,
         "isPopular": true
       },
       {
@@ -4976,8 +4976,8 @@ export const PRODUCTS = [
         "depth": 140,
         "height": 210,
         "dimensions": "160 × 140 × 210 mm",
-        "price": "₹699 (Incl. GST)",
-        "numericPrice": 699
+        "mrp_price": "₹699 (Incl. GST)", "price": "₹559 (Incl. GST)",
+        "mrp": 699, "numericPrice": 559
       }
     ],
     "specs": {
@@ -5043,9 +5043,9 @@ export const PRODUCTS = [
     "category": "Planters & Vases",
     "description": "Dual-layer planter featuring an organic Voronoi outer mesh cage enveloping a solid contrasting inner pot.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "COMPUTATIONAL",
     "rating": 4.8,
@@ -5057,8 +5057,8 @@ export const PRODUCTS = [
         "depth": 90,
         "height": 85,
         "dimensions": "90 × 90 × 85 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -5066,8 +5066,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 120,
         "dimensions": "125 × 125 × 120 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -5076,8 +5076,8 @@ export const PRODUCTS = [
         "depth": 165,
         "height": 155,
         "dimensions": "165 × 165 × 155 mm",
-        "price": "₹849 (Incl. GST)",
-        "numericPrice": 849
+        "mrp_price": "₹849 (Incl. GST)", "price": "₹679 (Incl. GST)",
+        "mrp": 849, "numericPrice": 679
       }
     ],
     "specs": {
@@ -5144,9 +5144,9 @@ export const PRODUCTS = [
     "category": "Lighting & Decorative",
     "description": "Helical spiral lampshade that casts dancing shadow ribbons across walls when paired with standard LED tea lights.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "AMBIENT",
     "rating": 4.9,
@@ -5158,8 +5158,8 @@ export const PRODUCTS = [
         "depth": 90,
         "height": 115,
         "dimensions": "90 × 90 × 115 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359
       },
       {
         "name": "Medium",
@@ -5167,8 +5167,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 160,
         "dimensions": "125 × 125 × 160 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649,
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519,
         "isPopular": true
       },
       {
@@ -5177,8 +5177,8 @@ export const PRODUCTS = [
         "depth": 165,
         "height": 210,
         "dimensions": "165 × 165 × 210 mm",
-        "price": "₹949 (Incl. GST)",
-        "numericPrice": 949
+        "mrp_price": "₹949 (Incl. GST)", "price": "₹759 (Incl. GST)",
+        "mrp": 949, "numericPrice": 759
       }
     ],
     "specs": {
@@ -5246,9 +5246,9 @@ export const PRODUCTS = [
     "category": "Lighting & Decorative",
     "description": "Curved 3D translucent photo lithophane panel box that reveals high-contrast photographic scenes when backlit.",
     "material": "PLA",
-    "price": "From ₹499",
-    "startingPrice": "₹499 (Incl. GST)",
-    "numericPrice": 499,
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "mrp": 499, "numericPrice": 399,
     "gstIncluded": true,
     "badge": "PHOTO",
     "rating": 5,
@@ -5260,8 +5260,8 @@ export const PRODUCTS = [
         "depth": 40,
         "height": 105,
         "dimensions": "110 × 40 × 105 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       },
       {
         "name": "Medium",
@@ -5269,8 +5269,8 @@ export const PRODUCTS = [
         "depth": 50,
         "height": 145,
         "dimensions": "150 × 50 × 145 mm",
-        "price": "₹749 (Incl. GST)",
-        "numericPrice": 749,
+        "mrp_price": "₹749 (Incl. GST)", "price": "₹599 (Incl. GST)",
+        "mrp": 749, "numericPrice": 599,
         "isPopular": true
       },
       {
@@ -5279,8 +5279,8 @@ export const PRODUCTS = [
         "depth": 65,
         "height": 190,
         "dimensions": "200 × 65 × 190 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099
+        "mrp_price": "₹1099 (Incl. GST)", "price": "₹879 (Incl. GST)",
+        "mrp": 1099, "numericPrice": 879
       }
     ],
     "specs": {
@@ -5347,9 +5347,9 @@ export const PRODUCTS = [
     "category": "Lighting & Decorative",
     "description": "Topographically accurate textured lunar sphere lamp displaying crater elevation with hidden LED disc base mount.",
     "material": "PLA",
-    "price": "From ₹549",
-    "startingPrice": "₹549 (Incl. GST)",
-    "numericPrice": 549,
+    "price": "From ₹439",
+    "startingPrice": "₹439 (Incl. GST)",
+    "mrp": 549, "numericPrice": 439,
     "gstIncluded": true,
     "badge": "POPULAR",
     "rating": 4.9,
@@ -5361,8 +5361,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 110,
         "dimensions": "95 × 95 × 110 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549
+        "mrp_price": "₹549 (Incl. GST)", "price": "₹439 (Incl. GST)",
+        "mrp": 549, "numericPrice": 439
       },
       {
         "name": "Medium",
@@ -5370,8 +5370,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 155,
         "dimensions": "135 × 135 × 155 mm",
-        "price": "₹799 (Incl. GST)",
-        "numericPrice": 799,
+        "mrp_price": "₹799 (Incl. GST)", "price": "₹639 (Incl. GST)",
+        "mrp": 799, "numericPrice": 639,
         "isPopular": true
       },
       {
@@ -5380,8 +5380,8 @@ export const PRODUCTS = [
         "depth": 175,
         "height": 200,
         "dimensions": "175 × 175 × 200 mm",
-        "price": "₹1199 (Incl. GST)",
-        "numericPrice": 1199
+        "mrp_price": "₹1199 (Incl. GST)", "price": "₹959 (Incl. GST)",
+        "mrp": 1199, "numericPrice": 959
       }
     ],
     "specs": {
@@ -5448,9 +5448,9 @@ export const PRODUCTS = [
     "category": "Lighting & Decorative",
     "description": "Low-poly faceted crystalline lampshade casting angular jewel-like refraction shadows across desktops.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 65,
@@ -5461,8 +5461,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 105,
         "dimensions": "95 × 95 × 105 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -5470,8 +5470,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 150,
         "dimensions": "135 × 135 × 150 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -5480,8 +5480,8 @@ export const PRODUCTS = [
         "depth": 175,
         "height": 195,
         "dimensions": "175 × 175 × 195 mm",
-        "price": "₹849 (Incl. GST)",
-        "numericPrice": 849
+        "mrp_price": "₹849 (Incl. GST)", "price": "₹679 (Incl. GST)",
+        "mrp": 849, "numericPrice": 679
       }
     ],
     "specs": {
@@ -5548,9 +5548,9 @@ export const PRODUCTS = [
     "category": "Lighting & Decorative",
     "description": "Parametric undulating wave column designed for diffused RGB LED light strips, creating kinetic light gradients.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 52,
@@ -5561,8 +5561,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 140,
         "dimensions": "80 × 80 × 140 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       },
       {
         "name": "Medium",
@@ -5570,8 +5570,8 @@ export const PRODUCTS = [
         "depth": 110,
         "height": 185,
         "dimensions": "110 × 110 × 185 mm",
-        "price": "₹749 (Incl. GST)",
-        "numericPrice": 749,
+        "mrp_price": "₹749 (Incl. GST)", "price": "₹599 (Incl. GST)",
+        "mrp": 749, "numericPrice": 599,
         "isPopular": true
       },
       {
@@ -5580,8 +5580,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 230,
         "dimensions": "135 × 135 × 230 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099
+        "mrp_price": "₹1099 (Incl. GST)", "price": "₹879 (Incl. GST)",
+        "mrp": 1099, "numericPrice": 879
       }
     ],
     "specs": {
@@ -5648,9 +5648,9 @@ export const PRODUCTS = [
     "category": "Keychains & Small Gifts",
     "description": "Pocket-sized mechanical keyboard clicker with built-in battery and blue LED that illuminates with each click.",
     "material": "PLA",
-    "price": "From ₹149",
-    "startingPrice": "₹149 (Incl. GST)",
-    "numericPrice": 149,
+    "price": "From ₹119",
+    "startingPrice": "₹119 (Incl. GST)",
+    "mrp": 149, "numericPrice": 119,
     "gstIncluded": true,
     "badge": "BESTSELLER",
     "rating": 4.9,
@@ -5662,8 +5662,8 @@ export const PRODUCTS = [
         "depth": 24,
         "height": 42,
         "dimensions": "24 × 24 × 42 mm",
-        "price": "₹149 (Incl. GST)",
-        "numericPrice": 149
+        "mrp_price": "₹149 (Incl. GST)", "price": "₹119 (Incl. GST)",
+        "mrp": 149, "numericPrice": 119
       },
       {
         "name": "Medium",
@@ -5671,8 +5671,8 @@ export const PRODUCTS = [
         "depth": 24,
         "height": 58,
         "dimensions": "42 × 24 × 58 mm",
-        "price": "₹199 (Incl. GST)",
-        "numericPrice": 199,
+        "mrp_price": "₹199 (Incl. GST)", "price": "₹159 (Incl. GST)",
+        "mrp": 199, "numericPrice": 159,
         "isPopular": true
       },
       {
@@ -5681,8 +5681,8 @@ export const PRODUCTS = [
         "depth": 24,
         "height": 72,
         "dimensions": "60 × 24 × 72 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       }
     ],
     "specs": {
@@ -5750,9 +5750,9 @@ export const PRODUCTS = [
     "category": "Keychains & Small Gifts",
     "description": "Cute dual-tone anime chibi hero character charm with reinforced lanyard loop hole for backpacks and keys.",
     "material": "PLA",
-    "price": "From ₹149",
-    "startingPrice": "₹149 (Incl. GST)",
-    "numericPrice": 149,
+    "price": "From ₹119",
+    "startingPrice": "₹119 (Incl. GST)",
+    "mrp": 149, "numericPrice": 119,
     "gstIncluded": true,
     "badge": "CUTE",
     "rating": 4.8,
@@ -5764,8 +5764,8 @@ export const PRODUCTS = [
         "depth": 28,
         "height": 10,
         "dimensions": "36 × 28 × 10 mm",
-        "price": "₹149 (Incl. GST)",
-        "numericPrice": 149
+        "mrp_price": "₹149 (Incl. GST)", "price": "₹119 (Incl. GST)",
+        "mrp": 149, "numericPrice": 119
       },
       {
         "name": "Medium",
@@ -5773,8 +5773,8 @@ export const PRODUCTS = [
         "depth": 38,
         "height": 14,
         "dimensions": "50 × 38 × 14 mm",
-        "price": "₹199 (Incl. GST)",
-        "numericPrice": 199,
+        "mrp_price": "₹199 (Incl. GST)", "price": "₹159 (Incl. GST)",
+        "mrp": 199, "numericPrice": 159,
         "isPopular": true
       },
       {
@@ -5783,8 +5783,8 @@ export const PRODUCTS = [
         "depth": 52,
         "height": 18,
         "dimensions": "68 × 52 × 18 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       }
     ],
     "specs": {
@@ -5852,9 +5852,9 @@ export const PRODUCTS = [
     "category": "Keychains & Small Gifts",
     "description": "Miniature football stud shoe replica paired with mini geometric soccer ball charm on stainless split ring.",
     "material": "PLA",
-    "price": "From ₹149",
-    "startingPrice": "₹149 (Incl. GST)",
-    "numericPrice": 149,
+    "price": "From ₹119",
+    "startingPrice": "₹119 (Incl. GST)",
+    "mrp": 149, "numericPrice": 119,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 97,
@@ -5865,8 +5865,8 @@ export const PRODUCTS = [
         "depth": 18,
         "height": 20,
         "dimensions": "45 × 18 × 20 mm",
-        "price": "₹149 (Incl. GST)",
-        "numericPrice": 149
+        "mrp_price": "₹149 (Incl. GST)", "price": "₹119 (Incl. GST)",
+        "mrp": 149, "numericPrice": 119
       },
       {
         "name": "Medium",
@@ -5874,8 +5874,8 @@ export const PRODUCTS = [
         "depth": 24,
         "height": 27,
         "dimensions": "60 × 24 × 27 mm",
-        "price": "₹199 (Incl. GST)",
-        "numericPrice": 199,
+        "mrp_price": "₹199 (Incl. GST)", "price": "₹159 (Incl. GST)",
+        "mrp": 199, "numericPrice": 159,
         "isPopular": true
       },
       {
@@ -5884,8 +5884,8 @@ export const PRODUCTS = [
         "depth": 30,
         "height": 34,
         "dimensions": "78 × 30 × 34 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       }
     ],
     "specs": {
@@ -5953,9 +5953,9 @@ export const PRODUCTS = [
     "category": "Keychains & Small Gifts",
     "description": "Acoustic 3D printed protective ride bell with internal clapper for motorbike handlebars and key fobs.",
     "material": "PLA",
-    "price": "From ₹169",
-    "startingPrice": "₹169 (Incl. GST)",
-    "numericPrice": 169,
+    "price": "From ₹135",
+    "startingPrice": "₹135 (Incl. GST)",
+    "mrp": 169, "numericPrice": 135,
     "gstIncluded": true,
     "rating": 4.7,
     "reviewsCount": 76,
@@ -5966,8 +5966,8 @@ export const PRODUCTS = [
         "depth": 26,
         "height": 36,
         "dimensions": "26 × 26 × 36 mm",
-        "price": "₹169 (Incl. GST)",
-        "numericPrice": 169
+        "mrp_price": "₹169 (Incl. GST)", "price": "₹135 (Incl. GST)",
+        "mrp": 169, "numericPrice": 135
       },
       {
         "name": "Medium",
@@ -5975,8 +5975,8 @@ export const PRODUCTS = [
         "depth": 36,
         "height": 48,
         "dimensions": "36 × 36 × 48 mm",
-        "price": "₹229 (Incl. GST)",
-        "numericPrice": 229,
+        "mrp_price": "₹229 (Incl. GST)", "price": "₹183 (Incl. GST)",
+        "mrp": 229, "numericPrice": 183,
         "isPopular": true
       },
       {
@@ -5985,8 +5985,8 @@ export const PRODUCTS = [
         "depth": 48,
         "height": 62,
         "dimensions": "48 × 48 × 62 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       }
     ],
     "specs": {
@@ -6053,9 +6053,9 @@ export const PRODUCTS = [
     "category": "Keychains & Small Gifts",
     "description": "Intricately detailed miniature spacewalk astronaut pendant tethered to a ribbed space capsule charm ring.",
     "material": "PLA",
-    "price": "From ₹149",
-    "startingPrice": "₹149 (Incl. GST)",
-    "numericPrice": 149,
+    "price": "From ₹119",
+    "startingPrice": "₹119 (Incl. GST)",
+    "mrp": 149, "numericPrice": 119,
     "gstIncluded": true,
     "badge": "POPULAR",
     "rating": 4.9,
@@ -6067,8 +6067,8 @@ export const PRODUCTS = [
         "depth": 24,
         "height": 20,
         "dimensions": "38 × 24 × 20 mm",
-        "price": "₹149 (Incl. GST)",
-        "numericPrice": 149
+        "mrp_price": "₹149 (Incl. GST)", "price": "₹119 (Incl. GST)",
+        "mrp": 149, "numericPrice": 119
       },
       {
         "name": "Medium",
@@ -6076,8 +6076,8 @@ export const PRODUCTS = [
         "depth": 32,
         "height": 26,
         "dimensions": "52 × 32 × 26 mm",
-        "price": "₹199 (Incl. GST)",
-        "numericPrice": 199,
+        "mrp_price": "₹199 (Incl. GST)", "price": "₹159 (Incl. GST)",
+        "mrp": 199, "numericPrice": 159,
         "isPopular": true
       },
       {
@@ -6086,8 +6086,8 @@ export const PRODUCTS = [
         "depth": 42,
         "height": 34,
         "dimensions": "68 × 42 × 34 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       }
     ],
     "specs": {
@@ -6155,9 +6155,9 @@ export const PRODUCTS = [
     "category": "Automotive Accessories",
     "description": "Auto-locking vent louvre smartphone holder with silicone clip blades and spherical pivot ball joint.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "badge": "CAR MUST-HAVE",
     "rating": 4.8,
@@ -6169,8 +6169,8 @@ export const PRODUCTS = [
         "depth": 65,
         "height": 60,
         "dimensions": "75 × 65 × 60 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -6178,8 +6178,8 @@ export const PRODUCTS = [
         "depth": 80,
         "height": 75,
         "dimensions": "95 × 80 × 75 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399,
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319,
         "isPopular": true
       },
       {
@@ -6188,8 +6188,8 @@ export const PRODUCTS = [
         "depth": 100,
         "height": 90,
         "dimensions": "120 × 100 × 90 mm",
-        "price": "₹549 (Incl. GST)",
-        "numericPrice": 549
+        "mrp_price": "₹549 (Incl. GST)", "price": "₹439 (Incl. GST)",
+        "mrp": 549, "numericPrice": 439
       }
     ],
     "specs": {
@@ -6256,9 +6256,9 @@ export const PRODUCTS = [
     "category": "Automotive Accessories",
     "description": "Tapered base adapter that converts standard 68mm car cup holders into oversized flasks, hydro-flasks, and mug holders.",
     "material": "PLA",
-    "price": "From ₹299",
-    "startingPrice": "₹299 (Incl. GST)",
-    "numericPrice": 299,
+    "price": "From ₹239",
+    "startingPrice": "₹239 (Incl. GST)",
+    "mrp": 299, "numericPrice": 239,
     "gstIncluded": true,
     "badge": "UTILITY",
     "rating": 4.7,
@@ -6270,8 +6270,8 @@ export const PRODUCTS = [
         "depth": 90,
         "height": 105,
         "dimensions": "90 × 90 × 105 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239
       },
       {
         "name": "Medium",
@@ -6279,8 +6279,8 @@ export const PRODUCTS = [
         "depth": 120,
         "height": 135,
         "dimensions": "125 × 120 × 135 mm",
-        "price": "₹449 (Incl. GST)",
-        "numericPrice": 449,
+        "mrp_price": "₹449 (Incl. GST)", "price": "₹359 (Incl. GST)",
+        "mrp": 449, "numericPrice": 359,
         "isPopular": true
       },
       {
@@ -6289,8 +6289,8 @@ export const PRODUCTS = [
         "depth": 145,
         "height": 165,
         "dimensions": "160 × 145 × 165 mm",
-        "price": "₹649 (Incl. GST)",
-        "numericPrice": 649
+        "mrp_price": "₹649 (Incl. GST)", "price": "₹519 (Incl. GST)",
+        "mrp": 649, "numericPrice": 519
       }
     ],
     "specs": {
@@ -6356,9 +6356,9 @@ export const PRODUCTS = [
     "category": "Automotive Accessories",
     "description": "Heavy-duty seat headrest strut clips supporting up to 8kg shopping bags, backpacks, and umbrella loops.",
     "material": "PLA",
-    "price": "From ₹199",
-    "startingPrice": "₹199 (Incl. GST)",
-    "numericPrice": 199,
+    "price": "From ₹159",
+    "startingPrice": "₹159 (Incl. GST)",
+    "mrp": 199, "numericPrice": 159,
     "gstIncluded": true,
     "rating": 4.9,
     "reviewsCount": 162,
@@ -6369,8 +6369,8 @@ export const PRODUCTS = [
         "depth": 30,
         "height": 35,
         "dimensions": "90 × 30 × 35 mm",
-        "price": "₹199 (Incl. GST)",
-        "numericPrice": 199
+        "mrp_price": "₹199 (Incl. GST)", "price": "₹159 (Incl. GST)",
+        "mrp": 199, "numericPrice": 159
       },
       {
         "name": "Medium",
@@ -6378,8 +6378,8 @@ export const PRODUCTS = [
         "depth": 38,
         "height": 45,
         "dimensions": "120 × 38 × 45 mm",
-        "price": "₹299 (Incl. GST)",
-        "numericPrice": 299,
+        "mrp_price": "₹299 (Incl. GST)", "price": "₹239 (Incl. GST)",
+        "mrp": 299, "numericPrice": 239,
         "isPopular": true
       },
       {
@@ -6388,8 +6388,8 @@ export const PRODUCTS = [
         "depth": 48,
         "height": 55,
         "dimensions": "155 × 48 × 55 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       }
     ],
     "specs": {
@@ -6455,9 +6455,9 @@ export const PRODUCTS = [
     "category": "Automotive Accessories",
     "description": "Sun-visor snap-on eyewear clip designed to hold aviator sunglasses and parking cards without scratching frames.",
     "material": "PLA",
-    "price": "From ₹169",
-    "startingPrice": "₹169 (Incl. GST)",
-    "numericPrice": 169,
+    "price": "From ₹135",
+    "startingPrice": "₹135 (Incl. GST)",
+    "mrp": 169, "numericPrice": 135,
     "gstIncluded": true,
     "rating": 4.6,
     "reviewsCount": 74,
@@ -6468,8 +6468,8 @@ export const PRODUCTS = [
         "depth": 24,
         "height": 32,
         "dimensions": "65 × 24 × 32 mm",
-        "price": "₹169 (Incl. GST)",
-        "numericPrice": 169
+        "mrp_price": "₹169 (Incl. GST)", "price": "₹135 (Incl. GST)",
+        "mrp": 169, "numericPrice": 135
       },
       {
         "name": "Medium",
@@ -6477,8 +6477,8 @@ export const PRODUCTS = [
         "depth": 32,
         "height": 42,
         "dimensions": "90 × 32 × 42 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249,
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199,
         "isPopular": true
       },
       {
@@ -6487,8 +6487,8 @@ export const PRODUCTS = [
         "depth": 40,
         "height": 52,
         "dimensions": "115 × 40 × 52 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279
       }
     ],
     "specs": {
@@ -6554,9 +6554,9 @@ export const PRODUCTS = [
     "category": "Automotive Accessories",
     "description": "Slide-out hidden tray organizer insert with custom divisions for parking toll coins, keys, and pen drives.",
     "material": "PLA",
-    "price": "From ₹249",
-    "startingPrice": "₹249 (Incl. GST)",
-    "numericPrice": 249,
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 249, "numericPrice": 199,
     "gstIncluded": true,
     "rating": 4.8,
     "reviewsCount": 63,
@@ -6567,8 +6567,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 38,
         "dimensions": "125 × 85 × 38 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       },
       {
         "name": "Medium",
@@ -6576,8 +6576,8 @@ export const PRODUCTS = [
         "depth": 105,
         "height": 46,
         "dimensions": "165 × 105 × 46 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399,
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319,
         "isPopular": true
       },
       {
@@ -6586,8 +6586,8 @@ export const PRODUCTS = [
         "depth": 135,
         "height": 54,
         "dimensions": "205 × 135 × 54 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479
       }
     ],
     "specs": {
@@ -6653,9 +6653,9 @@ export const PRODUCTS = [
     "category": "Custom / Personalized",
     "description": "Bespoke executive desk nameplate with raised embossed lettering, custom designation, and weighted beveled base.",
     "material": "PLA",
-    "price": "From ₹449",
-    "startingPrice": "₹449 (Incl. GST)",
-    "numericPrice": 449,
+    "price": "From ₹359",
+    "startingPrice": "₹359 (Incl. GST)",
+    "mrp": 449, "numericPrice": 359,
     "gstIncluded": true,
     "badge": "CUSTOM",
     "rating": 5,
@@ -6667,8 +6667,8 @@ export const PRODUCTS = [
         "depth": 38,
         "height": 38,
         "dimensions": "130 × 38 × 38 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -6676,8 +6676,8 @@ export const PRODUCTS = [
         "depth": 45,
         "height": 46,
         "dimensions": "165 × 45 × 46 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -6686,8 +6686,8 @@ export const PRODUCTS = [
         "depth": 52,
         "height": 54,
         "dimensions": "205 × 52 × 54 mm",
-        "price": "₹899 (Incl. GST)",
-        "numericPrice": 899
+        "mrp_price": "₹899 (Incl. GST)", "price": "₹719 (Incl. GST)",
+        "mrp": 899, "numericPrice": 719
       }
     ],
     "specs": {
@@ -6754,9 +6754,9 @@ export const PRODUCTS = [
     "category": "Custom / Personalized",
     "description": "Intertwined initials or company monogram 3D extruded sculpture on architectural stepped display base.",
     "material": "PLA",
-    "price": "From ₹399",
-    "startingPrice": "₹399 (Incl. GST)",
-    "numericPrice": 399,
+    "price": "From ₹319",
+    "startingPrice": "₹319 (Incl. GST)",
+    "mrp": 399, "numericPrice": 319,
     "gstIncluded": true,
     "badge": "GIFT",
     "rating": 4.9,
@@ -6768,8 +6768,8 @@ export const PRODUCTS = [
         "depth": 48,
         "height": 95,
         "dimensions": "95 × 48 × 95 mm",
-        "price": "₹399 (Incl. GST)",
-        "numericPrice": 399
+        "mrp_price": "₹399 (Incl. GST)", "price": "₹319 (Incl. GST)",
+        "mrp": 399, "numericPrice": 319
       },
       {
         "name": "Medium",
@@ -6777,8 +6777,8 @@ export const PRODUCTS = [
         "depth": 65,
         "height": 135,
         "dimensions": "135 × 65 × 135 mm",
-        "price": "₹599 (Incl. GST)",
-        "numericPrice": 599,
+        "mrp_price": "₹599 (Incl. GST)", "price": "₹479 (Incl. GST)",
+        "mrp": 599, "numericPrice": 479,
         "isPopular": true
       },
       {
@@ -6787,8 +6787,8 @@ export const PRODUCTS = [
         "depth": 85,
         "height": 175,
         "dimensions": "175 × 85 × 175 mm",
-        "price": "₹849 (Incl. GST)",
-        "numericPrice": 849
+        "mrp_price": "₹849 (Incl. GST)", "price": "₹679 (Incl. GST)",
+        "mrp": 849, "numericPrice": 679
       }
     ],
     "specs": {
@@ -6855,9 +6855,9 @@ export const PRODUCTS = [
     "category": "Custom / Personalized",
     "description": "Custom breed dog/cat profile silhouette collar tag with recessed phone number and pet name.",
     "material": "PLA",
-    "price": "From ₹249",
-    "startingPrice": "₹249 (Incl. GST)",
-    "numericPrice": 249,
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 249, "numericPrice": 199,
     "gstIncluded": true,
     "rating": 4.9,
     "reviewsCount": 141,
@@ -6868,8 +6868,8 @@ export const PRODUCTS = [
         "depth": 30,
         "height": 4,
         "dimensions": "35 × 30 × 4 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       },
       {
         "name": "Medium",
@@ -6877,8 +6877,8 @@ export const PRODUCTS = [
         "depth": 42,
         "height": 5,
         "dimensions": "48 × 42 × 5 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349,
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279,
         "isPopular": true
       },
       {
@@ -6887,8 +6887,8 @@ export const PRODUCTS = [
         "depth": 54,
         "height": 6,
         "dimensions": "62 × 54 × 6 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       }
     ],
     "specs": {
@@ -6955,9 +6955,9 @@ export const PRODUCTS = [
     "category": "Custom / Personalized",
     "description": "Playable scannable Spotify code & extruded sound wave crest engraved with your favorite song or anniversary track.",
     "material": "PLA",
-    "price": "From ₹249",
-    "startingPrice": "₹249 (Incl. GST)",
-    "numericPrice": 249,
+    "price": "From ₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 249, "numericPrice": 199,
     "gstIncluded": true,
     "badge": "ROMANTIC",
     "rating": 5,
@@ -6969,8 +6969,8 @@ export const PRODUCTS = [
         "depth": 16,
         "height": 5,
         "dimensions": "45 × 16 × 5 mm",
-        "price": "₹249 (Incl. GST)",
-        "numericPrice": 249
+        "mrp_price": "₹249 (Incl. GST)", "price": "₹199 (Incl. GST)",
+        "mrp": 249, "numericPrice": 199
       },
       {
         "name": "Medium",
@@ -6978,8 +6978,8 @@ export const PRODUCTS = [
         "depth": 20,
         "height": 6,
         "dimensions": "62 × 20 × 6 mm",
-        "price": "₹349 (Incl. GST)",
-        "numericPrice": 349,
+        "mrp_price": "₹349 (Incl. GST)", "price": "₹279 (Incl. GST)",
+        "mrp": 349, "numericPrice": 279,
         "isPopular": true
       },
       {
@@ -6988,8 +6988,8 @@ export const PRODUCTS = [
         "depth": 25,
         "height": 7,
         "dimensions": "80 × 25 × 7 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       }
     ],
     "specs": {
@@ -7056,9 +7056,9 @@ export const PRODUCTS = [
     "category": "Custom / Personalized",
     "description": "Weather-resistant architectural entrance plaque with bold 3D numbers, family name crest, and hidden standoff mounts.",
     "material": "PLA",
-    "price": "From ₹499",
-    "startingPrice": "₹499 (Incl. GST)",
-    "numericPrice": 499,
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "mrp": 499, "numericPrice": 399,
     "gstIncluded": true,
     "badge": "HOME",
     "rating": 4.8,
@@ -7070,8 +7070,8 @@ export const PRODUCTS = [
         "depth": 95,
         "height": 14,
         "dimensions": "140 × 95 × 14 mm",
-        "price": "₹499 (Incl. GST)",
-        "numericPrice": 499
+        "mrp_price": "₹499 (Incl. GST)", "price": "₹399 (Incl. GST)",
+        "mrp": 499, "numericPrice": 399
       },
       {
         "name": "Medium",
@@ -7079,8 +7079,8 @@ export const PRODUCTS = [
         "depth": 125,
         "height": 16,
         "dimensions": "175 × 125 × 16 mm",
-        "price": "₹749 (Incl. GST)",
-        "numericPrice": 749,
+        "mrp_price": "₹749 (Incl. GST)", "price": "₹599 (Incl. GST)",
+        "mrp": 749, "numericPrice": 599,
         "isPopular": true
       },
       {
@@ -7089,8 +7089,8 @@ export const PRODUCTS = [
         "depth": 150,
         "height": 18,
         "dimensions": "208 × 150 × 18 mm",
-        "price": "₹1099 (Incl. GST)",
-        "numericPrice": 1099
+        "mrp_price": "₹1099 (Incl. GST)", "price": "₹879 (Incl. GST)",
+        "mrp": 1099, "numericPrice": 879
       }
     ],
     "specs": {

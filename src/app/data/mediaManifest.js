@@ -724,7 +724,7 @@ export const PRODUCT_MEDIA_MANIFEST = [
   },
   {
     "id": "MIN-SLAYER-001",
-    "name": "Demon Slayer Flame Warrior 3D Miniature",
+    "name": "Demon Slayer Flame Warrior 3D Miniature (Without Key Chain)",
     "images": [
       "/images/products/MIN-SLAYER-001_FRONT.jpg",
       "/images/products/MIN-SLAYER-001_ANGLE.jpg",
