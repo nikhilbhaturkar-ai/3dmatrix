@@ -1258,5 +1258,23 @@
       "CUS-PLAQUE-005_REAR",
       "CUS-PLAQUE-005_DETAIL"
     ]
+  },
+  {
+    "id": "CUS-DESK-006",
+    "name": "Custom 3D Name Desk Organizer & Pen Stand",
+    "images": [
+      "/images/products/CUS-DESK-006_FRONT.jpg",
+      "/images/products/CUS-DESK-006_ANGLE.jpg",
+      "/images/products/CUS-DESK-006_SIDE.jpg",
+      "/images/products/CUS-DESK-006_REAR.jpg",
+      "/images/products/CUS-DESK-006_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "CUS-DESK-006_FRONT",
+      "CUS-DESK-006_ANGLE",
+      "CUS-DESK-006_SIDE",
+      "CUS-DESK-006_REAR",
+      "CUS-DESK-006_DETAIL"
+    ]
   }
 ]

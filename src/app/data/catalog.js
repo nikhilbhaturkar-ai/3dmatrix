@@ -7150,5 +7150,116 @@ export const PRODUCTS = [
       "quoteRequired": true,
       "pricingRule": "Price on Request"
     }
+  },
+  {
+    "id": "CUS-DESK-006",
+    "name": "Custom 3D Name Desk Organizer & Pen Stand",
+    "category": "Custom / Personalized",
+    "description": "Dual-tone personalized workspace organizer featuring bold 3D extruded lettering in front of a 3-compartment storage caddy for pens, markers, and desk tools.",
+    "material": "PLA",
+    "price": "From ₹399",
+    "startingPrice": "₹399 (Incl. GST)",
+    "mrp": 499,
+    "numericPrice": 399,
+    "gstIncluded": true,
+    "badge": "CUSTOM",
+    "rating": 4.9,
+    "reviewsCount": 94,
+    "sizes": [
+      {
+        "name": "Small",
+        "width": 140,
+        "depth": 55,
+        "height": 50,
+        "dimensions": "140 × 55 × 50 mm",
+        "mrp_price": "₹499 (Incl. GST)",
+        "price": "₹399 (Incl. GST)",
+        "mrp": 499,
+        "numericPrice": 399
+      },
+      {
+        "name": "Medium",
+        "width": 180,
+        "depth": 65,
+        "height": 60,
+        "dimensions": "180 × 65 × 60 mm",
+        "mrp_price": "₹699 (Incl. GST)",
+        "price": "₹549 (Incl. GST)",
+        "mrp": 699,
+        "numericPrice": 549,
+        "isPopular": true
+      },
+      {
+        "name": "Large",
+        "width": 210,
+        "depth": 75,
+        "height": 70,
+        "dimensions": "210 × 75 × 70 mm",
+        "mrp_price": "₹999 (Incl. GST)",
+        "price": "₹799 (Incl. GST)",
+        "mrp": 999,
+        "numericPrice": 799
+      }
+    ],
+    "specs": {
+      "infill": "20% Gyroid",
+      "layerHeight": "0.20mm Standard",
+      "printTime": "~6.5 hours",
+      "weight": "185g"
+    },
+    "tags": [
+      "desk organizer",
+      "pen stand",
+      "custom name",
+      "personalized",
+      "vcreate",
+      "stationery caddy",
+      "office decor",
+      "dual color"
+    ],
+    "featured": true,
+    "images": [
+      "/images/products/CUS-DESK-006_FRONT.jpg",
+      "/images/products/CUS-DESK-006_ANGLE.jpg",
+      "/images/products/CUS-DESK-006_SIDE.jpg",
+      "/images/products/CUS-DESK-006_REAR.jpg",
+      "/images/products/CUS-DESK-006_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "CUS-DESK-006_FRONT",
+      "CUS-DESK-006_ANGLE",
+      "CUS-DESK-006_SIDE",
+      "CUS-DESK-006_REAR",
+      "CUS-DESK-006_DETAIL"
+    ],
+    "productName": "Custom 3D Name Desk Organizer & Pen Stand",
+    "smallDimensions": "140 × 55 × 50 mm",
+    "mediumDimensions": "180 × 65 × 60 mm",
+    "largeDimensions": "210 × 75 × 70 mm",
+    "smallPrice": 399,
+    "mediumPrice": 549,
+    "largePrice": 799,
+    "customSizeAvailable": true,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customPricingRule": "Price on Request (calculated by material volume, print time & geometry)",
+    "customSize": {
+      "enabled": true,
+      "minDimensions": {
+        "width": 50,
+        "depth": 30,
+        "height": 30
+      },
+      "maxDimensions": {
+        "width": 210,
+        "depth": 205,
+        "height": 235
+      },
+      "quoteRequired": true,
+      "pricingRule": "Price on Request"
+    }
   }
 ];

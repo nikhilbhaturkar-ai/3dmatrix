@@ -36,7 +36,8 @@ export default function Shop() {
     'CUS-SIGNET-002',
     'CUS-PET-003',
     'CUS-SPOTIFY-004',
-    'CUS-PLAQUE-005'
+    'CUS-PLAQUE-005',
+    'CUS-DESK-006'
   ];
 
   // Angle labels for 5 studio perspective views
