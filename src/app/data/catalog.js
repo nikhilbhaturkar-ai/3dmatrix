@@ -1049,14 +1049,20 @@ export const PRODUCTS = [
       "/images/products/DSK-ORG-001_ANGLE.jpg",
       "/images/products/DSK-ORG-001_SIDE.jpg",
       "/images/products/DSK-ORG-001_REAR.jpg",
-      "/images/products/DSK-ORG-001_DETAIL.jpg"
+      "/images/products/DSK-ORG-001_DETAIL.jpg",
+      "/images/products/DSK-ORG-001_BLACK.png",
+      "/images/products/DSK-ORG-001_BLUE.png",
+      "/images/products/DSK-ORG-001_SKIN.png"
     ],
     "imageIds": [
       "DSK-ORG-001_FRONT",
       "DSK-ORG-001_ANGLE",
       "DSK-ORG-001_SIDE",
       "DSK-ORG-001_REAR",
-      "DSK-ORG-001_DETAIL"
+      "DSK-ORG-001_DETAIL",
+      "DSK-ORG-001_BLACK",
+      "DSK-ORG-001_BLUE",
+      "DSK-ORG-001_SKIN"
     ],
     "productName": "Multi-Compartment Desk Organizer",
     "smallDimensions": "110 × 95 × 85 mm",
