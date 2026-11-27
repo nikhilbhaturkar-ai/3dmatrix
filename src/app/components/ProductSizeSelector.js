@@ -24,7 +24,8 @@ export default function ProductSizeSelector({
   if (!product) return null;
 
   const sizes = product.sizes || [];
-  const isCustomSelected = selectedSize === 'Custom Size';
+  const isFixedSingle = sizes.length === 1 && product.customSizeAvailable === false;
+  const isCustomSelected = !isFixedSingle && selectedSize === 'Custom Size';
 
   // Live printability validation against Creality K2 SE envelope
   const validation = validateCustomDimensions(
@@ -46,9 +47,11 @@ export default function ProductSizeSelector({
     <div className={`global-size-system-wrapper ${className}`}>
       {/* SECTION HEADER */}
       <div className="section-label-row size-system-header">
-        <span className="section-title">CHOOSE SIZE</span>
+        <span className="section-title">{isFixedSingle ? 'SIZE' : 'CHOOSE SIZE'}</span>
         <span className="section-selected-value">
-          {isCustomSelected ? (
+          {isFixedSingle ? (
+            `Fixed Size (${sizes[0].dimensions})`
+          ) : isCustomSelected ? (
             customDimensions.width && customDimensions.depth && customDimensions.height ? (
               `Custom Size (Approx. dimensions: ${customDimensions.width} × ${customDimensions.depth} × ${customDimensions.height} mm)`
             ) : (
@@ -63,12 +66,12 @@ export default function ProductSizeSelector({
         </span>
       </div>
 
-      {/* SIZE TILES GRID: SMALL, MEDIUM, LARGE + CUSTOM SIZE */}
+      {/* SIZE TILES GRID: SMALL, MEDIUM, LARGE + CUSTOM SIZE (or single Fixed Size) */}
       <div className="size-options-grid global-size-grid">
         {/* Standard S / M / L Options */}
         {sizes.map((size) => {
-          const isSelected = selectedSize === size.name;
-          const isRecommended = size.isPopular || size.name === 'Medium';
+          const isSelected = isFixedSingle || selectedSize === size.name;
+          const isRecommended = !isFixedSingle && (size.isPopular || size.name === 'Medium');
 
           return (
             <button
@@ -83,7 +86,7 @@ export default function ProductSizeSelector({
                 <span className="size-name-text">{size.name}</span>
                 {isRecommended && <span className="size-recommended-badge">Recommended</span>}
               </div>
-              <div className="size-dim-label">Approx. dimensions:</div>
+              <div className="size-dim-label">{isFixedSingle ? 'Fixed dimensions:' : 'Approx. dimensions:'}</div>
               <div className="size-dim-text">{size.dimensions}</div>
               <div className="size-price-tag">
                 ₹{size.numericPrice.toLocaleString()} <span className="gst-sub">(Incl. GST)</span>
@@ -115,12 +118,14 @@ export default function ProductSizeSelector({
       </div>
 
       {/* STANDARD CUSTOMER SIZE PRESETS NOTICE */}
-      <div className="dimensions-approx-notice">
-        <span className="info-icon">ℹ️</span>
-        <span>
-          <strong>Standard Size Presets:</strong> Displayed dimensions are standard customer size presets for the website (Approx. dimensions) and not claimed to be original STL dimensions. Before production, the actual STL/3MF must be checked against the Creality K2 SE build volume (220 × 215 × 245 mm, practical single-piece website limit: approx. 210 × 205 × 235 mm).
-        </span>
-      </div>
+      {!isFixedSingle && (
+        <div className="dimensions-approx-notice">
+          <span className="info-icon">ℹ️</span>
+          <span>
+            <strong>Standard Size Presets:</strong> Displayed dimensions are standard customer size presets for the website (Approx. dimensions) and not claimed to be original STL dimensions. Before production, the actual STL/3MF must be checked against the Creality K2 SE build volume (220 × 215 × 245 mm, practical single-piece website limit: approx. 210 × 205 × 235 mm).
+          </span>
+        </div>
+      )}
 
       {/* EXPANDED CUSTOM SIZE REQUEST PANEL */}
       {isCustomSelected && (

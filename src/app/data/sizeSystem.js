@@ -291,12 +291,13 @@ export function buildWhatsAppUrl({
     const unitPrice = activeSize.numericPrice;
     const totalAmount = unitPrice * quantity;
 
+    const isFixedSingle = product.sizes?.length === 1 && product.customSizeAvailable === false;
     let msg =
       `Hello 3D Matrix,\n\n` +
       `I would like to order:\n\n` +
       `Product: ${pName}\n` +
       `Size: ${activeSize.name}\n` +
-      `Dimensions: Approx. ${activeSize.dimensions}\n` +
+      `Dimensions: ${isFixedSingle ? activeSize.dimensions : `Approx. ${activeSize.dimensions}`}\n` +
       `Quantity: ${quantity}\n` +
       `Material: PLA\n` +
       `Price per unit: ₹${unitPrice.toLocaleString()} (Incl. GST)\n` +

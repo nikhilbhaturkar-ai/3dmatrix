@@ -5079,5 +5079,88 @@ export const PRODUCTS = [
       "quoteRequired": true,
       "pricingRule": "Price on Request"
     }
+  },
+  {
+    "id": "KEY-MOTO-001",
+    "name": "Moto Rider Keychain",
+    "category": "Keychains & Small Gifts",
+    "description": "Compact 3D-printed chibi biker figurine keychain featuring a detailed racing helmet, hoodie, cargo pants, and sneakers with metal keyring.",
+    "material": "PLA",
+    "price": "₹199",
+    "startingPrice": "₹199 (Incl. GST)",
+    "mrp": 499,
+    "numericPrice": 199,
+    "gstIncluded": true,
+    "badge": "NEW",
+    "rating": 4.9,
+    "reviewsCount": 18,
+    "sizes": [
+      {
+        "name": "Fixed Size",
+        "width": 25,
+        "depth": 34,
+        "height": 60,
+        "dimensions": "25 × 34 × 60 mm",
+        "mrp_price": "₹499 (Incl. GST)",
+        "price": "₹199 (Incl. GST)",
+        "mrp": 499,
+        "numericPrice": 199
+      }
+    ],
+    "specs": {
+      "infill": "25% Gyroid (Durable)",
+      "layerHeight": "0.12mm Ultra Detail",
+      "printTime": "~1.5 hours",
+      "weight": "22g"
+    },
+    "tags": [
+      "keychain",
+      "moto",
+      "rider",
+      "biker",
+      "helmet",
+      "gift",
+      "miniature"
+    ],
+    "featured": true,
+    "visible": true,
+    "images": [
+      "/images/products/KEY-MOTO-001_FRONT.jpg",
+      "/images/products/KEY-MOTO-001_ANGLE.jpg",
+      "/images/products/KEY-MOTO-001_SIDE.jpg",
+      "/images/products/KEY-MOTO-001_REAR.jpg",
+      "/images/products/KEY-MOTO-001_DETAIL.jpg"
+    ],
+    "imageIds": [
+      "KEY-MOTO-001_FRONT",
+      "KEY-MOTO-001_ANGLE",
+      "KEY-MOTO-001_SIDE",
+      "KEY-MOTO-001_REAR",
+      "KEY-MOTO-001_DETAIL"
+    ],
+    "productName": "Moto Rider Keychain",
+    "smallDimensions": "25 × 34 × 60 mm",
+    "smallPrice": 199,
+    "customSizeAvailable": false,
+    "maxPrintableDimensions": {
+      "width": 210,
+      "depth": 205,
+      "height": 235
+    },
+    "customSize": {
+      "enabled": false,
+      "minDimensions": {
+        "width": 25,
+        "depth": 34,
+        "height": 60
+      },
+      "maxDimensions": {
+        "width": 25,
+        "depth": 34,
+        "height": 60
+      },
+      "quoteRequired": false,
+      "pricingRule": "Fixed Size"
+    }
   }
 ];

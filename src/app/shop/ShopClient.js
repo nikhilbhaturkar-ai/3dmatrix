@@ -117,8 +117,11 @@ export default function ShopClient({ products: PRODUCTS }) {
     setCustomNotes("");
     setModalCustomDimensions({ width: '', depth: '', height: '' });
     setModalCustomSizeNotes('');
-    // Default to medium size (recommended / most popular)
-    const defSize = norm.sizes.find(s => s.name === "Medium") || norm.sizes[0];
+    // Default to fixed single size if applicable, otherwise Medium (recommended / most popular)
+    const defSize =
+      norm.sizes.length === 1 && norm.customSizeAvailable === false
+        ? norm.sizes[0]
+        : (norm.sizes.find(s => s.name === "Medium") || norm.sizes[0]);
     setModalSize(defSize ? defSize.name : "Medium");
   };
 
@@ -427,13 +430,31 @@ export default function ShopClient({ products: PRODUCTS }) {
                     </div>
 
                     <div className="card-price-section">
-                      <div className="price-tag">
-                        <span className="price-val">Starting from ₹{product.numericPrice.toLocaleString()} (Incl. GST)</span>
-                      </div>
-                      <div className="card-size-availability-tag">
-                        <span>📐 Approx. dimensions: S · M · L</span>
-                        <span className="tag-highlight">+ Custom Size</span>
-                      </div>
+                      {product.sizes.length === 1 && product.customSizeAvailable === false ? (
+                        <>
+                          <div className="price-tag">
+                            <span className="price-val">₹{product.numericPrice.toLocaleString()} (Incl. GST)</span>
+                            {product.mrp > product.numericPrice && (
+                              <span className="card-price-original" style={{ marginLeft: 8 }}>
+                                ₹{product.mrp.toLocaleString()}
+                              </span>
+                            )}
+                          </div>
+                          <div className="card-size-availability-tag">
+                            <span>📐 Fixed Size: {product.sizes[0].dimensions}</span>
+                          </div>
+                        </>
+                      ) : (
+                        <>
+                          <div className="price-tag">
+                            <span className="price-val">Starting from ₹{product.numericPrice.toLocaleString()} (Incl. GST)</span>
+                          </div>
+                          <div className="card-size-availability-tag">
+                            <span>📐 Approx. dimensions: S · M · L</span>
+                            <span className="tag-highlight">+ Custom Size</span>
+                          </div>
+                        </>
+                      )}
                     </div>
 
                     {/* Card Actions: VIEW MODEL + ORDER ON WHATSAPP */}
@@ -796,6 +817,8 @@ export default function ShopClient({ products: PRODUCTS }) {
                         modalCustomDimensions.width && modalCustomDimensions.depth && modalCustomDimensions.height
                           ? `Custom Size (Approx. dimensions: ${modalCustomDimensions.width} × ${modalCustomDimensions.depth} × ${modalCustomDimensions.height} mm)`
                           : 'Custom Size (Review Required)'
+                      ) : product.sizes.length === 1 && product.customSizeAvailable === false ? (
+                        `Fixed Size (${activeSizeObj.dimensions})`
                       ) : (
                         `${activeSizeObj.name} (Approx. dimensions: ${activeSizeObj.dimensions})`
                       )}

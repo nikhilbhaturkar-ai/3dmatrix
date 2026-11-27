@@ -95,21 +95,28 @@ export function parseDims(text) {
 
 /** Converts a sheet row (object keyed by header) into the product shape the shop uses. */
 export function rowToProduct(row) {
-  const sizes = SIZE_NAMES.map((name) => {
+  const customSizeAvailable = toBool(row['Custom Size'], true);
+  const populatedSizes = SIZE_NAMES.filter(
+    (name) => str(row[`${name} Size`]) !== '' || Number.isFinite(toNumber(row[`${name} Price`]))
+  );
+  const activeSizeNames = populatedSizes.length > 0 ? populatedSizes : SIZE_NAMES;
+  const isFixedSingle = activeSizeNames.length === 1 && !customSizeAvailable;
+
+  const sizes = activeSizeNames.map((name) => {
     const dimensions = str(row[`${name} Size`]);
     const d = parseDims(dimensions) || { width: 0, depth: 0, height: 0 };
     const price = toNumber(row[`${name} Price`]);
     const mrpRaw = toNumber(row[`${name} MRP`]);
     const mrp = Number.isFinite(mrpRaw) && mrpRaw > 0 ? mrpRaw : price;
     return {
-      name,
+      name: isFixedSingle ? 'Fixed Size' : name,
       ...d,
       dimensions,
       price: `${inr(price)} (Incl. GST)`,
       numericPrice: price,
       mrp,
       mrp_price: `${inr(mrp)} (Incl. GST)`,
-      ...(name === 'Medium' ? { isPopular: true } : {}),
+      ...(name === 'Medium' && !isFixedSingle ? { isPopular: true } : {}),
     };
   });
 
@@ -142,9 +149,9 @@ export function rowToProduct(row) {
     sizes,
     numericPrice,
     mrp,
-    price: `From ${inr(numericPrice)}`,
+    price: isFixedSingle ? inr(numericPrice) : `From ${inr(numericPrice)}`,
     gstIncluded: true,
-    customSizeAvailable: toBool(row['Custom Size'], true),
+    customSizeAvailable,
     specs: {
       infill: str(row['Infill']),
       layerHeight: str(row['Layer Height']),
@@ -160,7 +167,12 @@ export function rowToProduct(row) {
  * differ from the Small size, so the column stays empty for normal products.
  */
 export function productToRow(p) {
-  const sizeBy = Object.fromEntries((p.sizes || []).map((s) => [s.name, s]));
+  const sizeList = p.sizes || [];
+  const sizeBy = Object.fromEntries(sizeList.map((s) => [s.name, s]));
+  // Single fixed-size products (e.g. name: "Fixed Size") map onto the Small columns in the sheet.
+  if (sizeList.length === 1 && !sizeBy.Small) {
+    sizeBy.Small = sizeList[0];
+  }
   const row = {
     ID: p.id,
     Name: p.name,
@@ -198,6 +210,11 @@ export function validateRow(row, categories) {
   if (!str(row.Name)) errors.push('Name is required.');
   if (categories && !categories.includes(str(row.Category))) errors.push('Choose a valid category.');
   for (const name of SIZE_NAMES) {
+    const rawSize = str(row[`${name} Size`]);
+    const rawPrice = str(row[`${name} Price`]);
+    const rawMrp = str(row[`${name} MRP`]);
+    // Medium and Large are optional for fixed single-size products when left completely blank.
+    if (name !== 'Small' && !rawSize && !rawPrice && !rawMrp) continue;
     if (!parseDims(row[`${name} Size`])) errors.push(`${name} size needs width × depth × height in mm.`);
     const price = toNumber(row[`${name} Price`]);
     if (!(price > 0)) errors.push(`${name} price must be a number above 0.`);

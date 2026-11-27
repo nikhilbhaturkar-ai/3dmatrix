@@ -303,7 +303,7 @@ export default function ProductForm({ product, categories, existing, canEdit }) 
                 Sizes &amp; prices <span className="hint">₹, GST included · MRP optional</span>
               </h2>
               {SIZES.map((size) => {
-                const s = sizeBy[size];
+                const s = sizeBy[size] || (size === 'Small' && product?.sizes?.length === 1 && !sizeBy.Small ? product.sizes[0] : undefined);
                 const d = splitDims(s?.dimensions);
                 const k = size.toLowerCase();
                 return (
